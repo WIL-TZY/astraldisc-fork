@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Candleholder</title>
+	<link rel="icon" type="image/png" href="../assets/img/candleholder/favicon.png"/>
+	<!-- CSS -->
+	<link href="../css/reset.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="../css/base.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="../css/projects.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="../css/candleholder.css" rel="stylesheet" type="text/css" media="all"/>
+	<link href="../css/characters.css" rel="stylesheet" type="text/css" media="all"/>
+</head>
+<body>
+	<div class=wrapper>
+		<h2 class="center character-name">Nataline</h2>
+		<div class="flex-container">
+			<!-- Character -->
+			<div class="character-container">
+				<!-- Character Image -->
+				<img class="image smooth" src="../assets/img/candleholder/char/nataline_nael.png"/>
+				<p class="center by-text">art by 
+					<a href="https://twitter.com/wil__tzy" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">WILTZY</a>
+				</p>
+
+				<!-- Audio Player -->
+				<div class="audioplayer-container"> 
+					<audio id="audioplayer"> <!-- preload="none" -->
+						<source src="../assets/audio/hiddenblizzard.mp3" type="audio/mpeg">
+						Your browser does not support the audio element.
+					</audio>
+
+					<!-- Play and Progress Bar -->
+					<button class="chara-audioplayer btn-play" type="button" onclick="playPause(); clickSoundLoad(event)" onmouseenter="hoverSound()">▶</button>
+					<input class="progress-slider" type="range" min="0" max="100" step="1" value="0" oninput="changeProgress(this.value)">
+
+					<!-- Time display -->
+					<span class="time-display">0:00 / 0:52</span>
+
+					<!-- Volume -->
+					<div class="volume-container">
+						<!-- Volume Buttons (+/-) -->
+						<button class="chara-audioplayer btn-vol vol-down" type="button" onclick="decreaseVolume()">-</button>
+						<button class="chara-audioplayer btn-vol vol-up" type="button" onclick="increaseVolume()">+</button>
+					</div>
+				</div>				
+			</div>
+
+			<!-- Main Content -->
+			<div class="flex-inner">
+
+				<!-- Dialogue Boxes -->
+				<div class="dialogueCH">
+					<span class="firstline">O-OH! A-AN O-O-ONLOOKER...?</span>
+				</div>
+				<div class="dialogueCH">
+					<span class="firstline">C-C-CAREFUL NOW... THE G-GLASS</span>
+					<br>
+					<span class="normaline">IS TOO F-F-FRAGILE...!!</span>
+				</div>
+				<div class="dialogueCH">
+					<span class="firstline">WAIT... Y-Y-YOU'RE N-NOT S-SUPPOSED</span>
+					<br>
+					<span class="normaline">TO B-BE BACKSTAGE...</span>
+				</div>
+				<div class="dialogueCH">
+					<span class="firstline"> Y-YOU BROUGHT M-M-ME A... HOLIDAY GIFT...?</span>
+					<br>
+					<span class="normaline">Y-YOUR PRESENCE. IT IS WARM...</span>
+				</div>
+			</div> <!-- End of .flex-inner -->
+		</div> <!-- .flex-container -->
+	</div> <!-- End of .wrapper -->
+
+	<!-- Return Button -->
+	<p class="center bold"><a href="../candleholder" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">RETURN</a></p>
+
+	<!-- Click/Hover Sound JS -->
+	<script src="../js/soundfx.js"></script>
+	<!-- Audio Player JS -->
+	<script src="../js/audio-player.js"></script>
+</body>
+</html>

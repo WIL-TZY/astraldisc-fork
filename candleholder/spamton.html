@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Candleholder</title>
+    <link rel="icon" type="image/png" href="../assets/img/candleholder/favicon.png"/>
+    <!-- CSS -->
+    <link href="../css/reset.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="../css/base.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="../css/projects.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="../css/candleholder.css" rel="stylesheet" type="text/css" media="all"/>
+    <link href="../css/characters.css" rel="stylesheet" type="text/css" media="all"/>
+</head>
+<body>
+    <div class="wrapper">
+		<h2 class="center character-name">Spamton</h2>
+      	<div class="flex-container">
+			<!-- Character -->
+			<div class="character-container">
+				<!-- Character Image -->
+				<img class="image smooth" src="../assets/img/candleholder/char/spamton_nael.png"/>
+				<p class="center by-text">art by 
+					<a href="https://twitter.com/wil__tzy" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">WILTZY</a>
+				</p>
+
+				<!-- Audio Player -->
+				<div class="audioplayer-container"> 
+					<audio id="audioplayer" preload="none">
+						<source src="../assets/audio/buisiness.ogg" type="audio/ogg">
+						Your browser does not support the audio element.
+					</audio>
+
+					<!-- Play and Progress Bar -->
+					<button class="chara-audioplayer btn-play" type="button" onclick="playPause(); clickSoundLoad(event)" onmouseenter="hoverSound()">▶</button>
+					<input class="progress-slider" type="range" min="0" max="100" step="1" value="0" oninput="changeProgress(this.value)">
+
+					<!-- Time display -->
+					<span class="time-display">0:00 / 1:12</span>
+
+					<!-- Volume -->
+					<div class="volume-container">
+						<!-- Volume Buttons (+/-) -->
+						<button class="chara-audioplayer btn-vol vol-down" type="button" onclick="decreaseVolume()">-</button>
+						<button class="chara-audioplayer btn-vol vol-up" type="button" onclick="increaseVolume()">+</button>
+					</div>
+				</div>	
+			</div>
+
+			<!-- Main Content -->
+			<div class="flex-inner">
+
+				<!-- Dialogue Boxes -->
+				<div class="dialogueCH">
+					<span class="firstline">HELLO...? WHAT?!</span>
+				</div>
+				<div class="dialogueCH">
+					<span class="firstline">WHAT DO YOU M3AN MY [Thematic] SONG</span>
+					<br>
+					<span class="normaline">IS NOT [Finished at 4:00 PM]????</span>
+				</div>
+				<div class="dialogueCH">
+					<span class="firstline">WHAT KIND OF [ShadyBuisiness]</span>
+					<br>
+					<span class="normaline">DO YOU GUYS RUN?!!</span>
+				</div>
+				<div class="dialogueCH">
+					<span class="firstline">OH. YOU'LL SEND A [TempMail]</span>
+					<br>
+					<span class="normaline">REPL4CEMENT? ALRI[tee], HURRY [Up]!!!1!</span>
+				</div>
+        	</div> <!-- End of .flex-inner -->
+      </div> <!-- .flex-container -->
+    </div> <!-- End of .wrapper -->
+
+	<!-- Return Button -->
+    <p class="center bold"><a href="../candleholder" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">RETURN</a></p>
+	
+	<!--
+    <footer>
+		<span style="color: var(--faint-text);">HUECYCLES © 2020 - 2023<br>UNDERTALE/DELTARUNE belongs to Toby Fox & his team.<br>These are just projects for fun!</span>
+	</footer>
+	-->
+
+	<!-- Click/Hover Sound JS -->
+	<script src="../js/soundfx.js"></script>
+	<!-- Audio Player JS -->
+	<script src="../js/audio-player.js"></script>
+</body>
+</html>

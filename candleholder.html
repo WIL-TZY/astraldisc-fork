@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta property="og:title" content="CANDLEHOLDER">
+    <meta property="og:url" content="https://huecycles.com/candleholder">
+    <meta property="og:description" content="A Deltarune fangame where Spamton keeps a candlelight safe.">
+    <meta property="og:image" content="https://huecycles.com/assets/img/candleholder/char/candle_nael.png">
+    <title>Candleholder</title>
+    <link rel="icon" type="image/png" href="assets/img/candleholder/favicon.png" />
+    <!-- CSS -->
+    <link href="css/reset.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/base.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/huesite.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/projects.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/candleholder.css" rel="stylesheet" type="text/css" media="all">
+  </head>
+  <body>
+    <!-- Click/Hover Sound JS -->
+		<script src="js/soundfx.js"></script>
+	<!-------------------------->
+    <div class="wrapper">
+      <header>
+        <div class="logo-container">
+          <img class="image pixelated" src="assets/img/candleholder/logo.png" alt="Logo">
+        </div>
+        <nav>
+          <ul>
+            <li><a href="./" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">Home</a></li>
+            <li><a href="./projects" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">Return to Projects</a></li>
+            <li><a href="./candleholder/team" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">Meet the Team</a></li>
+            <li><a href="./candleholder/faq" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">FAQ</a></li>
+          </ul>
+        </nav>
+      </header>
+      
+    <main>
+    <blockquote>
+    <p class="italic">In the wake of the festival, the LIGHT looks to lull away their worries. The Delta Warriors, with all seven Shadow Crystals, decide it is time to finally guide these turbulent energies through the DARK.<br><br>
+    But purification never comes easy. A new, darker shadow looms over a Lightner's HOPE, snatching their willpower... and casting away those still waiting to find peace to a land of DREAMS.
+    <br>
+    <br>
+    <p style="text-align: center" class="italic">...</p>
+    <br>
+    <p style="text-align: center" class="italic">You are here too, right?</p>
+    <br>
+    <p style="text-align: center" class="italic">Despite everything, you will just never learn to leave.</p>
+    </blockquote>
+
+    <!-- Spamvil animated fall toggle -->
+    <section class="spamvil-anim">
+      <div class="flex-container">
+        <div>
+          <a href="#characters" id="character-link" onclick="clickSound()" onmouseenter="hoverSound()">
+          <img id="character-img" class="default image pixelated" src="assets/img/candleholder/fall_dark.gif"> <!-- default -->
+          <img id="character-img-hover" class="hover image pixelated" src="assets/img/candleholder/fall_neodark.gif"/> <!-- hover -->
+          </a>
+        </div>
+      </div>
+    </section>
+	<hr>
+	<!-- About -->
+	<section>
+    <h2 class="center">About the Project</h2>
+    <br>
+    <p>Candleholder is a Deltarune fangame in early development. It is being programmed in <a href="https://kristal.cc/" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">Kristal</a>.</p>
+    <p>You play as Spamton, who has fallen in a Neo Dark Fountain inside Kris's pocket, and now explores a strange, dreamy place called the Cluttersphere.</p>
+    <p>With your perspective shifted, having Jevil as your ally (?) and being tasked with protecting Kris's lifeforce in the form of a candlelight, you must use the SOUL to guide Spamton into making it back to the Dark World safely.</p>
+    <p class="center">...Oh, and 
+		<a href="./candleholder/lancer" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">Lancer
+			<img class="image pixelated" src="assets/img/lancer_wave.gif" style="vertical-align:bottom">
+		</a> is here too.</p>
+		<hr>
+	</section>
+	
+	<!-- Characters List -->
+    <section id="characters" class="characters">
+          <h2 class="center">Characters</h2>
+          <!-- Upper Row -->
+          <div class="flex-container">
+
+            <!-- Spamton -->
+            <div class="flex-item spr-spamton">
+              <a href="./candleholder/spamton" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
+                <img class="default image pixelated" src="assets/img/candleholder/spamton.png"/> 
+                <img class="hover image pixelated" src="assets/img/candleholder/spamton_hover.png"/>
+                <p class="center">Spamton</p>
+              </a>
+            </div>
+            <!-- Jevil -->
+            <div class="flex-item spr-jevil">
+              <a href="./candleholder/jevil" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
+                <img class="default image pixelated" src="assets/img/candleholder/jevil.png"/>
+                <img class="hover image pixelated" src="assets/img/candleholder/jevil_hover.png"/>
+                <p class="center">Jevil</p>
+              </a>
+            </div>
+            <!-- Dess -->
+            <div class="flex-item spr-dess">
+              <a href="./candleholder/dess" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
+                <img class="default image pixelated" src="assets/img/candleholder/dess.png">
+                <img class="hover image pixelated" src="assets/img/candleholder/dess_hover.png"/>
+                <p class="center">Dess Holiday</p>
+              </a>
+            </div>
+          </div> <!-- End of flex-container -->
+
+          <!-- Lower Row -->
+          <div class="flex-container">
+            <!-- Dealmaker -->
+            <div class="flex-item spr-dealmaker">
+                <a href="./candleholder/dealmaker" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
+                  <img class="default image pixelated" src="assets/img/candleholder/dealmaker.png">
+                  <img class="hover image pixelated" src="assets/img/candleholder/dealmaker_2.gif"/>
+                  <p class="center">Dealmaker</p>
+                </a>
+            </div>
+            <!-- Devilsknife -->
+            <div class="flex-item spr-devilsknife">
+              <a href="./candleholder/devilsknife" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
+                <img class="default image pixelated" src="assets/img/candleholder/devilsknife.png">
+                <img class="hover image pixelated" src="assets/img/candleholder/devilsknife_blink.gif"/>
+                <p class="center">Devilsknife</p>
+              </a>
+            </div>
+            <!-- Risku -->
+            <div class="flex-item spr-risku">
+              <a href="./candleholder/risku" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
+                <img class="default image pixelated" src="assets/img/candleholder/risku.png">
+                <img class="hover image pixelated" src="assets/img/candleholder/risku_2.png"/>
+                <p class="center">Risku</p>
+              </a>
+            </div>
+            <!-- Nataline -->
+            <div class="flex-item spr-nataline">
+              <a href="./candleholder/nataline" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
+                <img class="default image pixelated" src="assets/img/candleholder/nataline.png">
+                <img class="hover image pixelated" src="assets/img/candleholder/nataline_2.png"/>
+                <p class="center">Nataline</p>
+              </a>
+            </div>
+          </div> <!-- End of flex-container -->
+        </section> <!-- End of characters section -->
+      <hr>
+    
+    <h2 class="center">Other Links</h2>
+      <div class="social-links">
+		<!-- Tumblr -->
+		<div class="social-icon tumblr">
+			<a href="https://candleholder-dev.tumblr.com/" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
+				<img class="default image pixelated social-icon" src="assets/img/candleholder/tumblr.png" width="82" height="64">
+				<img class="hover image pixelated social-icon" src="assets/img/candleholder/tumblr_2.png" width="82" height="64"/>
+			</a>
+		</div>
+		<!-- Soundcloud -->
+		<div class="social-icon soundcloud">
+			<a href="https://soundcloud.com/huecycles/sets/candleholder-ost" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
+				<img class="default image pixelated social-icon" src="assets/img/candleholder/sc.png" width="82" height="64">
+				<img class="hover image pixelated social-icon" src="assets/img/candleholder/sc_2.png" width="82" height="64"/>
+			</a>
+		</div>
+		<!-- Discord -->
+		<div class="social-icon discord">
+			<a href="#a" onclick="clickDenySound()" onmouseenter="hoverSound()">
+				<img class="default image pixelated social-icon" src="assets/img/candleholder/discord.png" width="82" height="64">
+				<img class="hover image pixelated social-icon" src="assets/img/candleholder/discord_2.png" width="82" height="64"/>
+			</a>
+		</div>
+		<!-- Game Jolt -->
+		<div class="social-icon gamejolt">
+			<a href="https://gamejolt.com/games/candleholder/791510" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
+				<img class="default image pixelated social-icon" src="assets/img/candleholder/gamejolt.png" width="82" height="64">
+				<img class="hover image pixelated social-icon" src="assets/img/candleholder/gamejolt_2.png" width="82" height="64"/>
+			</a>
+		</div>
+    </div>
+  </main> <!-- End of .main -->
+
+  <footer>
+    <span style="color: var(--faint-text);">HUECYCLES © 2020 - 2023
+      <br>Website designed by <a href="https://huecycles.com/about">HUECYCLES</a> & <a href="https://twitter.com/wil__tzy">WILTZY</a>
+      <br>DELTARUNE belongs to Toby Fox & his team.
+      <br>These are just projects for fun!</span>
+  </footer>
+    
+    </div> <!-- End of .wrapper -->
+
+    <!-- JS toggle to swap animations after the user clicks the images -->
+    <script>
+		// Ensures the script doesn't run until the HTML document has been fully loaded
+		document.addEventListener("DOMContentLoaded", function() {
+			var characterLink = document.getElementById("character-link");
+			var characterImg = document.getElementById("character-img");
+			var characterImgHover = document.getElementById("character-img-hover");
+
+			// Check if the device is a touchscreen
+			var isTouchDevice = 'ontouchstart' in document.documentElement;
+			var isToggled = false;
+
+			function toggleImages() {
+			var tempSrc = characterImg.src;
+			characterImg.src = characterImgHover.src;
+			characterImgHover.src = tempSrc;
+			isToggled = !isToggled;
+			}
+
+			// Click or touchstart event handler
+			function clickHandler(event) {
+			toggleImages();
+
+			if (isTouchDevice) {
+				// Prevent default behavior on touch devices
+				event.preventDefault();
+			}
+			}
+
+			// Event listeners
+			if (isTouchDevice) {
+			console.log("Device uses touch.");
+			// For touch devices, 'touchstart' and 'pointerdown' events
+			characterLink.addEventListener("touchstart", clickHandler);
+			characterLink.addEventListener("pointerdown", function (event) {
+				// Check if the pointer is a touch input
+				if (event.pointerType === "touch") {
+				event.preventDefault();
+				}
+			});
+			} else { // PC
+			console.log("Device doesn't use touch.");
+			// For non-touch devices, 'click' and 'mouseenter' events
+			characterLink.addEventListener("click", clickHandler);
+
+			characterLink.addEventListener("mouseenter", function () {
+				// Toggle when hovering
+				if (isToggled) {
+				toggleImages();
+				}
+			});
+
+			// Reset the toggle state on mouseleave
+			characterLink.addEventListener("mouseleave", function () {
+				isToggled = false;
+			});
+			}
+		});
+    </script>
+  </body>
+</html>

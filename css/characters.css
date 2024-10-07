@@ -1,0 +1,13 @@
+/* Character Pages */
+
+body {
+	font-family: var(--font);
+}
+
+section {
+    display: none;
+}
+
+.wrapper {
+    width: 1500px;
+}

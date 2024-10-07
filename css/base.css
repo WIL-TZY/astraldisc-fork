@@ -1,0 +1,173 @@
+/* ---------- CSS Variables - Colors & Sizing ---------- */
+:root {
+    --background: #000000;
+    --font: "8 Bit Operator Bold";
+    --secondary-font: "8 Bit Operator";
+    --h1: #ffffff;
+    --h2: #dfdfdf;
+    --h3: #c6c6c6;
+    --link-default: #ffffff;
+    --link-alt: #8f8f8f;
+    --link-hover: #ffff00;
+    --font-color: #ffffff;
+    --faint-text: #625f6a;
+    --textarea: #2c2530;
+    --textarea-border: #e7d9d9;
+    --font-tiny: 80%;
+    --font-very-tiny: 50%;
+    --cursor-main: url(../assets/img/heart.png), auto;
+    --cursor-pointer: url(../assets/img/heart_break.png) 2 0, auto;
+    --cursor-alt: url(../assets/img/heart_yellow.png), auto;
+    --cursor-pointer-alt: url(../assets/img/heart_yellow_break.png) 2 0, auto;
+    --text-shadow: 2px 2px #0f0f71;
+    --text-shadow-hover: 2px 2px #710f57;
+    --text-shadow-footer: 2px 2px #333333;
+    --border-color: #0f0f71;
+}
+
+/*  ---------- Fonts  ---------- */
+@font-face {
+    font-family: 'Deltarune';
+    src: url("../assets/fonts/Deltarune.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: '8 Bit Operator';
+    src: url('../assets/fonts/8bitoperatorplus-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: '8 Bit Operator Bold';
+    src: url('../assets/fonts/8bitoperatorplus-bold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'EASy Text';
+    src: url('../assets/fonts/easytext.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'wingdings';
+    src: url("../assets/fonts/wingdings.ttf") format("truetype");
+}
+
+/* ---------- Generic Styles - Applies to ALL ---------- */
+body {
+    background-color: #000000;
+    /* sans-serif is the fall back font */
+    font-family: var(--font), sans-serif;
+    line-height: 140%;
+    text-rendering: pixelated;
+    font-weight: normal;
+    text-shadow: var(--text-shadow);
+}
+
+/* ---------- Default Elements ---------- */
+p { 
+    margin-top: 16px;
+    margin-bottom: 16px;
+    font-size: 18px;
+    text-align: justify;
+}
+
+hr {
+    margin: 3% 0 ;
+    opacity: 0.2;
+    /* border-top: 1px solid rgb(22, 22, 22); */
+}
+
+a:hover {
+    text-shadow: var(--text-shadow-hover);
+}
+
+table {
+    border: 2px solid;
+    border-color: var(--border-color);
+    padding: 0px;
+}
+
+th {
+    text-align: left;
+    padding: 20px;
+    font-family: var(--font);
+}
+
+td {
+    text-align: left;
+    padding: 20px;
+    font-family: var(--secondary_font);
+}
+
+tr:nth-child(even) {background-color: #0a0a17;}
+tr:nth-child(odd) {background-color: var(--primary_color);}
+
+/* ---------- Headings ---------- */
+h1 {
+    color: var(--h1);
+    font-size:40px;
+    margin-top: 25;
+    margin-bottom: 25;
+    font-weight: bold;
+    font-family: var(--font);
+}
+  
+h2 {
+    color: var(--h2);
+    font-size:30px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-family: var(--font);
+}
+  
+h3 {
+    color: var(--h3);
+    font-size:22px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    font-family: var(--font);
+}  
+
+/* ---------- Alignment ---------- */
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.right {
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ---------- Classes for Font Weight ---------- */
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* ---------- Container Class ---------- */
+.container {
+    display: inline;
+    padding-right: 6%;
+    padding-left: 6%;
+}
+
+/* ---------------------------------- */
