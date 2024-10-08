@@ -5,11 +5,11 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
 		<meta property="og:title" content="ANDROMEDIA">
-		<meta property="og:url" content="https://huecycles.com/andromedia">
+		<meta property="og:url" content="https://andromedia.huecycles.com/">
 		<meta property="og:description" content="Archived in the ASTRAL DISC.">
-		<meta property="og:image" content="https://huecycles.com/assets/img/andromedia/cd_shooting_star.png">
+		<meta property="og:image" content="https://andromedia.huecycles.com/assets/img/disc/new_shooting_star.png">
 		<title>ANDROMEDIA</title>
-		<link rel="icon" type="image/png" href="assets/img/andromedia/favicon_cd.png" />
+		<link rel="icon" type="image/png" href="assets/img/favicon/astraldisc.png" />
 		<!-- CSS -->
 		<link href="css/reset.css" rel="stylesheet" type="text/css" media="all">
 		<link href="css/base.css" rel="stylesheet" type="text/css" media="all">
@@ -25,18 +25,11 @@
 				<div class="logo-container">
 					<img class="image pixelated" src="assets/img/andromedia/logo.png" width="490" height="60" alt="Logo">
 				</div>
-				<nav>
-					<ul>
-						<div class="grazearea" onmouseenter="grazeSound();showImage()" onmouseleave="hideImage()">
-							<li><a href="./" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">Home</a></li>
-							<li><a href="./projects" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">Return to Projects</a></li>
-							<li><a href="https://huecycles.com/andromedia/team" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">Meet the Team</a></li>
-							<li><a href="https://huecycles.com/andromedia/faq" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">FAQ</a></li>
-						</div>
-					</ul>
-				</nav>
+				<ul>
+					<my-nav></my-nav>
+					<script src="./js/components/nav.js"></script>
+				</ul>
 			</header>
-
 		<main>
 		<p style="text-align:center;"><h2 style="text-align: center;">CHOOSE A CHAPTER.</h2></p>
 			<div class="flex-container">
@@ -70,14 +63,10 @@
 		</div></p>
 
 		<h2 style="text-align: center;">About the Project</h2>
-		<p>Andromedia aims to work a set of fanmade <span class="deltarune-logo">DELTARUNE</span> Chapters 3-7, all safely archived in the ASTRAL DISC - with Candleholder as a fangame in early development which you could consider a "Chapter 8". All of this is managed by HUECYCLES, Lisspeed and a lovely team.</p>
-		<p>There are no plans of making a fangame for Chapters 3-7 as of now, with our project consisting in a collection of art, videos, music, character designs and the like.</p>
+		<p>Andromedia is a team of artists, gamedevs and musicians working a set of fanmade <span class="deltarune-logo">DELTARUNE</span> Chapters 3-7, with <a href="">Candleholder</a> as a fangame in development, which you could consider a "Chapter 8".</p>
+		<p>There are no plans of making a fangame for Chapters 3-7 as of now, with our project consisting in a YouTube webseries format.</p>
+		<p>But... never say never, right?</p>
 		<p>We hope all of this will interest you in some way!</p>
-		<div class="flip-container">
-			<div class="flip-this">
-				<img class="image pixelated" width="100" alt="ASTRAL DISC" src="assets/img/andromedia/cd_shooting_star.png">
-			</div>
-		</div>
 		<hr>
 		<h2 style="text-align: center;">Other Links</h2>
 		<p>
@@ -90,7 +79,7 @@
 				<img class="default image pixelated" src="assets/img/andromedia/ch3/sc.png" width="82" height="64">
 				<img class="hover image pixelated" src="assets/img/andromedia/ch3/sc_2.png" width="82" height="64"/>
 			</a>
-			<a href="#a" onclick="clickDenySound()" onmouseenter="hoverSound()">
+			<a href="https://discord.gg/eJwCBmNDvU" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
 				<img class="default image pixelated" src="assets/img/andromedia/ch3/discord.png" width="82" height="64">
 				<img class="hover image pixelated" src="assets/img/andromedia/ch3/discord_2.png" width="82" height="64"/>
 			</a>
@@ -102,32 +91,12 @@
 		</p>
 		</main>
 		<footer>
-			<span style="color: var(--faint-text);">HUECYCLES © 2020 - 2023
-				<br>Website designed by <a href="https://huecycles.com/about">HUECYCLES</a> & <a href="https://twitter.com/wil__tzy">WILTZY</a>
-				<br>DELTARUNE belongs to Toby Fox & his team.
-				<br>These are just projects for fun!</span>
-		</footer>   
+			<my-footer></my-footer>
+			<script src="./js/components/footer.js"></script>
+		</footer>
+		<!--<div class="grazearea" onmouseenter="grazeSound();showImage()" onmouseleave="hideImage()"></div>-->
 	</div>
-	<!-- Click/Hover Sound JS -->
 	<script src="js/soundfx.js"></script>
 	<script src="js/graze.js"></script>
-	<!-- End of .wrapper -->
-	<!--<script>
-		function cd(img) {
-		if (img.src.indexOf('cd_shooting_star')==-1) return; // already changed 
-		var d = new Date();
-		var Today = d.getDate();
-		var Month = d.getMonth();
-		var src;
-		if (Month === 12) {
-			src = "assets/img/andromedia/cd_christmas_dess.png";
-		} else if (Month === 10 && Today == 31) {
-			src = "assets/img/andromedia/cd_halloween_jevil.png";
-		} else if (Month === 5 && Today == 3) {
-			src = "assets/img/andromedia/cd_may3rd.png";
-		}
-		img.src=src;
-	}
-	</script>-->
 	</body>
 </html>

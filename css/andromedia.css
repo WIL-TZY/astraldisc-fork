@@ -1,16 +1,5 @@
 /* Andromedia unique styles here */
 
-body {
-	background-color: var(--background);
-	cursor: var(--cursor-main);
-}
-
-a {
-	cursor: var(--cursor-main);
-	color: var(--link-alt);
-	font-family: var(--font);
-}
-
 /* Dialogue Boxes */
 
 /* Dark World */

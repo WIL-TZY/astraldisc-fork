@@ -15,7 +15,7 @@
     --font-tiny: 80%;
     --font-very-tiny: 50%;
     --cursor-main: url(../assets/img/souls/heart.png), auto;
-    --cursor-graze: url(../assets/img/souls/graze.png) 17 16, auto;
+    --cursor-blur: url(../assets/img/souls/heart_blur.png) 10 7, auto;
     --cursor-break: url(../assets/img/souls/heart_break.png) 2 0, auto;
     --cursor-alt: url(../assets/img/souls/heart_yellow.png), auto;
     --cursor-break-alt: url(../assets/img/souls/heart_yellow_break.png) 2 0, auto;
@@ -61,6 +61,7 @@
     src: url('../assets/fonts/8bitoperatorplus-regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-size: 150%;
 }
 
 @font-face {
@@ -68,6 +69,7 @@
     src: url('../assets/fonts/8bitoperatorplus-bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
+    font-size: 150%;
 }
 
 @font-face {
@@ -84,20 +86,21 @@
 
 /* ---------- Generic Styles - Applies to ALL ---------- */
 body {
-    background-color: #000000;
+    background-color: var(--background);
     /* sans-serif is the fall back font */
     font-family: var(--font), sans-serif;
-    line-height: 140%;
+    line-height: 170%;
     text-rendering: pixelated;
     font-weight: normal;
     text-shadow: var(--text-shadow);
+    cursor: var(--cursor-main);
 }
 
 /* ---------- Default Elements ---------- */
 p { 
     margin-top: 16px;
     margin-bottom: 16px;
-    font-size: 18px;
+    font-size: 120%;
     text-align: justify;
 }
 

@@ -41,10 +41,17 @@ var clicksound=createsoundbite(
 	"../assets/audio/ui_select.wav", "../assets/audio/ui_select.ogg",
 	"../../assets/audio/ui_select.wav", "../../assets/audio/ui_select.ogg",
 );
+
 var clickdenysound=createsoundbite(
 	"./assets/audio/ui_cant_select.wav", "./assets/audio/ui_cant_select.ogg",
 	"../assets/audio/ui_cant_select.wav", "../assets/audio/ui_cant_select.ogg",
 	"../../assets/audio/ui_cant_select.wav", "../../assets/audio/ui_cant_select.ogg"
+);
+
+var clickgoner=createsoundbite(
+	"./assets/audio/ui_spooky_action.wav", "./assets/audio/ui_spooky_action.ogg",
+	"../assets/audio/ui_spooky_action.wav", "../assets/audio/ui_spooky_action.ogg",
+	"../../assets/audio/ui_spooky_action.wav", "../../assets/audio/ui_spooky_action.ogg"
 );
 
 var domInteracted = false;
@@ -75,6 +82,10 @@ clicksound.addEventListener('ended', function () {
 
 clickdenysound.addEventListener('ended', function () {
 	console.log('Click deny sound ended');
+});
+
+clickgoner.addEventListener('ended', function () {
+	console.log('Click GONER sound ended');
 });
 
 function createsoundbite(sound) {
@@ -136,6 +147,10 @@ function clickDenySound() {
 	clickdenysound.playclip();
 }
 
+function clickGoner() {
+	clickgoner.playclip();
+}
+
 // Call this function in the onclick event of an anchor
 async function clickSoundLoad(event) {
 	// Navigate to the next page after the sound finishes playing
@@ -156,6 +171,30 @@ async function clickSoundLoad(event) {
 
 			// Delay - 500 miliseconds -> half a second
 			setTimeout(() => { window.location.href = link; }, 500);
+		}
+	}	
+	else {} // If DOM wasn't interacted, the anchor will execute its default behavior
+}
+
+async function clickGonerLoad(event) {
+	// Navigate to the next page after the sound finishes playing
+	if (domInteracted) {
+		// Prevent the default behavior of the click event
+		event.preventDefault();
+
+       	// Play the click sound and wait for it to finish before proceeding
+	   	await clickgoner.playclip();
+		
+		// Check if the target element or its parent is an anchor (<a>) element
+		const targetElement = event.target;
+		const anchorElement = targetElement.tagName.toLowerCase() === 'a' ? targetElement : targetElement.closest('a');
+
+		// If the target element or its parent is an anchor...
+		if (anchorElement) {
+			const link = anchorElement.getAttribute('href'); // Get the link
+
+			// Delay - 500 miliseconds -> half a second
+			setTimeout(() => { window.location.href = link; }, 3000);
 		}
 	}	
 	else {} // If DOM wasn't interacted, the anchor will execute its default behavior

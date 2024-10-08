@@ -1,36 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta property="og:title" content="HUE'S VICIOUS CYCLE">
-    <meta property="og:url" content="https://huecycles.com/">
-    <meta property="og:description" content="Is there such a thing as a color coded brain?">
-    <meta property="og:image" content="https://huecycles.com/assets/img/brainrot.png">
-    <title>HUE'S VICIOUS CYCLE</title>
-    <link rel="icon" type="image/png" href="assets/img/favicon2.png" />
-    <!-- CSS -->
-    <link href="css/reset.css" rel="stylesheet" type="text/css" media="all">
-    <link href="css/base.css" rel="stylesheet" type="text/css" media="all">
-    <link href="css/main.css" rel="stylesheet" type="text/css" media="all">
-	<link href="css/andromedia.css" rel="stylesheet" type="text/css" media="all">
-  </head>
-  <body>
-    <div class=wrapper>
-		<main>
-			<div class="dialogueLW">
-				<span class="firstline">I don't want to deal with figuring</span>
-				<br>
-				<span class="normaline">out who I want to be.</span>
-			</div>
-		</main>
-    </div>
-      <!-- End of .wrapper -->
-	<footer>
-			ANDROMEDIA TEAM © 2021-2024<br>
-			<a href="https://deltarune.com/">DELTARUNE</a> © Toby Fox<br>
-			Website © <a href="https://huecycles.com/about">HUECYCLES</a> & <a href="https://twitter.com/wil__tzy">WILTZY</a>
-	</footer>
-  </body>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">    
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta property="og:title" content="ANDROMEDIA">
+		<meta property="og:url" content="https://andromedia.huecycles.com/">
+		<meta property="og:description" content="Archived in the ASTRAL DISC.">
+		<meta property="og:image" content="https://andromedia.huecycles.com/assets/img/disc/new_shooting_star.png">
+		<title>ANDROMEDIA</title>
+		<link rel="icon" type="image/png" href="assets/img/favicon/astraldisc.png" />
+		<!-- CSS -->
+		<link href="css/reset.css" rel="stylesheet" type="text/css" media="all">
+		<link href="css/base.css" rel="stylesheet" type="text/css" media="all">
+		<link href="css/main.css" rel="stylesheet" type="text/css" media="all">
+	</head>
+	<style>
+		body {
+			cursor: var(--cursor-blur);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 20vh;
+			margin: 0;
+		}
+
+		a {
+			cursor: var(--cursor-blur);
+		}
+
+		a:hover {
+			cursor: var(--cursor-blur);
+		}
+	</style>
+	<body>
+		<div class=wrapper>
+			<main>
+				<div class="DEVICEbox">
+					<div class="DEVICE">
+						<firstline>YOU HAVE FOUND A STRANGE DISC.</firstline>
+					</div>
+					<div class="DEVICE">
+						<firstline>INSERT IT IN THE DEVICE?</firstline><br>
+						<normaline><a href="./chapters" onclick="clickGonerLoad(event);hide(this.parentNode.parentNode.parentNode)" onmouseenter="hoverSound()">YES</a> / <a href="https://huecycles.com/" onclick="clickGonerLoad(event);hide(this.parentNode.parentNode.parentNode)" onmouseenter="hoverSound()">NO</a></normaline>
+					</div>
+				</div>
+			</main>
+		</div>
+			<!-- End of .wrapper -->
+		<script src="js/soundfx.js"></script>
+		<script>
+			function hide(elem) {
+				  elem.classList.add("DEVICE-fade-out")
+			}
+		</script>
+	</body>
 </html>
