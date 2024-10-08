@@ -17,6 +17,25 @@ var mouseoversound=createsoundbite(
 	"../assets/audio/ui_move.wav", "../assets/audio/ui_move.ogg", 	// <-- Path relative to subfolders
 	"../../assets/audio/ui_move.wav", "../../assets/audio/ui_move.ogg" 	// <-- Path relative to sub-subfolders
 );
+
+var heartbreak=createsoundbite(
+	"./assets/audio/heartbreak.wav", "./assets/audio/heartbreak.ogg", 	// <-- Path relative to the root level
+	"../assets/audio/heartbreak.wav", "../assets/audio/heartbreak.ogg", 	// <-- Path relative to subfolders
+	"../../assets/audio/heartbreak.wav", "../../assets/audio/heartbreak.ogg" 	// <-- Path relative to sub-subfolders
+);
+
+var soulmode=createsoundbite(
+	"./assets/audio/soulmode.wav", "./assets/audio/soulmode.ogg", 	// <-- Path relative to the root level
+	"../assets/audio/soulmode.wav", "../assets/audio/soulmode.ogg", 	// <-- Path relative to subfolders
+	"../../assets/audio/soulmode.wav", "../../assets/audio/soulmode.ogg" 	// <-- Path relative to sub-subfolders
+);
+
+var graze=createsoundbite(
+	"./assets/audio/graze.wav", "./assets/audio/graze.ogg", 	// <-- Path relative to the root level
+	"../assets/audio/graze.wav", "../assets/audio/graze.ogg", 	// <-- Path relative to subfolders
+	"../../assets/audio/graze.wav", "../../assets/audio/graze.ogg" 	// <-- Path relative to sub-subfolders
+);
+
 var clicksound=createsoundbite(
 	"./assets/audio/ui_select.wav", "./assets/audio/ui_select.ogg",
 	"../assets/audio/ui_select.wav", "../assets/audio/ui_select.ogg",
@@ -36,6 +55,18 @@ document.addEventListener("click", function () {
 // Add 'ended' event listener for both audio elements
 mouseoversound.addEventListener('ended', function () {
 	console.log('Mouseover sound ended');
+});
+
+heartbreak.addEventListener('ended', function () {
+	console.log('Heartbreak sound ended');
+});
+
+soulmode.addEventListener('ended', function () {
+	console.log('SoulMode sound ended');
+});
+
+graze.addEventListener('ended', function () {
+	console.log('Graze sound ended');
 });
   
 clicksound.addEventListener('ended', function () {
@@ -74,6 +105,24 @@ function createsoundbite(sound) {
 function hoverSound() {
 	if (domInteracted) {
 	  mouseoversound.playclip();
+	}
+}
+
+function heartBreak() {
+	if (domInteracted) {
+	  heartbreak.playclip();
+	}
+}
+
+function soulMode() {
+	if (domInteracted) {
+	  soulmode.playclip();
+	}
+}
+
+function grazeSound() {
+	if (domInteracted) {
+	  graze.playclip();
 	}
 }
 

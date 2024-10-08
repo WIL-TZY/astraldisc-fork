@@ -3,26 +3,51 @@
     --background: #000000;
     --font: "8 Bit Operator Bold";
     --secondary-font: "8 Bit Operator";
-    --h1: #ffffff;
-    --h2: #dfdfdf;
-    --h3: #c6c6c6;
+    --h1: #909090;
+    --h2: #606060;
+    --h3: #404040;
     --link-default: #ffffff;
     --link-alt: #8f8f8f;
     --link-hover: #ffff00;
     --font-color: #ffffff;
-    --faint-text: #625f6a;
-    --textarea: #2c2530;
-    --textarea-border: #e7d9d9;
+    --faint-text: #808080;
+    --textarea: #202020;
     --font-tiny: 80%;
     --font-very-tiny: 50%;
-    --cursor-main: url(../assets/img/heart.png), auto;
-    --cursor-pointer: url(../assets/img/heart_break.png) 2 0, auto;
-    --cursor-alt: url(../assets/img/heart_yellow.png), auto;
-    --cursor-pointer-alt: url(../assets/img/heart_yellow_break.png) 2 0, auto;
+    --cursor-main: url(../assets/img/souls/heart.png), auto;
+    --cursor-graze: url(../assets/img/souls/graze.png) 17 16, auto;
+    --cursor-break: url(../assets/img/souls/heart_break.png) 2 0, auto;
+    --cursor-alt: url(../assets/img/souls/heart_yellow.png), auto;
+    --cursor-break-alt: url(../assets/img/souls/heart_yellow_break.png) 2 0, auto;
     --text-shadow: 2px 2px #0f0f71;
     --text-shadow-hover: 2px 2px #710f57;
     --text-shadow-footer: 2px 2px #333333;
     --border-color: #0f0f71;
+
+    /* Deltarune Colors */
+    --tp: #ffa040;
+
+    /* Team Colors */
+    --kate: #FF69B4;
+    --void: #1E90FF;
+    --mim: #696969;
+    --rata: #00CED1;
+    --kitt: #8A2BE2;
+    --eribetra: #6495ED;
+    --marbles: #FF6347;
+    --jaru: #483D8B;
+    --lizzy: #20B2AA;
+    --wiltzy: #B0C4DE;
+    --sprout: #FFD700;
+    --marina: #66CDAA;
+    --surreal: #6A5ACD;
+    --creepa: #7CFC00;
+    --seabeam: #FFC0CB;
+    --noudele: #9932CC;
+    --tc: #7CFC00;
+    --bor: #ADD8E6;
+    --snowy: #DC143C;
+    --hodge: #B8860B;
 }
 
 /*  ---------- Fonts  ---------- */

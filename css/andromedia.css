@@ -6,9 +6,30 @@ body {
 }
 
 a {
-	cursor: var(--cursor-pointer);
+	cursor: var(--cursor-main);
 	color: var(--link-alt);
 	font-family: var(--font);
+}
+
+a.break {
+	cursor: var(--cursor-break);
+}
+
+.grazearea {
+	cursor: var(--cursor-main);
+	color: transparent;
+	width: auto;
+	height: auto;
+	padding: 40px;
+}
+
+#graze {
+	image-rendering: pixelated;
+	position: absolute;
+	display: none;
+	width: 52px;
+	height: 52px;
+	pointer-events: none;
 }
 
 /* Dialogue Boxes */
@@ -25,9 +46,9 @@ a {
 	padding: 0 8px;
 	/* padding: 0 8px; If no portrait */
 	border: 26px solid transparent;
-	border-image: url(../assets/img/DeltaruneBorder.gif) 52 stretch;
+	border-image: url(../assets/img/borders/DeltaruneBorder.gif) 52 stretch;
 	image-rendering: pixelated;
-	border-image-slice: 27.3% fill;  
+	border-image-slice: 27.3% fill;
 }
   
 .dialogueDW p {
@@ -50,7 +71,7 @@ a {
 	padding: 0 8px;
 	/* padding: 0 8px; If no portrait */
 	border: 26px solid transparent;
-	border-image: url(../assets/img/DeltaruneBorderLW.png) 52 stretch;
+	border-image: url(../assets/img/borders/DeltaruneBorderLW.png) 52 stretch;
 	image-rendering: pixelated;
 	border-image-slice: 27.3% fill;  
 }
@@ -279,28 +300,29 @@ body.standby-page {
 
 /* Soul modes for Andromedia Secret Bosses START */
 .halojack {
-    cursor: url("../assets/img/heart_cyan.png"), auto;
+    cursor: url("../assets/img/souls/heart_cyan.png"), auto;
 }
 
 .beltrowel {
-    cursor: url("../assets/img/heart_green.png"), auto;
+    cursor: url("../assets/img/souls/heart_green.png"), auto;
 }
 
 .spreeblitz {
-    cursor: url("../assets/img/heart_orange.png"), auto;
+    cursor: url("../assets/img/souls/heart_orange.png"), auto;
 }
 
 .gauze {
-    cursor: url("../assets/img/heart_purple.png"), auto;
+    cursor: url("../assets/img/souls/heart_purple.png"), auto;
 }
 
 .minerva {
-    cursor: url("../assets/img/heart_blue.png"), auto;
+    cursor: url("../assets/img/souls/heart_blue.png"), auto;
 }
 /* END */
 
-.deltarune.logo {
+.deltarune-logo {
 	font-family: "Deltarune";
+	font-size: 24px;
 }
 
 .minerva-redacted {
