@@ -36,6 +36,18 @@ var graze=createsoundbite(
 	"../../assets/audio/graze.wav", "../../assets/audio/graze.ogg" 	// <-- Path relative to sub-subfolders
 );
 
+var dooropen=createsoundbite(
+	"./assets/audio/dooropen.wav", "./assets/audio/dooropen.ogg", 	// <-- Path relative to the root level
+	"../assets/audio/dooropen.wav", "../assets/audio/dooropen.ogg", 	// <-- Path relative to subfolders
+	"../../assets/audio/dooropen.wav", "../../assets/audio/dooropen.ogg" 	// <-- Path relative to sub-subfolders
+);
+
+var doorclose=createsoundbite(
+	"./assets/audio/doorclose.wav", "./assets/audio/doorclose.ogg", 	// <-- Path relative to the root level
+	"../assets/audio/doorclose.wav", "../assets/audio/doorclose.ogg", 	// <-- Path relative to subfolders
+	"../../assets/audio/doorclose.wav", "../../assets/audio/doorclose.ogg" 	// <-- Path relative to sub-subfolders
+);
+
 var clicksound=createsoundbite(
 	"./assets/audio/ui_select.wav", "./assets/audio/ui_select.ogg",
 	"../assets/audio/ui_select.wav", "../assets/audio/ui_select.ogg",
@@ -134,6 +146,18 @@ function soulMode() {
 function grazeSound() {
 	if (domInteracted) {
 	  graze.playclip();
+	}
+}
+
+function doorOpen() {
+	if (domInteracted) {
+	  dooropen.playclip();
+	}
+}
+
+function doorClose() {
+	if (domInteracted) {
+	  doorclose.playclip();
 	}
 }
 

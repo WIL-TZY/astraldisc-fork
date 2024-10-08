@@ -8,17 +8,17 @@
 		<link rel="icon" type="image/png" href="assets/img/favicon/astraldisc.png" />
 		<!-- CSS -->
 		<!--<link href="css/reset.css" rel="stylesheet" type="text/css" media="all" />-->
-		<link href="https://andromedia.huecycles.com/css/base.css" rel="stylesheet" type="text/css" media="all" />
-		<link href="https://andromedia.huecycles.com/css/main.css" rel="stylesheet" type="text/css" media="all" />
-		<base href="https://andromedia.huecycles.com">
+		<link href="./css/base.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="./css/main.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="./css/andromedia.css" rel="stylesheet" type="text/css" media="all" />
 	</head>
 	<body class="notfound">
-		<div class="notfound-text"><h1>Oops!</h1><p>It appears you got lost.</p></div>
-		<!-- Overlay for the animation - GPT-->
-		<div class="overlay">
-			<canvas id="canvas"></canvas>
+		<div class="notfound-text">
+			<a href="./chapters">
+				<img class="default image pixelated" onmouseenter="doorOpen()" width="108" height="177" src="assets/img/404door.gif">
+				<img class="hover image pixelated" onmouseleave="doorClose()" width="108" height="177" src="assets/img/404door_open.png">
+			</a>
 		</div>
-		<!-- Particles -->
-		<script src="../js/particles.js"></script>
+		<script src="js/soundfx.js"></script>
 	</body>
 </html>
