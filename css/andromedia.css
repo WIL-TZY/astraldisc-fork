@@ -13,6 +13,8 @@ a {
 
 a.break {
 	cursor: var(--cursor-break);
+	color: var(--link-alt);
+	font-family: var(--font);
 }
 
 .grazearea {
