@@ -7,12 +7,41 @@ body {
 
 a {
 	text-decoration: none;
+	cursor: var(--cursor-main);
 	color: var(--link-alt);
 	font-family: var(--font);
 }
 
 a:hover {
 	color: var(--link-hover);
+}
+
+a.break {
+	cursor: var(--cursor-break);
+	color: var(--link-alt);
+	font-family: var(--font);
+}
+
+.grazearea {
+	cursor: var(--cursor-main);
+	color: transparent;
+	padding-left: 30px;
+	padding-top: 30px;
+	padding-right: 30px;
+	padding-bottom: 30px;
+	margin-left: -30px;
+	margin-top: -30px;
+	margin-right: -30px;
+	margin-bottom: -30px;
+}
+
+#graze {
+	image-rendering: pixelated;
+	position: absolute;
+	display: none;
+	width: 52px;
+	height: 52px;
+	pointer-events: none;
 }
 
 ul {

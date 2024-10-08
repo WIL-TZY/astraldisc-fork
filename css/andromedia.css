@@ -11,29 +11,6 @@ a {
 	font-family: var(--font);
 }
 
-a.break {
-	cursor: var(--cursor-break);
-	color: var(--link-alt);
-	font-family: var(--font);
-}
-
-.grazearea {
-	cursor: var(--cursor-main);
-	color: transparent;
-	width: auto;
-	height: auto;
-	padding: 40px;
-}
-
-#graze {
-	image-rendering: pixelated;
-	position: absolute;
-	display: none;
-	width: 52px;
-	height: 52px;
-	pointer-events: none;
-}
-
 /* Dialogue Boxes */
 
 /* Dark World */
