@@ -1,13 +1,14 @@
 /* ---------- CSS Variables - Colors & Sizing ---------- */
 :root {
     --background: #000000;
-    --font: "8 Bit Operator Bold";
+    --font: "8bitoperator JVE";
     --secondary-font: "8 Bit Operator";
-    --h1: #909090;
-    --h2: #606060;
-    --h3: #404040;
+    --tertiaty-font: "Crypt of Tomorrow";
+    --h1: #ffdf7e;
+    --h2: #ffff00;
+    --h3: #ffa040;
     --link-default: #ffffff;
-    --link-alt: #8f8f8f;
+    --link-alt: #a5a5a5;
     --link-hover: #ffff00;
     --font-color: #ffffff;
     --faint-text: #808080;
@@ -59,6 +60,30 @@
 @font-face {
     font-family: '8 Bit Operator';
     src: url('../assets/fonts/8bitoperatorplus-regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-size: 150%;
+}
+
+@font-face {
+    font-family: '8bitoperator JVE';
+    src: url('../assets/fonts/8bitoperator_jve.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-size: 170%;
+}
+
+@font-face {
+    font-family:'Crypt of Tomorrow';
+    src: url('../assets/fonts/small.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-size: 150%;
+}
+
+@font-face {
+    font-family: 'DeltaJP';
+    src: url('../assets/fonts/ja_main.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-size: 150%;
@@ -138,29 +163,29 @@ tr:nth-child(odd) {background-color: var(--primary_color);}
 /* ---------- Headings ---------- */
 h1 {
     color: var(--h1);
-    font-size:40px;
+    font-size:60px;
     margin-top: 25;
     margin-bottom: 25;
-    font-weight: bold;
     font-family: var(--font);
+    text-shadow: none;
 }
   
 h2 {
     color: var(--h2);
-    font-size:30px;
+    font-size:40px;
     margin-top: 30px;
     margin-bottom: 30px;
-    font-weight: bold;
     font-family: var(--font);
+    text-shadow: none;
 }
   
 h3 {
     color: var(--h3);
-    font-size:22px;
-    font-weight: bold;
+    font-size:20px;
     margin-top: 25px;
     margin-bottom: 25px;
     font-family: var(--font);
+    text-shadow: none;
 }  
 
 /* ---------- Alignment ---------- */

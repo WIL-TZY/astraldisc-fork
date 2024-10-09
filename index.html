@@ -15,32 +15,13 @@
 		<link href="css/base.css" rel="stylesheet" type="text/css" media="all">
 		<link href="css/main.css" rel="stylesheet" type="text/css" media="all">
 	</head>
-	<style>
-		body {
-			cursor: var(--cursor-blur);
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			height: 20vh;
-			margin: 0;
-		}
-
-		a {
-			cursor: var(--cursor-blur);
-		}
-
-		a:hover {
-			cursor: var(--cursor-blur);
-		}
-	</style>
-	<body>
+	<body class="DEVICE-page">
 		<div class=wrapper>
 			<main>
 				<div class="DEVICEbox">
+					<p>WARNING</p>
 					<div class="DEVICE">
-						<firstline>YOU HAVE FOUND A STRANGE DISC.</firstline>
-					</div>
-					<div class="DEVICE">
+						<firstline>YOU HAVE FOUND A STRANGE DISC.</firstline><br>
 						<firstline>INSERT IT IN THE DEVICE?</firstline><br>
 						<normaline><a href="./chapters" onclick="clickGonerLoad(event);hide(this.parentNode.parentNode.parentNode)" onmouseenter="hoverSound()">YES</a> / <a href="https://huecycles.com/" onclick="clickGonerLoad(event);hide(this.parentNode.parentNode.parentNode)" onmouseenter="hoverSound()">NO</a></normaline>
 					</div>
