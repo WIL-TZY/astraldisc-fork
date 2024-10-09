@@ -43,7 +43,7 @@ class MyNav extends HTMLElement {
             }
             </style>
             <nav>
-                <li><a href="./" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">Home</a></li>
+                <li><a href="./chapters" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">Home</a></li>
                 <li><a href="./team" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">Team</a></li>
                 <li><a href="./faq" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">FAQ</a></li>
                 <li><a href="./newsletters" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">Newsletters</a></li>
