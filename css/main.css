@@ -37,6 +37,12 @@ a {
 	cursor: var(--cursor-main)
 }
 
+.chselect ul a:hover.break {
+	cursor: var(--cursor-break);
+	color: var(--link-hover);
+	font-family: var(--font);
+}
+
 .chselect li {
 	display: inline;
     line-height:70px;
@@ -65,9 +71,9 @@ a:hover {
 	text-shadow: none;
 }
 
-a.break {
+a:hover.break {
 	cursor: var(--cursor-break);
-	color: var(--link-alt);
+	color: var(--link-hover);
 	font-family: var(--font);
 }
 

@@ -41,6 +41,12 @@ class MyNav extends HTMLElement {
                 color: var(--link-hover);
                 cursor: var(--cursor-main)
             }
+            
+            nav li a:hover.break {
+	            cursor: var(--cursor-break);
+	            color: var(--link-hover);
+	            font-family: var(--font);
+            }
             </style>
             <nav>
                 <li><a href="./chapters" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">Home</a></li>
