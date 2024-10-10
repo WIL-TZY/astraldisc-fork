@@ -1,7 +1,7 @@
 /* ---------- CSS Variables - Colors & Sizing ---------- */
 :root {
     --background: #000000;
-    --font: "8bitoperator JVE";
+    --font: "8bitoperator JVE2";
     --secondary-font: "8 Bit Operator";
     --tertiaty-font: "Crypt of Tomorrow";
     --h1: #ffdf7e;
@@ -82,6 +82,14 @@
 @font-face {
     font-family: '8bitoperator JVE';
     src: url('../assets/fonts/8bitoperator_jve.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-size: 170%;
+}
+
+@font-face {
+    font-family: '8bitoperator JVE2';
+    src: url('../assets/fonts/8bitoperator-JVE.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-size: 170%;
