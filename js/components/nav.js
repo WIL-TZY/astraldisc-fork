@@ -41,11 +41,6 @@ class MyNav extends HTMLElement {
                 color: var(--link-hover);
                 cursor: var(--cursor-main)
             }
-<<<<<<< HEAD
-
-=======
-            
->>>>>>> gh-pages
             nav li a:hover.break {
 	            cursor: var(--cursor-break);
 	            color: var(--link-hover);
