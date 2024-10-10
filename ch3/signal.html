@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>* There's a strange interference here.</title>
+		<link rel="icon" type="image/png" href="../../assets/img/andromedia/favicon_3.png"/>
+		<!-- CSS -->
+		<link href="../../css/reset.css" rel="stylesheet" type="text/css" media="all">
+		<link href="../../css/base.css" rel="stylesheet" type="text/css" media="all">
+		<link href="../../css/main.css" rel="stylesheet" type="text/css" media="all">
+		<link href="../../css/andromedia.css" rel="stylesheet" type="text/css" media="all">
+	</head>
+	<script>
+		var urlArray = [
+		"../ch3/eas",
+		"../ch3/standby",
+		"../ch3/location"
+		];
+
+		function randomUrl() {
+				var randomNumber = Math.floor(Math.random() * urlArray.length);
+				var newUrl = urlArray[randomNumber];
+				window.location.href = newUrl;
+		}
+	</script>
+	<body class="halojack-page">
+		<div class="wrapper">
+			<div id="over"></div>
+			<div id="img">
+				<div id="imgtip"></div>
+				<a href="javascript:randomUrl()"><img
+					id="interference"
+					src="../../assets/img/andromedia/ch3/halo_interference.gif"
+					alt="signal intrusion"
+				/></a>
+			</div>
+		</div>
+		<!-- End of .wrapper -->
+</body>
+</html>

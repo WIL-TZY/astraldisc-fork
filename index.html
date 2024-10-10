@@ -14,16 +14,19 @@
 		<link href="css/reset.css" rel="stylesheet" type="text/css" media="all">
 		<link href="css/base.css" rel="stylesheet" type="text/css" media="all">
 		<link href="css/main.css" rel="stylesheet" type="text/css" media="all">
+		<link href="css/goner.css" rel="stylesheet" type="text/css" media="all">
 	</head>
 	<body class="DEVICE-page">
 		<div class="wrapper">
 			<main>
-				<div class="DEVICEbox">
-					<p>WARNING</p>
-					<div class="DEVICE">
-						<firstline>YOU HAVE FOUND A STRANGE DISC.</firstline><br>
-						<firstline>INSERT IT IN THE DEVICE?</firstline><br>
-						<normaline><a href="./chapters" onclick="clickGonerLoad(event);hide(this.parentNode.parentNode.parentNode)" onmouseenter="hoverSound()">YES</a> / <a href="https://huecycles.com/" onclick="clickGonerLoad(event);hide(this.parentNode.parentNode.parentNode)" onmouseenter="hoverSound()">NO</a></normaline>
+				<div id="fade_in">
+					<div class="DEVICEbox">
+						<p>WARNING</p>
+						<div class="DEVICE">
+							<firstline>YOU HAVE FOUND A STRANGE DISC.</firstline><br>
+							<firstline>INSERT IT IN THE DEVICE?</firstline><br>
+							<normaline><a href="./chapters" onclick="clickGonerLoad(event);hide(this.parentNode.parentNode.parentNode)" onmouseenter="hoverSound()">YES</a> / <a href="https://huecycles.com/" onclick="clickGonerLoad(event);hide(this.parentNode.parentNode.parentNode)" onmouseenter="hoverSound()">NO</a></normaline>
+						</div>
 					</div>
 				</div>
 			</main>
@@ -32,7 +35,7 @@
 		<script src="js/soundfx.js"></script>
 		<script>
 			function hide(elem) {
-				  elem.classList.add("DEVICE-fade-out")
+				elem.classList.add("DEVICE-fade-out")
 			}
 		</script>
 	</body>

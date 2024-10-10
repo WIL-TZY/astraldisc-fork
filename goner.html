@@ -1,54 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>CONNECTION</title>
-    <link rel="icon" type="image/png" href="assets/img/goner/IMAGE_DEPTH.png" />
-    <!-- CSS -->
-    <link href="css/reset.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="css/base.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="css/main.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="css/andromedia.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="css/goner.css" rel="stylesheet" type="text/css" media="all" />
-    <img class="to-animate one image pixelated" src="assets/img/candleholder/neodoor.png"></div>
-    <img class="to-animate two image pixelated" src="assets/img/candleholder/neodoor.png"></div>
-  </head>
-  <body class="notfound-page">
-    <audio autoplay loop>
-      <source src="assets/audio/AUDIO_DRONE.ogg" type="audio/ogg">
-      Your browser does not support the audio element.
-    </audio>
-    <script>
-        var urlArray = [
-        "../goner/prophecy",
-        "../goner/missing",
-        "../goner/angel",
-        "../andromedia/ch4/pray",
-        ];
-    
-        function randomUrl() {
-            var randomNumber = Math.floor(Math.random() * urlArray.length);
-            var newUrl = urlArray[randomNumber];
-            window.location.href = newUrl;
-        }
-    </script>
-    <div class="wrapper">
-    <div class="notfound-text">
-      <a href="javascript:randomUrl()"><img
-          class="default image pixelated";
-          src="assets/img/goner/door_close.png";
-          alt="The Monochrome Door";
-          />
-      <img
-          class="hover image pixelated";
-          src="assets/img/goner/door.png";
-          alt="The Monochrome Door";
-          />
-          </a>
-          <p style="text-align: center" class="glow">WHAT ARE YOU LOOKING FOR?</p>
-      </div>
-    </div>
-  </body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>CONNECTION</title>
+		<link rel="icon" type="image/png" href="assets/img/goner/IMAGE_DEPTH.png" />
+		<!-- CSS -->
+		<link href="css/reset.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/base.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/main.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/andromedia.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="css/goner.css" rel="stylesheet" type="text/css" media="all" />
+		<img class="to-animate one image pixelated" src="assets/img/candleholder/neodoor.png"></div>
+		<img class="to-animate two image pixelated" src="assets/img/candleholder/neodoor.png"></div>
+	</head>
+	<body class="notfound-page">
+		<audio autoplay loop>
+			<source src="assets/audio/AUDIO_DRONE.ogg" type="audio/ogg">
+			Your browser does not support the audio element.
+		</audio>
+		<script>
+				var urlArray = [
+				"../goner/prophecy",
+				"../goner/missing",
+				"../goner/angel",
+				];
+		
+				function randomUrl() {
+						var randomNumber = Math.floor(Math.random() * urlArray.length);
+						var newUrl = urlArray[randomNumber];
+						window.location.href = newUrl;
+				}
+		</script>
+		<div class="wrapper">
+		<div class="notfound-text">
+			<a href="javascript:randomUrl()"><img
+					class="default image pixelated";
+					src="assets/img/goner/door_close.png";
+					alt="The Monochrome Door";
+					/>
+			<img
+					class="hover image pixelated";
+					src="assets/img/goner/door.png";
+					alt="The Monochrome Door";
+					/>
+					</a>
+					<p style="text-align: center" class="glow">WHAT ARE YOU LOOKING FOR?</p>
+			</div>
+		</div>
+	</body>
 </html>
