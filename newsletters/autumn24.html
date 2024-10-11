@@ -24,7 +24,8 @@
 				[Gif of Kris, Susie, Noelle and Berdly carving pumpkins.
 				Kris is eating the inside of theirs with their knife, Susie is taking a big chomp out of hers,
 				Berdly's is a carving of his face and Noelle's is decorated by fairy lights.]
-			</strong></em></p>
+			</strong></em>
+			<div class="credit">by Jounderscore</div></p>
 			<p>
 				Technically this is the second newsletter in our arsenal, but here's a proper greeting... HELLO!
 			</p>
@@ -82,14 +83,87 @@
 				<img class="image pixelated" src="../assets/img/newsletters/2024/autumn/malius_fix.png">
 				<div class="credit">*squeak*</div><br>
 			</p>
+			<p>
+				Some more progress we've made include... Cutscenes! Test cutscenes! Shops! Test shops! Shops that rewrite the whole UI for some reason!
+				Seriously, though... we're incredibly happy with all the progress that's been done so far especially after we've spent a while without news.
+			</p>
+			<p>
+				Burnout and lack of motivation (fueled by the stagnant wait for the official chapters) tends to hit at the worst moments and that was no different
+				for our team. However, after welcoming some more members and setting up a new production schedule, we're foreseeing this project to
+				have a good amount of content soon!
+			</p>
+			<p class="center">
+				<img class="image pixelated" src="../assets/img/newsletters/2024/autumn/sans_shop.png">
+				<div class="credit">Sprites, background and coding by WIL-TZY. HUE helped out a bit.</div><br>
+			</p>
+			<h2 class="center">Soundtrack Update</h2>
+			<p>
+				Our plan going forward is to slowly revamp and remaster most of the current soundtrack, so you'll likely be seeing some changes
+				and updates on old songs.
+			</p>
+			<p> In case you want a preview of a highly anticipated song for YouTube, here is an excerpt of a piano draft for <strong>FRIGHT NIGHT V2</strong>, by Hodgepodge.</p>
+
+			<div class="flex-container" style="justify-content: center;">
+				<img class="image pixelated" src="../assets/img/newsletters/2024/autumn/mayhem_kris_piano.gif" width="412" height="396">
+				<div class="audioplayer-container"> 
+					<audio id="audioplayer"> <!-- preload="none" -->
+						<source src="../assets/audio/music/newsletter/fright_night_v2_hodgepodge_piano_draft.mp3" type="audio/mpeg">
+						<source src="../assets/audio/music/newsletter/fright_night_v2_hodgepodge_piano_draft.ogg" type="audio/ogg">
+						Your browser does not support the audio element.
+					</audio>
+
+					<!-- Play and Progress Bar -->
+					<button class="chara-audioplayer btn-play" type="button" onclick="playPause(); clickSoundLoad(event)" onmouseenter="hoverSound()">></button>
+					<input class="progress-slider" type="range" min="0" max="100" step="1" value="0" oninput="changeProgress(this.value)">
+	
+					<!-- Time display -->
+					<span class="time-display">0:00 / 1:00</span>
+	
+					<!-- Volume -->
+					<div class="volume-container">
+						<!-- Volume Buttons (+/-) -->
+						<button class="chara-audioplayer btn-vol vol-down" type="button" onclick="decreaseVolume()">-</button>
+						<button class="chara-audioplayer btn-vol vol-up" type="button" onclick="increaseVolume()">+</button>
+					</div>
+				</div>
+			</div>
+			<h2 class="center">Candleholder</h2>
+			<p>
+				"Alright, fine, but what about Candleholder?! Is it still on hiatus???""
+			</p>
+			<p>
+				Candleholder will soon be returning to the main stage! In 2025, we plan on resuming our development of the game and sharing news and sneak peeks + proper devlogs with you all. There's a LOT to update ever since the hiatus started so we should get to work soon enough.
+			</p>
+			<p>
+				The game is also going through a semi-major rewrite, and some characters will be slightly redesigned (see: Dealmaker) as well as the "Hard Mode" getting almost a full rewrite. Everyone in the team is honestly really excited to soon go back to Candleholder after so long!
+			</p>
+			<p class="center">
+				<img class="image pixelated" src="../assets/img/newsletters/2024//autumn/spam_roast.gif" width="393" height="240">
+				<div class="credit">by Creepa-Bot Inc.</div>
+			</p>
+			<h2 class="center">Website (this is WIP still)</h2>
+			<p>
+				This website will go through some changes, to keep things separate from HUECYCLES's own stuff and Andromedia/Candleholder.
+				You'll get some more news about this on November 18th.
+			</p>
+			<p>
+				For now, please join our new <a href="https://discord.gg/eJwCBmNDvU" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">Discord server</a>
+				for further information and content! (The old one got archived as we wanted to start anew.)
+			</p>
+
+			<p>That's it for now! Thank you for reading!</p>
+			<p class="center">
+				<img class="image pixelated" src="../assets/img/newsletters/2024/autumn/scaryflashlight.gif" width="189" height="180">
+				<div class="credit">by Marbles</div>
+			</p>
 			<hr>
-		</div>
-		<p class="center"><a href="../chapters" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">RETURN</a></p>
-		<footer>
-			<my-footer></my-footer>
-			<script src="../js/components/footer.js"></script>
-		</footer>
+			<p class="center"><a href="../chapters" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">RETURN</a></p>
+			<footer>
+				<my-footer></my-footer>
+				<script src="../js/components/footer.js"></script>
+			</footer>
 		<!-- Click/Hover Sound JS -->
-		<script src="../../js/soundfx.js"></script>
-</body>
+		<script src="../js/soundfx.js"></script>
+		<script src="../js/audio-player.js"></script>
+	</body>
 </html>
