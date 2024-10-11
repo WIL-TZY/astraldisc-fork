@@ -28,8 +28,12 @@
 				</ul>
 			</header>
 		<main>
+			<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 			<div id="graze">
 				<img src="assets/img/souls/graze.png">
+			</div>
+			<div id="explosion">
+				<img src="assets/img/explosion-boom.gif" width="142" height="196">
 			</div>
 			<center>
 				<h2>Team</h2>
@@ -242,7 +246,7 @@
 					Artist and animator, I joined the team in early 2023, providing character designs and animations.
 					I always enjoy adding a touch of silly to each character I make!
 				</p>
-				<img onmouseenter="grazeSound();showImage()" onmouseleave="hideImage()" src="assets/img/teamicon/hue.png">
+				<img onmouseenter="grazeSound();showImage()" onmouseleave="hideImage()" src="assets/img/teamicon/bunniapa.png">
 			</div>
 			<hr>
 			<div class="team" style="color:var(--wilkus)">
@@ -309,11 +313,19 @@
 				</p>
 			</div>
 			<hr>
+			<div class="team" style="color:var(--xnq)">
+				<p class="right" style="margin-left: 250px;">
+					<a style="color:var(--xnq)" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()" id="xnq" href="https://soundcloud.com/xnqqq">xnq</a><br>
+					<role>Musician</role><br>
+					music, gamedev, artist
+				</p>
+				<img onmouseenter="explosionSound();showExplosion()" src="assets/img/teamicon/xnq.png">
+			</div>
+			<hr>
 			<center>
 				<h2>Additional Help + Credits</h2>
 				<p><ul>
 					<li><a href="https://ne0nbandit.neocities.org/" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">NE0Nbandit</a></li>
-					<li><a class="break" href="#0" onclick="clickDenySound()" onmouseenter="heartBreak()">ulmeyda</a></li>
 					<li><a href="https://x.com/bep_celeste" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">bep_celeste</a></li>
 				</ul></p>
 				<h2>Special Thanks</h2>
@@ -332,7 +344,8 @@
 		</footer>
 	</div>
 	<!-- Click/Hover Sound JS -->
-	<script src="../js/soundfx.js"></script>
-	<script src="js/graze.js"></script>
+	<script src="./js/soundfx.js"></script>
+	<script src="./js/graze.js"></script>
+	<script src="./js/explosion.js"></script>
 	</body>
 </html>

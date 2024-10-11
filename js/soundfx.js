@@ -36,6 +36,12 @@ var graze=createsoundbite(
 	"../../assets/audio/graze.wav", "../../assets/audio/graze.ogg" 	// <-- Path relative to sub-subfolders
 );
 
+var explosion=createsoundbite(
+	"./assets/audio/badexplosion.wav", "./assets/audio/badexplosion.ogg", 	// <-- Path relative to the root level
+	"../assets/audio/badexplosion.wav", "../assets/audio/badexplosion.ogg", 	// <-- Path relative to subfolders
+	"../../assets/audio/badexplosion.wav", "../../assets/audio/badexplosion.ogg" 	// <-- Path relative to sub-subfolders
+);
+
 var dooropen=createsoundbite(
 	"./assets/audio/dooropen.wav", "./assets/audio/dooropen.ogg", 	// <-- Path relative to the root level
 	"../assets/audio/dooropen.wav", "../assets/audio/dooropen.ogg", 	// <-- Path relative to subfolders
@@ -86,6 +92,10 @@ soulmode.addEventListener('ended', function () {
 
 graze.addEventListener('ended', function () {
 	console.log('Graze sound ended');
+});
+
+explosion.addEventListener('ended', function () {
+	console.log('Explosion sound ended');
 });
   
 clicksound.addEventListener('ended', function () {
@@ -149,6 +159,12 @@ function grazeSound() {
 	}
 }
 
+function explosionSound() {
+	if (domInteracted) {
+	  explosion.playclip();
+	}
+}
+
 function doorOpen() {
 	if (domInteracted) {
 	  dooropen.playclip();
@@ -173,6 +189,10 @@ function clickDenySound() {
 
 function clickGoner() {
 	clickgoner.playclip();
+}
+
+function clickExplosion() {
+	explosion.playclip();
 }
 
 // Call this function in the onclick event of an anchor

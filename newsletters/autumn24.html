@@ -15,6 +15,7 @@
 		<link href="../css/base.css" rel="stylesheet" type="text/css" media="all">
 		<link href="../css/main.css" rel="stylesheet" type="text/css" media="all">
 		<link href="../css/andromedia.css" rel="stylesheet" type="text/css" media="all">
+		<link href="../css/green-audio-player.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -59,7 +60,7 @@
 				<img class="image pixelated" src="../assets/img/newsletters/2024/autumn/iceslide_test_ch6.png">
 				<div class="credit">Susie & Noelle sprites by SnowyBoi64 & Marbles</div>
 			</p>
-			<p>(The latest official newsletter did surprise us with the balloon being teased specifically for Chapter... Lizzy was ecstatic.)</p>
+			<p>(The latest official newsletter did surprise us with the balloon being teased specifically for Chapter 5... Lizzy was ecstatic.)</p>
 			<p class="center">
 				<img class="image pixelated" src="../assets/img/newsletters/2024/autumn/lizzy_balloon_pog.gif", width="280" height="264">
 				<div class="credit">by HUECYCLES</div><br>
@@ -103,28 +104,16 @@
 			</p>
 			<p> In case you want a preview of a highly anticipated song for YouTube, here is an excerpt of a piano draft for <strong>FRIGHT NIGHT V2</strong>, by Hodgepodge.</p>
 
-			<div class="flex-container" style="justify-content: center;">
-				<img class="image pixelated" src="../assets/img/newsletters/2024/autumn/mayhem_kris_piano.gif" width="412" height="396">
-				<div class="audioplayer-container"> 
-					<audio id="audioplayer"> <!-- preload="none" -->
+			<p class="center">
+				<img id="piano" class="image pixelated" src="../assets/img/newsletters/2024/autumn/kris_piano.png" width="309" height="297">
+			</p>
+			<div class="playercontainer">
+				<div class="audioplayer">
+					<audio> <!-- preload="none" -->
 						<source src="../assets/audio/music/newsletter/fright_night_v2_hodgepodge_piano_draft.mp3" type="audio/mpeg">
 						<source src="../assets/audio/music/newsletter/fright_night_v2_hodgepodge_piano_draft.ogg" type="audio/ogg">
 						Your browser does not support the audio element.
 					</audio>
-
-					<!-- Play and Progress Bar -->
-					<button class="chara-audioplayer btn-play" type="button" onclick="playPause(); clickSoundLoad(event)" onmouseenter="hoverSound()">></button>
-					<input class="progress-slider" type="range" min="0" max="100" step="1" value="0" oninput="changeProgress(this.value)">
-	
-					<!-- Time display -->
-					<span class="time-display">0:00 / 1:00</span>
-	
-					<!-- Volume -->
-					<div class="volume-container">
-						<!-- Volume Buttons (+/-) -->
-						<button class="chara-audioplayer btn-vol vol-down" type="button" onclick="decreaseVolume()">-</button>
-						<button class="chara-audioplayer btn-vol vol-up" type="button" onclick="increaseVolume()">+</button>
-					</div>
 				</div>
 			</div>
 			<h2 class="center">Candleholder</h2>
@@ -164,6 +153,27 @@
 			</footer>
 		<!-- Click/Hover Sound JS -->
 		<script src="../js/soundfx.js"></script>
-		<script src="../js/audio-player.js"></script>
+
+		<script src="../js/green-audio-player.js"></script>
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				GreenAudioPlayer.init({
+					selector: '.audioplayer',
+					stopOthersOnPlay: true
+				});
+			});
+		</script>
+	 	<script>
+			var audio = document.getElementsByClassName("green-audio-player");
+			var img = document.getElementById("piano");
+			if (audio.paused) {
+				img.classList.add("playing");
+				img.src = "../assets/img/newsletters/2024/autumn/mayhem_kris_piano.gif";
+			}
+			else {
+				img.classList.remove("playing");
+				img.src = "../assets/img/newsletters/2024/autumn/kris_piano.png";
+			}
+		</script>
 	</body>
 </html>

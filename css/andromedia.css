@@ -335,11 +335,24 @@ body.standby-page {
 }
 
 /* ---------- Audio Player ---------- */
+.playercontainer {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.audioplayer {
+    font-size: 14px;
+	text-shadow: none;
+}
+
 .audioplayer-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
+    width: fit-content;
     font-size: 14px;
     border: 2px solid rgb(255, 255, 255);
     margin: 1em;
@@ -352,7 +365,6 @@ body.standby-page {
     margin: px;
     /* border: 1px solid rgb(255, 255, 255); */
     padding: 10px;
-    cursor: var(--cursor-pointer);
     /* position: relative; */
     transition: all 0.3s; /* For smooth effect when hovering */
     flex-grow: 0;
@@ -370,9 +382,8 @@ body.standby-page {
 .progress-slider {
     margin-right: 3%;
     appearance: none;
-    cursor: var(--cursor-pointer);
     height: 8px;
-    border-radius: 5px;
+    border-radius: 4px;
     background: #333;
     outline: none;
 }
@@ -383,7 +394,6 @@ body.standby-page {
     height: 10px;
     border-radius: 50%;
     background: #fff;
-    cursor: var(--cursor-pointer);
 }
 
 .volume-container {
@@ -412,7 +422,6 @@ body.standby-page {
 
 .volume-slider { 
     width: 3em;
-    cursor: var(--cursor-pointer);
 }
 
 /* ---------- Play/Pausa & Volume Buttons ---------- */

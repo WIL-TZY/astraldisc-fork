@@ -109,6 +109,13 @@ a:hover.break {
 	pointer-events: none;
 }
 
+#explosion {
+	image-rendering: pixelated;
+	position: fixed;
+	display: none;
+	pointer-events: none;
+}
+
 /* DEVICE */
 body.DEVICE-page {
 	cursor: var(--cursor-blur);

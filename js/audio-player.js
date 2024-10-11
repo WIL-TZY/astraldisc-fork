@@ -8,12 +8,18 @@ const volContainer = document.querySelector('.volume-container');
 function playPause() {
     if (audio.paused) {
         audio.play();
-        playButton.textContent = '||';
+        playButton.textContent = '| |';
     } else {
         audio.pause();
         playButton.textContent = '▶'; 
     }
 }
+
+audio.addEventListener("ended", function(){
+    audio.currentTime = 0;
+    console.log("ended");
+    playButton.textContent = '▶';
+});
 
 /* Updates the progress based on where the user moves along the bar */
 function changeProgress(value) {
