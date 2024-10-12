@@ -16,6 +16,7 @@
 		<link href="../css/main.css" rel="stylesheet" type="text/css" media="all">
 		<link href="../css/andromedia.css" rel="stylesheet" type="text/css" media="all">
 		<link href="../css/green-audio-player.css" rel="stylesheet" type="text/css">
+		<link href="../css/playerslider-only.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -44,7 +45,7 @@
 				We are making TONS of progress on the Andromedia Chapters 3-7 project.
 				Seriously, you should see our Github push activity!
 				With this, we're getting closer and closer to releasing the actual installments of the series,
-				and maybe even somel playable secret fights somewhere down the road (kind of a big maybe).
+				and maybe even some playable secret fights somewhere down the road (kind of a big maybe).
 			</p>
 			<p>
 				We're slowly but surely implementing new mechanics and gimmicks for each chapter,
@@ -90,7 +91,7 @@
 			</p>
 			<p>
 				Burnout and lack of motivation (fueled by the stagnant wait for the official chapters) tends to hit at the worst moments and that was no different
-				for our team. However, after welcoming some more members and setting up a new production schedule, we're foreseeing this project to
+				for our team. However, after welcoming in some more members and setting up a new production schedule, we're foreseeing this project to
 				have a good amount of content soon!
 			</p>
 			<p class="center">
@@ -109,7 +110,7 @@
 			</p>
 			<div class="playercontainer">
 				<div class="audioplayer">
-					<audio> <!-- preload="none" -->
+					<audio id="fright"> <!-- preload="none" -->
 						<source src="../assets/audio/music/newsletter/fright_night_v2_hodgepodge_piano_draft.mp3" type="audio/mpeg">
 						<source src="../assets/audio/music/newsletter/fright_night_v2_hodgepodge_piano_draft.ogg" type="audio/ogg">
 						Your browser does not support the audio element.
@@ -154,25 +155,32 @@
 		<!-- Click/Hover Sound JS -->
 		<script src="../js/soundfx.js"></script>
 
-		<script src="../js/green-audio-player.js"></script>
+		<script src="../js/playerslider-only.js"></script>
 		<script>
 			document.addEventListener('DOMContentLoaded', function() {
-				GreenAudioPlayer.init({
+				PlayerSliderOnly.init({
 					selector: '.audioplayer',
 					stopOthersOnPlay: true
 				});
 			});
 		</script>
 	 	<script>
-			var audio = document.getElementsByClassName("green-audio-player");
-			var img = document.getElementById("piano");
-			if (audio.paused) {
-				/*img.classList.add("playing");*/
-				img.src = "../assets/img/newsletters/2024/autumn/mayhem_kris_piano.gif";
-			}
-			else {
-				/*img.classList.remove("playing");*/
-				img.src = "../assets/img/newsletters/2024/autumn/kris_piano.png";
+			//var audio = document.getElementsByClassName("green-audio-player");
+			document.getElementById("piano").onclick = function() {
+    			var audio = document.getElementById("fright");
+    			if (audio.paused) {
+					audio.play();
+					document.getElementById("piano").src = "../assets/img/newsletters/2024/autumn/mayhem_kris_piano.gif";
+				}
+    			else {
+					document.getElementById("piano").src = "../assets/img/newsletters/2024/autumn/kris_piano.png";
+					audio.pause();
+				}
+
+				audio.addEventListener("ended", function(){
+					audio.currentTime = 0;
+					document.getElementById("piano").src = "../assets/img/newsletters/2024/autumn/kris_piano.png";
+				});
 			}
 		</script>
 	</body>

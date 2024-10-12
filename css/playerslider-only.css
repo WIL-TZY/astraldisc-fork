@@ -1,0 +1,163 @@
+@keyframes spin {
+	from {
+		transform: rotateZ(0); }
+	to {
+		transform: rotateZ(1turn); } }
+
+.playerslider-only {
+	width: 400px;
+	min-width: 300px;
+	height: 56px;
+	box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.07);
+	display: flex !important;
+	justify-content: space-between;
+	align-items: center;
+	padding-left: 14px;
+	padding-right: 24px;
+	user-select: none;
+	background-color: #000000;
+	border: var(--unselected), solid, 2px;
+	box-sizing: border-box;
+	outline: none; }
+	.playerslider-only.player-accessible .controls:hover,
+	.playerslider-only.player-accessible .volume__button:hover,
+	.playerslider-only.player-accessible .volume__controls:hover,
+	.playerslider-only.player-accessible .download:hover {
+		outline: dotted 1px var(--unselected); }
+	.playerslider-only svg,
+	.playerslider-only img {
+		display: block; }
+	.playerslider-only .holder {
+		position: relative; }
+		.playerslider-only .holder .loading .loading__spinner {
+			position: absolute;
+			left: -3px;
+			bottom: 2px;
+			width: 16px;
+			height: 16px;
+			border: 2px solid var(--unselected);
+			border-right-color: var(--unselected);
+			border-radius: 50%;
+			animation: spin 0.4s linear infinite; }
+	.playerslider-only .slider {
+		flex-grow: 1;
+		background-color: var(--unselected);
+		cursor: var(--cursor-main);
+		position: relative; }
+		.playerslider-only .slider .gap-progress {
+			background-color: var(--tp);
+			border-radius: inherit;
+			position: absolute;
+			pointer-events: none; }
+			.playerslider-only .slider .gap-progress .pin {
+				height: 18px;
+				width: 18px;
+				background-image: url(../assets/img/souls/heart_orange.png);
+				background-repeat: no-repeat;
+				position: absolute;
+				pointer-events: all;
+			}
+				.playerslider-only .slider .gap-progress .pin::after {
+					content: "";
+					display: block;
+					background: rgba(0, 0, 0, 0);
+					width: 200%;
+					height: 200%;
+					margin-left: -50%;
+					margin-top: -50%;
+					border-radius: 50%; }
+	.playerslider-only .controls {
+		font-family: var(--font);
+		font-size: 20px;
+		line-height: 18px;
+		color: var(--font-color);
+		display: flex;
+		flex-grow: 1;
+		justify-content: space-between;
+		align-items: center;
+		margin-left: 15px;
+		margin-right: 15px;
+		outline: none; }
+		.playerslider-only .controls .controls__slider {
+			margin-left: 16px;
+			margin-right: 16px;
+			border-radius: 2px;
+			height: 4px; }
+			.playerslider-only .controls .controls__slider .controls__progress {
+				width: 0;
+				height: 100%; }
+				.playerslider-only .controls .controls__slider .controls__progress .progress__pin {
+					right: -8px;
+					top: -6px; }
+		.playerslider-only .controls span {
+			cursor: var(--cursor-main); }
+		.playerslider-only .controls:focus {
+			outline: none; }
+	.playerslider-only .volume {
+		position: relative; }
+		.playerslider-only .volume .volume__button {
+			cursor: var(--cursor-main);
+			outline: none; }
+			.playerslider-only .volume .volume__button:focus {
+				outline: none; }
+			.playerslider-only .volume .volume__button.open path {
+				fill: var(--tp); }
+		.playerslider-only .volume .volume__controls {
+			width: 30px;
+			height: 135px;
+			background-color: rgba(0, 0, 0, 0.62);
+			border: var(--unselected), solid, 2px;
+			position: absolute;
+			left: -3px;
+			bottom: 52px;
+			flex-direction: column;
+			align-items: center;
+			display: flex;
+			z-index: 2;
+			outline: none; }
+			.playerslider-only .volume .volume__controls .volume__slider {
+				margin-top: 12px;
+				margin-bottom: 12px;
+				width: 6px;
+				border-radius: 3px; }
+				.playerslider-only .volume .volume__controls .volume__slider .volume__progress {
+					bottom: 0;
+					height: 100%;
+					width: 6px; }
+					.playerslider-only .volume .volume__controls .volume__slider .volume__progress .volume__pin {
+						left: -5px;
+						top: -8px; }
+			.playerslider-only .volume .volume__controls:focus {
+				outline: none; }
+			.playerslider-only .volume .volume__controls.hidden {
+				display: none; }
+			.playerslider-only .volume .volume__controls.top {
+				bottom: 52px;
+				left: -3px; }
+			.playerslider-only .volume .volume__controls.middle {
+				bottom: -54px;
+				left: 54px; }
+			.playerslider-only .volume .volume__controls.bottom {
+				bottom: -164px;
+				left: -3px; }
+	.playerslider-only .download {
+		display: none;
+		margin-left: 16px;
+		cursor: var(--cursor-main);
+		outline: none; }
+		.playerslider-only .download:focus {
+			outline: none; }
+	.playerslider-only:focus {
+		outline: none; }
+
+.message__offscreen {
+	border: 0;
+	clip: rect(1px, 1px, 1px, 1px);
+	clip-path: inset(50%);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	width: 1px;
+	word-wrap: normal; }

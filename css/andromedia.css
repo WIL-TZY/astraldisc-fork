@@ -352,7 +352,7 @@ body.standby-page {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: fit-content;
+    width: 100%;
     font-size: 14px;
     border: 2px solid rgb(255, 255, 255);
     margin: 1em;
