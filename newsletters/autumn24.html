@@ -15,8 +15,7 @@
 		<link href="../css/base.css" rel="stylesheet" type="text/css" media="all">
 		<link href="../css/main.css" rel="stylesheet" type="text/css" media="all">
 		<link href="../css/andromedia.css" rel="stylesheet" type="text/css" media="all">
-		<link href="../css/green-audio-player.css" rel="stylesheet" type="text/css">
-		<link href="../css/playerslider-only.css" rel="stylesheet" type="text/css">
+		<link href="../css/deltaplayer.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -100,23 +99,75 @@
 			</p>
 			<h2 class="center">Soundtrack Update</h2>
 			<p>
-				Our plan going forward is to slowly revamp and remaster most of the current soundtrack, so you'll likely be seeing some changes
-				and updates on old songs.
+				Our plan going forward is to slowly revamp and remaster most of the current soundtrack, so you'll be seeing changes
+				and updates of old songs. We have decided to do this because we think some tracks either don't fit the characters, sound
+				extremely dated, or are just overall not a good result...
 			</p>
-			<p> In case you want a preview of a highly anticipated song for YouTube, here is an excerpt of a piano draft for <strong>FRIGHT NIGHT V2</strong>, by Hodgepodge.</p>
+			<p>
+				After bringing in very talented musicians from the community,
+				we have started this process and will be posting the new tracks on HUECYCLES's SoundCloud account (because that's where I have
+				Next Pro and I can't afford another plan lol), with some "special" songs being posted on YouTube, also.
+			</p>
+			<p>In case you want previews of some of the team's work, here's a few!</p>
+
+			<h3 class="center">Nick L. Odeion (WIP)</h3>
 
 			<p class="center">
-				<img id="piano" class="image pixelated" src="../assets/img/newsletters/2024/autumn/kris_piano.png" width="309" height="297">
+				<img class="image pixelated" src="../assets/img/newsletters/2024/autumn/nick_kris.png" width="255" height="234">
+				<div class="credit">by HUECYCLES</div>
 			</p>
 			<div class="playercontainer">
-				<div class="audioplayer">
-					<audio id="fright"> <!-- preload="none" -->
-						<source src="../assets/audio/music/newsletter/fright_night_v2_hodgepodge_piano_draft.mp3" type="audio/mpeg">
-						<source src="../assets/audio/music/newsletter/fright_night_v2_hodgepodge_piano_draft.ogg" type="audio/ogg">
+				<div class="deltaplayer">
+					<audio>
+						<source src="../assets/audio/music/newsletter/nick_wip_lex.mp3" type="audio/mpeg">
+						<source src="../assets/audio/music/newsletter/nick_wip_lex.ogg" type="audio/ogg">
 						Your browser does not support the audio element.
 					</audio>
 				</div>
 			</div>
+			<div class="credit">Sprite by HUECYCLES, music by lex3x</div>
+
+			<h3 class="center">Magic Mountains (Working Title, WIP?)</h3>
+
+			<p class="center">
+				<img class="image pixelated" src="../assets/img/newsletters/2024/autumn/magicmountains_marnie.jpg">
+			</p>
+			<div class="playercontainer">
+				<div class="deltaplayer">
+					<audio>
+						<source src="../assets/audio/music/newsletter/magic_mountains_void.mp3" type="audio/mpeg">
+						<source src="../assets/audio/music/newsletter/magic_mountains_void.ogg" type="audio/ogg">
+						Your browser does not support the audio element.
+					</audio>
+				</div>
+			</div>
+			<div class="credit">Concept by Marnie, music by L Void</div>
+
+			<h3 class="center">turbulence_wip (Concept/WIP)</h3>
+
+			<div class="playercontainer">
+				<div class="deltaplayer">
+					<audio>
+						<source src="../assets/audio/music/newsletter/turbulence_wip.mp3" type="audio/mpeg">
+						<source src="../assets/audio/music/newsletter/turbulence_wip.ogg" type="audio/ogg">
+						Your browser does not support the audio element.
+					</audio>
+				</div>
+			</div>
+			<div class="credit">Music by HUECYCLES</div>
+
+			<h3 class="center">FRIGHT NIGHT V2 (Piano Draft)</h3>
+
+			<p class="center">
+				<img id="piano" class="image pixelated" src="../assets/img/newsletters/2024/autumn/kris_piano.png" width="309" height="297">
+			</p>
+			<audio id="fright" class="imgplayer"> <!-- preload="none" -->
+				<source src="../assets/audio/music/newsletter/fright_night_v2_hodgepodge_piano_draft.mp3" type="audio/mpeg">
+				<source src="../assets/audio/music/newsletter/fright_night_v2_hodgepodge_piano_draft.ogg" type="audio/ogg">
+				Your browser does not support the audio element.
+			</audio>
+			<div class="credit">Sprite/Animation by HUECYCLES, music by Hodgepodge</div>
+
 			<h2 class="center">Candleholder</h2>
 			<p>
 				"Alright, fine, but what about Candleholder?! Is it still on hiatus???""
@@ -155,22 +206,23 @@
 		<!-- Click/Hover Sound JS -->
 		<script src="../js/soundfx.js"></script>
 
-		<script src="../js/playerslider-only.js"></script>
+		<script src="../js/deltaplayer.js"></script>
 		<script>
 			document.addEventListener('DOMContentLoaded', function() {
-				PlayerSliderOnly.init({
-					selector: '.audioplayer',
+				DeltaPlayer.init({
+					selector: '.deltaplayer',
 					stopOthersOnPlay: true
 				});
 			});
 		</script>
+
 	 	<script>
-			//var audio = document.getElementsByClassName("green-audio-player");
 			document.getElementById("piano").onclick = function() {
     			var audio = document.getElementById("fright");
     			if (audio.paused) {
 					audio.play();
 					document.getElementById("piano").src = "../assets/img/newsletters/2024/autumn/mayhem_kris_piano.gif";
+					stopDeltaPlayers();
 				}
     			else {
 					document.getElementById("piano").src = "../assets/img/newsletters/2024/autumn/kris_piano.png";
@@ -181,6 +233,14 @@
 					audio.currentTime = 0;
 					document.getElementById("piano").src = "../assets/img/newsletters/2024/autumn/kris_piano.png";
 				});
+			}
+
+			function stopDeltaPlayers() {
+				var players = document.querySelectorAll('.deltaplayer audio');
+
+				for (var i = 0; i < players.length; i++) {
+					DeltaPlayer.pausePlayer(players[i]);
+				}
 			}
 		</script>
 	</body>
