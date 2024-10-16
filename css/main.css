@@ -295,6 +295,12 @@ a img.hover {
 	padding: 0px;
 }
 
+.flex-container > img {
+	height: 400px;
+  	width: auto;
+	padding: 5px;
+}
+
 .flex-container.projects-box {
 	/* Fixed width and height for both boxes */
 	width: 200px;
@@ -433,6 +439,15 @@ body.notfound-page {
 	height: 100%;
 	background: rgba(0, 0, 0, 0); /* Transparent background - GPT*/
 	pointer-events: none; /* Allow clicks to go through - GPT*/
+}
+
+.hue p {
+	font-size: 120%;
+	text-align: justify;
+	text-shadow: none;
+	background: linear-gradient(90deg, var(--hue1), var(--hue2), var(--hue3), var(--hue4));
+  	background-clip: text;
+  	-webkit-text-fill-color: transparent;
 }
 	
 /* Selected Text */
