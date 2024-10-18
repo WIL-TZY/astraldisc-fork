@@ -500,3 +500,32 @@ body.notfound-page {
 	
 ::selection { color:rgba(255, 255, 255, 1); background:  rgb(0, 171, 201, 0.5);}
 
+/******************************************************************************\
+*                               MEDIA QUERIES                                  *
+\******************************************************************************/
+/* Tablet */
+@media (max-width: 768px) {
+
+    .chapter-list li a {
+        flex-direction: column;
+        text-align: center;
+    }
+
+	/* except for the .other-links container that should keep row style */
+    .flex-container > .other-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+
+    .flex-container {
+        margin: 0;
+    }
+
+    .flex-container a {
+        margin: 5px;
+    }
+}
