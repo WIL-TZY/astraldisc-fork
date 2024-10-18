@@ -24,55 +24,6 @@ a {
 	font-size: 120%;
 }
 
-.chselect {
-	background-color: black;
-	font-family: var(--font);
-	margin-top: 20px;
-}
-
-.chselect ul {
-	list-style-type: none;
-}
-
-.chselect ul a {
-	text-decoration: none;
-	color: var(--link-default);
-	font-size: 250%;
-	cursor: var(--cursor-main)
-}
-
-.chselect ul a:hover {
-	color: var(--link-hover);
-	cursor: var(--cursor-main)
-}
-
-.chselect ul a:hover.break {
-	cursor: var(--cursor-break);
-	color: var(--faint-text);
-	font-family: var(--font);
-}
-
-.chselect li {
-	display: inline;
-    line-height:70px;
-	margin-right: 10px;
-	margin-left: 20px;
-	/* Spacing between links */
-	margin-bottom: 10px;
-}
-
-.chselect hr {
-    margin: 1.5% 0 ;
-    opacity: 0.2;
-}
-
-.chselect img {
-	float: right;
-	width: 26;
-	height: 23;
-	padding-bottom: -10px;
-}
-
 a:hover {
 	cursor: var(--cursor-main);
 	color: var(--link-hover);
@@ -115,8 +66,134 @@ a:hover.break {
 	display: none;
 	pointer-events: none;
 }
+  
+/* Everything in the main box goes in this */
+.wrapper {
+	width: 90%;
+	max-width: 700px;
+	/*border: 3px solid black;*/
+	margin: 0 auto;
+	top: 0px;
+}
 
-/* DEVICE */
+.smooth {
+	image-rendering: smooth;
+}
+
+.high-quality {
+	image-rendering: high-quality;
+}
+
+.pixelated {
+	image-rendering: pixelated;
+}
+	
+.tiny {
+	font-size: 9px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+header {
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	/* Vertically center items */
+	align-items: center;
+	padding: 10px;
+}
+
+.logo-container {
+	margin-top: 30px;
+}
+
+.logo-container img {
+	margin: 0 auto; /* Center the image horizontally */
+	height: auto; /* Make sure logo scales well */
+}
+
+main {
+	padding: 15px;
+	margin: 0 auto;
+	background: #000000;
+}
+	
+/*Prevent overflow of large images in main text areas.*/
+main img {
+	max-width: 100%;
+	height: auto;
+}
+
+/* Image hover effect */
+a img.hover {
+	display: none;
+}
+	a img.default {
+	display: inherit;
+}
+	a:hover img.hover {
+	display: inherit;
+}
+	a:hover img.default {
+	display: none;
+}
+	
+.small-letters {
+	color: var(--faint-text);
+	font-size: var(--font-tiny);
+}
+
+.flex-container {
+	display: flex;
+	/* align-items: center; */
+	/* justify-content: space-around; */
+	justify-content: center;
+	flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.flex-container > div {
+	text-align: center;
+	margin: 50px;
+	padding: 0px;
+}
+
+.flex-container > img {
+	height: 400px;
+  	width: auto;
+	padding: 5px;
+}
+
+.flex-container.projects-box {
+	/* Fixed width and height for both boxes */
+	width: 200px;
+	height: 200px; 
+}
+
+textarea {
+	border: 1px solid var(--textarea-border); 
+	font-size: 14px; 
+	background-color: var(--textarea) !important; 
+	color: white;
+	padding: 1%;
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+footer {
+	padding: 20px;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 1.4rem;
+	text-align: center;
+	color: var(--faint-text);
+	text-shadow: var(--text-shadow-footer);
+	/* border-top: 1px solid rgb(22, 22, 22); */
+}
+
+/******************************************************************************\
+*                                 INDEX.HTML                                   *
+\******************************************************************************/
 body.DEVICE-page {
 	cursor: var(--cursor-blur);
 	display: flex;
@@ -151,7 +228,6 @@ body.DEVICE-page {
 	min-height: 104px; /* Keeps Next Button in the corner */
 }
 
-/* ---------- General Text Styles ---------- */
 .DEVICE firstline, .DEVICE normaline {
     max-width: 640px;
     font-size: 32px;
@@ -207,127 +283,99 @@ body.DEVICE-page {
     opacity: 0;
 }
 
-/* Everything in the main box goes in this */
-.wrapper {
-	width: 700px;
-	/*border: 3px solid black;*/
-	margin: 0 auto;
-	top: 0px;
+/******************************************************************************\
+*                                 CHAPTERS.HTML                                *
+\******************************************************************************/
+.chselect {
+    background-color: black;
+    font-family: var(--font);
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.smooth {
-	image-rendering: smooth;
+.chselect ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.high-quality {
-	image-rendering: high-quality;
+.chselect ul a {
+    text-decoration: none;
+    color: var(--link-default);
+    font-size: 250%;
+    cursor: var(--cursor-main);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.pixelated {
-	image-rendering: pixelated;
+.chselect ul a:hover {
+    color: var(--link-hover);
 }
-	
-.tiny {
-	font-size: 9px;
-	margin: 0 auto;
+
+.chselect ul a.break:hover {
+    cursor: var(--cursor-break);
+    color: var(--faint-text);
+}
+
+.chselect li {
+    display: inline;
+    line-height: 70px;
+    margin: 0 10px 10px 20px;
+}
+
+.chselect hr {
+    margin: 1.5% 0;
+    opacity: 0.2;
+}
+
+.chapter-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.chapter-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chapter-list li a span {
+    display: inline-block;
+}
+
+.chapter-list li a .chapter-title {
 	text-align: center;
+    flex: 1;
 }
 
-header {
-	background-color: black;
-	display: flex;
-	flex-direction: column;
-	/* Vertically center items */
-	align-items: center;
-	padding: 10px;
+.chapter-icon {
+    display: flex;
+    justify-content: flex-end;
 }
 
-.logo-container {
-	margin-top: 30px;
+.chapter-icon img {
+    width: 78px;
+    height: 69px;
 }
 
-.logo-container img {
-	/* Center the image horizontally */
-	margin: 0 auto;
+.chapter-icon img.hover {
+    display: none;
 }
 
-main {
-	padding: 15px;
-	margin: 0 auto;
-	background: #000000;
-}
-	
-/*Prevent overflow of large images in main text areas.*/
-main img {
-	max-width: 100%;
-	height: auto;
+.chapter-list li a:hover .chapter-icon img.default {
+    display: none;
 }
 
-/* Image hover effect */
-a img.hover {
-	display: none;
-}
-	a img.default {
-	display: inherit;
-}
-	a:hover img.hover {
-	display: inherit;
-}
-	a:hover img.default {
-	display: none;
-}
-	
-.small-letters {
-	color: var(--faint-text);
-	font-size: var(--font-tiny);
+.chapter-list li a:hover .chapter-icon img.hover {
+    display: block;
 }
 
-.flex-container {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	background-color: var(--background);
-}
-
-.flex-container > div {
-	text-align: center;
-	margin: 50px;
-	padding: 0px;
-}
-
-.flex-container > img {
-	height: 400px;
-  	width: auto;
-	padding: 5px;
-}
-
-.flex-container.projects-box {
-	/* Fixed width and height for both boxes */
-	width: 200px;
-	height: 200px; 
-}
-
-textarea {
-	border: 1px solid var(--textarea-border); 
-	font-size: 14px; 
-	background-color: var(--textarea) !important; 
-	color: white;
-	padding: 1%;
-	text-align: left;
-	margin-bottom: 20px;
-}
-
-footer {
-	padding: 20px;
-	font-weight: bold;
-	font-size: 14px;
-	line-height: 1.4rem;
-	text-align: center;
-	color: var(--faint-text);
-	text-shadow: var(--text-shadow-footer);
-	/* border-top: 1px solid rgb(22, 22, 22); */
-}
-
+/******************************************************************************\
+ *                                404.HTML                                     *
+\******************************************************************************/
 body.notfound-page {
 	background: black;
 	image-rendering: pixelated;
@@ -450,28 +498,5 @@ body.notfound-page {
   	-webkit-text-fill-color: transparent;
 }
 	
-/* Selected Text */
 ::selection { color:rgba(255, 255, 255, 1); background:  rgb(0, 171, 201, 0.5);}
 
-	/*For narrow screens*/
-	@media(max-width: 790px) {
-		.wrapper {
-			width: 95%;
-		}
-		header h1, header h2, header h3 { /*Vertical centering gets wonky when the box is variable width*/
-			margin: 20% 5% auto;
-		}
-	}
-	
-	/*Mobile compatibility*/
-	@media(orientation: portrait) {
-		.wrapper {
-			width: 95%;
-		}
-		header {
-			height:230px;
-		}
-		header h1, header h2, header h3 {
-			margin: 20% 3% auto;
-		}
-	}
