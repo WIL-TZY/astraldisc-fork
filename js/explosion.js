@@ -13,9 +13,9 @@ function showExplosion() {
 		image.style.display = "block";
 		document.addEventListener("mousemove", followMouseExp);
 		setTimeout(function () {
-            resetExplosion();
+			resetExplosion();
 			hideExplosion(image);
-		}, 1702)
+		}, 1710)
   	}
 };
 
@@ -28,8 +28,6 @@ function hideExplosion() {
 function resetExplosion() {
     $(document).ready(function(){
         var $img = $('#explosion img');
-        setTimeout(function() {
-            $img.attr('src', '../assets/img/explosion-boom.gif');
-        }, 0);
+        $img.attr('src', '../assets/img/explosion-boom.gif');
     });
 }
