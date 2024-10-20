@@ -373,6 +373,14 @@ body.DEVICE-page {
     display: block;
 }
 
+#chselect-landscape {
+    display: inline-block;
+}
+
+#chselect-portrait {
+    display: none;
+}
+
 /******************************************************************************\
  *                                404.HTML                                     *
 \******************************************************************************/
@@ -437,8 +445,8 @@ body.notfound-page {
 }
 
 .team img {
-    width: 30%;
-    height: 30%;
+    max-width: 30%;
+    max-height: 30%;
 	padding-left: 30px;
 	padding-right: 30px;
 }
@@ -506,10 +514,39 @@ body.notfound-page {
 /* Tablet */
 @media (max-width: 768px) {
 
-    .chapter-list li a {
-        flex-direction: column;
+	#chselect-landscape {
+		display: none;
+	}
+	
+	#chselect-portrait {
+		display: inline-block;
+	}
+
+	#chselect-portrait li a {
+		flex-direction: column;
         text-align: center;
-    }
+	}
+	
+	#chselect-portrait li {
+		display: inline;
+		line-height: 50px;
+		margin: auto;
+	}
+
+	#chselect-portrait li a {
+		flex-direction: column;
+        text-align: center;
+	}
+
+	#chselect-portrait li a .chapter-title {
+		font-size: 70%;
+	}
+	
+	#chselect-portrait .chapter-icon img {
+		width: 78px;
+		height: 69px;
+		margin: 10px 0 10px 0;
+	}
 
 	/* except for the .other-links container that should keep row style */
     .flex-container > .other-links {
