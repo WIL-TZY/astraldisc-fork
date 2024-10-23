@@ -267,23 +267,23 @@ body.standby-page {
 
 /* Soul modes for Andromedia Secret Bosses START */
 .halojack {
-    cursor: url("../assets/img/souls/heart_cyan.png"), auto;
+    cursor: url("../assets/img/souls/heart_cyan.png") 10 5, auto;
 }
 
 .beltrowel {
-    cursor: url("../assets/img/souls/heart_green.png"), auto;
+    cursor: url("../assets/img/souls/heart_green.png") 10 5, auto;
 }
 
 .spreeblitz {
-    cursor: url("../assets/img/souls/heart_orange.png"), auto;
+    cursor: url("../assets/img/souls/heart_orange.png") 10 5, auto;
 }
 
 .gauze {
-    cursor: url("../assets/img/souls/heart_purple.png"), auto;
+    cursor: url("../assets/img/souls/heart_purple.png") 10 5, auto;
 }
 
 .minerva {
-    cursor: url("../assets/img/souls/heart_blue.png"), auto;
+    cursor: url("../assets/img/souls/heart_blue.png") 10 5, auto;
 }
 /* END */
 
