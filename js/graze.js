@@ -3,8 +3,8 @@ let attached = false;
 let imageContainer = document.querySelector("#graze");
 
 const followMouse = (event) => {
-	imageContainer.style.left = event.x - 17 + "px";
-	imageContainer.style.top = event.y - 16 + "px";
+	imageContainer.style.left = event.x - 27 + "px";
+	imageContainer.style.top = event.y - 21 + "px";
 }
 
 function showImage() {

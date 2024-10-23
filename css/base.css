@@ -15,11 +15,11 @@
     --textarea: #202020;
     --font-tiny: 80%;
     --font-very-tiny: 50%;
-    --cursor-main: url(../assets/img/souls/heart.png), auto;
-    --cursor-blur: url(../assets/img/souls/heart_blur.png) 10 7, auto;
-    --cursor-break: url(../assets/img/souls/heart_break.png) 2 0, auto;
-    --cursor-alt: url(../assets/img/souls/heart_yellow.png), auto;
-    --cursor-break-alt: url(../assets/img/souls/heart_yellow_break.png) 2 0, auto;
+    --cursor-main: url(../assets/img/souls/heart.png) 10 5, auto;
+    --cursor-blur: url(../assets/img/souls/heart_blur.png) 20 12, auto;
+    --cursor-break: url(../assets/img/souls/heart_break.png) 12 5, auto;
+    --cursor-alt: url(../assets/img/souls/heart_yellow.png) 10 5, auto;
+    --cursor-break-alt: url(../assets/img/souls/heart_yellow_break.png) 12 5, auto;
     --text-shadow: 2px 2px #0f0f71;
     --text-shadow-hover: 2px 2px #710f57;
     --text-shadow-footer: 2px 2px #333333;
@@ -49,7 +49,7 @@
     --tc: #7CFC00;
     --bor: #ADD8E6;
     --snowy: #DC143C;
-    --hodge: #B8860B;
+    --punki: #B8860B;
     --bunniapa: #FFB6C1;
     --toosday: #CD5C5C;
     --wilkus: #71AA36;

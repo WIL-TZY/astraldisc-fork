@@ -3,8 +3,8 @@ let attachedexp = false;
 let image = document.querySelector("#explosion");
 
 const followMouseExp = (event) => {
-	image.style.left = event.x - 60 + "px";
-	image.style.top = event.y - 100 + "px";
+	image.style.left = event.x - 70 + "px";
+	image.style.top = event.y - 105 + "px";
 };
 
 function showExplosion() {
