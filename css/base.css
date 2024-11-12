@@ -23,11 +23,12 @@
     --text-shadow: 2px 2px #0f0f71;
     --text-shadow-hover: 2px 2px #710f57;
     --text-shadow-footer: 2px 2px #333333;
-    --border-color: #0f0f71;
 
     /* Deltarune Colors */
     --tp: #ffa040;
     --unselected: #614e6b;
+    --unselected-darker: #261e2c;
+    --unselected-darkest: #1b151f;
 
     /* Team Colors */
     --katebulka: #FF69B4;
@@ -159,7 +160,6 @@ p {
 hr {
     margin: 3% 0 ;
     opacity: 0.2;
-    /* border-top: 1px solid rgb(22, 22, 22); */
 }
 
 a:hover {
@@ -168,23 +168,26 @@ a:hover {
 
 table {
     border: 2px solid;
-    border-color: var(--border-color);
+    border-color: var(--unselected);
     padding: 0px;
+    font-family: var(--secondary_font);
 }
 
 th {
     text-align: left;
     padding: 20px;
     font-family: var(--font);
+    font-weight: normal;
+    font-size: 28px;
 }
 
 td {
     text-align: left;
     padding: 20px;
-    font-family: var(--secondary_font);
+    font-size: 120%;
 }
 
-tr:nth-child(even) {background-color: #0a0a17;}
+tr:nth-child(even) {background-color: var(--unselected-darker);}
 tr:nth-child(odd) {background-color: var(--primary_color);}
 
 /* ---------- Headings ---------- */

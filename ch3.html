@@ -1,28 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<meta property="og:title" content="ANDROMEDIA">
-	<meta property="og:url" content="https://andromedia.huecycles.com/">
-	<meta property="og:description" content="Archived in the ASTRAL DISC.">
-	<meta property="og:image" content="https://andromedia.huecycles.com/assets/img/disc/new_shooting_star.png">
-	<title>ANDROMEDIA</title>
-	<link rel="icon" type="image/png" href="assets/img/favicon/astraldisc.png" />
-	<!-- CSS -->
-	<link href="../css/reset.css" rel="stylesheet" type="text/css" media="all">
-	<link href="../css/base.css" rel="stylesheet" type="text/css" media="all">
-	<link href="../css/main.css" rel="stylesheet" type="text/css" media="all">
-	<link href="../css/andromedia.css" rel="stylesheet" type="text/css" media="all">
-  </head>
-  <body>
-	<!-- Click/Hover Sound JS -->
-		<script src="../js/soundfx.js"></script>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta property="og:title" content="ANDROMEDIA">
+		<meta property="og:url" content="https://andromedia.huecycles.com/">
+		<meta property="og:description" content="Archived in the ASTRAL DISC.">
+		<meta property="og:image" content="https://andromedia.huecycles.com/assets/img/disc/new_shooting_star.png">
+		<title>ANDROMEDIA</title>
+		<link rel="icon" type="image/png" href="assets/img/favicon/astraldisc.png" />
+		<!-- CSS -->
+		<link href="css/reset.css" rel="stylesheet" type="text/css" media="all">
+		<link href="css/base.css" rel="stylesheet" type="text/css" media="all">
+		<link href="css/main.css" rel="stylesheet" type="text/css" media="all">
+		<link href="css/andromedia.css" rel="stylesheet" type="text/css" media="all">
+	</head>
+	<body>
 		<script>
 			var urlArray = [
-			"../andromedia/ch3/signal",
-			"../andromedia/ch3/halojack"
+			"../ch3/signal",
+			"../ch3/halojack"
 			];
 		
 			function randomUrl() {
@@ -31,63 +29,202 @@
 				window.location.href = newUrl;
 			}
 		</script>
+		<div class="wrapper">
+			<header>
+				<div class="logo-container">
+					<img class="image pixelated" src="../assets/img/andromedia/ch3.png" width="490" height="60">
+				</div>
+				<ul>
+					<my-nav></my-nav>
+					<script src="./js/components/nav.js"></script>
+				</ul>
+			</header>
+			<main>
+				<h2 class="center">Premise</h2>
+				<p>A long night awaits Kris, Susie, Toriel and Napstablook in a bizarre adventure through a world of cutting-edge entertainment!</p>
+				<hr>
 
-	<div class=wrapper>
-  
-	  <header>
-		<div class="logo-container">
-		  <img class="image pixelated" src="../assets/img/andromedia/logo.png" width="490" height="60" alt="Logo">
+				<h2 class="center">Characters</h2>
+				<center>
+					<div class="tab-buttons">
+						<button class="tab-btn" content-id="mike" onclick="clickSound()" onmouseenter="hoverSound()">
+							<img class="image pixelated tab-img" src="assets/img/andromedia/ch3/mike.png"
+							onmouseover="this.src='assets/img/andromedia/ch3/mike_2.png'"
+							onmouseout="this.src='assets/img/andromedia/ch3/mike.png'">
+							<p class="tab-btn-text">M.I.K.E.</p>
+						</button>
+
+						<button class="tab-btn" content-id="nick" onclick="clickSound()" onmouseenter="hoverSound()">
+							<img class="image pixelated tab-img" src="assets/img/andromedia/ch3/nick.png"
+							onmouseover="this.src='../assets/img/andromedia/ch3/nick_2.png'"
+							onmouseout="this.src='../assets/img/andromedia/ch3/nick.png'">
+							<p class="tab-btn-text">Nick L. Odeion</p>
+						</button>
+
+						<button class="tab-btn" content-id="halojack" onclick="clickSound()" onmouseenter="hoverSound()">
+							<img class="image pixelated tab-img halojack" src="assets/img/andromedia/ch3/halojack.png"
+							onmouseover="this.src='assets/img/andromedia/ch3/halojack_2.gif'"
+							onmouseout="this.src='assets/img/andromedia/ch3/halojack.png'">
+							<p class="tab-btn-text">Halojack</p>
+						</button>
+					</div>
+
+					<div class="content show" id="mike">
+						<div class="infos center">
+							<h2 class="center">Profile</h2>
+							<tr class="center">
+								<td>
+									<table>
+										<tr>
+											<th>Name</th>
+											<td>M.I.K.E.
+												<br>
+												<span style="color: var(--faint-text); text-shadow: none;">
+													(Monitor. Influence. Know. Exploit.)
+												</span>
+											</td>
+										</tr>
+										<tr>
+											<th>Pronouns</th>
+											<td>
+												He/him
+											</td>
+										</tr>
+										<tr>
+											<th>Role</th>
+											<td>
+												Main Antagonist
+											</td>
+										</tr>
+										<tr>
+											<th>LW Object</th>
+											<td>
+												Toriel's TV
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</div>
+					</div>
+
+					<div class="content" id="nick">
+						<div class="infos">
+							<h2 class="center">Profile</h2>
+							<tr class="center">
+								<td>
+									<table>
+										<tr>
+											<th>Name</th>
+											<td>Nick "Lumière" Odeion</td>
+										</tr>
+										<tr>
+											<th>Pronouns</th>
+											<td>
+												He/him
+											</td>
+										</tr>
+										<tr>
+											<th>Role</th>
+											<td>
+												Secondary Antagonist...?
+											</td>
+										</tr>
+										<tr>
+											<th>LW Object</th>
+											<td>
+												Dreemurr Vintage Camera
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+							<p>
+								Nick L. Odeion knows everything there is to old-fashioned cinema and theater, and has an unique gift of
+								displaying and controlling memories. His objective is to make sure Kris and their friends
+								traverse safely through the Metropolis, while avoiding trouble with M.I.K.E..
+							</p>
+							<h2 class="center">Trivia</h2>
+							<ul>
+								<li>
+									Nick's blood has high levels of nitrate which results in him easily getting drunk on vinegar.
+									Let's just hope the guy isn't flammable...
+								</li>
+								<li>
+									Nick is unable to see any colour, viewing things through a sepia lens.
+								</li>
+								<li>
+									Nick is what you would call a "memory vampire", feeding on positive memories.
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="content" id="halojack">
+						<div class="infos center">
+							<h2 class="center">Profile</h2>
+							<tr class="center">
+								<td>
+									<table>
+										<tr>
+											<th>Name</th>
+											<td>Halojack</td>
+										</tr>
+										<tr>
+											<th>Pronouns</th>
+											<td>
+												She/her
+											</td>
+										</tr>
+										<tr>
+											<th>Role</th>
+											<td>
+												Secret Boss
+											</td>
+										</tr>
+										<tr>
+											<th>Soul Mode</th>
+											<td><img src ="assets/img/souls/heart_cyan.png"></td>
+										</tr>
+										<tr>
+											<th>LW Object</th>
+											<td>
+												Signal Amplifier
+											</td>
+										</tr>
+										<tr>
+											<th>Items</th>
+											<td>
+												<img class="image pixelated" src="assets/img/equip_sword.png"> Gloryslicer<br>
+												<img class="image pixelated" src="assets/img/equip_armor.png"> IdConcealer
+											</td>
+										</tr>
+									</table>
+								</td>
+							</tr>
+						</div>
+					</div>
+				</center>
+
+				<!--<div class="flex-container">
+					<div class="flex-item">
+						<a class= "halojack" href="javascript:randomUrl()" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
+							<img class="default image pixelated halojack" src="../assets/img/andromedia/ch3/halojack.png" width="50" height="100">
+							<img class="hover image pixelated halojack" src="../assets/img/andromedia/ch3/halojack_2.gif" width="50" height="100"/>
+							<p class="center">Halojack</p>
+						</a>
+					</div>
+				</div>-->
+				<hr>
+			</main>
+
+			<footer>
+				<my-footer></my-footer>
+				<script src="./js/components/footer.js"></script>
+			</footer>
 		</div>
-	  </header>
-	  
-	<main>
-		<p class="center bold"><a href="../andromedia" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()"><font style="font-family:'8 Bit Operator Bold'">RETURN</font></a></p>
-
-		<p class="center"><img class="image pixelated" src="../assets/img/andromedia/ch3.png" width="490" height="60"></p>
-
-		<h2 class="center">Premise</h2>
-		<p class="center">A long night seems to await Kris, Susie, Toriel and Napstablook in this bizarre adventure through a world tailored for your entertainment!</p>
-		<p class="center">Watch the stars in astral observatories, face the endless cold of Wildland Dunes and help a family's bond grow through hardships at The Metropolis... Be wary of M.I.K.E. and his crew, however!</p>
-		<p class="center" style="color: #827f8c;">(Rook Technologies is not responsible for any casualities involving teenagers, broadcast hijacking incidents or boring TV shows.)</p>
-		<hr>
-		<div id="characters">
-			<h2 class="center">Characters</h2>
-			<div class="flex-container">
-
-				<!-- Mike -->
-				<div class="flex-item">
-					<a href="#a" onclick="clickDenySound()" onmouseenter="hoverSound()">
-						<img class="default image pixelated" src="../assets/img/andromedia/ch3/mike.png">
-						<img class="hover image pixelated" src="../assets/img/andromedia/ch3/mike_2.png"/>
-						<p class="center" style="margin-right: 1.5em;">Mike</p>
-					</a>
-				</div>
-				<!-- Nick -->
-				<div class="flex-item">
-					<a href="./ch3/nick" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
-						<img class="default image pixelated" src="../assets/img/andromedia/ch3/nick.png">
-						<img class="hover image pixelated" src="../assets/img/andromedia/ch3/nick_2.png"/>
-						<p class="center">Nick L. Odeion</p>
-					</a>
-				</div>
-				<!-- Halojack -->
-				<div class="flex-item">
-					<a class= "halojack" href="javascript:randomUrl()" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
-						<img class="default image pixelated halojack" src="../assets/img/andromedia/ch3/halojack.png">
-						<img class="hover image pixelated halojack" src="../assets/img/andromedia/ch3/halojack_2.gif"/>
-						<p class="center">Halojack</p>
-					</a>
-				</div>
-			</div>
-		</div>
-  </main>
-
-  <footer>
-	<span style="color: var(--faint-text);">HUECYCLES © 2020 - 2023
-	  <br>Website designed by <a href="https://huecycles.com/about">HUECYCLES</a> & <a href="https://twitter.com/wil__tzy">WILTZY</a>
-	  <br>DELTARUNE belongs to Toby Fox & his team.
-	  <br>These are just projects for fun!</span>
-  </footer>
-	
-  </body>
+		<!-- Click/Hover Sound JS -->
+		<script src="../js/soundfx.js"></script>
+		<script src="../js/tabs.js"></script>
+	</body>
 </html>
