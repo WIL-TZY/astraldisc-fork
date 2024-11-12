@@ -106,7 +106,7 @@ body.halojack-page {
 }
 
 #img1 {
-	cursor: var(--cursor-pointer);
+	cursor: var(--cursor-main);
 }
 
 #over {
@@ -263,7 +263,54 @@ body.standby-page {
 	font-size: 20px;
 }
 
-/* ------------ EAS STYLES END ------------ */
+/* ------------ SIGNAL INTRUSION STYLES END ------------ */
+
+/* ------------ SHADOW CRYSTAL STYLES ------------ */
+body.shadowcrystal {
+	background: black;
+    image-rendering: pixelated;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#shadowcrystal {
+    /* Centering the image on the screen */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	animation: float 3s ease-in-out infinite, glow 1.25s alternate infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-20px);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes glow {
+	0% {
+		-webkit-filter: brightness(1);
+		filter: brightness(1);
+	}
+	100% {
+		-webkit-filter: brightness(2);
+		filter: brightness(2);
+	}
+}
+
+/* ------------ SHADOW CRYSTAL STYLES END ------------ */
 
 /* Soul modes for Andromedia Secret Bosses START */
 .halojack {
