@@ -360,28 +360,21 @@ body.standby-page {
     margin-right: 5px;
 }
 
-/* ---------- Other ---------- */
-::selection { color:#ffff00; background:  #333;} /* Selected Text */
+/* ------------------------------ CHARACTER PAGES ------------------------------ */
 
-:focus {
-    background-color: #333;
-    outline: 2px solid transparent;
-    outline-offset: 2px; 
-    transition: outline 0.3s;
+.profile-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
 }
 
-.content {
-	display: none;
-	align-self: center;
-	padding: 10px;
+.character-profile {
+	display: none; /* Hide all profiles by default */
+	text-align: center;
 }
 
-.content.show {
-	display: flex;
-}
-
-.tab-buttons {
-	align-content: center;
+.character-profile.active {
+	display: block;
 }
 
 .tab-btn {
@@ -394,9 +387,11 @@ body.standby-page {
 	transition: .3s ease;
 }
 
-.tab-btn:hover {
-	background-color: var(--unselected-darkest);
+.character-profile table {
+    margin: 0 auto;
 }
+
+/* .tab-btn:hover { background-color: var(--unselected-darkest); } */
 
 .tab-btn:hover .tab-btn-text {
 	color: var(--link-hover);
@@ -416,10 +411,19 @@ body.standby-page {
 	text-align: center;
 }
 
-.tab-contents {
-	padding: 20px;
+.tab-btn.active {
+	background-color: var(--unselected-darkest);
+	color: var(--link-hover);
 }
 
-#characters {
-	align-content: center;
+/* ---------- Other ---------- */
+
+::selection { color:#ffff00; background:  #333;} /* Selected Text */
+
+/* Delicious click effect */
+:focus {
+    background-color: #333;
+    outline: 2px solid transparent;
+    outline-offset: 2px; 
+    transition: outline 0.3s;
 }

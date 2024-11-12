@@ -44,32 +44,35 @@
 				<p>A long night awaits Kris, Susie, Toriel and Napstablook in a bizarre adventure through a world of cutting-edge entertainment!</p>
 				<hr>
 
+
 				<h2 class="center">Characters</h2>
-				<center>
-					<div class="tab-buttons">
-						<button class="tab-btn" content-id="mike" onclick="clickSound()" onmouseenter="hoverSound()">
-							<img class="image pixelated tab-img" src="assets/img/andromedia/ch3/mike.png"
-							onmouseover="this.src='assets/img/andromedia/ch3/mike_2.png'"
-							onmouseout="this.src='assets/img/andromedia/ch3/mike.png'">
-							<p class="tab-btn-text">M.I.K.E.</p>
-						</button>
 
-						<button class="tab-btn" content-id="nick" onclick="clickSound()" onmouseenter="hoverSound()">
-							<img class="image pixelated tab-img" src="assets/img/andromedia/ch3/nick.png"
-							onmouseover="this.src='../assets/img/andromedia/ch3/nick_2.png'"
-							onmouseout="this.src='../assets/img/andromedia/ch3/nick.png'">
-							<p class="tab-btn-text">Nick L. Odeion</p>
-						</button>
+				<div class="character-menu">
+					<button class="tab-btn" data-character="mike">
+						<img class="image pixelated tab-img" src="assets/img/andromedia/ch3/mike.png"
+						onmouseover="this.src='assets/img/andromedia/ch3/mike_2.png'"
+						onmouseout="this.src='assets/img/andromedia/ch3/mike.png'">
+						<p class="tab-btn-text">M.I.K.E.</p>
+					</button>
 
-						<button class="tab-btn" content-id="halojack" onclick="clickSound()" onmouseenter="hoverSound()">
-							<img class="image pixelated tab-img halojack" src="assets/img/andromedia/ch3/halojack.png"
-							onmouseover="this.src='assets/img/andromedia/ch3/halojack_2.gif'"
-							onmouseout="this.src='assets/img/andromedia/ch3/halojack.png'">
-							<p class="tab-btn-text">Halojack</p>
-						</button>
-					</div>
+					<button class="tab-btn" data-character="nick">
+						<img class="image pixelated tab-img" src="assets/img/andromedia/ch3/nick.png"
+						onmouseover="this.src='../assets/img/andromedia/ch3/nick_2.png'"
+						onmouseout="this.src='../assets/img/andromedia/ch3/nick.png'">
+						<p class="tab-btn-text">Nick L. Odeion</p>
+					</button>
 
-					<div class="content show" id="mike">
+					<button class="tab-btn" data-character="halojack">
+						<img class="image pixelated tab-img halojack" src="assets/img/andromedia/ch3/halojack.png"
+						onmouseover="this.src='assets/img/andromedia/ch3/halojack_2.gif'"
+						onmouseout="this.src='assets/img/andromedia/ch3/halojack.png'">
+						<p class="tab-btn-text">Halojack</p>
+					</button>
+				</div>
+
+				<div class="profile-container">
+					<!-- Mike -->
+					<div id="mike" class="character-profile">
 						<div class="infos center">
 							<h2 class="center">Profile</h2>
 							<tr class="center">
@@ -107,8 +110,9 @@
 							</tr>
 						</div>
 					</div>
-
-					<div class="content" id="nick">
+					
+					<!-- Nick -->
+					<div id="nick" class="character-profile">
 						<div class="infos">
 							<h2 class="center">Profile</h2>
 							<tr class="center">
@@ -160,7 +164,8 @@
 						</div>
 					</div>
 
-					<div class="content" id="halojack">
+					<!-- Halojack -->
+					<div id="halojack" class="character-profile">
 						<div class="infos center">
 							<h2 class="center">Profile</h2>
 							<tr class="center">
@@ -203,10 +208,10 @@
 								</td>
 							</tr>
 						</div>
-					</div>
-				</center>
+					</div> <!-- End of #halojack -->
+				</div> <!-- End of characters-profile -->
 
-				<!--<div class="flex-container">
+				<!--<div class="flex-container">/
 					<div class="flex-item">
 						<a class= "halojack" href="javascript:randomUrl()" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
 							<img class="default image pixelated halojack" src="../assets/img/andromedia/ch3/halojack.png" width="50" height="100">
@@ -224,7 +229,7 @@
 			</footer>
 		</div>
 		<!-- Click/Hover Sound JS -->
-		<script src="../js/soundfx.js"></script>
-		<script src="../js/tabs.js"></script>
+		<script src="./js/soundfx.js"></script>
+		<script src="./js/tabs.js"></script>
 	</body>
 </html>
