@@ -88,9 +88,12 @@ function generateCharacterTable(character) {
 		<tr><th>Name</th><td>${character.table.name[0]}<br><span style="color: var(--faint-text);">${character.table.name[1] || ''}</span></td></tr>
 		<tr><th>Pronouns</th><td>${character.table.pronouns}</td></tr>
 		<tr><th>Role</th><td>${character.table.role}</td></tr>
-		<tr><th>LW Object</th><td>${character.table.object}</td></tr>
 	`;
 	
+	if (character.table.object) {
+		table += /*html*/ `<tr><th>LW Object</th><td>${character.table.object}</td></tr>`;
+	}
+
 	if (character.table.role === 'Secret Boss') {
 		if (character.table.soulMode) {
 		table += /*html*/ `<tr><th>Soul Mode</th><td><img src="${character.table.soulMode}"></td></tr>`;

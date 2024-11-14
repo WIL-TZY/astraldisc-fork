@@ -22,59 +22,42 @@
 		<div class=wrapper>
 			<header>
 				<div class="logo-container">
-					<img class="image pixelated" src="../assets/img/andromedia/logo.png" width="490" height="60" alt="Logo">
+					<img class="image pixelated" src="../assets/img/andromedia/ch6.png" width="490" height="60">
 				</div>
+				<ul>
+					<my-nav></my-nav>
+					<script src="./js/components/nav.js"></script>
+				</ul>
 			</header>
 
-			<main>
-			<p style="text-align:center;"><a href="../andromedia" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()"><font style="font-family:'8 Bit Operator Bold'">RETURN</font></a></p>
-			
-			<p style="text-align:center;"><img class="image pixelated" src="../assets/img/andromedia/ch6.png" width="490" height="60"></p>
+			<main>			
+				<h2 class="center">Premise</h2>
 
-			<h2 style="text-align: center;">Premise</h2>
-			<p style="text-align: center;">Kris, Susie and Noelle are determined to find out what lies in the<br>deeper darkness of the bunker.</p>
-			<p style="text-align: center;">This might have been a bad decision.</p>
-			<hr>
-			
-			<div id="characters">
-				<h2 class="center">Characters</h2>
-				<div class="flex-container">
+				<p class="center">
+					Kris, Susie and Noelle are determined to find out what lies in the deeper darkness of the bunker.<br>
+					<br>
+					This might have been a bad decision.
+				</p>
+				<hr>
 
-					<!-- The Beholder -->
-					<div class="flex-item">
-						<a href="#a" onclick="clickDenySound()" onmouseenter="hoverSound()">
-							<p class="center" style="margin-left: 1em;"><img class="default image pixelated" width="94" height="96" src="../assets/img/andromedia/ch6/beholder.png">
-							<img class="hover image pixelated" width="94" height="96" src="../assets/img/andromedia/ch6/beholder_2.gif"/></p>
-							<p>The Beholder</p>
-						</a>
-					</div>
-					<!-- FRIEND -->
-					<div class="flex-item">
-						<a href="#a" onclick="clickDenySound()" onmouseenter="hoverSound()">
-							<p class="center" style="margin-left: 0.3em;"><img class="default image pixelated" width="54" height="96" src="../assets/img/andromedia/ch6/friend.gif">
-							<img class="hover image pixelated" width="54" height="96" src="../assets/img/andromedia/ch6/friend_2.gif"/></p>
-							<p>FRIEND</p>
-						</a>
-					</div>
-					<!-- Gauze -->
-					<div class="flex-item">
-						<a class="gauze" href="#a" onclick="clickDenySound()" onmouseenter="hoverSound()">
-							<p class="center" style="margin-left: 1.4em;"><img class="default image pixelated" width="60" height="96" src="../assets/img/andromedia/ch6/gauze.png">
-							<img class="hover image pixelated" width="60" height="96" src="../assets/img/andromedia/ch6/gauze_2.gif"/></p>
-							<p>The Vessel</p>
-						</a>
-					</div>
+				<div class="characters" data-chapter="6">
+					<h2 class="center">Characters</h2>
+
+					<!-- Dynamically generated content -->
+					<div class="chara-buttons"></div>
+					<div class="profile-container"></div>
 				</div>
-			</div>
 			</main>
 
 			<footer>
-				<span style="color: var(--faint-text);">HUECYCLES © 2020 - 2023
-					<br>Website designed by <a href="https://huecycles.com/about">HUECYCLES</a> & <a href="https://twitter.com/wil__tzy">WILTZY</a>
-					<br>DELTARUNE belongs to Toby Fox & his team.
-					<br>These are just projects for fun!</span>
+				<hr>
+				<my-footer></my-footer>
+				<script src="./js/components/footer.js"></script>
 			</footer>
-		</div>
-		<!-- End of .wrapper -->
+		</div> <!-- End of .wrapper -->
+
+		<!-- Scripts -->
+		<script src="./js/soundfx.js"></script>
+		<script src="./js/characters/loadcharacters.js"></script>
 	</body>
 </html>

@@ -139,6 +139,124 @@
 					"hover": "assets/img/andromedia/ch4/beltrowel_2.gif"
 				}
 			}
+		],
+		"5": 
+		[
+			{
+				"id": "comet",
+				"table": {
+					"name": ["Comet Holiday", ""],
+					"pronouns": "She/her",
+					"role": "???",
+					"object": ""
+				},
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+				"trivia": [],
+				"image": {
+					"default": "assets/img/andromedia/ch5/comet.png",
+					"hover": "assets/img/andromedia/ch5/comet_2.png"
+				}
+			},
+			{
+				"id": "firefly",
+				"table": {
+					"name": ["Firefly", ""],
+					"pronouns": "She/her",
+					"role": "Main Antagonist",
+					"object": ""
+				},
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+				"trivia": [],
+				"image": {
+					"default": "assets/img/andromedia/ch5/firefly.png",
+					"hover": "assets/img/andromedia/ch5/firefly_2.png"
+				}
+			},
+			{
+				"id": "spreeblitz",
+				"table": {
+					"name": ["Spree Blitz", ""],
+					"pronouns": "He/him",
+					"role": "Secret Boss",
+					"object": "",
+					"soulMode": "assets/img/souls/heart_orange.png",
+					"items": [
+						{
+							"name": "Item 1 (you can change the icon)",
+							"icon": "assets/img/equip_sword.png"
+						},
+						{
+							"name": "Item 2",
+							"icon": "assets/img/equip_armor.png"
+						}
+					]
+				},
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+				"trivia": [],
+				"image": {
+					"default": "assets/img/andromedia/ch5/spreeblitz.png",
+					"hover": "assets/img/andromedia/ch5/spreeblitz_2.gif"
+				}
+			}
+		],
+		"6": 
+		[
+			{
+				"id": "beholder",
+				"table": {
+					"name": ["The Beholder", ""],
+					"pronouns": "??/??",
+					"role": "Main Antagonist",
+					"object": ""
+				},
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+				"trivia": [],
+				"image": {
+					"default": "assets/img/andromedia/ch6/beholder.png",
+					"hover": "assets/img/andromedia/ch6/beholder_2.gif"
+				}
+			},
+			{
+				"id": "friend",
+				"table": {
+					"name": ["F R I E N D", ""],
+					"pronouns": "They/them",
+					"role": "Secondary Antagonist",
+					"object": ""
+				},
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+				"trivia": [],
+				"image": {
+					"default": "assets/img/andromedia/ch6/friend.gif",
+					"hover": "assets/img/andromedia/ch6/friend_2.gif"
+				}
+			},
+			{
+				"id": "gauze",
+				"table": {
+					"name": ["The Vessel", "Gauze?"],
+					"pronouns": "They/them",
+					"role": "Secret Boss",
+					"object": "",
+					"soulMode": "assets/img/souls/heart_purple.png",
+					"items": [
+						{
+							"name": "Item 1 (you can change the icon)",
+							"icon": "assets/img/equip_sword.png"
+						},
+						{
+							"name": "Item 2",
+							"icon": "assets/img/equip_armor.png"
+						}
+					]
+				},
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+				"trivia": ["Gauze likes cookies"],
+				"image": {
+					"default": "assets/img/andromedia/ch6/gauze.png",
+					"hover": "assets/img/andromedia/ch6/gauze_2.gif"
+				}
+			}
 		]
 	}
 }
