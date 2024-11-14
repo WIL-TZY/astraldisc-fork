@@ -30,6 +30,7 @@
 			}
 		</script>
 		<div class="wrapper">
+
 			<header>
 				<div class="logo-container">
 					<img class="image pixelated" src="../assets/img/andromedia/ch3.png" width="490" height="60">
@@ -39,177 +40,19 @@
 					<script src="./js/components/nav.js"></script>
 				</ul>
 			</header>
+
 			<main>
 				<h2 class="center">Premise</h2>
 				<p>A long night awaits Kris, Susie, Toriel and Napstablook in a bizarre adventure through a world of cutting-edge entertainment!</p>
 				<hr>
 
+				<div class="characters" data-chapter="3">
+					<h2 class="center">Characters</h2>
 
-				<h2 class="center">Characters</h2>
-
-				<div class="character-menu">
-					<button class="tab-btn" data-character="mike">
-						<img class="image pixelated tab-img" src="assets/img/andromedia/ch3/mike.png"
-						onmouseover="this.src='assets/img/andromedia/ch3/mike_2.png'"
-						onmouseout="this.src='assets/img/andromedia/ch3/mike.png'">
-						<p class="tab-btn-text">M.I.K.E.</p>
-					</button>
-
-					<button class="tab-btn" data-character="nick">
-						<img class="image pixelated tab-img" src="assets/img/andromedia/ch3/nick.png"
-						onmouseover="this.src='../assets/img/andromedia/ch3/nick_2.png'"
-						onmouseout="this.src='../assets/img/andromedia/ch3/nick.png'">
-						<p class="tab-btn-text">Nick L. Odeion</p>
-					</button>
-
-					<button class="tab-btn" data-character="halojack">
-						<img class="image pixelated tab-img halojack" src="assets/img/andromedia/ch3/halojack.png"
-						onmouseover="this.src='assets/img/andromedia/ch3/halojack_2.gif'"
-						onmouseout="this.src='assets/img/andromedia/ch3/halojack.png'">
-						<p class="tab-btn-text">Halojack</p>
-					</button>
+					<!-- Dynamically generated content -->
+					<div class="chara-buttons"></div>
+					<div class="profile-container"></div>
 				</div>
-
-				<div class="profile-container">
-					<!-- Mike -->
-					<div id="mike" class="character-profile">
-						<div class="infos center">
-							<h2 class="center">Profile</h2>
-							<tr class="center">
-								<td>
-									<table>
-										<tr>
-											<th>Name</th>
-											<td>M.I.K.E.
-												<br>
-												<span style="color: var(--faint-text); text-shadow: none;">
-													(Monitor. Influence. Know. Exploit.)
-												</span>
-											</td>
-										</tr>
-										<tr>
-											<th>Pronouns</th>
-											<td>
-												He/him
-											</td>
-										</tr>
-										<tr>
-											<th>Role</th>
-											<td>
-												Main Antagonist
-											</td>
-										</tr>
-										<tr>
-											<th>LW Object</th>
-											<td>
-												Toriel's TV
-											</td>
-										</tr>
-									</table>
-								</td>
-							</tr>
-						</div>
-					</div>
-					
-					<!-- Nick -->
-					<div id="nick" class="character-profile">
-						<div class="infos">
-							<h2 class="center">Profile</h2>
-							<tr class="center">
-								<td>
-									<table>
-										<tr>
-											<th>Name</th>
-											<td>Nick "Lumière" Odeion</td>
-										</tr>
-										<tr>
-											<th>Pronouns</th>
-											<td>
-												He/him
-											</td>
-										</tr>
-										<tr>
-											<th>Role</th>
-											<td>
-												Secondary Antagonist...?
-											</td>
-										</tr>
-										<tr>
-											<th>LW Object</th>
-											<td>
-												Dreemurr Vintage Camera
-											</td>
-										</tr>
-									</table>
-								</td>
-							</tr>
-							<p>
-								Nick L. Odeion knows everything there is to old-fashioned cinema and theater, and has an unique gift of
-								displaying and controlling memories. His objective is to make sure Kris and their friends
-								traverse safely through the Metropolis, while avoiding trouble with M.I.K.E..
-							</p>
-							<h2 class="center">Trivia</h2>
-							<ul>
-								<li>
-									Nick's blood has high levels of nitrate which results in him easily getting drunk on vinegar.
-									Let's just hope the guy isn't flammable...
-								</li>
-								<li>
-									Nick is unable to see any colour, viewing things through a sepia lens.
-								</li>
-								<li>
-									Nick is what you would call a "memory vampire", feeding on positive memories.
-								</li>
-							</ul>
-						</div>
-					</div>
-
-					<!-- Halojack -->
-					<div id="halojack" class="character-profile">
-						<div class="infos center">
-							<h2 class="center">Profile</h2>
-							<tr class="center">
-								<td>
-									<table>
-										<tr>
-											<th>Name</th>
-											<td>Halojack</td>
-										</tr>
-										<tr>
-											<th>Pronouns</th>
-											<td>
-												She/her
-											</td>
-										</tr>
-										<tr>
-											<th>Role</th>
-											<td>
-												Secret Boss
-											</td>
-										</tr>
-										<tr>
-											<th>Soul Mode</th>
-											<td><img src ="assets/img/souls/heart_cyan.png"></td>
-										</tr>
-										<tr>
-											<th>LW Object</th>
-											<td>
-												Signal Amplifier
-											</td>
-										</tr>
-										<tr>
-											<th>Items</th>
-											<td>
-												<img class="image pixelated" src="assets/img/equip_sword.png"> Gloryslicer<br>
-												<img class="image pixelated" src="assets/img/equip_armor.png"> IdConcealer
-											</td>
-										</tr>
-									</table>
-								</td>
-							</tr>
-						</div>
-					</div> <!-- End of #halojack -->
-				</div> <!-- End of characters-profile -->
 
 				<!--<div class="flex-container">/
 					<div class="flex-item">
@@ -220,16 +63,17 @@
 						</a>
 					</div>
 				</div>-->
-				<hr>
 			</main>
 
 			<footer>
+				<hr>
 				<my-footer></my-footer>
 				<script src="./js/components/footer.js"></script>
 			</footer>
-		</div>
-		<!-- Click/Hover Sound JS -->
+		</div> <!-- End of .wrapper -->
+
+		<!-- Scripts -->
 		<script src="./js/soundfx.js"></script>
-		<script src="./js/tabs.js"></script>
+		<script src="./js/characters/loadcharacters.js"></script>
 	</body>
 </html>

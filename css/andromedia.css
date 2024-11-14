@@ -424,7 +424,7 @@ body.shadowcrystal {
 	display: block;
 }
 
-.tab-btn {
+.chara-button {
 	cursor: var(--cursor-main);
 	background-color: #000000;
 	width: 30%;
@@ -432,25 +432,24 @@ body.shadowcrystal {
 	padding: 2px;
 	border: none;
 	transition: .3s ease;
+	margin-right: 0.8em;
 }
 
 .character-profile table {
     margin: 0 auto;
 }
 
-/* .tab-btn:hover { background-color: var(--unselected-darkest); } */
-
-.tab-btn:hover .tab-btn-text {
+.chara-button:hover .chara-button-text {
 	color: var(--link-hover);
 	transition: .3s ease;
 }
 
-.tab-img {
+.chara-img {
 	width: 80%;
 	height: 80%;
 }
 
-.tab-btn-text {
+.chara-button-text {
 	font-family: var(--font);
 	font-size: 24px;
 	color: var(--font-color);
@@ -458,7 +457,7 @@ body.shadowcrystal {
 	text-align: center;
 }
 
-.tab-btn.active {
+.chara-button.active {
 	background-color: var(--unselected-darkest);
 	color: var(--link-hover);
 }
