@@ -13,6 +13,7 @@
 		<!-- CSS -->
 		<link href="../css/reset.css" rel="stylesheet" type="text/css" media="all">
 		<link href="../css/base.css" rel="stylesheet" type="text/css" media="all">
+		<link href="../css/main.css" rel="stylesheet" type="text/css" media="all">
 		<link href="../css/andromedia.css" rel="stylesheet" type="text/css" media="all">
 	</head>
 	<body>
@@ -22,59 +23,41 @@
 	
 			<header>
 				<div class="logo-container">
-					<img class="image pixelated" src="../assets/img/andromedia/logo.png" width="490" height="60" alt="Logo">
+					<img class="image pixelated" src="../assets/img/andromedia/ch5.png" width="490" height="60">
 				</div>
+				<ul>
+					<my-nav></my-nav>
+					<script src="./js/components/nav.js"></script>
+				</ul>
 			</header>
 
-			<main>
-			<p style="text-align:center;"><a href="../andromedia" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()"><font style="font-family:'8 Bit Operator Bold'">RETURN</font></a></p>
-			
-			<p style="text-align:center;"><img class="image pixelated" src="../assets/img/andromedia/ch5.png" width="490" height="60"></p>
+			<main>			
+				<h2 class="center">Premise</h2>
+				<p class="center">
+					On a school trip with the Mayor to a nearby theme park in order to further prepare for the festival, the gang find themselves in yet another Dark Fountain.<br>
+					<br>
+					Chased away and separated from their classmates by Firefly, Kris, Noelle and Berdly must find a way to reach their friends and live through the rush of adrenaline that is Dreamland.
+				</p>
+				<hr>
 
-			<h2 style="text-align: center;">Premise</h2>
-			<p style="text-align: center;">On a school trip with the Mayor to a nearby theme park in order to further prepare for the festival, the gang find themselves in yet another Dark Fountain.</p>
-			<p style="text-align: center;">Chased away and separated from their classmates by Firefly, Kris, Noelle and Berdly must find a way to reach their friends and live through the rush of adrenaline that is Dreamland.</p>
-			<hr>
-			
-			<div id="characters">
-				<h2 class="center">Characters</h2>
-				<div class="flex-container">
+				<div class="characters" data-chapter="5">
+					<h2 class="center">Characters</h2>
 
-					<!-- Comet -->
-					<div class="flex-item">
-						<a href="#a" onclick="clickDenySound()" onmouseenter="hoverSound()">
-							<p class="center" style="margin-left: 2.2em;"><img class="default image pixelated" width="58" height="108" src="../assets/img/andromedia/ch5/comet.png">
-							<img class="hover image pixelated" width="58" height="108" src="../assets/img/andromedia/ch5/comet_2.png"/></p>
-							<p>Comet Holiday</p>
-						</a>
-					</div>
-					<!-- Firefly -->
-					<div class="flex-item">
-						<a href="#a" onclick="clickDenySound()" onmouseenter="hoverSound()">
-							<p class="center" style="margin-right: 0.8em;"><img class="default image pixelated" width="80" height="108" src="../assets/img/andromedia/ch5/firefly.png">
-							<img class="hover image pixelated" width="80" height="108" src="../assets/img/andromedia/ch5/firefly_2.png"/></p>
-							<p>Firefly</p>
-						</a>
-					</div>
-					<!-- Spree Blitz -->
-					<div class="flex-item">
-						<a class="spreeblitz" href="#a" onclick="clickDenySound()" onmouseenter="hoverSound()">
-							<p class="center" style="margin-left: 0.8em;"><img class="default image pixelated" width="104" height="108" src="../assets/img/andromedia/ch5/spreeblitz.png">
-							<img class="hover image pixelated" width="104" height="108" src="../assets/img/andromedia/ch5/spreeblitz_2.gif"/></p>
-							<p>Spree Blitz</p>
-						</a>
-					</div>
+					<!-- Dynamically generated content -->
+					<div class="chara-buttons"></div>
+					<div class="profile-container"></div>
 				</div>
-			</div>
 			</main>
 
 			<footer>
-				<span style="color: var(--faint-text);">HUECYCLES © 2020 - 2023
-					<br>Website designed by <a href="https://huecycles.com/about">HUECYCLES</a> & <a href="https://twitter.com/wil__tzy">WILTZY</a>
-					<br>DELTARUNE belongs to Toby Fox & his team.
-					<br>These are just projects for fun!</span>
+				<hr>
+				<my-footer></my-footer>
+				<script src="./js/components/footer.js"></script>
 			</footer>
-		</div>
-		<!-- End of .wrapper -->
+		</div> <!-- End of .wrapper -->
+	
+		<!-- Scripts -->
+		<script src="./js/soundfx.js"></script>
+		<script src="./js/characters/loadcharacters.js"></script>
 	</body>
 </html>

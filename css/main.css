@@ -124,17 +124,25 @@ main img {
 	height: auto;
 }
 
-/* Image hover effect */
+main ul {
+    list-style-type: disc;
+    padding-inline-start: 40px;
+    font-family: var(--secondary-font);
+    font-size: 120%;
+    text-align: justify;
+}
+
+/* Image hover effect for links */
 a img.hover {
 	display: none;
 }
-	a img.default {
+a img.default {
 	display: inherit;
 }
-	a:hover img.hover {
+a:hover img.hover {
 	display: inherit;
 }
-	a:hover img.default {
+a:hover img.default {
 	display: none;
 }
 	

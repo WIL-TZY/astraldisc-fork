@@ -4,25 +4,30 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<title>* There's a strange interference here.</title>
-		<link rel="icon" type="image/png" href="../../assets/img/andromedia/favicon_3.png"/>
+		<meta property="og:title" content="ANDROMEDIA">
+		<meta property="og:url" content="https://andromedia.huecycles.com/">
+		<meta property="og:description" content="Archived in the ASTRAL DISC.">
+		<meta property="og:image" content="https://andromedia.huecycles.com/assets/img/disc/new_shooting_star.png">
+		<title>There's a strange interference here.</title>
+		<link rel="icon" type="image/png" href="../assets/img/favicon/astraldisc.png" />
 		<!-- CSS -->
-		<link href="../../css/reset.css" rel="stylesheet" type="text/css" media="all">
-		<link href="../../css/base.css" rel="stylesheet" type="text/css" media="all">
-		<link href="../../css/main.css" rel="stylesheet" type="text/css" media="all">
-		<link href="../../css/andromedia.css" rel="stylesheet" type="text/css" media="all">
+		<link href="../css/reset.css" rel="stylesheet" type="text/css" media="all">
+		<link href="../css/base.css" rel="stylesheet" type="text/css" media="all">
+		<link href="../css/main.css" rel="stylesheet" type="text/css" media="all">
+		<link href="../css/andromedia.css" rel="stylesheet" type="text/css" media="all">
 	</head>
 	<script>
 		var urlArray = [
 		"../ch3/eas",
-		"../ch3/standby",
+		"../ch3/rapture",
+		"../ch3/halojack",
 		"../ch3/location"
 		];
 
 		function randomUrl() {
-				var randomNumber = Math.floor(Math.random() * urlArray.length);
-				var newUrl = urlArray[randomNumber];
-				window.location.href = newUrl;
+			var randomNumber = Math.floor(Math.random() * urlArray.length);
+			var newUrl = urlArray[randomNumber];
+			window.location.href = newUrl;
 		}
 	</script>
 	<body class="halojack-page">
@@ -32,11 +37,13 @@
 				<div id="imgtip"></div>
 				<a href="javascript:randomUrl()"><img
 					id="interference"
-					src="../../assets/img/andromedia/ch3/halo_interference.gif"
-					alt="signal intrusion"
+					src="../assets/img/andromedia/ch3/signal_intrusion.gif"
+					alt="A strange signal intrusion."
+					width="144"
+					height="184"
 				/></a>
 			</div>
 		</div>
 		<!-- End of .wrapper -->
-</body>
+	</body>
 </html>

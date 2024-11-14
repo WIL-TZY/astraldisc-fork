@@ -1,0 +1,262 @@
+{
+	"chapters": 
+	{
+		"3":
+		[
+			{
+				"id": "mike",
+				"table": {
+					"name": [
+						"M.I.K.E.",
+						"Monitor. Influence. Know. Exploit."
+					],
+					"pronouns": "He/him",
+					"role": "Main Antagonist",
+					"object": "Toriel's TV"
+				},
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+				"trivia": [],
+				"image": {
+					"default": "assets/img/andromedia/ch3/mike.png",
+					"hover": "assets/img/andromedia/ch3/mike_2.png"
+				}
+			},
+			{
+				"id": "nick",
+				"table": {
+					"name": [
+						"Nick",
+						"Nick \"Lumière\" Odeion"
+					],
+					"pronouns": "He/him",
+					"role": "Secondary Antagonist...?",
+					"object": "Dreemurr Vintage Camera"
+				},
+				"description": "Nick L. Odeion knows everything there is to old-fashioned cinema and theater, and has an unique gift of displaying and controlling memories. His objective is to make sure Kris and their friends traverse safely through the Metropolis, while avoiding trouble with M.I.K.E...",
+				"trivia": [
+					"Nick's blood has high levels of nitrate which results in him easily getting drunk on vinegar. Let's just hope the guy isn't flammable...",
+					"Nick is unable to see any colour, viewing things through a sepia lens.",
+					"Nick is what you would call a \"memory vampire\", feeding on positive memories."
+				],
+				"image": {
+					"default": "assets/img/andromedia/ch3/nick.png",
+					"hover": "assets/img/andromedia/ch3/nick_2.png"
+				}
+			},
+			{
+				"id": "halojack",
+				"table": {
+					"name": [
+						"Halojack"
+					],
+					"pronouns": "She/her",
+					"role": "Secret Boss",
+					"object": "Signal Amplifier",
+					"soulMode": "assets/img/souls/heart_cyan.png",
+					"items": [
+						{
+							"name": "Gloryslicer",
+							"icon": "assets/img/equip_sword.png"
+						},
+						{
+							"name": "IdConcealer",
+							"icon": "assets/img/equip_armor.png"
+						}
+					]
+				},
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+				"trivia": [],
+				"image": {
+					"default": "assets/img/andromedia/ch3/halojack.png",
+					"hover": "assets/img/andromedia/ch3/halojack_2.gif"
+				}
+			}
+		],
+		"4": 
+		[
+			{
+				"id": "gospiel",
+				"table": {
+					"name": [
+						"Gospiel",
+						"Role? Title?"
+					],
+					"pronouns": "She/her",
+					"role": "Main Antagonist",
+					"object": ""
+				},
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+				"trivia": [],
+				"image": {
+					"default": "assets/img/andromedia/ch4/gospiel.png",
+					"hover": "assets/img/andromedia/ch4/gospiel_2.png"
+				}
+			},
+			{
+				"id": "acolyte",
+				"table": {
+					"name": [
+						"The Acolyte",
+						"Mesmer"
+					],
+					"pronouns": "She/her",
+					"role": "Secondary Antagonist",
+					"object": ""
+				},
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+				"trivia": [],
+				"image": {
+					"default": "assets/img/andromedia/ch4/acolyte.png",
+					"hover": "assets/img/andromedia/ch4/acolyte_2.png"
+				}
+			},
+			{
+				"id": "beltrowel",
+				"table": {
+					"name": [
+						"Beltrowel",
+						"Role? Title?"
+					],
+					"pronouns": "He/him",
+					"role": "Secret Boss",
+					"object": "Church Bell",
+					"soulMode": "assets/img/souls/heart_green.png",
+					"items": [
+						{
+							"name": "Item 1 (you can change the icon)",
+							"icon": "assets/img/equip_sword.png"
+						},
+						{
+							"name": "Item 2",
+							"icon": "assets/img/equip_armor.png"
+						}
+					]
+				},
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+				"trivia": [],
+				"image": {
+					"default": "assets/img/andromedia/ch4/beltrowel.png",
+					"hover": "assets/img/andromedia/ch4/beltrowel_2.gif"
+				}
+			}
+		],
+		"5": 
+		[
+			{
+				"id": "comet",
+				"table": {
+					"name": ["Comet Holiday", ""],
+					"pronouns": "She/her",
+					"role": "???",
+					"object": ""
+				},
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+				"trivia": [],
+				"image": {
+					"default": "assets/img/andromedia/ch5/comet.png",
+					"hover": "assets/img/andromedia/ch5/comet_2.png"
+				}
+			},
+			{
+				"id": "firefly",
+				"table": {
+					"name": ["Firefly", ""],
+					"pronouns": "She/her",
+					"role": "Main Antagonist",
+					"object": ""
+				},
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+				"trivia": [],
+				"image": {
+					"default": "assets/img/andromedia/ch5/firefly.png",
+					"hover": "assets/img/andromedia/ch5/firefly_2.png"
+				}
+			},
+			{
+				"id": "spreeblitz",
+				"table": {
+					"name": ["Spree Blitz", ""],
+					"pronouns": "He/him",
+					"role": "Secret Boss",
+					"object": "",
+					"soulMode": "assets/img/souls/heart_orange.png",
+					"items": [
+						{
+							"name": "Item 1 (you can change the icon)",
+							"icon": "assets/img/equip_sword.png"
+						},
+						{
+							"name": "Item 2",
+							"icon": "assets/img/equip_armor.png"
+						}
+					]
+				},
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+				"trivia": [],
+				"image": {
+					"default": "assets/img/andromedia/ch5/spreeblitz.png",
+					"hover": "assets/img/andromedia/ch5/spreeblitz_2.gif"
+				}
+			}
+		],
+		"6": 
+		[
+			{
+				"id": "beholder",
+				"table": {
+					"name": ["The Beholder", ""],
+					"pronouns": "??/??",
+					"role": "Main Antagonist",
+					"object": ""
+				},
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+				"trivia": [],
+				"image": {
+					"default": "assets/img/andromedia/ch6/beholder.png",
+					"hover": "assets/img/andromedia/ch6/beholder_2.gif"
+				}
+			},
+			{
+				"id": "friend",
+				"table": {
+					"name": ["F R I E N D", ""],
+					"pronouns": "They/them",
+					"role": "Secondary Antagonist",
+					"object": ""
+				},
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+				"trivia": [],
+				"image": {
+					"default": "assets/img/andromedia/ch6/friend.gif",
+					"hover": "assets/img/andromedia/ch6/friend_2.gif"
+				}
+			},
+			{
+				"id": "gauze",
+				"table": {
+					"name": ["The Vessel", "Gauze?"],
+					"pronouns": "They/them",
+					"role": "Secret Boss",
+					"object": "",
+					"soulMode": "assets/img/souls/heart_purple.png",
+					"items": [
+						{
+							"name": "Item 1 (you can change the icon)",
+							"icon": "assets/img/equip_sword.png"
+						},
+						{
+							"name": "Item 2",
+							"icon": "assets/img/equip_armor.png"
+						}
+					]
+				},
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+				"trivia": ["Gauze likes cookies"],
+				"image": {
+					"default": "assets/img/andromedia/ch6/gauze.png",
+					"hover": "assets/img/andromedia/ch6/gauze_2.gif"
+				}
+			}
+		]
+	}
+}
