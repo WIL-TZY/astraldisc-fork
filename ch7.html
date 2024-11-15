@@ -20,63 +20,81 @@
 		<!-- Click/Hover Sound JS -->
 		<script src="../js/soundfx.js"></script>
 		<div class=wrapper>
+	
 			<header>
 				<div class="logo-container">
-					<img class="image pixelated" src="../assets/img/andromedia/logo.png" width="490" height="60" alt="Logo">
+					<img class="image pixelated" src="../assets/img/andromedia/ch7.png" width="490" height="60">
 				</div>
+				<ul>
+					<my-nav></my-nav>
+					<script src="./js/components/nav.js"></script>
+				</ul>
 			</header>
 
-			<main>
-			<p style="text-align:center;"><a href="../andromedia" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()"><font style="font-family:'8 Bit Operator Bold'">RETURN</font></a></p>
-			
-			<p style="text-align:center;"><img class="image pixelated" src="../assets/img/andromedia/ch7.png" width="490" height="60"></p>
+			<main>			
+				<h2 class="center">Premise</h2>
+				<p class="center">It's time for the festival.</p>
+				<p class="center">And the Knight is more than prepared.</p>
+				<p class="center">The ANGEL'S HEAVEN can wait no longer.</p>
+				<table class="center">
+                    <tr>
+                        <th>Knight</th>
+                        <td>The Roaring Knight</td>
+                    </tr>
+                    <tr>
+                        <th>Dark World...?</th>
+                        <td>WORLDS' Edge</td>
+                    </tr>
+                    <tr>
+                        <th>Dark World...?<br>Subsections</th>
+                        <td>
+                            ???
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Location</th>
+                        <td>Town Hall + Hometown</td>
+                    </tr>
+                    <tr>
+                        <th>Weird Route</th>
+                        <td>✓</td>
+                    </tr>
+                    <tr>
+                        <th>Main Party</th>
+                        <td>
+                            <img src="assets/img/head_kris.png">
+							<img src="assets/img/head_susie.png">
+							<img src="assets/img/head_ralsei.png">
+                        </td>
+                    </tr>
+					<tr>
+                        <th>Secondary Party</th>
+                        <td>
+                            <img src="assets/img/head_angel.png">
+							<img src="assets/img/head_noelle.png">
+                        </td>
+                    </tr>
+                </table>
+				<hr>
 
-			<h2 style="text-align: center;">Premise</h2>
-			<p style="text-align: center;">It's time for the festival.</p>
-			<p style="text-align: center;">And the Mayor is more than prepared.</p>
-			<p style="text-align: center;">The ANGEL'S HEAVEN can wait no longer.</p>
-			<hr>
-			
-			<div id="characters">
-				<h2 class="center">Characters</h2>
-				<div class="flex-container">
+				<div class="characters" data-chapter="7">
+					<h2 class="center">Characters</h2>
 
-					<!-- The Knight -->
-					<div class="flex-item">
-						<a href="#a" onclick="clickDenySound()" onmouseenter="hoverSound()">
-							<p class="center" style="margin-left: 0.5em;"><img class="default image pixelated" width="92" height="152" src="../assets/img/andromedia/ch7/knight.png">
-							<img class="hover image pixelated" width="92" height="152" src="../assets/img/andromedia/ch7/knight_2.gif"/></p>
-							<p class="center" style="margin-right: 1.5em;">The Knight</p>
-						</a>
-					</div>
-					<!-- Pionite -->
-					<div class="flex-item">
-						<a href="#a" onclick="clickDenySound()" onmouseenter="hoverSound()">
-							<p class="center" style="margin-right: 1.5em;"><img class="default image pixelated" width="120" height="152" src="../assets/img/andromedia/ch7/pionite.png">
-							<img class="hover image pixelated" width="120" height="152" src="../assets/img/andromedia/ch7/pionite_2.png"/></p>
-							<p class="center" style="margin-right: 1.5em;">Pionite</p>
-						</a>
-					</div>
-					<!-- Minerva -->
-					<div class="flex-item">
-						<a class="minerva" href="#a" onclick="clickDenySound()" onmouseenter="hoverSound()">
-							<p class="center" style="margin-right: 1.4em;"><img class="default image pixelated" width="106" height="152" src="../assets/img/andromedia/ch7/minerva.png">
-							<img class="hover image pixelated" width="106" height="152" src="../assets/img/andromedia/ch7/minerva_2.gif"/></p>
-							<p class="center" style="margin-right: 1.5em;">Minerva</p>
-						</a>
-					</div>
+					<!-- Dynamically generated content -->
+					<div class="chara-buttons center"></div>
+					<div class="profile-container"></div>
 				</div>
-			</div>
 			</main>
 
 			<footer>
-				<span style="color: var(--faint-text);">HUECYCLES © 2020 - 2023
-					<br>Website designed by <a href="https://huecycles.com/about">HUECYCLES</a> & <a href="https://twitter.com/wil__tzy">WILTZY</a>
-					<br>DELTARUNE belongs to Toby Fox & his team.
-					<br>These are just projects for fun!</span>
-			</footer>   
-		</div>
-		<!-- End of .wrapper -->
-	</body>
+				<hr>
+				<my-footer></my-footer>
+				<script src="./js/components/footer.js"></script>
+			</footer>
+		</div> <!-- End of .wrapper -->
+	
+		<!-- Scripts -->
+		<script src="./js/soundfx.js"></script>
+		<script src="./js/characters/loadcharacters.js"></script>
 	</body>
 </html>

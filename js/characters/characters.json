@@ -167,29 +167,13 @@
 		"5": 
 		[
 			{
-				"id": "comet",
-				"table": {
-					"buttonName": "Comet Holiday",
-					"name": ["Comet Holiday"],
-					"pronouns": "She/her",
-					"role": "???",
-					"object": ""
-				},
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-				"trivia": [],
-				"image": {
-					"default": "assets/img/andromedia/ch5/comet.png",
-					"hover": "assets/img/andromedia/ch5/comet_2.png"
-				}
-			},
-			{
 				"id": "firefly",
 				"table": {
 					"buttonName": "Firefly",
 					"name": ["Firefly"],
 					"pronouns": "She/they",
 					"role": "Main Antagonist",
-					"object": "Suspended Looping Coaster"
+					"object": "Flying Coaster"
 				},
 				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
 				"trivia": [],
@@ -229,9 +213,9 @@
 				"id": "pollyanna",
 				"table": {
 					"buttonName": "Pollyanna",
-					"name": ["Pollyanna Dew"],
+					"name": ["Pollyanna Dew", "\"Polly\""],
 					"pronouns": "She/her",
-					"role": "Support",
+					"role": "Side Character",
 					"object": ""
 				},
 				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
@@ -239,6 +223,27 @@
 				"image": {
 					"default": "assets/img/andromedia/ch5/pollyanna.png",
 					"hover": "assets/img/andromedia/ch5/pollyanna_2.png"
+				}
+			},
+			{
+				"id": "comet",
+				"table": {
+					"buttonName": "Comet",
+					"name": ["Comet Holiday", "Comet Leonard (Maiden Name)"],
+					"pronouns": "She/her",
+					"role": "Side Character",
+					"object": ""
+				},
+				"description": "As mayor, Comet seems to always be focused on her job, leaning towards being a workaholic. This leaves her with no time to be present for her family, and more often than not, she is severely stressed out.\n\nShe takes her job very seriously and always does what she thinks is best for the town. Dess' disappearance and Rudy's hospitalization shook her greatly, however, which only made her become even more strict with Noelle and closed off emotionally.",
+				"trivia": [
+					"A true coffee addict. It helps her function.",
+					"Not only her relationship with Noelle is shaken, but her marriage as well.",
+					"Always busy. Always.",
+					"She loves her family so much it hurts."
+				],
+				"image": {
+					"default": "assets/img/andromedia/ch5/comet.png",
+					"hover": "assets/img/andromedia/ch5/comet_2.png"
 				}
 			}
 		],
@@ -257,15 +262,15 @@
 				"trivia": [],
 				"image": {
 					"default": "assets/img/andromedia/ch6/beholder.png",
-					"hover": "assets/img/andromedia/ch6/beholder_2.gif"
+					"hover": "assets/img/andromedia/ch6/beholder_2.png"
 				}
 			},
 			{
 				"id": "friend",
 				"table": {
 					"buttonName": "FRIEND",
-					"name": ["FRIEND"],
-					"pronouns": "They/it",
+					"name": ["DEVICE_FRIEND"],
+					"pronouns": "It/they",
 					"role": "Secondary Antagonist",
 					"object": ""
 				},
@@ -301,6 +306,68 @@
 				"image": {
 					"default": "assets/img/andromedia/ch6/gauze.png",
 					"hover": "assets/img/andromedia/ch6/gauze_2.gif"
+				}
+			}
+		],
+		"7": 
+		[
+			{
+				"id": "knight",
+				"table": {
+					"buttonName": "The Roaring Knight",
+					"name": ["Comet Holiday"],
+					"pronouns": "She/her",
+					"role": "Main Antagonist",
+					"object": ""
+				},
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+				"trivia": [],
+				"image": {
+					"default": "assets/img/andromedia/ch7/knight.png",
+					"hover": "assets/img/andromedia/ch7/knight_2.gif"
+				}
+			},
+			{
+				"id": "pionite",
+				"table": {
+					"buttonName": "Pionite",
+					"name": ["Pionite"],
+					"pronouns": "He/they",
+					"role": "Secondary Antagonist",
+					"object": "Christmas Tree Glass Sculpture"
+				},
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+				"trivia": [],
+				"image": {
+					"default": "assets/img/andromedia/ch7/pionite.png",
+					"hover": "assets/img/andromedia/ch7/pionite_2.png"
+				}
+			},
+			{
+				"id": "minerva",
+				"table": {
+					"buttonName": "Minerva",
+					"name": ["Minerva"],
+					"pronouns": "She/her",
+					"role": "Secret Boss",
+					"object": "Fountain Pen + Penholder",
+					"soulMode": "assets/img/souls/heart_blue.png",
+					"items": [
+						{
+							"name": "Fatemantle",
+							"icon": "assets/img/equip_scarf.png"
+						},
+						{
+							"name": "DestinyVeil",
+							"icon": "assets/img/equip_armor.png"
+						}
+					]
+				},
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+				"trivia": [],
+				"image": {
+					"default": "assets/img/andromedia/ch7/minerva.png",
+					"hover": "assets/img/andromedia/ch7/minerva.png"
 				}
 			}
 		]

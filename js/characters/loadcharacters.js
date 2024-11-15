@@ -45,8 +45,8 @@ function createCharacterButton(character) {
 	img.classList.add('image', 'pixelated', 'chara-img');
 	img.src = character.image.default; // Initial image source
 	
-    button.onmouseover = () => img.src = character.image.hover;
-    button.onmouseout = () => img.src = character.image.default;
+    img.onmouseover = () => img.src = character.image.hover;
+    img.onmouseout = () => img.src = character.image.default;
     button.appendChild(img);
 
 	const text = document.createElement('p');
