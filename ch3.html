@@ -17,18 +17,6 @@
 		<link href="css/andromedia.css" rel="stylesheet" type="text/css" media="all">
 	</head>
 	<body>
-		<script>
-			var urlArray = [
-			"../ch3/signal",
-			"../ch3/halojack"
-			];
-		
-			function randomUrl() {
-				var randomNumber = Math.floor(Math.random() * urlArray.length);
-				var newUrl = urlArray[randomNumber];
-				window.location.href = newUrl;
-			}
-		</script>
 		<div class="wrapper">
 
 			<header>
@@ -43,30 +31,19 @@
 
 			<main>
 				<h2 class="center">Premise</h2>
-				<p>A long night awaits Kris, Susie, Toriel and Napstablook in a bizarre adventure through a world of cutting-edge entertainment!</p>
+				<p>A long night awaits Kris, Susie, Toriel and Napstablook in this bizarre adventure through a world of cutting-edge entertainment!</p>
 				<hr>
 
 				<div class="characters" data-chapter="3">
 					<h2 class="center">Characters</h2>
 
 					<!-- Dynamically generated content -->
-					<div class="chara-buttons"></div>
+					<div class="chara-buttons center"></div>
 					<div class="profile-container"></div>
 				</div>
-
-				<!--<div class="flex-container">/
-					<div class="flex-item">
-						<a class= "halojack" href="javascript:randomUrl()" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
-							<img class="default image pixelated halojack" src="../assets/img/andromedia/ch3/halojack.png" width="50" height="100">
-							<img class="hover image pixelated halojack" src="../assets/img/andromedia/ch3/halojack_2.gif" width="50" height="100"/>
-							<p class="center">Halojack</p>
-						</a>
-					</div>
-				</div>-->
 			</main>
-
+			<hr>
 			<footer>
-				<hr>
 				<my-footer></my-footer>
 				<script src="./js/components/footer.js"></script>
 			</footer>

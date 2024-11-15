@@ -44,14 +44,14 @@ function createCharacterButton(character) {
 	const img = document.createElement('img');
 	img.classList.add('image', 'pixelated', 'chara-img');
 	img.src = character.image.default; // Initial image source
-
-    img.onmouseover = () => img.src = character.image.hover;
-    img.onmouseout = () => img.src = character.image.default;
+	
+    button.onmouseover = () => img.src = character.image.hover;
+    button.onmouseout = () => img.src = character.image.default;
     button.appendChild(img);
 
 	const text = document.createElement('p');
     text.classList.add('chara-button-text');
-    text.textContent = character.table.name[0];
+    text.textContent = character.table.buttonName;
     button.appendChild(text);
 
 	button.addEventListener('click', selectCharacter);

@@ -381,32 +381,6 @@ body.shadowcrystal {
     transform: rotateY(360deg);
 }
 
-/* ---------- Audio Player ---------- */
-.playercontainer {
-	margin: 0;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-
-/* ---------- Play/Pausa & Volume Buttons ---------- */
-.btn-play {
-    margin-left: 5px;
-}
-
-.btn-vol {
-    margin: 5px 0;
-    background-color: #000000;
-    color: #fff;
-    cursor: var(--cursor-pointer);
-    border-radius: 0px;
-}
-
-.vol-up {
-    margin-right: 5px;
-}
-
 /* ------------------------------ CHARACTER PAGES ------------------------------ */
 
 .profile-container {
@@ -431,7 +405,7 @@ body.shadowcrystal {
 	height: 30%;
 	padding: 2px;
 	border: none;
-	transition: .3s ease;
+	transition: .4s ease;
 	margin-right: 0.8em;
 }
 
@@ -441,7 +415,7 @@ body.shadowcrystal {
 
 .chara-button:hover .chara-button-text {
 	color: var(--link-hover);
-	transition: .3s ease;
+	transition: .4s ease;
 }
 
 .chara-img {
@@ -460,6 +434,7 @@ body.shadowcrystal {
 .chara-button.active {
 	background-color: var(--unselected-darkest);
 	color: var(--link-hover);
+	transition: .4s ease;
 }
 
 /* ---------- Other ---------- */

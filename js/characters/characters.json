@@ -6,6 +6,7 @@
 			{
 				"id": "mike",
 				"table": {
+					"buttonName": "M.I.K.E.",
 					"name": [
 						"M.I.K.E.",
 						"Monitor. Influence. Know. Exploit."
@@ -14,8 +15,12 @@
 					"role": "Main Antagonist",
 					"object": "Toriel's TV"
 				},
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-				"trivia": [],
+				"description": "The big boss of Rook Technologies (and all of Telehaven), M.I.K.E. never fails to bring your favorite gameshows to life! With his endless charisma, he can turn any situation thrown at him into an spectacle, while overworked employees suffer behind the scenes. Once Kris opened the fountain, M.I.K.E. knew it was time to make them wish they would've carried out their little plan earlier. Maybe they can learn a thing or two about what it's like to fulfill someone else's legacy...",
+				"trivia": [
+					"M.I.K.E. values family the same way he values money.",
+					"He likes building dioramas and very tiny things. No one is supposed to know.",
+					"Still thinks about Tenna sometimes, and hates that."
+				],
 				"image": {
 					"default": "assets/img/andromedia/ch3/mike.png",
 					"hover": "assets/img/andromedia/ch3/mike_2.png"
@@ -24,18 +29,18 @@
 			{
 				"id": "nick",
 				"table": {
+					"buttonName": "Nick L. Odeion",
 					"name": [
-						"Nick",
 						"Nick \"Lumière\" Odeion"
 					],
 					"pronouns": "He/him",
 					"role": "Secondary Antagonist...?",
 					"object": "Dreemurr Vintage Camera"
 				},
-				"description": "Nick L. Odeion knows everything there is to old-fashioned cinema and theater, and has an unique gift of displaying and controlling memories. His objective is to make sure Kris and their friends traverse safely through the Metropolis, while avoiding trouble with M.I.K.E...",
+				"description": "Nick L. Odeion knows everything there is to old-fashioned cinema and theater, and has an unique gift of displaying and controlling memories. His objective is to make sure Kris and their friends traverse safely through the Metropolis, while avoiding trouble with M.I.K.E. There is, however, a lingering sadness that radiates through him, but it seems he will never tell you about any of that.",
 				"trivia": [
 					"Nick's blood has high levels of nitrate which results in him easily getting drunk on vinegar. Let's just hope the guy isn't flammable...",
-					"Nick is unable to see any colour, viewing things through a sepia lens.",
+					"Nick is unable to see any colour, viewing the world through a sepia lens.",
 					"Nick is what you would call a \"memory vampire\", feeding on positive memories."
 				],
 				"image": {
@@ -46,6 +51,7 @@
 			{
 				"id": "halojack",
 				"table": {
+					"buttonName": "Halojack",
 					"name": [
 						"Halojack"
 					],
@@ -64,8 +70,13 @@
 						}
 					]
 				},
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-				"trivia": [],
+				"description": "Those who knew Halojack recall that she used to be a mere journalist in News Valley. One day, she left the monotony of her job to try her luck in Rook Technologies as an intern. As things went wrong, and with a strange force seemingly guiding her, Halojack had turned to broadcast hijacking as a way to spread deranged messages across Telehaven. After being fired and pursued, her reign of terror had finally faded into obscurity, even though some swear they can catch strange signal intrusions from the corner of their eyes.",
+				"trivia": [
+					"Halojack is an avid people watcher. She enjoys observing others and keeping herself updated on their lives... even if they never notice.",
+					"She has taken knitting as a hobby to avoid stress. All of her socks are handmade.",
+					"She needs eyedrops regularly. Her vision is strained.",
+					"Ironically, Halojack is very impatient."
+				],
 				"image": {
 					"default": "assets/img/andromedia/ch3/halojack.png",
 					"hover": "assets/img/andromedia/ch3/halojack_2.gif"
@@ -77,6 +88,7 @@
 			{
 				"id": "gospiel",
 				"table": {
+					"buttonName": "Gospiel",
 					"name": [
 						"Gospiel",
 						"Role? Title?"
@@ -95,6 +107,7 @@
 			{
 				"id": "acolyte",
 				"table": {
+					"buttonName": "The Acolyte",
 					"name": [
 						"The Acolyte",
 						"Mesmer"
@@ -113,6 +126,7 @@
 			{
 				"id": "beltrowel",
 				"table": {
+					"buttonName": "Beltrowel",
 					"name": [
 						"Beltrowel",
 						"Role? Title?"
@@ -145,6 +159,7 @@
 			{
 				"id": "comet",
 				"table": {
+					"buttonName": "Comet Holiday",
 					"name": ["Comet Holiday", ""],
 					"pronouns": "She/her",
 					"role": "???",
@@ -160,6 +175,7 @@
 			{
 				"id": "firefly",
 				"table": {
+					"buttonName": "Firefly",
 					"name": ["Firefly", ""],
 					"pronouns": "She/her",
 					"role": "Main Antagonist",
@@ -175,6 +191,7 @@
 			{
 				"id": "spreeblitz",
 				"table": {
+					"buttonName": "Spree Blitz",
 					"name": ["Spree Blitz", ""],
 					"pronouns": "He/him",
 					"role": "Secret Boss",
@@ -204,6 +221,7 @@
 			{
 				"id": "beholder",
 				"table": {
+					"buttonName": "The Beholder",
 					"name": ["The Beholder", ""],
 					"pronouns": "??/??",
 					"role": "Main Antagonist",
@@ -219,7 +237,8 @@
 			{
 				"id": "friend",
 				"table": {
-					"name": ["F R I E N D", ""],
+					"buttonName": "FRIEND",
+					"name": ["FRIEND", ""],
 					"pronouns": "They/them",
 					"role": "Secondary Antagonist",
 					"object": ""
@@ -234,6 +253,7 @@
 			{
 				"id": "gauze",
 				"table": {
+					"buttonName": "Gauze",
 					"name": ["The Vessel", "Gauze?"],
 					"pronouns": "They/them",
 					"role": "Secret Boss",
