@@ -1,142 +1,179 @@
+// NOTE: In the JSON, character objects must go inside { chapters: { x: [...] } }
 document.addEventListener('DOMContentLoaded', () => {
-	// Process JSON
-    fetch('./js/characters/characters.json')
-		.then(response => response.json())
-		.then(data => {
-		// NOTE: Character objects must go inside { chapters: { x: [...] } }
-		const characterContainer = document.querySelector('.characters');
-        const chapter = characterContainer.getAttribute('data-chapter');
-		const characters = data.chapters[chapter];
-
-		if (characters) {
-			populateCharacters(characters);
-		} else {
-			console.error('No characters found for chapter: ', ch);
-		}
-		// console.log(data); // DEBUG
-		})
-		.catch(error => console.error('Error loading character data:', error));
+    const menu = new CharacterMenu();
+    menu._init();
 });
+const CHAPTER = document.querySelector('.characters').getAttribute('data-chapter');
 
-// Helper Functions
-function populateCharacters(characters) {
-	const tabButtonsContainer = document.querySelector('.chara-buttons');
-	const profileContainer = document.querySelector('.profile-container');
+class CharacterMenu {
+    constructor() {
+        this.chapter = CHAPTER;
+        this.characters = null; // Not the button, just the data
+		this.selectedButton = null // Keeps track of the currently selected button
+    }
 
-	characters.forEach(character => {
-		// Create the character button
-		const button = createCharacterButton(character);
-		tabButtonsContainer.appendChild(button);
+	// System Methods
+    async _init() {
+        this.characters = await this._loadCharacters();
+        if (this.characters) this._populateCharacters();
+    }
 
-		const profileDiv = createProfileDiv(character);
-		profileContainer.appendChild(profileDiv);
-	});
+    async _loadCharacters() {
+        try {
+            const response = await fetch('./js/characters/characters.json');
+            const data = await response.json();
+            return data.chapters[this.chapter] || null;
+        } catch (error) {
+            console.error("Error loading character data:", error);
+            return null;
+        }
+    }
+    
+	_populateCharacters() {
+		const tabButtonsContainer = document.querySelector('.chara-buttons');
+		const profileContainer = document.querySelector('.profile-container');
 
-	// Get the first character and select it by default
-	document.querySelector('.chara-button')?.click();
-}
-
-function createCharacterButton(character) {
-	const button = document.createElement('button');
-	button.classList.add('chara-button');
-	button.setAttribute('data-character', character.id);
-	
-	const img = document.createElement('img');
-	img.classList.add('image', 'pixelated', 'chara-img');
-	img.src = character.image.default; // Initial image source
-	
-    img.onmouseover = () => img.src = character.image.hover;
-    img.onmouseout = () => img.src = character.image.default;
-    button.appendChild(img);
-
-	const text = document.createElement('p');
-    text.classList.add('chara-button-text');
-    text.textContent = character.table.buttonName;
-    button.appendChild(text);
-
-	button.addEventListener('click', selectCharacter);
-	
-	return button;
-}
-	
-function createProfileDiv(character) {
-	const profileDiv = document.createElement('div');
-	profileDiv.id = character.id;
-	profileDiv.classList.add('character-profile');
-	
-	profileDiv.innerHTML = generateCharacterTable(character);
-	
-	if (character.description) {
-		const description = document.createElement('p');
-		description.classList.add('formatted-text');
-		description.innerHTML = character.description;
-		profileDiv.appendChild(description);
-	}
-	
-	if (character.trivia?.length > 0) {
-		profileDiv.innerHTML += '<h2 class="center">Trivia</h2>';
-		const triviaList = createTriviaList(character.trivia);
-		profileDiv.appendChild(triviaList);
-	}
-	
-	return profileDiv;
-}
-
-function generateCharacterTable(character) {
-	let table = /*html*/ `
-		<h2 class="center">Profile</h2>
-		<table>
-		<tr><th>Name</th><td>${character.table.name[0]}<br><span style="color: var(--faint-text);">${character.table.name[1] || ''}</span></td></tr>
-		<tr><th>Pronouns</th><td>${character.table.pronouns}</td></tr>
-		<tr><th>Role</th><td>${character.table.role}</td></tr>
-	`;
-	
-	if (character.table.object) {
-		table += /*html*/ `<tr><th>LW Object</th><td>${character.table.object}</td></tr>`;
+		this.characters.forEach(character => {
+			const button = this._createCharacterButton(character);
+			const profileDiv = this._createProfileDiv(character);
+			tabButtonsContainer.appendChild(button);
+			profileContainer.appendChild(profileDiv);
+		});
+		
+		// Select the first button by default
+		document.querySelector('.chara-button')?.click(); 
 	}
 
-	if (character.table.role === 'Secret Boss') {
-		if (character.table.soulMode) {
-		table += /*html*/ `<tr><th>Soul Mode</th><td><img src="${character.table.soulMode}"></td></tr>`;
+	_createCharacterButton(character) {
+		const button = document.createElement('button');
+		button.classList.add('chara-button');
+		button.setAttribute('data-character', character.id);
+
+		const img = document.createElement('img');
+		img.classList.add('image', 'pixelated', 'chara-img');
+		img.src = character.image.default; // Initial image source
+		button.appendChild(img);
+
+		// Hover effects
+        img.addEventListener('mouseover', () => this.updateCharacterImage(button, character.image.hover));
+        img.addEventListener('mouseout', () => {
+			// Only if button isn't selected, change back to default img
+            if (!button.classList.contains('active')) { this.updateCharacterImage(button, character.image.default); }
+		});
+
+		// Clicking selects the character
+		button.addEventListener('click', (e) => this._selectCharacter(e, character, button));
+
+		return button;
+	}
+
+	_createProfileDiv(character) {
+		const profileDiv = document.createElement('div');
+		profileDiv.id = character.id;
+		profileDiv.classList.add('character-profile');
+		
+		// Create the profile div content
+		profileDiv.innerHTML = `
+			<h2 class="center">Profile</h2>
+			${this._createCharacterTable(character)}
+			${character.description ? `<p class="formatted-text">${character.description}</p>` : ''}
+		`;
+		
+		// Create the trivia list
+		if (character.trivia?.length) {
+			const triviaList = this._createTriviaList(character.trivia);
+			const triviaHeading = document.createElement('h2');
+			triviaHeading.classList.add('center');
+			triviaHeading.innerText = 'Trivia';
+			profileDiv.appendChild(triviaHeading);
+			profileDiv.appendChild(triviaList);
 		}
-		if (character.table.items?.length) {
-		const itemsHtml = character.table.items.map(item => /*html*/ `<img class="image pixelated" src="${item.icon}"> ${item.name}`).join('<br>');
-		table += /*html*/ `<tr><th>Items</th><td>${itemsHtml}</td></tr>`;
-		}
+		
+		return profileDiv;
 	}
 	
-	// Close tag
-	table += `</table>`;
+	_createCharacterTable(character) {
+		let tableHTML = /*html*/ `
+			<table>
+				<tr><th>Name</th><td>${character.table.name[0]}<br><span style="color: var(--faint-text);">${character.table.name[1] || ''}</span></td></tr>
+				<tr><th>Pronouns</th><td>${character.table.pronouns}</td></tr>
+				<tr><th>Role</th><td>${character.table.role}</td></tr>
+		`;
 	
-	return table;
-}
+		if (character.table.object) {
+			tableHTML += /*html*/ `
+				<tr><th>LW Object</th><td>${character.table.object}</td></tr>
+			`;
+		}
 	
-function createTriviaList(triviaItems) {
-	const triviaList = document.createElement('ul');
-	triviaItems.forEach(triviaItem => {
-	const listItem = document.createElement('li');
-	listItem.classList.add('formatted-text');
-	listItem.innerHTML = triviaItem;
-	triviaList.appendChild(listItem);
-	});
+		if (character.table.role === 'Secret Boss') {
+			if (character.table.soulMode) {
+				tableHTML += /*html*/ `
+					<tr><th>Soul Mode</th><td><img src="${character.table.soulMode}" alt="Soul Mode Image"></td></tr>
+				`;
+			}
 	
-	return triviaList;
-}
+			if (character.table.items?.length) {
+				const itemsHTML = character.table.items.map(item => /*html*/ `<img class="image pixelated" src="${item.icon}"> ${item.name}`).join('<br>');
+				tableHTML += /*html*/ `<tr><th>Items</th><td>${itemsHTML}</td></tr>`;
+			}
+		}
+	
+		tableHTML += `</table>`;
+		
+		return tableHTML;
+	}	
 
-function clearActiveClasses() {
-	const tabButtons = document.querySelectorAll('.chara-button');
-	const profiles = document.querySelectorAll('.character-profile');
+	_createTriviaList(triviaItems) {
+		const triviaList = document.createElement('ul');
+		
+		triviaItems.forEach(triviaItem => {
+			const listItem = document.createElement('li');
+			listItem.classList.add('formatted-text');
+			listItem.innerHTML = triviaItem;
+			triviaList.appendChild(listItem);
+		});
+		
+		return triviaList;
+	}
 
-	tabButtons.forEach(btn => btn.classList.remove('active'));
-	profiles.forEach(profile => profile.classList.remove('active'));
-}
+	_selectCharacter(event, character, button) {
+		this.clearActiveClasses(); // Prevents multiple selections
 
-function selectCharacter(event) {
-	const characterId = event.currentTarget.getAttribute('data-character');
+		// Selected button
+		this.selectedButton = button
+		document.querySelector(`[data-character="${character.id}"]`).classList.add('active');
+		document.getElementById(character.id).classList.add('active');
 
-	clearActiveClasses(); // Clear active classes from previous selection
+		// Unselect other buttons
+		const allButtons = document.querySelectorAll('.chara-button');
+		allButtons.forEach(btn => {
+			if (!btn.classList.contains('active')) {
+				// Revert the image to default
+				const id = btn.getAttribute('data-character');
+				const character = this.getCharacter(id);
+				this.updateCharacterImage(btn, character.image.default);
+			}
+		});
 
-	// Add active class to the selected button and profile
-	event.currentTarget.classList.add('active');
-	document.getElementById(characterId)?.classList.add('active');
+		// Change the image of the selected button to hover image
+		this.updateCharacterImage(button, character.image.hover);
+	}
+
+	// Usable Methods
+	clearActiveClasses() {
+		const tabButtons = document.querySelectorAll('.chara-button');
+		const profiles = document.querySelectorAll('.character-profile');
+	
+		tabButtons.forEach(btn => btn.classList.remove('active'));
+		profiles.forEach(profile => profile.classList.remove('active'));
+	}
+
+	updateCharacterImage(button, src) {
+		if (button) { button.querySelector('.chara-img').src = src; };
+	}
+
+	getCharacter(id) {
+		return this.characters.find(c => c.id === id);
+	}
 }
