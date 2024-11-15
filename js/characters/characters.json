@@ -15,7 +15,7 @@
 					"role": "Main Antagonist",
 					"object": "Toriel's TV"
 				},
-				"description": "The big boss of Rook Technologies (and all of Telehaven), M.I.K.E. never fails to bring your favorite gameshows to life! With his endless charisma, he can turn any situation thrown at him into an spectacle, while overworked employees suffer behind the scenes. Once Kris opened the fountain, M.I.K.E. knew it was time to make them wish they would've carried out their little plan earlier. Maybe they can learn a thing or two about what it's like to fulfill someone else's legacy...",
+				"description": "The big boss of Rook Technologies (and all of Telehaven), M.I.K.E. never fails to bring your favorite gameshows to life! With his endless charisma, he can turn any situation thrown at him into an spectacle, while overworked employees suffer behind the scenes.\n\nOnce Kris opened the fountain, M.I.K.E. knew it was time to make them wish they would've carried out their little plan earlier. Maybe they can learn a thing or two about what it's like to fulfill someone else's legacy...",
 				"trivia": [
 					"M.I.K.E. values family the same way he values money.",
 					"He likes building dioramas and very tiny things. No one is supposed to know.",
@@ -70,7 +70,7 @@
 						}
 					]
 				},
-				"description": "Those who knew Halojack recall that she used to be a mere journalist in News Valley.<br><br>One day, she left the monotony of her job to try her luck in Rook Technologies as an intern.<br><br>As things went wrong, and with a strange force seemingly guiding her, Halojack had turned to broadcast hijacking as a way to spread deranged messages across Telehaven.<br><br>After being fired and pursued, her reign of terror had finally faded into obscurity, even though some swear they can catch strange signal intrusions from the corner of their eyes.",
+				"description": "Those who knew Halojack recall that she used to be a mere journalist in News Valley. One day, she left the monotony of her job to try her luck in Rook Technologies as an intern.\n\nAs things went wrong, and with a strange force seemingly guiding her, Halojack had turned to broadcast hijacking as a way to spread deranged messages across Telehaven.\n\nAfter being fired and pursued, her reign of terror had finally faded into obscurity, even though some swear they can catch strange signal intrusions from the corner of their eyes.",
 				"trivia": [
 					"Halojack is an avid people watcher. She enjoys observing others and keeping herself updated on their lives... even if they never notice.",
 					"She has taken knitting as a hobby to avoid stress. All of her socks are handmade.",
@@ -96,8 +96,13 @@
 					"role": "Main Antagonist",
 					"object": "Angel Doll"
 				},
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-				"trivia": [],
+				"description": "Gospiel is a frantic, slightly manic nun who appeared one day by the Great Pillars and swayed the locals with her unusual, powerful presence.\n\nThis ended up with the Bishop being cast aside, and Gospiel taking his manor and prestigious title to herself. Her sacred power comes from a strong prayer to a loved one's safety, and once she sees Noelle, the pieces start to fit together.",
+				"trivia": [
+					"Given her origins, Gospiel has a natural talent for painting and most of her powers are linked to art. She has turned the manor into her own gallery. Some say her paintings look almost TOO real...",
+					"Her favorite subject to paint is The Acolyte. They are very close.",
+					"Don't be fooled by her caring and kind demeanor. She has favorites.",
+					"Loves wine, but you will never see her drunk in public."
+				],
 				"image": {
 					"default": "assets/img/andromedia/ch4/gospiel.png",
 					"hover": "assets/img/andromedia/ch4/gospiel_2.png"
@@ -115,8 +120,12 @@
 					"role": "Secondary Antagonist",
 					"object": "Church Organ"
 				},
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-				"trivia": [],
+				"description": "A mysterious Acolyte that can often be found close to Gospiel. After the Bishop's removal from power, she made it her purpose to protect the nun from potential danger and give her a second opinion where needed.\n\nWhile harsh, she does it all with a reason and might actually be quite sweet once you peel back the layers.",
+				"trivia": [
+					"Always seen wearing an odd eyemask. What is she hiding?",
+					"Has an old fashioned way of speaking, giving Rouxls Kaard a run for his money.",
+					"While half of her face is covered, nothing seems to escape her cold gaze."
+				],
 				"image": {
 					"default": "assets/img/andromedia/ch4/acolyte.png",
 					"hover": "assets/img/andromedia/ch4/acolyte_2.png"
@@ -142,8 +151,13 @@
 						}
 					]
 				},
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-				"trivia": [],
+				"description": "Beltrowel used to be a priest in Divine Manor. While being known as a holy man, his selfishness did not go unnoticed by a strange visitor who one day stepped foot into his confession booth.\n\nAfter that encounter, Beltrowel began to refuse his role to assist lightners, preaching about a terrible calamity soon to come. Once word got out to the Bishop of a lunatic trying to offer \"salvation\", Beltrowel was swiftly decommissioned and trapped inside a well with a powerful incantation...",
+				"trivia": [
+					"Beltrowel has a great singing voice. In fact, he speaks very sing-songy.",
+					"He finds flower baths to be relaxing. He usually picks red roses, his favorite flower — his bathtub often stained with red.",
+					"Why serve lightners when they care so little about you...? That's what he thinks.",
+					"Beltrowel excels at manipulation to get what he wants. Maybe one day, a fellow darkner will agree to his plan..."
+				],
 				"image": {
 					"default": "assets/img/andromedia/ch4/beltrowel.png",
 					"hover": "assets/img/andromedia/ch4/beltrowel_2.gif"
