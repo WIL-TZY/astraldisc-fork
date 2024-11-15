@@ -253,4 +253,8 @@ h3 {
     padding-left: 6%;
 }
 
-/* ---------------------------------- */
+/* --------------- Utils ------------------ */
+/* Class to transform white-space into line breaks */
+.formatted-text {
+	white-space: pre-line;
+}

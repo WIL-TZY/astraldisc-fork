@@ -68,6 +68,7 @@ function createProfileDiv(character) {
 	
 	if (character.description) {
 		const description = document.createElement('p');
+		description.classList.add('formatted-text');
 		description.innerHTML = character.description;
 		profileDiv.appendChild(description);
 	}
@@ -114,7 +115,8 @@ function createTriviaList(triviaItems) {
 	const triviaList = document.createElement('ul');
 	triviaItems.forEach(triviaItem => {
 	const listItem = document.createElement('li');
-	listItem.textContent = triviaItem;
+	listItem.classList.add('formatted-text');
+	listItem.innerHTML = triviaItem;
 	triviaList.appendChild(listItem);
 	});
 	
