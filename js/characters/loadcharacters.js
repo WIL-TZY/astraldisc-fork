@@ -3,7 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const menu = new CharacterMenu();
     menu._init();
 });
+
 const CHAPTER = document.querySelector('.characters').getAttribute('data-chapter');
+const Names = { BUTTON: 0, MAIN: 1, EXTRA: 2 };
 
 class CharacterMenu {
     constructor() {
@@ -54,6 +56,11 @@ class CharacterMenu {
 		img.src = character.image.default; // Initial image source
 		button.appendChild(img);
 
+		const text = document.createElement('p');
+		text.classList.add('chara-button-text');
+		text.textContent = character.table.name[Names.BUTTON];
+		button.appendChild(text);
+
 		// Hover effects
         img.addEventListener('mouseover', () => this.updateCharacterImage(button, character.image.hover));
         img.addEventListener('mouseout', () => {
@@ -95,7 +102,7 @@ class CharacterMenu {
 	_createCharacterTable(character) {
 		let tableHTML = /*html*/ `
 			<table>
-				<tr><th>Name</th><td>${character.table.name[0]}<br><span style="color: var(--faint-text);">${character.table.name[1] || ''}</span></td></tr>
+				<tr><th>Name</th><td>${character.table.name[Names.MAIN]}<br><span style="color: var(--faint-text);">${character.table.name[Names.EXTRA] || ''}</span></td></tr>
 				<tr><th>Pronouns</th><td>${character.table.pronouns}</td></tr>
 				<tr><th>Role</th><td>${character.table.role}</td></tr>
 		`;

@@ -6,8 +6,8 @@
 			{
 				"id": "mike",
 				"table": {
-					"buttonName": "M.I.K.E.",
 					"name": [
+						"M.I.K.E.",
 						"M.I.K.E.",
 						"Monitor. Influence. Know. Exploit."
 					],
@@ -29,8 +29,9 @@
 			{
 				"id": "nick",
 				"table": {
-					"buttonName": "Nick L. Odeion",
 					"name": [
+						"Nick L. Odeion",
+						"Nick L. Odeion",
 						"Nick \"Lumière\" Odeion"
 					],
 					"pronouns": "He/him",
@@ -51,8 +52,8 @@
 			{
 				"id": "halojack",
 				"table": {
-					"buttonName": "Halojack",
 					"name": [
+						"Halojack", 
 						"Halojack"
 					],
 					"pronouns": "She/her",
@@ -88,8 +89,8 @@
 			{
 				"id": "gospiel",
 				"table": {
-					"buttonName": "Gospiel",
 					"name": [
+						"Gospiel", 
 						"Gospiel"
 					],
 					"pronouns": "She/her",
@@ -111,8 +112,8 @@
 			{
 				"id": "acolyte",
 				"table": {
-					"buttonName": "The Acolyte",
 					"name": [
+						"The Acolyte",
 						"The Acolyte",
 						"Mesmer"
 					],
@@ -134,8 +135,10 @@
 			{
 				"id": "beltrowel",
 				"table": {
-					"buttonName": "Beltrowel",
-					"name": ["Beltrowel"],
+					"name": [
+						"Beltrowel",
+						"Beltrowel"
+					],
 					"pronouns": "He/him",
 					"role": "Secret Boss",
 					"object": "Church Bell",
@@ -169,8 +172,10 @@
 			{
 				"id": "firefly",
 				"table": {
-					"buttonName": "Firefly",
-					"name": ["Firefly"],
+					"name": [
+						"Firefly",
+						"Firefly"
+					],
 					"pronouns": "She/they",
 					"role": "Main Antagonist",
 					"object": "Flying Coaster"
@@ -185,8 +190,10 @@
 			{
 				"id": "spreeblitz",
 				"table": {
-					"buttonName": "Spree Blitz",
-					"name": ["Spree Blitz"],
+					"name": [
+						"Spree Blitz",
+						"Spree Blitz"
+					],
 					"pronouns": "He/they/it",
 					"role": "Secret Boss",
 					"object": "Suspended Looping Coaster",
@@ -212,8 +219,11 @@
 			{
 				"id": "pollyanna",
 				"table": {
-					"buttonName": "Pollyanna",
-					"name": ["Pollyanna Dew", "\"Polly\""],
+					"name": [
+						"Pollyanna", 
+						"Pollyanna Dew", 
+						"\"Polly\""
+					],
 					"pronouns": "She/her",
 					"role": "Side Character",
 					"object": ""
@@ -228,8 +238,11 @@
 			{
 				"id": "comet",
 				"table": {
-					"buttonName": "Comet",
-					"name": ["Comet Holiday", "Comet Leonard (Maiden Name)"],
+					"name": [
+						"Comet Holiday",
+						"Comet Holiday", 
+						"Comet Leonard (Maiden Name)"
+					],
 					"pronouns": "She/her",
 					"role": "Side Character",
 					"object": ""
@@ -252,8 +265,10 @@
 			{
 				"id": "beholder",
 				"table": {
-					"buttonName": "The Beholder",
-					"name": ["The Beholder"],
+					"name": [
+						"The Beholder",
+						"The Beholder"
+				],
 					"pronouns": "He/they",
 					"role": "Main Antagonist",
 					"object": ""
@@ -268,8 +283,11 @@
 			{
 				"id": "friend",
 				"table": {
-					"buttonName": "FRIEND",
-					"name": ["DEVICE_FRIEND"],
+					"name": [
+						"FRIEND",
+						"FRIEND", 
+						"DEVICE_FRIEND"
+					],
 					"pronouns": "It/they",
 					"role": "Secondary Antagonist",
 					"object": ""
@@ -284,8 +302,11 @@
 			{
 				"id": "gauze",
 				"table": {
-					"buttonName": "Gauze",
-					"name": ["Gauze", "The Vessel"],
+					"name": [
+						"Gauze", 
+						"Gauze",
+						"The Vessel"
+					],
 					"pronouns": "They/them",
 					"role": "Secret Boss",
 					"object": "",
@@ -314,8 +335,10 @@
 			{
 				"id": "knight",
 				"table": {
-					"buttonName": "The Roaring Knight",
-					"name": ["Comet Holiday"],
+					"name": [
+						"Comet Holiday",
+						"Comet Holiday"
+					],
 					"pronouns": "She/her",
 					"role": "Main Antagonist",
 					"object": ""
@@ -330,8 +353,10 @@
 			{
 				"id": "pionite",
 				"table": {
-					"buttonName": "Pionite",
-					"name": ["Pionite"],
+					"name": [
+						"Pionite",
+						"Pionite"
+					],
 					"pronouns": "He/they",
 					"role": "Secondary Antagonist",
 					"object": "Christmas Tree Glass Sculpture"
@@ -346,8 +371,10 @@
 			{
 				"id": "minerva",
 				"table": {
-					"buttonName": "Minerva",
-					"name": ["Minerva"],
+					"name": [
+						"Minerva",
+						"Minerva"
+					],
 					"pronouns": "She/her",
 					"role": "Secret Boss",
 					"object": "Fountain Pen + Penholder",
