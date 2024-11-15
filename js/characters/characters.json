@@ -189,7 +189,7 @@
 					"name": ["Firefly"],
 					"pronouns": "She/they",
 					"role": "Main Antagonist",
-					"object": ""
+					"object": "Suspended Looping Coaster"
 				},
 				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
 				"trivia": [],
@@ -205,7 +205,7 @@
 					"name": ["Spree Blitz"],
 					"pronouns": "He/they/it",
 					"role": "Secret Boss",
-					"object": "",
+					"object": "Suspended Looping Coaster",
 					"soulMode": "assets/img/souls/heart_orange.png",
 					"items": [
 						{
@@ -223,6 +223,22 @@
 				"image": {
 					"default": "assets/img/andromedia/ch5/spreeblitz.png",
 					"hover": "assets/img/andromedia/ch5/spreeblitz_2.gif"
+				}
+			},
+			{
+				"id": "pollyanna",
+				"table": {
+					"buttonName": "Pollyanna",
+					"name": ["Pollyanna Dew"],
+					"pronouns": "She/her",
+					"role": "Support",
+					"object": ""
+				},
+				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+				"trivia": [],
+				"image": {
+					"default": "assets/img/andromedia/ch5/pollyanna.png",
+					"hover": "assets/img/andromedia/ch5/pollyanna_2.png"
 				}
 			}
 		],
