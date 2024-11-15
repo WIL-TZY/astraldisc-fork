@@ -90,12 +90,11 @@
 				"table": {
 					"buttonName": "Gospiel",
 					"name": [
-						"Gospiel",
-						"Role? Title?"
+						"Gospiel"
 					],
 					"pronouns": "She/her",
 					"role": "Main Antagonist",
-					"object": ""
+					"object": "Angel Doll"
 				},
 				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
 				"trivia": [],
@@ -114,7 +113,7 @@
 					],
 					"pronouns": "She/her",
 					"role": "Secondary Antagonist",
-					"object": ""
+					"object": "Church Organ"
 				},
 				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
 				"trivia": [],
@@ -127,21 +126,18 @@
 				"id": "beltrowel",
 				"table": {
 					"buttonName": "Beltrowel",
-					"name": [
-						"Beltrowel",
-						"Role? Title?"
-					],
+					"name": ["Beltrowel"],
 					"pronouns": "He/him",
 					"role": "Secret Boss",
 					"object": "Church Bell",
 					"soulMode": "assets/img/souls/heart_green.png",
 					"items": [
 						{
-							"name": "Item 1 (you can change the icon)",
-							"icon": "assets/img/equip_sword.png"
+							"name": "VesperRing",
+							"icon": "assets/img/equip_ring.png"
 						},
 						{
-							"name": "Item 2",
+							"name": "CorruptStole",
 							"icon": "assets/img/equip_armor.png"
 						}
 					]
@@ -160,7 +156,7 @@
 				"id": "comet",
 				"table": {
 					"buttonName": "Comet Holiday",
-					"name": ["Comet Holiday", ""],
+					"name": ["Comet Holiday"],
 					"pronouns": "She/her",
 					"role": "???",
 					"object": ""
@@ -176,8 +172,8 @@
 				"id": "firefly",
 				"table": {
 					"buttonName": "Firefly",
-					"name": ["Firefly", ""],
-					"pronouns": "She/her",
+					"name": ["Firefly"],
+					"pronouns": "She/they",
 					"role": "Main Antagonist",
 					"object": ""
 				},
@@ -192,18 +188,18 @@
 				"id": "spreeblitz",
 				"table": {
 					"buttonName": "Spree Blitz",
-					"name": ["Spree Blitz", ""],
-					"pronouns": "He/him",
+					"name": ["Spree Blitz"],
+					"pronouns": "He/they/it",
 					"role": "Secret Boss",
 					"object": "",
 					"soulMode": "assets/img/souls/heart_orange.png",
 					"items": [
 						{
-							"name": "Item 1 (you can change the icon)",
+							"name": "BrokenTracks",
 							"icon": "assets/img/equip_sword.png"
 						},
 						{
-							"name": "Item 2",
+							"name": "Safety Belt",
 							"icon": "assets/img/equip_armor.png"
 						}
 					]
@@ -222,8 +218,8 @@
 				"id": "beholder",
 				"table": {
 					"buttonName": "The Beholder",
-					"name": ["The Beholder", ""],
-					"pronouns": "??/??",
+					"name": ["The Beholder"],
+					"pronouns": "He/they",
 					"role": "Main Antagonist",
 					"object": ""
 				},
@@ -238,8 +234,8 @@
 				"id": "friend",
 				"table": {
 					"buttonName": "FRIEND",
-					"name": ["FRIEND", ""],
-					"pronouns": "They/them",
+					"name": ["FRIEND"],
+					"pronouns": "They/it",
 					"role": "Secondary Antagonist",
 					"object": ""
 				},
@@ -254,18 +250,18 @@
 				"id": "gauze",
 				"table": {
 					"buttonName": "Gauze",
-					"name": ["The Vessel", "Gauze?"],
+					"name": ["Gauze", "The Vessel"],
 					"pronouns": "They/them",
 					"role": "Secret Boss",
 					"object": "",
 					"soulMode": "assets/img/souls/heart_purple.png",
 					"items": [
 						{
-							"name": "Item 1 (you can change the icon)",
-							"icon": "assets/img/equip_sword.png"
+							"name": "GonerLabrys",
+							"icon": "assets/img/equip_axe.png"
 						},
 						{
-							"name": "Item 2",
+							"name": "SoulBandage",
 							"icon": "assets/img/equip_armor.png"
 						}
 					]
