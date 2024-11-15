@@ -68,7 +68,7 @@ function createProfileDiv(character) {
 	
 	if (character.description) {
 		const description = document.createElement('p');
-		description.textContent = character.description;
+		description.innerHTML = character.description;
 		profileDiv.appendChild(description);
 	}
 	
