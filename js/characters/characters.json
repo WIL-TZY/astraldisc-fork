@@ -31,7 +31,6 @@
 				"table": {
 					"name": [
 						"Nick L. Odeion",
-						"Nick L. Odeion",
 						"Nick \"Lumière\" Odeion"
 					],
 					"pronouns": "He/him",
@@ -97,7 +96,7 @@
 					"role": "Main Antagonist",
 					"object": "Angel Doll"
 				},
-				"description": "Gospiel is a frantic, slightly manic nun who appeared one day by the Great Pillars and swayed the locals with her unusual, powerful presence.\n\nThis ended up with the Bishop being cast aside, and Gospiel taking his manor and prestigious title to herself. Her sacred power comes from a strong prayer to a loved one's safety, and once she sees Noelle, the pieces start to fit together.",
+				"description": "Gospiel is a frantic nun who appeared one day by the Great Pillars and swayed the locals with her unusual, powerful presence.\n\nThis ended up with the Bishop being cast aside, and Gospiel taking his manor and prestigious title to herself. Her sacred power comes from a strong prayer to a loved one's safety, and once she sees Noelle, the pieces start to fit together.",
 				"trivia": [
 					"Given her origins, Gospiel has a natural talent for painting and most of her powers are linked to art. She has turned the manor into her own gallery. Some say her paintings look almost TOO real...",
 					"Her favorite subject to paint is The Acolyte. They are very close.",
@@ -180,8 +179,11 @@
 					"role": "Main Antagonist",
 					"object": "Flying Coaster"
 				},
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-				"trivia": [],
+				"description": "An adventurous and eccentric lady, Firefly cares deeply about keeping Dreamland running. She's absolutely determined to bring a smile to everyone's faces, even if it means a little danger is put into mix.\n\nTo Firefly, you can't truly have fun witout a spike of adrenaline... and that's why she always cooks up extravagant inventions to blow the Lightner visitors away!",
+				"trivia": [
+					"Was once part of a dueling coaster with her brother. After the incident, her ride was repurposed entirely and turned into the park's crown jewel.",
+					"She loves the hell out of heights."
+				],
 				"image": {
 					"default": "assets/img/andromedia/ch5/firefly.png",
 					"hover": "assets/img/andromedia/ch5/firefly_2.png"
@@ -221,25 +223,6 @@
 				}
 			},
 			{
-				"id": "pollyanna",
-				"table": {
-					"name": [
-						"Pollyanna", 
-						"Pollyanna Dew", 
-						"\"Polly\""
-					],
-					"pronouns": "She/her",
-					"role": "Side Character",
-					"object": ""
-				},
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-				"trivia": [],
-				"image": {
-					"default": "assets/img/andromedia/ch5/pollyanna.png",
-					"hover": "assets/img/andromedia/ch5/pollyanna_2.png"
-				}
-			},
-			{
 				"id": "comet",
 				"table": {
 					"name": [
@@ -261,6 +244,29 @@
 				"image": {
 					"default": "assets/img/andromedia/ch5/comet.png",
 					"hover": "assets/img/andromedia/ch5/comet_2.png"
+				}
+			},
+			{
+				"id": "pollyanna",
+				"table": {
+					"name": [
+						"Pollyanna", 
+						"Pollyanna Dew", 
+						"\"Polly\""
+					],
+					"pronouns": "She/her",
+					"role": "Side Character",
+					"object": ""
+				},
+				"description": "As a resident of Hometown during her teenage years, Pollyanna wishes she could go back to the simpler days where all she did was play baseball and throw paper planes at Gerson. After the disaster that was college in Ebott City, she dropped out and started working at the local theme park to get by.\n\nSadly for her, she hates kids... But getting to see a few people who were once part of her past isn't so bad.",
+				"trivia": [
+					"Knows Susie. They get along well.",
+					"Asriel did not tell her the truth. She thinks Dess has ghosted her online.",
+					"Despite everything, Pollyanna still believes in better days."
+				],
+				"image": {
+					"default": "assets/img/andromedia/ch5/pollyanna.png",
+					"hover": "assets/img/andromedia/ch5/pollyanna_2.png"
 				}
 			}
 		],
@@ -353,14 +359,14 @@
 				"id": "knight",
 				"table": {
 					"name": [
-						"Comet Holiday",
+						"The Roaring Knight",
 						"Comet Holiday"
 					],
 					"pronouns": "She/her",
 					"role": "Main Antagonist",
 					"object": ""
 				},
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
+				"description": "",
 				"trivia": [],
 				"image": {
 					"default": "assets/img/andromedia/ch7/knight.png",
@@ -378,8 +384,12 @@
 					"role": "Secondary Antagonist",
 					"object": "Christmas Tree Glass Sculpture"
 				},
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-				"trivia": [],
+				"description": "A cold, calculated and sinister ruler, Pionite has been using their crystals and ink to build his empire for centuries.\n\nWhen the Knight came to him with an offer, he was more than willing to listen, strongly believing in her cause. He will do whatever it takes to make sure her plans come to fruition.",
+				"trivia": [
+					"He has his subjects bring gifts and offerings to him constantly.",
+					"Residents of the Hyaloid Fortress must always be present for the Yuletide Feast. Show up late and you will be punished.",
+					"Everything is a tradition in their eyes, and must be followed thoroughly."
+				],
 				"image": {
 					"default": "assets/img/andromedia/ch7/pionite.png",
 					"hover": "assets/img/andromedia/ch7/pionite_2.png"
@@ -407,8 +417,12 @@
 						}
 					]
 				},
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-				"trivia": [],
+				"description": "Minerva was a prolific scribe who wrote the stories of lightner’s history and laws. She paraded her home as a sanctuary of ideas and her library was ever expanding. But one day, The Grand Inkwell, ran dry. With no Ink, her stories ceased and her powers dwindled.\n\nFor years she scoured the dark world in search of a spark that would never reignite. Feeling hopeless, she kept to herself as the world continued on without her.\n\nOn a rare outing, she encountered a strange man. He told wonderful stories, stories about Lightners, stories about Darkners, and a world beyond the stretches of their universe. He placed a shard in her hands, and through the inky darkness she saw light.\n\nNowadays, Minerva wander the depths of Hyaloid Fortress, forever searching for a way to tell the truth of the stories she's heard from the darkness. She firmly believes in The Knight's schemes, having known Comet's despair for quite a while, and longs to prove herself useful in order to aid her goals.",
+				"trivia": [
+					"Prim and proper. She is the embodiment of order, doing everything by the book.",
+					"She likes pianos and harps. She hasn't made music in a long time.",
+					"Masks the fact that she has little self worth."
+				],
 				"image": {
 					"default": "assets/img/andromedia/ch7/minerva.png",
 					"hover": "assets/img/andromedia/ch7/minerva.png"
