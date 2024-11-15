@@ -154,11 +154,11 @@
 						}
 					]
 				},
-				"description": "Beltrowel used to be a priest in Divine Manor. While being known as a holy man, his selfishness did not go unnoticed by a strange visitor who one day stepped foot into his confession booth.\n\nAfter that encounter, Beltrowel began to refuse his role to assist lightners, preaching about a terrible calamity soon to come. Once word got out to the Bishop of a lunatic trying to offer \"salvation\", Beltrowel was swiftly decommissioned and trapped inside a well with a powerful incantation...",
+				"description": "Beltrowel used to be a priest in Divine Manor. While being known as a holy man, his selfishness did not go unnoticed by a strange visitor who one day stepped foot into his confession booth.\n\nAfter that encounter, Beltrowel began to refuse his role to assist Lightners, preaching about a terrible calamity soon to come. Once word got out to the Bishop of a lunatic trying to offer \"salvation\", Beltrowel was swiftly decommissioned and trapped inside a well with a powerful incantation...",
 				"trivia": [
 					"Beltrowel has a great singing voice. In fact, he speaks very sing-songy.",
 					"He finds flower baths to be relaxing. He usually picks red roses, his favorite flower — his bathtub often stained with red.",
-					"Why serve lightners when they care so little about you...? That's what he thinks.",
+					"Why serve Lightners when they care so little about you...? That's what he thinks.",
 					"Beltrowel excels at manipulation to get what he wants. Maybe one day, a fellow darkner will agree to his plan..."
 				],
 				"image": {
@@ -209,8 +209,12 @@
 						}
 					]
 				},
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-				"trivia": [],
+				"description": "Spree Blitz, along with his sister Firefly, was part of an inseparable duo who helped manage Dreamland. One day, his ride got decommissioned after a malfunction had caused the death of two Lightners.\n\nThey were never the same after the accident, his behavior erratic and bringing danger to those around him. With no other choice, Firefly was forced to leave them behind in an abandoned section of the park.\n\nSpree Blitz, embittered, and wishing to return to his days of glory, was then offered aid by a strange man. He gave it a peculiar crystal, and Spree Blitz, faced with the knowledge of the impossible, short-circuited and entered a comatose state. There it'd stay, forgotten by the world, awaiting the day Lightners would pass by and reactivate him.",
+				"trivia": [
+					"Gravi, the shopkeeper, helps keep an eye on him as Spree Blitz has proven to be extremely dangerous.",
+					"Firefly comes by to visit its mechanical tomb whenever guilt decides to consume her.",
+					"They once met a strange priest and grew close to him. Little did they know that later on the priest would steal his eyes as a morbid memento. ...Maybe that's fine by him."
+				],
 				"image": {
 					"default": "assets/img/andromedia/ch5/spreeblitz.png",
 					"hover": "assets/img/andromedia/ch5/spreeblitz_2.gif"
@@ -273,8 +277,12 @@
 					"role": "Main Antagonist",
 					"object": ""
 				},
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-				"trivia": [],
+				"description": "The Beholder is someone... peculiar. He says he's a lab assistant to... someone, but he doesn't seem very enthusiastic about it.\n\nHe appears to be currently stranded in The Depths, and is antsy to get out once he finishes his \"main objective\" there.",
+				"trivia": [
+					"They rhyme. Like, a lot.",
+					"Has a tendency to stare (like cats do) and make unnecessary or blunt observations.",
+					"His main function is to observe experiments from up close and write reports with his notes."
+				],
 				"image": {
 					"default": "assets/img/andromedia/ch6/beholder.png",
 					"hover": "assets/img/andromedia/ch6/beholder_2.png"
@@ -292,8 +300,13 @@
 					"role": "Secondary Antagonist",
 					"object": ""
 				},
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-				"trivia": [],
+				"description": "Intrinsically connected to the DEVICE, no one knows where exactly this creature came from. Its glitchy body can disperse itself into arachnids that form webs wherever they see fit, and all that is left is a FACE... staring back at you.\n\nA trickster at heart, this FRIEND will be yours for all ETERNITY.",
+				"trivia": [
+					"Those who go glitch hunting get to see them first.",
+					"Not a cat! A raccoon that hangs around trash.",
+					"An all powerful entity...? Maybe not. Just a friend you wouldn't want to mess with.",
+					"Makes a room for itself everywhere they go."
+				],
 				"image": {
 					"default": "assets/img/andromedia/ch6/friend.gif",
 					"hover": "assets/img/andromedia/ch6/friend_2.gif"
@@ -322,8 +335,12 @@
 						}
 					]
 				},
-				"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.",
-				"trivia": ["Gauze likes cookies"],
+				"description": "Being tossed aside upon their creation, \"Gauze\" has to live with a decaying body, slowly feeling the life being chipped away from them. Clinging to what little identity they have, they persist, even in the face of The Depths' pressure.\n\nBeing cursed with a mirror directly into Kris's life, envy and anger began to boil inside them. Maybe they have a proposition that can help both of them out.",
+				"trivia": [
+					"They wear a bandage on their cheek, stained by sickly pink-colored liquid. It has a strange aura.",
+					"Can induce VERTIGO status effect.",
+					"Despite their best efforts, decay is imminent. They're in denial of that."
+				],
 				"image": {
 					"default": "assets/img/andromedia/ch6/gauze.png",
 					"hover": "assets/img/andromedia/ch6/gauze_2.gif"
