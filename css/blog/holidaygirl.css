@@ -7,7 +7,7 @@ a {
 }
 
 body {
-    background-image: url("../assets/img/holidaygirl1225/bg-tree.png");
+    background-image: url("../../assets/img/blog/noelle/bg-tree.png");
     background-color: #ffd5ef;
     color: black;
     font-family: "Georgia", Georgia, serif;
@@ -22,6 +22,10 @@ body {
 
 .pixelated {
     image-rendering: pixelated;
+}
+
+.smooth {
+    image-rendering: smooth;
 }
 
 h1, h2, h3 {
@@ -199,79 +203,4 @@ body.dark .post-footer { border-color: white; }
 body.dark .alert {
     background-color: #AA0000;
     color: white;
-}
-
-.music { text-align: right; }
-
-.really-player {
-    position: relative;
-    display: inline-block;
-    font-family: 'Arial', Arial, sans-serif;
-    height: 50px;
-    width: 250px;
-    max-width: 100%;
-    margin-bottom: 1rem;
-    background: #dedede;
-    background: linear-gradient(180deg, #dedede 0%, white 28%, #c6c6c6 50%, #c6c6c6 70%, white 100%);
-}
-
-.really-player audio { display: none; }
-
-.really-player .volume {
-    position: absolute;
-    top: 14px;
-    right: 10px;
-    width: 58%;
-}
-
-.really-player .volume-icon {
-    position: absolute;
-    top: 13px;
-    left: 60px;
-    height: 24px;
-    width: 24px;
-    opacity: 0.8;
-}
-
-.really-player .play-button {
-    position: absolute;
-    left: 5px;
-    top: 5px;
-    color: black;
-    height: 40px;
-    width: 40px;
-    border-radius: 999px;
-    background: none;
-    box-shadow: inset 0 0 4px #c8c8c8, 0 0 8px #c8c8c8;
-    border: 1px solid #b4b4b4;
-}
-
-.really-player .play-button::before {
-    content: "◀︎";
-    transform: rotate(180deg);
-    position: absolute;
-    pointer-events: none;
-    left: 11px;
-    top: 4px;
-    font-size: 24px;
-}
-
-.really-player .play-button:hover {
-    cursor: pointer;
-    box-shadow: inset 0 0 8px #c8c8c8, 0 0 12px #c8c8c8;
-    color: blue;
-}
-
-.really-player .play-button:active {
-    color: white;
-    background: blue;
-}
-
-.really-player.playing .play-button::before {
-    content: "=";
-    transform: rotate(90deg);
-    font-size: 32px;
-    font-weight: bold;
-    left: 11px;
-    top: 1px;
 }
