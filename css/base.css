@@ -29,6 +29,12 @@
     --unselected: #614e6b;
     --unselected-darker: #261e2c;
     --unselected-darkest: #1b151f;
+    --device: green;
+    --device-darker: #006600;
+    --device-darkest: #004600;
+    --device-lighter: rgb(0, 255, 0);
+    --device-alpha: #00660070;
+    --device-alpha2: #00660026;
 
     /* Team Colors */
     --katebulka: #FF69B4;

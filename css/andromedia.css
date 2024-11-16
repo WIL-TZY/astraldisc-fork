@@ -282,7 +282,7 @@ body.shadowcrystal {
     display: flex;
     justify-content: center;
     align-items: center;
-	animation: float 3s ease-in-out infinite, glow 1.25s alternate infinite;
+	animation: float 3s ease-in-out infinite, glowing 1.25s alternate infinite;
 }
 
 @keyframes float {
@@ -299,7 +299,7 @@ body.shadowcrystal {
 	}
 }
 
-@keyframes glow {
+@keyframes glowing {
 	0% {
 		-webkit-filter: brightness(1);
 		filter: brightness(1);
