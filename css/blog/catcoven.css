@@ -1,0 +1,55 @@
+body {
+    background-image: url("../../assets/img/blog/catti/bg-mist.png");
+    background-blend-mode: multiply;
+    background-color: #510048;
+    font-family: "Garamond", serif;
+    font-size: large;
+    color: white;
+}
+
+h1, h2, h3 {
+    font-family: "Garamond", serif; 
+}
+
+.header {
+    background: black;
+}
+
+.header .welcome {
+    flex-grow: 1;
+    max-width: 80%;
+    object-fit: contain;
+}
+
+.header .ornament {
+    flex-grow: 1;
+    margin-left: 1rem;
+    max-width: 20%;
+    max-height: 100px;
+    object-fit: contain;
+}
+
+.post {
+    background: black;
+}
+
+.post-footer {
+    border-top: 1px solid #510048;
+    border-bottom: 1px solid #510048;
+}
+
+.comment .author {
+    background: #240020;
+}
+
+.comment .author .user {
+    color: #4643a1;
+}
+
+.comment .author .user.admin {
+    color: #008f11;
+}
+
+.comment .comment-body {
+    background-color: black;
+}
