@@ -40,17 +40,8 @@ h1, h2, h3 {
     margin-bottom: 1rem;
 }
 
-.header .welcome {
-    flex-grow: 1;
+.header .logo {
     max-width: 80%;
-    object-fit: contain;
-}
-
-.header .ornament {
-    flex-grow: 1;
-    margin-left: 1rem;
-    max-width: 20%;
-    max-height: 100px;
     object-fit: contain;
 }
 
@@ -83,9 +74,13 @@ h1, h2, h3 {
     border-bottom: 1px dashed black;
 }
 
-.post-footer div:not(:first-child) { margin-top: 0.5rem; }
+.post-footer div:not(:first-child) {
+    margin-top: 0.5rem;
+}
 
-.post-footer strong { margin-right: 0.25rem; }
+.post-footer strong {
+    margin-right: 0.25rem;
+}
 
 .comments-footer {
     text-align: center;
@@ -100,7 +95,9 @@ h1, h2, h3 {
     text-decoration: underline;
 }
 
-.comments-footer a:not(:first-child) { margin-left: 2rem; }
+.comments-footer a:not(:first-child) {
+    margin-left: 2rem;
+}
 
 .comments-footer a.disabled {
     cursor: not-allowed;
@@ -113,7 +110,9 @@ h1, h2, h3 {
     margin-bottom: 1rem;
 }
 
-.comments-header small { color: #555555; }
+.comments-header small {
+    color: #555555;
+}
 
 .comment .author {
     background: #a4b4ff;
@@ -173,7 +172,26 @@ h1, h2, h3 {
 }
 
 .alert img {
-    float: left; height: 20px; margin-right: 0.5rem; }
+    float: left;
+    height: 20px;
+    margin-right: 0.5rem;
+}
+
+.powered-by {
+    color: #545454;
+    font-size: 16px;
+    font-family: monospace;
+    font-weight: bold;
+    padding: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.powered-by img {
+    width: 20%;
+    height: 20%;
+    image-rendering: smooth;
+    vertical-align: -12px;
+}
 
 .back {
     display: inline-block;
@@ -190,13 +208,21 @@ body.dark {
     background-image: none;
 }
 
-body.dark .header, body.dark .post { background: #555555; }
+body.dark .header, body.dark .post {
+    background: #555555;
+}
 
-body.dark .header a, body.dark .post a { color: #61d9ff; }
+body.dark .header a, body.dark .post a {
+    color: #61d9ff;
+}
 
-body.dark .header { opacity: 0; }
+body.dark .header {
+    opacity: 0;
+}
 
-body.dark .post-footer { border-color: white; }
+body.dark .post-footer {
+    border-color: white;
+}
 
 body.dark .alert {
     background-color: #AA0000;

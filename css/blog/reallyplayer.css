@@ -1,4 +1,6 @@
-.music { text-align: right; }
+.music {
+    text-align: right;
+}
 
 .really-player {
     position: relative;
@@ -71,4 +73,27 @@
     font-weight: bold;
     left: 11px;
     top: 1px;
+}
+
+/* Dark Mode */
+
+.dark {
+    background: #333333;
+    background: linear-gradient(180deg, #333 0%, rgb(74, 74, 74) 28%, #262626 50%, #171717 70%, black 100%);
+}
+
+.dark .play-button {
+    color: white;
+    box-shadow: inset 0 0 4px #434343, 0 0 8px #434343;
+    border: 1px solid #232323;
+}
+
+.dark .play-button:hover {
+    box-shadow: inset 0 0 8px #434343, 0 0 12px #434343;
+    color: grey;
+}
+
+.dark .play-button:active {
+    color: black;
+    background: grey;
 }
