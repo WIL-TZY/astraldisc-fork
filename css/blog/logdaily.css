@@ -92,6 +92,11 @@ h1, h2, h3 {
     border: 2px inset white;
 }
 
+.post .deleted {
+    color: #555555;
+    font-family: monospace;
+}
+
 .post-footer {
     margin-top: 2rem;
     padding: 0.5rem 0;
@@ -255,6 +260,11 @@ body.dark .header a, body.dark .post a {
 
 body.dark .header {
     opacity: 0;
+}
+
+body.dark .post .deleted {
+    color: #d5d5d5;
+    font-family: monospace;
 }
 
 body.dark .post-footer {
