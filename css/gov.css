@@ -159,12 +159,14 @@ input[type="text"], input[type="email"], textarea {
     background-color: #b6ced2;
     color: #324952;
     margin-top: 5px;
+    font-size: medium;
 }
 
 textarea {
     resize: vertical;
-    height: 60px;
+    height: 150px;
     background-color: #b6ced2;
+    font-size: large;
 }
 
 input[type="radio"] {

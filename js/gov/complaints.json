@@ -1,53 +1,234 @@
 [
     {
         "caseNumber": "001",
-        "caseStatus": "Ongoing",
+        "caseStatus": "Closed",
         "date": "202X-11-18",
         "complainerDetails": {
-            "name": "Maria Anders",
-            "occupation": "Teacher",
-            "email": "maria.anders@example.com",
-            "phone": "123-456-7890",
+            "name": "Scarf Lady",
+            "occupation": "Journalist",
+            "email": "ihatelibraries@homemail.com",
+            "phone": "(999) 323-4488",
             "address": "123 Main St, Hometown"
         },
 
         "complaintDetails": {
-            "complainee": "Alfreds Futterkiste",
-            "summary": "Poor service regarding document processing.",
-            "details": "I have been waiting for weeks to get my documents processed but still have not received any updates."
+            "complainee": "Terry Fans",
+            "summary": "Pothole Vandalism",
+            "details": "Dear Mayor Holiday\n\nWhile potholes are always a problem local council should be on top of, I understand you can't send someone to deal with them immediately. But, recently, I've bared witness to a trio of HOOLIGANS deliberately creating potholes using industrial sized pressure sprays to carve chunks out of our roads!\n\nI believe they call themselves \"The Terry Fans\" because I overheard them shouting \"We the Terry Fans are doing this vandalism, yo!\" in unison. If hooligans are tearing up our vital infrastructure, then who knows what else they're capable of. That is why I saw it fit to draw them to your attention posthaste!\n\nI hope this situation can be dealt with quickly, who knows what else these \"Terry Fans\" can get up to.\n\nThank you in advance!"
         },
 
         "mayoralStaffResponse": {
             "isJustified": "yes",
-            "followUp": "yes",
-            "satisfied": "no",
-            "response": "We are currently reviewing the case and will follow up soon."
+            "followUp": "no",
+            "satisfied": "yes",
+            "response": "Thank you, Miss, for bringing this to our attention. We have notified local law enforcement and hopefully they can catch this gang before they do anything more egregious. In the future, if you have any complaint against another individual who you believe to be committing dangerous or illegal activity, contact Officer Undyne first before informing the local council. Good day."
         }
     },
 
     {
         "caseNumber": "002",
         "caseStatus": "Closed",
-        "date": "202X-10-10",
+        "date": "202X-01-10",
         "complainerDetails": {
-        "name": "Christina Berglund",
-        "occupation": "Accountant",
-        "email": "christina.berglund@example.com",
-        "phone": "987-654-3210",
-        "address": "456 Elm St, Hometown"
+        "name": "M. Teen",
+        "occupation": "Student",
+        "email": "mteen@hometown.ed",
+        "phone": "(999) 301-7742",
+        "address": "7 Fifth Ave, Apt 014, Hometown"
         },
 
         "complaintDetails": {
-        "complainee": "Berglunds snabbköp",
-        "summary": "Unprofessional behavior by staff.",
-        "details": "I experienced unprofessional behavior from staff while trying to get assistance."
+        "complainee": "?? What",
+        "summary": "Urgent Help!",
+        "details": "Yo Miss Mayor, I was hoping to get some professional feedback about my sick new rap and the government is the most professional people in the world so I bet you got some real wise words for me.\n\n\"They call it rockin', I say grillin'\nCause I'm cookin' I'm on that beat.\nI'm as big as dinosaur,\nAnd I'll crush you with my feets!\"\n\nLet me know if you got any advice for my music career and also, do you know what people do in clubs? I want to write a verse about being in da club but I've never actually been in da club, thanks!"
+        },
+
+        "mayoralStaffResponse": {
+        "isJustified": "no",
+        "followUp": "no",
+        "satisfied": "no",
+        "response": "You want an agent, dearie?"
+        }
+    },
+
+    {
+        "caseNumber": "003",
+        "caseStatus": "Closed",
+        "date": "202X-03-05",
+        "complainerDetails": {
+        "name": "Alphys",
+        "occupation": "Teacher",
+        "email": "alphys@hometown.ed",
+        "phone": "(999) 222-5101",
+        "address": "7 Fifth Ave, Apt 006, Hometown"
+        },
+
+        "complaintDetails": {
+        "complainee": "None",
+        "summary": "About the School's Funding",
+        "details": "Salutations, Mayor Comet... Is \"salutations\" the right way to address a government agent?? Is it even the way to address a normal person?!?! That seems a little too formal, or maybe a little out of date, when was the last time someone said \"salutations\"? 1847???? You know what, let me start over...\n\nG'day Miss Mayor Comet. I was hoping to discuss a further budget increase for the school so that we can more easily afford additional stationary. Someone has been... misplacing certain items and even a small budget increase would mean that we could pay to replace some markers, pencils, erasers, chalk, etc without having to dip into the school's volleyball club pension.\n\nSo if you could do that, that would be great... although now that I'm thinking about it, I'm pretty sure a different teacher, someone with a bit more seniority is supposed to make these kinds of requests and I might be... definitely wasting my time here, so...\n\nSorry.\n\nP.S. Please don't bring this up to Toriel."
+        },
+
+        "mayoralStaffResponse": {
+        "isJustified": "yes",
+        "followUp": "yes",
+        "satisfied": "yes",
+        "response": "Hey, it's all cool Miss A, I'll make sure the Mayor knows about those problems at the next school staff meeting, won't even mention your name or nothing. Just make sure you know who to talk to next time, alright A? Stay Frosty Sister."
+        }
+    },
+
+    {
+        "caseNumber": "004",
+        "caseStatus": "Open",
+        "date": "202X-03-20",
+        "complainerDetails": {
+        "name": "M. M.",
+        "occupation": "Church Attendant",
+        "email": "monstermom@homemail.com",
+        "phone": "(999) 301-7742",
+        "address": "7 Fifth Ave, Apt 014, Hometown"
+        },
+
+        "complaintDetails": {
+        "complainee": "None",
+        "summary": "Public Nudity",
+        "details": "So there's this guy, fish tail, horse's head, big muscular body. Well, the reason I know that he's got rippling biceps and why everyone knows that he's got abs like a fresh-from-the-oven muffin tray is because he insists on walking around everywhere without a shirt on.\n\nListen, I swear I'm not some weird prude, clothes are optional and should be a personal decision, except for this guy. I need this dude to wear a shirt.\n\nSo if you can do that, that'd be great. Thanks."
+        },
+
+        "mayoralStaffResponse": {
+        "isJustified": "yes",
+        "followUp": "yes",
+        "satisfied": "no",
+        "response": "While we cannot openly infringe upon the individual rights of freedom of expression, we'll see what the police can do."
+        }
+    },
+
+    {
+        "caseNumber": "005",
+        "caseStatus": "Closed",
+        "date": "202X-04-12",
+        "complainerDetails": {
+        "name": "Rainy Kid",
+        "occupation": "Kid",
+        "email": "rainrulez1234@homemail.com",
+        "phone": "(999) 255-3725",
+        "address": "541 E 4th St, Hometown"
+        },
+
+        "complaintDetails": {
+        "complainee": "Terry Fans",
+        "summary": "Hooligans Gang in MY SPOT",
+        "details": "Hello Ms Mayor. You must have heard by now, but those Terry Fans are back at it again!\n\nAfter evading the fishy arm of the law, these hooligans are BREAK DANCING in the middle of the street, blocking the way to the librarby and the school! Most importantly, they have also started break dancing IN MY SPOT!\n\nI love the effort it takes to have everyone dance the exact same way, but I need these guys out of my way and out of MY SPOT!\n\nPlease help me."
         },
 
         "mayoralStaffResponse": {
         "isJustified": "no",
         "followUp": "no",
         "satisfied": "yes",
-        "response": "The case has been reviewed and found to be unjustified."
+        "response": "Please contact the police next time something like this happens, ok! We'll get to it eventually but the cops can act faster than bureaucrats, gotcha."
+        }
+    },
+
+    {
+        "caseNumber": "006",
+        "caseStatus": "Closed",
+        "date": "202X-06-24",
+        "complainerDetails": {
+        "name": "Purple Guy",
+        "occupation": "Former ICE-E Employee",
+        "email": "ourpleguy@homemail.com",
+        "phone": "(999) 337-0304",
+        "address": "Alleyway, Hometown"
+        },
+
+        "complaintDetails": {
+        "complainee": "",
+        "summary": "YOU DESERVE LOVE",
+        "details": "Give them love! Give them love, folks! I am, of the VERY strong opinion - VERY strong opinion - that NO ONE respects the local council members (such as you reading this) who work TIRELESSLY to: Get. Things. Done! Get things done, folks!\n\nI swear that half of the complaints here are simply put in place to make you all work even harder and that will just not do! Therefore I am sending in this complaint to show how it is TRULY done! Truly done, folks! Our beloved local council members keep this town running. Give them the respect they deserve! And for you, the wonderful, WONDERFUL, council member reading this, something NEEDS to be put in place, to give you the recognition you deserve! I may even have an idea or two.\n\nLet me help! Let me help, council!"
+        },
+
+        "mayoralStaffResponse": {
+        "isJustified": "no",
+        "followUp": "no",
+        "satisfied": "no",
+        "response": "We do appreciate the energetic use of words... but this is a complaint desk, not a support group, dearie."
+        }
+    },
+
+    {
+        "caseNumber": "007",
+        "caseStatus": "Open",
+        "date": "202X-07-01",
+        "complainerDetails": {
+        "name": "Winston",
+        "occupation": "Gravekeeper",
+        "email": "graveskeeper@homemail.com",
+        "phone": "(999) 848-9565",
+        "address": "487 South St, Hometown"
+        },
+
+        "complaintDetails": {
+        "complainee": "Sans' Grocery Store",
+        "summary": "Early Closing Times",
+        "details": "Dear Mrs Mayor, as some may know, I am not a morning person, nor a sun and daylight person either. I work two night shifts at the local cemetery and as soon as dawn begins to break I immediately rush home and encase myself in blackout curtains and several heavy blankets.\n\nMy immediate concern is that during my typical Night to Night, I can never seem to find time to buy groceries. I checked the schedule at Sans' and I was outraged to find that they only open at 8 am in the morning and close at 4pm in the afternoon! (12pm on the Weekends)\n\nI've tried to take this up with the store manager but they are never at the establishment when I arrive. The skeleton running the checkout seems completely oblivious to my needs.\n\nHe always goes \"why don'tcha come in earlier?\" or \"hey, you're here now, why not just grab your groceries?\"\n\nIt's clear that some decisive action must be taken against this establishment if it is to ever take care of its customers' needs, or to actually make a profit. I hope you can more effectively communicate with the store owner than I have and address my concerns.\n\nGood night! - Gravekeeper Winston."
+        },
+
+        "mayoralStaffResponse": {
+        "isJustified": "yes",
+        "followUp": "yes",
+        "satisfied": "no",
+        "response": "Thank you for your input, Mr. Winston. We'll keep your concerns in mind and send a message to the store owner about this. Have a good evening."
+        }
+    },
+
+    {
+        "caseNumber": "008",
+        "caseStatus": "Closed",
+        "date": "202X-08-20",
+        "complainerDetails": {
+        "name": "Berdly",
+        "occupation": "Student",
+        "email": "berdly@hometown.ed",
+        "phone": "(999) 795-3716",
+        "address": "7 Fifth Ave, Apt 008, Hometown"
+        },
+
+        "complaintDetails": {
+        "complainee": "Hometown Power Station",
+        "summary": "Strange Power Outage!",
+        "details": "To our wondrous, Mayor!\n\nToday was the release day of the much ANTICIPATED game \"ATG 6\", and as one might suspect... a veteran gamer such as myself was incredibly excited to finally get my hands on a copy and spend many hours enhancing my true gaming skills!\n\nSadly my excitement was short-lived... After ALMOST completing its installation, all the lights in my apartment went out! The kitchen appliances, the lamps and WORST of all! My computer...\n\nHow am I, the true ATG player, meant to experience this masterpiece and write my IMPORTANT reviews online when I could not even start my computer? Now everyone else will get to enjoy ATG 6 and talk about it before I can. I will go to school tomorrow and be spoiled by everyone, because all my classmates got to play the game before I did!\n\n... I realized that as I was writing this complaint (with the trusty help of my mobile data), the power returned, and I found that all traces of ATG 6 were gone, including the disc I am confident I had inserted into my PC.\n\nI apologize for wasting your time. I have no idea what just happened and am quite puzzled.\n\n\nYours truly, Berdly"
+        },
+
+        "mayoralStaffResponse": {
+        "isJustified": "no",
+        "followUp": "no",
+        "satisfied": "yes",
+        "response": "It appears that you have everything under control. Next time, try to be more careful and perhaps ask for an adult's assistance before contacting the Town Hall. Thank you."
+        }
+    },
+    {
+        "caseNumber": "009",
+        "caseStatus": "Closed",
+        "date": "202X-09-08",
+        "complainerDetails": {
+        "name": "Catdad",
+        "occupation": "Grill Chef",
+        "email": "",
+        "phone": "(999) 251-8288",
+        "address": "456 Main St, Hometown"
+        },
+
+        "complaintDetails": {
+        "complainee": "My neighbor",
+        "summary": "Constant Birthday Parties on Non-Birthdays",
+        "details": "Hey Major-Mayor!\n\nI apologize for sending this complaint during such a busy time of the year, ya must be swamped! I'll try keeping it short. I'm getting tired of the amount of birthday parties being thrown at my neighbor's place! Ya'd think every family needs 4, maybe 5 birthday parties a year... But no, not this one.\n\nSomehow the lovely fam living next to my house feels the need to celebrate every week! When I asked 'bout that they mentioned how every week 's worth celebrating! If I hear 'nother \"happy birthday\" on Saturday and Sunday mornings around eight, I will explode! I want Saturdays and Sundays to sleep in!\n\nPlease tell me something can be done 'bout this! I can't even grill in peace anymore!\n\n"
+        },
+
+        "mayoralStaffResponse": {
+        "isJustified": "yes",
+        "followUp": "yes",
+        "satisfied": "yes",
+        "response": "Thank you for the complaint. I will write this family a letter asking them to to turn down the noise, especially on weekends. That is simply unacceptable, and most uncouth behavior. Good day."
         }
     }
 ]
