@@ -1,0 +1,113 @@
+html {
+    position: relative;
+}
+
+a {
+    text-decoration: underline;
+    color: #577179;
+}
+
+a.disabled {
+    cursor: not-allowed;
+    color: #555555;
+}
+
+/* ---------- Alignment ---------- */
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.right {
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    background-color: #9dc0b5;
+    color: #393f3d;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 1rem;
+    margin: 0;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: auto;
+}
+
+.pixelated {
+    image-rendering: pixelated;
+}
+
+.smooth {
+    image-rendering: smooth;
+}
+
+h1, h2, h3 {
+    font-family: monospace;
+}
+
+.header {
+    display: block;
+    font-size: 36px;
+    margin-top: 0;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.header .logo {
+    max-width: 80%;
+    object-fit: contain;
+}
+
+.intro {
+    background: #768d8d;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.intro p {
+    margin-top: 0;
+}
+
+.intro p:last-child {
+    margin-bottom: 0;
+}
+
+hr {
+    border: 1px solid #768d8d;
+}
+
+#complainers {
+    background-color: #b5ced1;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#complainers td, #complainers th {
+    border: 1px solid #393f3d;
+    padding: 8px;
+}
+
+#complainers tr:nth-child(even){background-color: #9facaf;}
+
+#complainers tr:hover {background-color: #ddd;}
+
+#complainers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #768d8d;
+    color: #393f3d;
+}
