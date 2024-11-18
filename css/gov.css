@@ -102,9 +102,9 @@ hr {
     padding: 8px;
 }
 
-#complainers tr:nth-child(even){background-color: #9facaf;}
+#complainers tr:nth-child(even){background-color: #9eb9b9;}
 
-#complainers tr:hover {background-color: #ddd;}
+#complainers tr:hover {background-color: #b9b9b9;}
 
 #complainers th {
     padding-top: 12px;
