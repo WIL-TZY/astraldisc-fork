@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta property="og:title" content="ANDROMEDIA">
+		<meta property="og:url" content="https://astraldisc.com/">
+		<meta property="og:description" content="Archived in the ASTRAL DISC.">
+		<meta property="og:image" content="https://astraldisc.com/assets/img/disc/new_shooting_star.png">
+		<title>Susie Hawthorn.</title>
+		<link rel="icon" type="image/png" href="../assets/img/favicon/astraldisc.png" />
+		<!-- CSS -->
+		<link href="../css/reset.css" rel="stylesheet" type="text/css" media="all">
+		<link href="../css/base.css" rel="stylesheet" type="text/css" media="all">
+		<link href="../css/main.css" rel="stylesheet" type="text/css" media="all">
+		<link href="../css/andromedia.css" rel="stylesheet" type="text/css" media="all">
+	</head>
+	<body class="image-page">
+		<div class="wrapper">
+            <div id="over"></div>
+			<div id="img">
+				<img
+					id="img1"
+					src="../assets/img/andromedia/ch5/susie_alone.png"
+                    class="image pixelated"
+					width="200%"
+					height="200%"
+					alt="Susie Hawthorn"
+					onclick="imgChange(this, '../assets/audio/birdnoise.ogg');"
+				/>
+			</div>
+		</div>
+		<!-- End of .wrapper -->
+
+		<script>
+            function susieAlone() {
+                document.getElementById("over").style.display="none";
+                document.title = 'Susie Hawthorn.';
+                document.getElementById("img1").src="../assets/img/andromedia/ch5/susie_alone.png";
+                document.getElementById("img1").alt="A lonely girl";
+            }
+
+            function susieFamily() {
+                document.getElementById("over").style.display="block";
+                document.getElementById("img1").src="../assets/img/andromedia/ch5/susie_family.gif";
+                document.title = 'Lake\'s kids.';
+                document.getElementById("img1").alt="A happy family";
+            }
+
+			function imgChange(el,soundfile) {
+				if (el.mp3) {
+					if(el.mp3.paused) {
+                        el.mp3.play();
+                        el.mp3.loop = true;
+                        susieFamily();
+                    }
+					else {
+                        el.mp3.pause();
+                        susieAlone();
+                    }
+				} else {
+					el.mp3 = new Audio(soundfile);
+                    el.mp3.loop = true;
+					el.mp3.play();
+                    susieFamily();
+				}
+			}
+		</script>
+	</body>
+</html>

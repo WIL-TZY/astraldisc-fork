@@ -72,22 +72,8 @@
     content: "* ";
 }
 
-/* ------------ NICK STYLES ------------ */
-body.nick-page {
-	background-color: #000000;
-	font-family: var(--font);
-}
-
-/* For the audio player */
-.wrappernick {
-	width: 400px;
-	/*border: 3px solid black;*/
-	margin: 0 auto;
-	top: 0px;
-}
-
 /* ------------ HALOJACK STYLES ------------ */
-body.halojack-page {
+body.image-page {
 	background: black;
     image-rendering: pixelated;
     display: flex;
