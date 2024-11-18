@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Complaint Form</title>
+    		<!-- CSS -->
+    <link href="../css/reset.css" rel="stylesheet" type="text/css" media="all">
+    <link href="../css/main.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="../css/gov.css" type="text/css" media="all">
+    <script src="../js/gov/complaints.js"></script>
+</head>
+<body>
+    <init-component></init-component>
+    <script src="../js/components/init.js"></script>
+
+    <div class="wrapper">
+        
+        <div class="complaint-container">
+            <fieldset>
+                <legend>Complaint Form</legend>
+                <div class="fieldset-container">
+                    <fieldset>
+                        <legend>Case Number</legend>
+                        <div class="form-group">
+                            <input type="text" placeholder="Enter Case Number" disabled>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Case Status</legend>
+                        <div class="form-group">
+                            <input type="text" placeholder="Enter Case Status" disabled>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Date</legend>
+                        <div class="form-group">
+                            <input type="text" placeholder="Enter Date" disabled>
+                        </div>
+                    </fieldset>
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="complaint-container">
+            <fieldset>
+                <legend>Complainer's Details</legend>
+                <div class="fieldset-container">
+                    <fieldset>
+                        <legend>Name</legend>
+                        <div class="form-group">
+                            <input type="text" placeholder="Enter Name" disabled>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Occupation</legend>
+                        <div class="form-group">
+                            <input type="text" placeholder="Enter Occupation" disabled>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Email</legend>
+                        <div class="form-group">
+                            <input type="email" placeholder="Enter Email" disabled>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Phone No.</legend>
+                        <div class="form-group">
+                            <input type="text" placeholder="Enter Phone Number" disabled>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Address</legend>
+                        <div class="form-group">
+                            <input type="text" placeholder="Enter Address" disabled>
+                        </div>
+                    </fieldset>
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="complaint-container">
+            <fieldset>
+                <legend>Complainer's Complaint</legend>
+                <div class="form-group">
+                    <label for="complainee">Complainee</label>
+                    <input type="text" id="complainee" placeholder="Enter Complainee Name" disabled>
+
+                    <label for="summary">Summary</label>
+                    <input type="text" id="summary" placeholder="Enter Summary of Complaint" disabled>
+
+                    <label for="details">Details</label>
+                    <textarea id="details" placeholder="Enter Complaint Details" disabled></textarea>
+                </div>
+            </fieldset>
+        </div>
+
+        <div class="complaint-container">
+            <fieldset>
+                <legend>Mayoral Staff Response</legend>
+                <div class="response-section">
+                    <fieldset>
+                        <legend>Is the complaint justified?</legend>
+                        <div class="radio-group">
+                            <input type="radio" name="justified" value="yes" disabled> Yes
+                            <input type="radio" name="justified" value="no" disabled> No
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Will there be any follow up?</legend>
+                        <div class="radio-group">
+                            <input type="radio" name="follow_up" value="yes" disabled> Yes
+                            <input type="radio" name="follow_up" value="no" disabled> No
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Is the complainer satisfied?</legend>
+                        <div class="radio-group">
+                            <input type="radio" name="satisfied" value="yes" disabled> Yes
+                            <input type="radio" name="satisfied" value="no" disabled> No
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="form-group">
+                    <label for="final-comments">Response</label>
+                    <textarea id="final-comments" placeholder="Enter Final Comments" disabled></textarea>
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</body>
+</html>

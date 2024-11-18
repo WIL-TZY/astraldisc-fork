@@ -183,7 +183,7 @@ a:hover img.default {
 textarea {
 	border: 1px solid var(--textarea-border); 
 	font-size: 14px; 
-	background-color: var(--textarea) !important; 
+	background-color: var(--textarea); /* !important */ 
 	color: white;
 	padding: 1%;
 	text-align: left;

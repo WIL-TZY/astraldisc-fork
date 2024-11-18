@@ -1,0 +1,54 @@
+[
+    {
+        "caseNumber": "001",
+        "caseStatus": "Ongoing",
+        "date": "202X-11-18",
+        "complainerDetails": {
+            "name": "Maria Anders",
+            "occupation": "Teacher",
+            "email": "maria.anders@example.com",
+            "phone": "123-456-7890",
+            "address": "123 Main St, Hometown"
+        },
+
+        "complaintDetails": {
+            "complainee": "Alfreds Futterkiste",
+            "summary": "Poor service regarding document processing.",
+            "details": "I have been waiting for weeks to get my documents processed but still have not received any updates."
+        },
+
+        "mayoralStaffResponse": {
+            "isJustified": "yes",
+            "followUp": "yes",
+            "satisfied": "no",
+            "response": "We are currently reviewing the case and will follow up soon."
+        }
+    },
+
+    {
+        "caseNumber": "002",
+        "caseStatus": "Closed",
+        "date": "202X-10-10",
+        "complainerDetails": {
+        "name": "Christina Berglund",
+        "occupation": "Accountant",
+        "email": "christina.berglund@example.com",
+        "phone": "987-654-3210",
+        "address": "456 Elm St, Hometown"
+        },
+
+        "complaintDetails": {
+        "complainee": "Berglunds snabbköp",
+        "summary": "Unprofessional behavior by staff.",
+        "details": "I experienced unprofessional behavior from staff while trying to get assistance."
+        },
+
+        "mayoralStaffResponse": {
+        "isJustified": "no",
+        "followUp": "no",
+        "satisfied": "yes",
+        "response": "The case has been reviewed and found to be unjustified."
+        }
+    }
+]
+  
