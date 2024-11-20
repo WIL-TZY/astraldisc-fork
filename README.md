@@ -1,2 +1,3 @@
-# Andromedia Website
+# ASTRAL DISC Website
 Wish you hadn't stumbled here, but Github is kind of annoying.
+Please don't snoop! Have some respect...

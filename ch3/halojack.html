@@ -4,9 +4,9 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta http-equiv="X-UA-Compatible" content="ie=edge">
-		<meta property="og:title" content="ANDROMEDIA">
+		<meta property="og:title" content="ASTRAL DISC">
 		<meta property="og:url" content="https://astraldisc.com/">
-		<meta property="og:description" content="Archived in the ASTRAL DISC.">
+		<meta property="og:description" content="A Deltarune Chapters 3-8 take.">
 		<meta property="og:image" content="https://astraldisc.com/assets/img/disc/new_shooting_star.png">
 		<title>A lone TV.</title>
 		<link rel="icon" type="image/png" href="../assets/img/favicon/astraldisc.png" />
@@ -14,7 +14,7 @@
 		<link href="../css/reset.css" rel="stylesheet" type="text/css" media="all">
 		<link href="../css/base.css" rel="stylesheet" type="text/css" media="all">
 		<link href="../css/main.css" rel="stylesheet" type="text/css" media="all">
-		<link href="../css/andromedia.css" rel="stylesheet" type="text/css" media="all">
+		<link href="../css/disc.css" rel="stylesheet" type="text/css" media="all">
 	</head>
 	<body class="image-page">
 		<init-component></init-component>
@@ -25,7 +25,7 @@
 				<div id="imgtip"></div>
 				<img
 					id="img1"
-					src="../assets/img/andromedia/ch3/tv_off.png"
+					src="../assets/img/disc/ch3/tv_off.png"
 					width="216"
 					height="224"
 					alt="A lone TV"
@@ -38,7 +38,7 @@
 		<script>
 			function imgChange(el,soundfile) {
 				document.getElementById("over").style.display="block";
-				document.getElementById("img1").src="../assets/img/andromedia/ch3/tv_static.gif";
+				document.getElementById("img1").src="../assets/img/disc/ch3/tv_static.gif";
 				if (el.mp3) {
 					if(el.mp3.paused) el.mp3.play();
 					else el.mp3.pause();
@@ -49,8 +49,8 @@
 				setTimeout(function() {
 					document.getElementById("over").style.display="none";
 					document.title = 'GOInG SOmEWHERE??';
-					document.querySelector("link[rel*='icon']").href = "../assets/img/andromedia/ch3/haloeye.png";
-					document.getElementById("img1").src="../assets/img/andromedia/ch3/tv_halojack.gif";
+					document.querySelector("link[rel*='icon']").href = "../assets/img/disc/ch3/haloeye.png";
+					document.getElementById("img1").src="../assets/img/disc/ch3/tv_halojack.gif";
 					document.getElementById("img1").title="* YOU aRE tOO //NoSY//!!!! !!";
 					document.getElementById("img1").alt="A hijacked TV";
 				}, 2000);

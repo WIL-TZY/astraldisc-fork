@@ -60,7 +60,7 @@
 			.deltaplayer .slider .gap-progress .pin {
 				height: 18px;
 				width: 18px;
-				background-image: url(../assets/img/souls/heart.png);
+				background-image: url(../assets/img/cursor/heart.png);
 				background-repeat: no-repeat;
 				position: absolute;
 				pointer-events: all;

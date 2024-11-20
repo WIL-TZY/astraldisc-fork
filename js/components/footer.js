@@ -31,7 +31,7 @@ class MyFooter extends HTMLElement {
                 text-shadow: none;
             }
         </style>
-            <p>ANDROMEDIA TEAM © 2021-2024</p>
+            <p>ASTRAL DISC © 2021-2024</p>
             <p><a href="https://deltarune.com/">DELTARUNE</a> © Toby Fox</p>
             <p>Website © <a href="https://huecycles.com/about">HUECYCLES</a> & <a href="https://wiltzy.art/">WIL-TZY</a></p>
         `;
