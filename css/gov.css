@@ -147,7 +147,6 @@ legend {
 
 .form-group {
     display: inline;
-    color: #324952;
     margin-bottom: 10px;
 }
 
@@ -163,8 +162,10 @@ input[type="text"], input[type="email"], textarea {
 }
 
 textarea {
-    resize: vertical;
-    height: 150px;
+    resize: none;
+    overflow: hidden;
+    min-height: 100px;
+    height: auto;
     background-color: #b6ced2;
     font-size: large;
 }
@@ -218,4 +219,34 @@ input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::pla
     color: #82989b;
     font-style: italic;
     color: transparent; 
+}
+
+/* Print Button Styles */
+.print-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.print-btn {
+    background: #82989b;
+    color:#495a5a;
+    border: 1px solid #000000;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.print-btn:disabled {
+    background: #b0b0b0;
+    cursor: not-allowed;
+}
+
+/* Hides button while printing */
+@media print {
+    .print-container {
+        display: none;
+    }
 }

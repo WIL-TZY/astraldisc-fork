@@ -42,7 +42,6 @@ function loadComplaintForm(complaints, id) {
         return;
     }
 
-    // Gosh this is messy...
     document.querySelector('input[placeholder="Enter Case Number"]').value = complaint.caseNumber;
     document.querySelector('input[placeholder="Enter Case Status"]').value = complaint.caseStatus;
     document.querySelector('input[placeholder="Enter Date"]').value = complaint.date;
@@ -61,4 +60,8 @@ function loadComplaintForm(complaints, id) {
     document.querySelector(`input[name="follow_up"][value="${complaint.mayoralStaffResponse.followUp}"]`).checked = true;
     document.querySelector(`input[name="satisfied"][value="${complaint.mayoralStaffResponse.satisfied}"]`).checked = true;
     document.getElementById('final-comments').value = complaint.mayoralStaffResponse.response;
+
+    // Dynamically adjust the height of the textareas
+    const textareas = document.querySelectorAll('.auto-resize');
+    textareas.forEach(textarea => { textarea.style.height = `${textarea.scrollHeight}px`; });
 }

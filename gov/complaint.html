@@ -92,7 +92,7 @@
                     <input type="text" id="summary" placeholder="Enter Summary of Complaint" disabled>
 
                     <label for="details">Details</label>
-                    <textarea id="details" placeholder="Enter Complaint Details" disabled></textarea>
+                    <textarea class="auto-resize" id="details" placeholder="Enter Complaint Details" disabled></textarea>
                 </div>
             </fieldset>
         </div>
@@ -125,10 +125,18 @@
                 </div>
                 <div class="form-group">
                     <label for="final-comments">Response</label>
-                    <textarea id="final-comments" placeholder="Enter Final Comments" disabled></textarea>
+                    <textarea class="auto-resize" id="final-comments" placeholder="Enter Final Comments" disabled></textarea>
                 </div>
             </fieldset>
         </div>
+        
+        <!-- Print Button -->
+        <div class="print-container">
+            <button class="print-btn" onclick="printDoc()">Print Complaint</button>
+        </div>
     </div>
+
+    <!-- Print Script -->
+    <script>function printDoc() { window.print(); }</script>
 </body>
 </html>
