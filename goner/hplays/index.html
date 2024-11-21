@@ -11,13 +11,13 @@
 		<title>DESS H. PLAYS</title>
 		<link rel="icon" type="image/png" href="../assets/img/candleholder/"/>
 		<!-- CSS -->
-		<link href="../css/extra.css" rel="stylesheet" type="text/css" media="all"/>
+		<link href="../../css/extra.css" rel="stylesheet" type="text/css" media="all"/>
+		<link href="../../css/blog/reallyplayer.css" rel="stylesheet" type="text/css" media="all">
 	</head>
 	<body>
 		<init-component></init-component>
-		<script src="../js/components/init.js"></script>
-		<script src="https://code.jquery.com/jquery-3.7.1.min.js"
-			integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+		<script src="../../js/components/init.js"></script>
+		<script src="../../js/jquery.js"></script>
 		<div class="wrapper">
 			<!-- Blog Post 1 -->
 			<div class="hplays">
@@ -160,12 +160,6 @@
 					<p>
 					<a href="../goner/hplays/past"><img src="../assets/img/hplays/player.png" /></a>
 					</p>
-					<p>Holiday gif of the day:</p>
-					<p>
-					<a href="https://gifcities.org/"
-					><img src="../assets/img/hplays/holiday/snowman.gif"
-					/></a>
-					</p>
 					<div class="footer">
 						<hr>
 						<small>Posted at 10:24 AM</small>
@@ -208,21 +202,13 @@
 					<p>
 					Sorry about the background noise, I recorded this from my phone!
 					</p>
-					<div class="music really-player-container">
-						<div class="really-player">
-							<button aria-label="Play" class="play-button"></button>
-							<img aria-hidden="true" class="volume-icon" src="../assets/img/blog/logdaily/volume.png">
-							<input aria-label="Volume" class="volume" max="100" min="0" type="range" value="50">
-							<audio loop volume="0.5">
-							<source src="../assets/audio/music/dess_practicing.ogg" type="audio/ogg">
-						</div>
+					<div class="really-player dark">
+						<button aria-label="Play" class="play-button"></button>
+						<img aria-hidden="true" class="volume-icon" src="../../assets/img/blog/logdaily/volume.png">
+						<input aria-label="Volume" class="volume" max="100" min="0" type="range" value="50">
+						<audio loop volume="0.5">
+						<source src="../../assets/audio/music/dess_practicing.ogg" type="audio/ogg">
 					</div>
-					<p>Holiday gif of the day:</p>
-					<p>
-					<a href="https://gifcities.org/"
-					><img src="../assets/img/hplays/holiday/decor.gif"
-					/></a>
-					</p>
 
 					<div class="footer">
 						<hr>
@@ -279,12 +265,6 @@
 					<a href="../goner/hplays/future">
 						<img src="../assets/img/hplays/player.png" />
 					</a>
-					<p>Holiday gif of the day:</p>
-					<div class="snowflake-gif">
-						<a href="https://gifcities.org/">
-							<img src="../assets/img/hplays/holiday/snowflake.gif"/>
-						</a>
-					</div>
 
 					<div class="footer">
 						<hr>
@@ -337,21 +317,12 @@
 					I'm kinda tired today, but here's another original :)
 					</p>
 					<p>I'm really happy with this one. Any suggestion for names??</p>
-					<div class="music really-player-container">
-						<div class="really-player">
-							<button aria-label="Play" class="play-button"></button>
-							<img aria-hidden="true" class="volume-icon" src="../assets/img/blog/logdaily/volume.png">
-							<input aria-label="Volume" class="volume" max="100" min="0" type="range" value="50">
-							<audio loop volume="0.5">
-							<source src="../assets/audio/music/d.ogg" type="audio/ogg">
-						</div>
-					</div>
-
-					<p>Holiday gif of the day:</p>
-					<div class="merry-xmas-gif">
-						<a href="https://gifcities.org/">
-							<img src="../../assets/img/hplays/holiday/merry_xmas.gif"/>
-						</a>
+					<div class="really-player dark">
+						<button aria-label="Play" class="play-button"></button>
+						<img aria-hidden="true" class="volume-icon" src="../../assets/img/blog/logdaily/volume.png">
+						<input aria-label="Volume" class="volume" max="100" min="0" type="range" value="50">
+						<audio loop volume="0.5">
+						<source src="../../assets/audio/music/d.ogg" type="audio/ogg">
 					</div>
 
 					<div class="footer">
@@ -391,6 +362,6 @@
 				});
 			}
 		</script>
-		<script src="../js/reallyplayer.js"></script>
+		<script src="../../js/reallyplayer.js"></script>
 	</body>
 </html>
