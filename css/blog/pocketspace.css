@@ -1,0 +1,179 @@
+/* ---------- Basic Stuff ---------- */
+body {
+    background-color: #bcedff;
+    color: #53698d;
+    font-family: 'Courier New', Courier, monospace;
+	font-size: medium;
+	font-weight: bold;
+    margin: 0;
+	text-align: justify;
+}
+
+.wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+	padding: 20px;
+}
+
+.header {
+    display: block;
+    font-size: 36px;
+    margin-top: 0;
+    padding: 1rem;
+    margin-bottom: 1rem;
+	transition-duration: 0.2s;
+}
+
+.header .logo {
+    max-width: 80%;
+    object-fit: contain;
+}
+
+.header:hover {
+	transition-duration: 0.2s;
+  	transform: translateY(4px);
+}
+
+.alert {
+	border: beige solid 6px;
+	color: darkred;
+	border-radius: 10px;
+	background-color: beige;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+.alert p {
+	font-size: large;
+	font-weight: bold;
+}
+
+.content {
+	display: none;
+}
+
+.content.show {
+	display: block;
+}
+
+.tab-buttons {
+	border: #9ad2e8 solid 6px;
+	border-radius: 10px;
+	background-color: #9ad2e8;
+	padding-left: 20px;
+	padding-right: 20px;
+	font-size: large;
+	font-weight: bold;
+	text-align: center;
+}
+
+.tab-buttons .icon {
+    height: 16px;
+    width: 16px;
+    margin-right: 0.25rem;
+    vertical-align: middle;
+}
+
+.tab-btn {
+	border-radius: 30px;
+	background-color: white;
+	border: none;
+	margin: 4px 2px;
+	padding: 5px;
+	transition-duration: 0.2s;
+	cursor: pointer;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: medium;
+	font-weight: bold;
+	color: #53698d;
+}
+
+.tab-btn:hover {
+	background-color: #6b91b7;
+  	color: white;
+}
+
+.tab-btn:active {
+	transition-duration: 0.1s;
+  	transform: translateY(3px);
+}
+
+.input-group {
+	display: flex;
+	align-items: center;
+	padding: 8px 16px 8px 8px;
+	gap: 8px;
+}
+
+.input-icon {
+	display: flex;
+	min-width: 16px;
+	min-height: 16px;
+	background-color: #9ad2e8;
+	border-radius: 8px;
+	align-items: center;
+	justify-content: center;
+	padding: 2px;
+}
+
+.input-field {
+	width: 100%;
+	border: none;
+	height: 20px;
+	padding-left: 10px;
+	border-radius: 6px;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: medium;
+}
+
+.input-field:focus {
+	outline: none;
+}
+
+footer {
+	font-size: small;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* ---------- Links ---------- */
+a {
+    text-decoration: underline;
+}
+
+a.disabled {
+    cursor: not-allowed;
+    color: #63768e;
+}
+
+/* ---------- Image Rendering ---------- */
+.pixelated {
+    image-rendering: pixelated;
+}
+
+.smooth {
+    image-rendering: smooth;
+}
+
+/* ---------- Alignment ---------- */
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.right {
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ---------- Default Blog Formatting ---------- */
