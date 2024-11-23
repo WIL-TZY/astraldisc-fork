@@ -1,0 +1,99 @@
+/* ---------- Basic Stuff ---------- */
+body {
+    background-color: white;
+    background-image: url("../../assets/img/blog/asriel/old/rainbow.gif");
+	background-attachment: fixed;
+    color: darkslateblue;
+    font-family: "Tahoma", Tahoma, sans-serif;
+	font-size: medium;
+	font-weight: normal;
+	text-align: left;
+}
+
+.wrapper {
+	margin-left: 0;
+}
+
+#info ul li {
+	list-style-type: '★ ';
+}
+
+.tab-buttons {
+	background-color: white;
+	border: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	padding: 20px;
+	align-items: right;
+}
+
+.tab-buttons .spacename {
+	float: left;
+}
+
+.tab-btn {
+	background-color: lightsteelblue;
+	color: darkslateblue;
+	font-family: "Tahoma", Tahoma, sans-serif;
+}
+
+.tab-btn:hover {
+	background-color: darkslateblue;
+  	color: lightsteelblue;
+}
+
+.tab-contents {
+	background-color: lightsteelblue;
+	padding: 10px;
+}
+
+a {
+	color: blue;
+}
+
+a.disabled {
+    color: blueviolet;
+}
+
+hr {
+	border: lightsteelblue 1px solid;
+}
+
+/* ---------- Posts ---------- */
+.post .title {
+	background-color: white;
+	font-size: x-large;
+}
+
+.post .postbody {
+	background-color: lightsteelblue;
+}
+
+.post .footer {
+	background-color: white;
+	font-family: "Tahoma", Tahoma, sans-serif;
+}
+
+/* ---------- Comments ---------- */
+.comment {
+	background: white;
+}
+
+.comment .author {
+    background: lightsteelblue;
+}
+
+.comment.reply .comment-body {
+	background: lightsteelblue;
+}
+
+/* ---------- Collapsible Comment Button ---------- */
+.comment-btn {
+	color: blueviolet;
+	font-family: "Tahoma", Tahoma, sans-serif;
+}
+
+.comment-btn:active { /* <-- This happens only once when the element is clicked */
+    background-color: blueviolet;
+	color: white;
+}

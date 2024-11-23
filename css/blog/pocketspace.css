@@ -57,6 +57,7 @@ body {
 
 .content.show {
 	display: block;
+	padding: 20px;
 }
 
 .tab-buttons {
@@ -245,7 +246,7 @@ a.disabled {
 }
 
 .comment {
-	background: #9ad2e8;
+	border-radius: 10px;
 	margin-top: 20px;
 	margin-bottom: 20px;
 }
@@ -253,7 +254,9 @@ a.disabled {
 .comment .author {
     background: #bcedff;
     padding: 1% 3%;
-    font-size: large;
+    font-size: medium;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 }
 
 .comment .author .icon {
@@ -272,6 +275,8 @@ a.disabled {
 
 .comment.reply .comment-body {
 	background: #bcedff;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 
 .comment .author .timestamp {
@@ -281,7 +286,9 @@ a.disabled {
 
 .comment .comment-body {
     padding: 1% 3%;
-	font-size: large;
+	font-size: medium;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
 }
 
 /* ---------- Collapsible Comment Button ---------- */

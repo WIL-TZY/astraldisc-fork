@@ -82,15 +82,23 @@ hr {
 /* ---------- Comments ---------- */
 .comment {
 	background: #202428;
+	border-radius: 0;
 }
 
 .comment .author {
     background: #2A2F33;
     font-size: large;
+	border-radius: 0;
+}
+
+.comment .comment-body {
+	font-size: large;
 }
 
 .comment.reply .comment-body {
 	background: #2A2F33;
+	border-radius: 0;
+	font-size: large;
 }
 
 /* ---------- Collapsible Comment Button ---------- */
@@ -101,5 +109,5 @@ hr {
 
 .comment-btn:active { /* <-- This happens only once when the element is clicked */
     background-color: #9aa6b0;
-	color: white
+	color: white;
 }
