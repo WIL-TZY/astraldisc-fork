@@ -154,7 +154,7 @@ hr {
 }
 
 /* ---------- Collapsible ---------- */
-.collapsible {
+.comment-btn {
     border: none;
 	background: none;
 	color: #9191ab;
@@ -164,7 +164,7 @@ hr {
 	text-decoration: underline;
 }
 
-.collapsible:active { /* <-- This happens only once when the element is clicked */
+.comment-btn:active { /* <-- This happens only once when the element is clicked */
     background-color: #9aa6b0;
 	color: white
 }

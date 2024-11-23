@@ -68,7 +68,7 @@
 						</div>
 						<div class="comment-count">
 							<img alt="Speech Bubble" class="icon pixelated" src="../../assets/img/blog/pocket/dark/comments.png">
-							<button class="collapsible">Comments (9)</button>
+							<button class="comment-btn">Comments (9)</button>
 						</div>
 					</div>
 
@@ -198,20 +198,20 @@
 						</div>
 						<div class="comment-count">
 							<img alt="Speech Bubble" class="icon pixelated" src="../../assets/img/blog/pocket/dark/comments.png">
-							<button class="collapsible">Comments (1)</button>
+							<button class="comment-btn">Comments (1)</button>
 						</div>
 					</div>
-				</div>
 
-				<div class="comments">
-					<div class="comment">
-						<div class="author">
-							<img alt="User" class="icon pixelated" src="../../assets/img/blog/pocket/dark/user.png">
-							<a class="disabled">galactablazing</a>
-							<div class="timestamp">At 9:02 PM</div>
-						</div>
-						<div class="comment-body">
-							<p>AAA sounds amazing!! Clap clap</p>
+					<div class="comments">
+						<div class="comment">
+							<div class="author">
+								<img alt="User" class="icon pixelated" src="../../assets/img/blog/pocket/dark/user.png">
+								<a class="disabled">galactablazing</a>
+								<div class="timestamp">At 9:02 PM</div>
+							</div>
+							<div class="comment-body">
+								<p>AAA sounds amazing!! Clap clap</p>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -232,12 +232,12 @@
 			</div>
         </div>
 		<script>
-			/* WHAT THE FUCK IS WRONG */
-			const buttons = document.querySelectorAll('.collapsible');
+			const posts = document.querySelectorAll('.post');
 
-			buttons.forEach(button => {
+			posts.forEach((item, index) => {
+				let button = item.querySelector(".comment-btn");
+				let comments = item.querySelector(".comments");
 				button.addEventListener('click', () => {
-					const comments = document.querySelector('.comments');
 					comments.classList.toggle('active');
 				})
 			})
