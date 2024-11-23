@@ -91,6 +91,7 @@ hr {
 .comment-btn {
 	color: blueviolet;
 	font-family: "Tahoma", Tahoma, sans-serif;
+	font-weight: bold;
 }
 
 .comment-btn:active { /* <-- This happens only once when the element is clicked */
