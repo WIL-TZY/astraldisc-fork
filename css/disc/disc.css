@@ -462,19 +462,6 @@ footer {
 	/* border-top: 1px solid rgb(22, 22, 22); */
 }
 
-a img.hover {
-	display: none;
-}
-a img.default {
-	display: inherit;
-}
-a:hover img.hover {
-	display: inherit;
-}
-a:hover img.default {
-	display: none;
-}
-
 /* UNUSED */
 /* .small-letters {
 	color: var(--faint-text);

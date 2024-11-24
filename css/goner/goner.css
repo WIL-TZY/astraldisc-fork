@@ -1,5 +1,5 @@
 /******************************************************************************\
-*                                 INDEX.HTML                                   *
+*                                 GONER PAGES                                  *
 \******************************************************************************/
 :root {
 	--background: #000000;
@@ -117,6 +117,12 @@ body.DEVICE-page {
     -ms-transition: opacity 3s ease-in-out;
     -o-transition: opacity 3s ease-in-out;
     opacity: 0;
+}
+
+/* Missing Page */
+.missingpage__img--eyes {
+	transform: scale(4);
+	transform-origin: center center;
 }
 
 /* Gaster Styles */
