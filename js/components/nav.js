@@ -44,7 +44,7 @@ class MyNav extends HTMLElement {
             nav li a:hover.break {
 	            cursor: var(--cursor-break);
 	            color: var(--link-hover);
-	            font-family: var(--font);
+	            font-family: var(--main-font);
             }
             </style>
             <nav>

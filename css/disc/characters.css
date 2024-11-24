@@ -48,7 +48,7 @@ section {
 }
 
 .chara-button-text {
-	font-family: var(--font);
+	font-family: var(--main-font);
 	font-size: 24px;
 	color: var(--font-color);
 	text-shadow: none;

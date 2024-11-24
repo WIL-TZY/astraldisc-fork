@@ -117,7 +117,7 @@
 
 .deltaplayer 
 .controls {
-	font-family: var(--font);
+	font-family: var(--main-font);
 	font-size: 20px;
 	line-height: 18px;
 	color: var(--font-color);

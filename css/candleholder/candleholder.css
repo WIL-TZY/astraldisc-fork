@@ -6,7 +6,7 @@ body {
 a {
 	cursor: var(--cursor-pointer-alt);
     color: var(--link-alt);
-    font-family: var(--font);
+    font-family: var(--main-font);
 }
 
 /* ---------- Lancer Page ---------- */
@@ -54,7 +54,7 @@ a {
 	max-width: 640px;
 	min-height: 144px;
 	margin: auto;
-	font-family: var(--font);
+	font-family: var(--main-font);
 	padding: 0 8px;
 	/* padding: 0 8px; If no portrait */
 	border: 26px solid transparent;

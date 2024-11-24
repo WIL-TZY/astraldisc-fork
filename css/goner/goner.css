@@ -94,7 +94,7 @@ body.DEVICE-page {
 	color: var(--device);
 	font-size: 60px;
 	text-shadow: none;
-	font-family: var(--font);
+	font-family: var(--main-font);
 }
 
 .DEVICEbox a {
@@ -102,7 +102,7 @@ body.DEVICE-page {
 	font-size: 32px;
 	color: var(--device-lighter);
 	text-shadow: none;
-	font-family: var(--font);
+	font-family: var(--main-font);
 	cursor: var(--cursor-blur);
 }
 
@@ -128,7 +128,7 @@ body.DEVICE-page {
 /* Gaster Styles */
 
 body {
-	font-family: var(--font);
+	font-family: var(--main-font);
 	background-color: black;
 	color: var(--device);
 	text-shadow: none;
@@ -147,7 +147,7 @@ a {
 	font-size: 32px;
 	color: var(--device-lighter);
 	text-shadow: none;
-	font-family: var(--font);
+	font-family: var(--main-font);
 	cursor: var(--cursor-blur);
 }
 
