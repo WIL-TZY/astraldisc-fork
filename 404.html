@@ -12,8 +12,8 @@
 		<title>You got lost.</title>
 		<link rel="icon" type="image/png" href="assets/img/favicon/astraldisc.png" />
 		<!-- CSS -->
-		<link href="css/reset.css" rel="stylesheet" type="text/css" media="all" />
-		<link href="./css/base.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="./css/reset.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="./css/templates.css" rel="stylesheet" type="text/css" media="all" />
 		<style>
 			.notfound-text {
 				text-align: center;
@@ -71,8 +71,7 @@
 				`;
 			} else {
 				changeFavicon('./assets/img/favicon/astraldisc.png');
-				loadStylesheet('./css/main.css');
-				loadStylesheet('./css/disc.css');
+				loadStylesheet('./css/base.css');
 		
 				mainElement.innerHTML = `
 					<div class="notfound-text">

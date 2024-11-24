@@ -11,7 +11,7 @@ class CharacterMenu {
     constructor() {
         this.chapter = CHAPTER;
         this.characters = null; // Not the button, just the data
-		this.selectedButton = null // Keeps track of the currently selected button
+		this.selectedButton = null
     }
 
 	// System Methods

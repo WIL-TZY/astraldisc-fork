@@ -2,35 +2,6 @@ html {
     position: relative;
 }
 
-a {
-    text-decoration: underline;
-    color: #577179;
-}
-
-a.disabled {
-    cursor: not-allowed;
-    color: #555555;
-}
-
-/* ---------- Alignment ---------- */
-.center {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.left {
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.right {
-    text-align: right;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 body {
     background-color: #9dc0b5;
     color: #393f3d;
@@ -41,23 +12,33 @@ body {
     margin: 0;
 }
 
+a {
+    text-decoration: underline;
+    color: #577179;
+}
+
+h1, h2, h3 {
+    font-family: monospace;
+    padding: 1rem;
+}
+
+/* Ordered List */
+ol {
+    list-style-type: decimal;
+    margin-left: 3rem; /* Default indentation */
+    margin-bottom: 1rem;
+}
+
+a.disabled {
+    cursor: not-allowed;
+    color: #555555;
+}
+
 .wrapper {
     /* width: 100%; */
     /* max-width: auto; */
     max-width: 1000px;
     margin: 0 auto;
-}
-
-.pixelated {
-    image-rendering: pixelated;
-}
-
-.smooth {
-    image-rendering: smooth;
-}
-
-h1, h2, h3 {
-    font-family: monospace;
 }
 
 .header {
@@ -75,12 +56,14 @@ h1, h2, h3 {
 
 .intro {
     background: #768d8d;
-    padding: 1rem;
+    padding: 2rem;
     margin-bottom: 2rem;
 }
 
 .intro p {
-    margin-top: 0;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    text-align: justify;
 }
 
 .intro p:last-child {

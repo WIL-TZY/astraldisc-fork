@@ -143,21 +143,37 @@
     src: url("../assets/fonts/wingdings.ttf") format("truetype");
 }
 
-/* ---------- Generic Styles - Applies to ALL ---------- */
-body {
-    background-color: var(--background);
-    /* sans-serif is the fall back font */
-    font-family: var(--font), sans-serif;
-    line-height: 170%;
-    /* text-rendering: pixelated; */
-    font-weight: normal;
+/* ---------- Generic Styles ---------- */
+html {
+	font-size: 16px;
+	line-height: 1.5;
+    cursor: var(--cursor-main);
 }
 
-/* ---------- Default Elements ---------- */
+body {
+    background-color: var(--background);
+    font-family: var(--font), sans-serif;
+    line-height: 170%;
+    font-weight: normal;
+	font-size: 100%;
+	font-family: inherit;
+    font-family: var(--secondary-font), sans-serif;
+	color: var(--font-color);
+	text-shadow: var(--text-shadow);
+}
+
+/* Optimized for responsive images */
+img {
+	max-width: 100%;
+	height: auto;
+}
+
 p { 
     margin-top: 16px;
     margin-bottom: 16px;
-    font-size: 120%;
+    font-size: 20px;
+    font-family: var(--secondary-font);
+    font-weight: normal;
     text-align: justify;
 }
 
@@ -166,35 +182,64 @@ hr {
     opacity: 0.2;
 }
 
-a:hover {
-    text-shadow: var(--text-shadow-hover);
+a {
+	text-decoration: none;
+	text-shadow: none;
+	cursor: var(--cursor-main);
+	color: var(--link-alt);
+	font-family: var(--font);
+	font-size: 150%;
 }
 
+a:hover {
+	cursor: var(--cursor-main);
+	color: var(--link-hover);
+	text-decoration: none;
+	text-shadow: none;
+}
+
+/* Was this a Candleholder style? I legit can't remember */
+/* a:hover { text-shadow: var(--text-shadow-hover); }  */
+
+a:hover.break {
+	cursor: var(--cursor-break);
+	color: var(--faint-text);
+	font-family: var(--font);
+}
+
+/* ---------- Lists ---------- */
+li::marker { content: "*  "; }
+
+/* ---------- Tables ---------- */
 table {
     border: 2px solid;
     border-color: var(--unselected);
     padding: 0px;
-    font-family: var(--secondary_font);
+    
 }
 
 th {
+    font-family: var(--font);
     text-align: left;
     padding: 20px;
-    font-family: var(--font);
     font-weight: normal;
     font-size: 28px;
 }
 
 td {
+    font-family: var(--secondary_font);
     text-align: left;
     padding: 20px;
-    font-size: 120%;
+    font-size: 20px;
 }
 
 tr:nth-child(even) {background-color: var(--unselected-darker);}
 tr:nth-child(odd) {background-color: var(--primary_color);}
 
 /* ---------- Headings ---------- */
+
+h1, h2, h3, h4, h5, h6 { font-weight: normal; } /* Remove default bold style */
+
 h1 {
     color: var(--h1);
     font-size:60px;
@@ -220,45 +265,588 @@ h3 {
     margin-bottom: 25px;
     font-family: var(--font);
     text-shadow: none;
-}  
-
-/* ---------- Alignment ---------- */
-.center {
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
 }
 
-.left {
-    text-align: left;
-    margin-left: auto;
-    margin-right: auto;
+/* ---------- Other ---------- */
+::selection { color:#ffff00; background:  #333;} /* Selected Text */
+
+/* Delicious click effect */
+:focus {
+    background-color: #333;
+    outline: 2px solid transparent;
+    outline-offset: 2px; 
+    transition: outline 0.3s;
 }
 
-.right {
-    text-align: right;
-    margin-left: auto;
-    margin-right: auto;
+/* ---------- Home Page ---------- */
+.deltarune-logo {
+	font-family: "Deltarune";
+	font-size: 24px;
 }
 
-/* ---------- Classes for Font Weight ---------- */
-.bold {
-    font-weight: bold;
+/* ---------- Newsletters ---------- */
+.credit {
+	text-decoration: none;
+	text-shadow: none;
+	text-align: center;
+	color: var(--faint-text);
+	font-family: var(--font);
+	font-size: 120%;
 }
 
-.italic {
-    font-style: italic;
+.minerva-redacted {
+	background-color: #333;
+	color: #333;
+	text-shadow: none;
+	user-select: none;
 }
 
-/* ---------- Container Class ---------- */
-.container {
+.flex-item {
+    display: flex;
+    max-width: 100%; /* Make images responsive */
+    height: auto;
+    justify-content: center;
+    /* flex: 0 0 calc(33.33% - 20px);  */
+    /* Three items per row */
+}
+
+.flip-container {
+    background: transparent;
+    display: flex;
+	justify-content: center;
+    align-items: center;
+}
+
+.flip-this {
+    position: relative;
+    width: 100%;
+    height: 100%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-container:hover .flip-this {
+    transition: 0.9s;
+    transform: rotateY(360deg);
+}
+
+/* ---------- Newsletters END ---------- */
+
+.grazearea {
+	cursor: var(--cursor-main);
+	color: transparent;
+	/* just setting padding and margin didn't work */
+	padding-left: 40px;
+	padding-top: 40px;
+	padding-right: 40px;
+	padding-bottom: 40px;
+	margin-left: -40px;
+	margin-top: -40px;
+	margin-right: -40px;
+	margin-bottom: -40px;
+}
+
+#graze {
+	image-rendering: pixelated;
+	position: fixed;
+	display: none;
+	width: 52px;
+	height: 52px;
+	pointer-events: none;
+}
+
+#explosion {
+	image-rendering: pixelated;
+	position: fixed;
+	display: none;
+	pointer-events: none;
+}
+  
+.wrapper {
+	width: 90%;
+	max-width: 700px;
+	/*border: 3px solid red;*/ /* Use for Debug */
+	margin: 0 auto;
+	top: 0px;
+}
+
+/* ---------- Header ---------- */
+header {
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 10px;
+}
+
+.logo-container {
+	margin-top: 30px;
+}
+
+.logo-container img {
+	margin: 0 auto;
+	height: auto; /* Make sure logo scales well */
+}
+
+main {
+	padding: 15px;
+	margin: 0 auto;
+	background: #000000;
+}
+	
+/* Prevent overflow of large images in main text areas */
+main img {
+	max-width: 100%;
+	height: auto;
+}
+
+main ul {
+    list-style-type: disc;
+    padding-inline-start: 40px;
+    font-family: var(--secondary-font);
+    font-size: 20px;
+    text-align: justify;
+}
+
+textarea {
+	border: 1px solid var(--textarea-border); 
+	font-size: 14px; 
+	background-color: var(--textarea); /* !important */ 
+	color: white;
+	padding: 1%;
+	text-align: left;
+	margin-bottom: 20px;
+}
+
+footer {
+	padding: 20px;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 1.4rem;
+	text-align: center;
+	color: var(--faint-text);
+	text-shadow: var(--text-shadow-footer);
+	/* border-top: 1px solid rgb(22, 22, 22); */
+}
+
+a img.hover {
+	display: none;
+}
+a img.default {
+	display: inherit;
+}
+a:hover img.hover {
+	display: inherit;
+}
+a:hover img.default {
+	display: none;
+}
+	
+.small-letters {
+	color: var(--faint-text);
+	font-size: var(--font-tiny);
+}
+
+.flex-container {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.flex-container > div {
+	text-align: center;
+	margin: 50px;
+	padding: 0px;
+}
+
+.flex-container > img {
+	height: 400px;
+  	width: auto;
+	padding: 5px;
+}
+
+.flex-container.projects-box {
+	width: 200px;
+	height: 200px; 
+}
+
+/******************************************************************************\
+*                                 CHAPTERS.HTML                                *
+\******************************************************************************/
+.chselect {
+    background-color: black;
+    font-family: var(--font);
+    margin-top: 20px;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.chselect ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.chselect ul a {
+    text-decoration: none;
+    color: var(--link-default);
+    font-size: 250%;
+    cursor: var(--cursor-main);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.chselect ul a:hover {
+    color: var(--link-hover);
+}
+
+.chselect ul a.break:hover {
+    cursor: var(--cursor-break);
+    color: var(--faint-text);
+}
+
+.chselect li {
     display: inline;
-    padding-right: 6%;
-    padding-left: 6%;
+    line-height: 70px;
+    margin: 0 10px 10px 20px;
 }
 
-/* --------------- Utils ------------------ */
-/* Class to transform white-space into line breaks */
-.formatted-text {
-	white-space: pre-line;
+.chselect hr {
+    margin: 1.5% 0;
+    opacity: 0.2;
+}
+
+.chapter-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.chapter-list li {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chapter-list li a span {
+    display: inline-block;
+}
+
+.chapter-list li a .chapter-title {
+	text-align: center;
+    flex: 1;
+}
+
+.chapter-icon {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.chapter-icon img {
+    width: 78px;
+    height: 69px;
+}
+
+.chapter-icon img.hover {
+    display: none;
+}
+
+.chapter-list li a:hover .chapter-icon img.default {
+    display: none;
+}
+
+.chapter-list li a:hover .chapter-icon img.hover {
+    display: block;
+}
+
+#chselect-landscape {
+    display: inline-block;
+}
+
+#chselect-portrait {
+    display: none;
+}
+
+/******************************************************************************\
+ *                                team.HTML                                     *
+\******************************************************************************/
+.team {
+	display: flex;
+	justify-content: left;
+    align-items: center;
+	padding-bottom: 0 auto;
+}
+
+.team a {
+	font-size: 30px;
+	font-family: var(--font);
+	text-decoration: underline;
+}
+
+.team p {
+	font-size: 18px;
+	font-family: var(--secondary-font);
+	text-align: left;
+	text-shadow: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.team p.right {
+	font-size: 18px;
+	font-family: var(--secondary-font);
+	text-align: right;
+	text-shadow: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.team role {
+	font-size: 25px;
+	font-family: var(--font);
+	text-align: left;
+	text-shadow: none;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.team img {
+    max-width: 30%;
+    max-height: 30%;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.team hue a {
+	font-family: var(--font);
+	font-size: 30px;
+	text-decoration: underline;
+	text-decoration-color: rgb(56, 56, 56);
+	text-shadow: none;
+	background: linear-gradient(90deg, var(--hue1), var(--hue2), var(--hue3), var(--hue4));
+  	background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+.team hue p {
+	font-size: 18px;
+	text-shadow: none;
+	background: linear-gradient(90deg, var(--hue1), var(--hue2), var(--hue3), var(--hue4));
+  	background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+.team hue p.role {
+	font-size: 25px;
+	text-shadow: none;
+	font-family: var(--font);
+	background: linear-gradient(90deg, var(--hue1), var(--hue2), var(--hue3), var(--hue4));
+  	background-clip: text;
+  	-webkit-text-fill-color: transparent;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+
+#canvas {
+	display: block;
+}
+
+.overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0); /* Transparent background - GPT*/
+	pointer-events: none; /* Allow clicks to go through - GPT*/
+}
+
+.hue p {
+	font-size: 120%;
+	text-align: justify;
+	text-shadow: none;
+	background: linear-gradient(90deg, var(--hue1), var(--hue2), var(--hue3), var(--hue4));
+  	background-clip: text;
+  	-webkit-text-fill-color: transparent;
+}
+
+/* ------------ SHADOW CRYSTAL STYLES ------------ */
+body.shadowcrystal {
+	background: black;
+    image-rendering: pixelated;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#shadowcrystal {
+    /* Centering the image on the screen */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+	animation: float 3s ease-in-out infinite, glowing 1.25s alternate infinite;
+}
+
+@keyframes float {
+	0% {
+		transform: translateY(0);
+	}
+
+	50% {
+		transform: translateY(-20px);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
+
+@keyframes glowing {
+	0% {
+		-webkit-filter: brightness(1);
+		filter: brightness(1);
+	}
+	100% {
+		-webkit-filter: brightness(2);
+		filter: brightness(2);
+	}
+}
+
+/* ---------- Dialogue Boxes  ---------- */
+
+.dialogueDW { /* Dark World */
+	text-align: left;
+	color: white;
+	background: black;
+	max-width: 640px;
+	min-height: 144px;
+	margin: auto;
+	font-family: var(--font);
+	padding: 0 8px;
+	/* padding: 0 8px; If no portrait */
+	border: 26px solid transparent;
+	border-image: url(../assets/img/borders/DeltaruneBorder.gif) 52 stretch;
+	image-rendering: pixelated;
+	border-image-slice: 27.3% fill;
+}
+  
+.dialogueDW p {
+	font-size: 32px;
+	letter-spacing: 2px;
+	line-height: 34px;
+	margin: 0;
+	min-height: 104px; /* Keeps Next Button in the corner */
+}
+
+.dialogueLW { /* Light World */
+	text-align: left;
+	color: white;
+	background: black;
+	max-width: 640px;
+	min-height: 144px;
+	margin: auto;
+	font-family: var(--font);
+	padding: 0 8px;
+	/* padding: 0 8px; If no portrait */
+	border: 26px solid transparent;
+	border-image: url(../assets/img/borders/DeltaruneBorderLW.png) 52 stretch;
+	image-rendering: pixelated;
+	border-image-slice: 27.3% fill;  
+}
+  
+.dialogueLW p {
+	font-size: 32px;
+	letter-spacing: 2px;
+	line-height: 34px;
+	text-shadow: none;
+	margin: 0;
+	min-height: 104px; /* Keeps Next Button in the corner */
+}
+
+/* ---------- General Text Styles ---------- */
+.firstline, .normaline {
+	text-shadow: var(--text-shadow);
+    max-width: 640px;
+    font-size: 32px;
+    letter-spacing: 1px;
+    line-height: 34px;
+    min-height: 104px; /* Keeps Next Button in the corner */
+}
+
+.firstline::before {
+    content: "* ";
+}
+
+.normaline::before {
+    visibility: hidden;
+    content: "* ";
+}
+
+/******************************************************************************\
+*                               MEDIA QUERIES                                  *
+\******************************************************************************/
+/* Tablet */
+@media (max-width: 768px) {
+
+	#chselect-landscape {
+		display: none;
+	}
+	
+	#chselect-portrait {
+		display: inline-block;
+	}
+
+	#chselect-portrait li a {
+		flex-direction: column;
+        text-align: center;
+	}
+	
+	#chselect-portrait li {
+		display: inline;
+		line-height: 50px;
+		margin: auto;
+	}
+
+	#chselect-portrait li a {
+		flex-direction: column;
+        text-align: center;
+	}
+
+	#chselect-portrait li a .chapter-title {
+		font-size: 70%;
+	}
+	
+	#chselect-portrait .chapter-icon img {
+		width: 78px;
+		height: 69px;
+		margin: 10px 0 10px 0;
+	}
+
+	/* except for the .other-links container that should keep row style */
+    .flex-container > .other-links {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+
+    .flex-container {
+        margin: 0;
+    }
+
+    .flex-container a {
+        margin: 5px;
+    }
 }

@@ -1,0 +1,60 @@
+
+/* ---------- Alignment ---------- */
+.center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.left {
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.right {
+    text-align: right;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ---------- Classes for Font Weight ---------- */
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+/* ---------- Container Class ---------- */
+.container {
+    display: inline;
+    padding-right: 6%;
+    padding-left: 6%;
+}
+
+/* --------------- Utils ------------------ */
+/* Class to transform white-space into line breaks */
+.formatted-text {
+	white-space: pre-line;
+}
+
+/* ---------- Classes for Images ---------- */
+.smooth {
+	image-rendering: smooth;
+}
+
+.high-quality {
+	image-rendering: high-quality;
+}
+
+.pixelated {
+	image-rendering: pixelated;
+}
+	
+.tiny {
+	font-size: 9px;
+	margin: 0 auto;
+	text-align: center;
+}

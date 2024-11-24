@@ -1,6 +1,17 @@
 /******************************************************************************\
 *                                 INDEX.HTML                                   *
 \******************************************************************************/
+/* Remove focus effect when an anchor is clicked */
+a:focus, a:active {
+    outline: none;
+	background-color: transparent;
+}
+
+/* Prevents img selection */
+img { user-select: none; }
+
+::selection { color:rgba(255, 255, 255, 1); background:  rgb(0, 171, 201, 0.5);}
+
 body.DEVICE-page {
 	cursor: var(--cursor-blur);
 	display: flex;
