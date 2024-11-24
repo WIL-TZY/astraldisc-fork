@@ -28,6 +28,6 @@ function hideExplosion() {
 function resetExplosion() {
     $(document).ready(function(){
         var $img = $('#explosion img');
-        $img.attr('src', '/assets/img/explosion-boom.gif');
+        $img.attr('src', '/assets/img/cursor/explosion-boom.gif');
     });
 }
