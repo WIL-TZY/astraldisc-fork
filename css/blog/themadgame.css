@@ -1,0 +1,90 @@
+/* ---------- Basic Stuff ---------- */
+body {
+    background-color: white;
+    background-image: url("../../assets/img/blog/pollyanna/grunge.png");
+	background-attachment: fixed;
+    color: darkolivegreen;
+    font-family: Verdana, sans-serif;
+	font-size: medium;
+	font-weight: normal;
+	text-align: left;
+}
+
+.tab-buttons {
+	background-color: darkgreen;
+	border: none;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	padding: 20px;
+}
+
+.tab-btn {
+	background-color: lime;
+	color: darkolivegreen;
+	font-family: Verdana, sans-serif;
+}
+
+.tab-btn:hover {
+	background-color: #004800;
+  	color: lime;
+}
+
+.tab-contents {
+	background-color: lightgreen;
+	padding: 10px;
+}
+
+a {
+	color: green;
+}
+
+a.disabled {
+    color: lime;
+}
+
+hr {
+	border: lightgreen 1px solid;
+}
+
+/* ---------- Posts ---------- */
+.post .title {
+	background-color: darkgreen;
+	color: lime;
+	font-size: x-large;
+}
+
+.post .postbody {
+	background-color: lightgreen;
+}
+
+.post .footer {
+	background-color: darkgreen;
+	color: lime;
+	font-family: Verdana, sans-serif;
+}
+
+/* ---------- Comments ---------- */
+.comment {
+	background: lightgreen;
+}
+
+.comment .author {
+    background: darkgreen;
+	color: lime;
+}
+
+.comment.reply .comment-body {
+	background: lightgreen;
+}
+
+/* ---------- Collapsible Comment Button ---------- */
+.comment-btn {
+	color: lime;
+	font-family: Verdana, sans-serif;
+	font-weight: bold;
+}
+
+.comment-btn:active { /* <-- This happens only once when the element is clicked */
+    background-color: #004800;
+	color: lightgreen;
+}
