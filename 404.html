@@ -8,24 +8,81 @@
 		<meta property="og:url" content="https://astraldisc.com/">
 		<meta property="og:description" content="A Deltarune Chapters 3-8 take.">
 		<meta property="og:image" content="https://astraldisc.com/assets/img/disc/new_shooting_star.png">
-		<base href="https://astraldisc.com/">
+		<!-- <base href="https://astraldisc.com/"> -->
 		<title>You got lost.</title>
 		<link rel="icon" type="image/png" href="assets/img/favicon/astraldisc.png" />
 		<!-- CSS -->
-		<!--<link href="css/reset.css" rel="stylesheet" type="text/css" media="all" />-->
+		<link href="css/reset.css" rel="stylesheet" type="text/css" media="all" />
 		<link href="./css/base.css" rel="stylesheet" type="text/css" media="all" />
-		<link href="./css/main.css" rel="stylesheet" type="text/css" media="all" />
-		<link href="./css/disc.css" rel="stylesheet" type="text/css" media="all" />
+		<style>
+			.notfound-text {
+				text-align: center;
+				position: fixed;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		</style>
 	</head>
-	<body class="notfound-page">
+	<body>
 		<init-component></init-component>
 		<script src="./js/components/init.js"></script>
-		<div class="notfound-text">
-			<a href="./chapters">
-				<img class="default image pixelated" onmouseenter="doorOpen()" width="108" height="177" src="assets/img/404/door.gif">
-				<img class="hover image pixelated" onmouseleave="doorClose()" width="108" height="177" src="assets/img/404/door_open.png">
-			</a>
-		</div>
+		
+		<main></main>
+		
 		<script src="js/soundfx.js"></script>
+		<script>
+			const previousPage = document.referrer; 
+			// const currentPath = window.location.pathname;
+		
+			const mainElement = document.querySelector('main');
+			const headElement = document.head;
+		
+			const changeFavicon = (href) => {
+				let favicon = document.querySelector('link[rel="icon"]');
+				if (favicon) {
+					favicon.href = href;
+				} else {
+					favicon = document.createElement('link');
+					favicon.rel = 'icon';
+					favicon.type = 'image/png';
+					favicon.href = href;
+					headElement.appendChild(favicon);
+				}
+			};
+		
+			const loadStylesheet = (href) => {
+				const link = document.createElement('link');
+				link.rel = 'stylesheet';
+				link.type = 'text/css';
+				link.href = href;
+				headElement.appendChild(link);
+			};
+		
+			if (previousPage.includes('/blog')) {
+				changeFavicon('./assets/img/favicon/blog_favicon.png');
+				loadStylesheet('./css/blog/logdaily.css');
+		
+				mainElement.innerHTML = `
+					<div class="alert">
+						<img alt="Lock" class="icon" src="./assets/img/blog/logdaily/denied.png">
+						<span>[Oops! Looks like the page you were looking for is not available or doesn't exist.]</span>
+					</div>
+				`;
+			} else {
+				changeFavicon('./assets/img/favicon/astraldisc.png');
+				loadStylesheet('./css/main.css');
+				loadStylesheet('./css/disc.css');
+		
+				mainElement.innerHTML = `
+					<div class="notfound-text">
+						<a href="./chapters">
+							<img class="default image pixelated" onmouseenter="doorOpen()" width="108" height="177" src="assets/img/404/door.gif">
+							<img class="hover image pixelated" onmouseleave="doorClose()" width="108" height="177" src="assets/img/404/door_open.png">
+						</a>
+					</div>
+				`;
+			}
+		</script>		
 	</body>
 </html>

@@ -3,6 +3,7 @@
 body {
 	font-family: var(--secondary-font), sans-serif;
 	color: var(--font-color);
+	text-shadow: var(--text-shadow);
 	cursor: var(--cursor-main);
 }
 
@@ -300,28 +301,8 @@ footer {
 }
 
 /******************************************************************************\
- *                                404.HTML                                     *
+ *                                team.HTML                                     *
 \******************************************************************************/
-body.notfound-page {
-	background: black;
-	image-rendering: pixelated;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	height: 100vh;
-	margin: 0;
-}
-
-.notfound-text {
-	/* Centering the text on the screen */
-	text-align: center;
-	position: fixed; /* or absolute */
-	top: 50%;
-	left: 50%;
-	/* bring your own prefixes */
-	transform: translate(-50%, -50%);
-}
-
 .team {
 	display: flex;
 	justify-content: left;

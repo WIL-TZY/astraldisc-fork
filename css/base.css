@@ -149,10 +149,8 @@ body {
     /* sans-serif is the fall back font */
     font-family: var(--font), sans-serif;
     line-height: 170%;
-    text-rendering: pixelated;
+    /* text-rendering: pixelated; */
     font-weight: normal;
-    text-shadow: var(--text-shadow);
-    cursor: var(--cursor-main);
 }
 
 /* ---------- Default Elements ---------- */
