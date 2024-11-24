@@ -1,40 +1,37 @@
 /* ---------- CSS Variables - Colors & Sizing ---------- */
 :root {
     --background: #000000;
-    --font: "8bitoperator JVE2";
+    --main-font: "8bitoperator JVE2";
     --secondary-font: "8 Bit Operator";
     --tertiaty-font: "Crypt of Tomorrow";
+
     --h1: #ffdf7e;
     --h2: #ffff00;
     --h3: #ffa040;
+
     --link-default: #ffffff;
     --link-alt: #a5a5a5;
     --link-hover: #ffff00;
+
     --font-color: #ffffff;
     --faint-text: #808080;
-    --textarea: #202020;
     --font-tiny: 80%;
     --font-very-tiny: 50%;
-    --cursor-main: url(../assets/img/cursor/heart.png) 10 5, auto;
-    --cursor-blur: url(../assets/img/cursor/heart_blur.png) 20 12, auto;
-    --cursor-break: url(../assets/img/cursor/heart_break.png) 12 5, auto;
-    --cursor-alt: url(../assets/img/cursor/heart_yellow.png) 10 5, auto;
-    --cursor-break-alt: url(../assets/img/cursor/heart_yellow_break.png) 12 5, auto;
     --text-shadow: 2px 2px #0f0f71;
     --text-shadow-hover: 2px 2px #710f57;
     --text-shadow-footer: 2px 2px #333333;
+    --textarea: #202020;
+
+    --cursor-main: url(/assets/img/cursor/heart.png) 10 5, auto;
+    --cursor-break: url(/assets/img/cursor/heart_break.png) 12 5, auto;
+    --cursor-alt: url(/assets/img/cursor/heart_yellow.png) 10 5, auto;
+    --cursor-break-alt: url(/assets/img/cursor/heart_yellow_break.png) 12 5, auto;
 
     /* Deltarune Colors */
     --tp: #ffa040;
     --unselected: #614e6b;
     --unselected-darker: #261e2c;
     --unselected-darkest: #1b151f;
-    --device: green;
-    --device-darker: #006600;
-    --device-darkest: #004600;
-    --device-lighter: rgb(0, 255, 0);
-    --device-alpha: #00660070;
-    --device-alpha2: #00660026;
 
     /* Team Colors */
     --katebulka: #FF69B4;
@@ -80,12 +77,12 @@
 /*  ---------- Fonts  ---------- */
 @font-face {
     font-family: 'Deltarune';
-    src: url("../assets/fonts/Deltarune.ttf") format("truetype");
+    src: url("/assets/fonts/Deltarune.ttf") format("truetype");
 }
 
 @font-face {
     font-family: '8 Bit Operator';
-    src: url('../assets/fonts/8bitoperatorplus-regular.ttf') format('truetype');
+    src: url('/assets/fonts/8bitoperatorplus-regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-size: 150%;
@@ -93,7 +90,7 @@
 
 @font-face {
     font-family: '8bitoperator JVE';
-    src: url('../assets/fonts/8bitoperator_jve.ttf') format('truetype');
+    src: url('/assets/fonts/8bitoperator_jve.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-size: 170%;
@@ -101,7 +98,7 @@
 
 @font-face {
     font-family: '8bitoperator JVE2';
-    src: url('../assets/fonts/8bitoperator-JVE.woff') format('woff');
+    src: url('/assets/fonts/8bitoperator-JVE.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-size: 170%;
@@ -109,7 +106,7 @@
 
 @font-face {
     font-family:'Crypt of Tomorrow';
-    src: url('../assets/fonts/small.ttf') format('truetype');
+    src: url('/assets/fonts/small.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-size: 150%;
@@ -117,7 +114,7 @@
 
 @font-face {
     font-family: 'DeltaJP';
-    src: url('../assets/fonts/ja_main.ttf') format('truetype');
+    src: url('/assets/fonts/ja_main.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-size: 150%;
@@ -125,7 +122,7 @@
 
 @font-face {
     font-family: '8 Bit Operator Bold';
-    src: url('../assets/fonts/8bitoperatorplus-bold.ttf') format('truetype');
+    src: url('/assets/fonts/8bitoperatorplus-bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-size: 150%;
@@ -133,14 +130,14 @@
 
 @font-face {
     font-family: 'EASy Text';
-    src: url('../assets/fonts/easytext.ttf') format('truetype');
+    src: url('/assets/fonts/easytext.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'wingdings';
-    src: url("../assets/fonts/wingdings.ttf") format("truetype");
+    src: url("/assets/fonts/wingdings.ttf") format("truetype");
 }
 
 /* ---------- Generic Styles ---------- */
@@ -152,7 +149,7 @@ html {
 
 body {
     background-color: var(--background);
-    font-family: var(--font), sans-serif;
+    font-family: var(--main-font), sans-serif;
     line-height: 170%;
     font-weight: normal;
 	font-size: 100%;
@@ -185,9 +182,8 @@ hr {
 a {
 	text-decoration: none;
 	text-shadow: none;
-	cursor: var(--cursor-main);
 	color: var(--link-alt);
-	font-family: var(--font);
+	font-family: var(--main-font);
 	font-size: 150%;
 }
 
@@ -204,7 +200,7 @@ a:hover {
 a:hover.break {
 	cursor: var(--cursor-break);
 	color: var(--faint-text);
-	font-family: var(--font);
+	font-family: var(--main-font);
 }
 
 /* ---------- Lists ---------- */
@@ -215,11 +211,10 @@ table {
     border: 2px solid;
     border-color: var(--unselected);
     padding: 0px;
-    
 }
 
 th {
-    font-family: var(--font);
+    font-family: var(--main-font);
     text-align: left;
     padding: 20px;
     font-weight: normal;
@@ -245,7 +240,7 @@ h1 {
     font-size:60px;
     margin-top: 25;
     margin-bottom: 25;
-    font-family: var(--font);
+    font-family: var(--main-font);
     text-shadow: none;
 }
   
@@ -254,7 +249,7 @@ h2 {
     font-size:40px;
     margin-top: 30px;
     margin-bottom: 30px;
-    font-family: var(--font);
+    font-family: var(--main-font);
     text-shadow: none;
 }
   
@@ -263,7 +258,7 @@ h3 {
     font-size:30px;
     margin-top: 25px;
     margin-bottom: 25px;
-    font-family: var(--font);
+    font-family: var(--main-font);
     text-shadow: none;
 }
 
@@ -285,12 +280,12 @@ h3 {
 }
 
 /* ---------- Newsletters ---------- */
-.credit {
+.newsletter-credit {
 	text-decoration: none;
 	text-shadow: none;
 	text-align: center;
 	color: var(--faint-text);
-	font-family: var(--font);
+	font-family: var(--main-font);
 	font-size: 120%;
 }
 
@@ -479,7 +474,7 @@ a:hover img.default {
 \******************************************************************************/
 .chselect {
     background-color: black;
-    font-family: var(--font);
+    font-family: var(--main-font);
     margin-top: 20px;
     width: 100%;
     max-width: 800px;
@@ -584,7 +579,7 @@ a:hover img.default {
 
 .team a {
 	font-size: 30px;
-	font-family: var(--font);
+	font-family: var(--main-font);
 	text-decoration: underline;
 }
 
@@ -608,7 +603,7 @@ a:hover img.default {
 
 .team role {
 	font-size: 25px;
-	font-family: var(--font);
+	font-family: var(--main-font);
 	text-align: left;
 	text-shadow: none;
 	margin-top: 0px;
@@ -623,7 +618,7 @@ a:hover img.default {
 }
 
 .team hue a {
-	font-family: var(--font);
+	font-family: var(--main-font);
 	font-size: 30px;
 	text-decoration: underline;
 	text-decoration-color: rgb(56, 56, 56);
@@ -646,7 +641,7 @@ a:hover img.default {
 .team hue p.role {
 	font-size: 25px;
 	text-shadow: none;
-	font-family: var(--font);
+	font-family: var(--main-font);
 	background: linear-gradient(90deg, var(--hue1), var(--hue2), var(--hue3), var(--hue4));
   	background-clip: text;
   	-webkit-text-fill-color: transparent;
@@ -731,7 +726,7 @@ body.shadowcrystal {
 	max-width: 640px;
 	min-height: 144px;
 	margin: auto;
-	font-family: var(--font);
+	font-family: var(--main-font);
 	padding: 0 8px;
 	/* padding: 0 8px; If no portrait */
 	border: 26px solid transparent;
@@ -755,7 +750,7 @@ body.shadowcrystal {
 	max-width: 640px;
 	min-height: 144px;
 	margin: auto;
-	font-family: var(--font);
+	font-family: var(--main-font);
 	padding: 0 8px;
 	/* padding: 0 8px; If no portrait */
 	border: 26px solid transparent;

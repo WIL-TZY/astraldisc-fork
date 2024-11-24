@@ -13,7 +13,7 @@ class MyNav extends HTMLElement {
             <style>
             nav {
                 background-color: black;
-                font-family: var(--font);
+                font-family: var(--main-font);
                 text-align: center;
                 margin-top: 20px;
             }
