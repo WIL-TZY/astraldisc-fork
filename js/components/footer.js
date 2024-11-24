@@ -20,7 +20,7 @@ class MyFooter extends HTMLElement {
                 text-shadow: none;
                 cursor: var(--cursor-main);
                 color: var(--link-alt);
-                font-family: var(--font);
+                font-family: var(--main-font);
                 font-size: 140%;
                 font-weight: normal;
                 text-shadow: none;

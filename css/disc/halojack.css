@@ -124,7 +124,7 @@ body.standby-page {
 	position: fixed;
 	height:100%;
 	width:100%;
-	background-image: url("../assets/img/overlays/static.gif");
+	background-image: url("/assets/img/overlays/static.gif");
 	background-repeat: repeat;
 	background-size: cover;
 	pointer-events: none;
@@ -139,7 +139,7 @@ body.standby-page {
 	position: fixed;
 	height:100%;
 	width:100%;
-	background-image: url("../assets/img/overlays/static_deltarune.gif");
+	background-image: url("/assets/img/overlays/static_deltarune.gif");
 	background-repeat: repeat;
 	background-size: cover;
 	pointer-events: none;
@@ -154,7 +154,7 @@ body.standby-page {
 	position: fixed;
 	height:100%;
 	width:100%;
-	background-image: url("../assets/img/overlays/vhs.gif");
+	background-image: url("/assets/img/overlays/vhs.gif");
 	background-repeat: repeat;
 	background-size: cover;
 	pointer-events: none;

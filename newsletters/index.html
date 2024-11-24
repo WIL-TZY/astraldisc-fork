@@ -9,45 +9,59 @@
 		<meta property="og:description" content="A Deltarune Chapters 3-8 take.">
 		<meta property="og:image" content="https://astraldisc.com/assets/img/disc/new_shooting_star.png">
 		<title>ASTRAL DISC</title>
-		<link rel="icon" type="image/png" href="../assets/img/favicon/astraldisc.png" />
+		<link rel="icon" type="image/png" href="/assets/img/favicon/astraldisc.png" />
 		<!-- CSS -->
-		<link href="../css/reset.css" rel="stylesheet" type="text/css" media="all">
-		<link href="../css/templates.css" rel="stylesheet" type="text/css" media="all">
-		<link href="../css/disc/disc.css" rel="stylesheet" type="text/css" media="all">
+		<link href="/css/reset.css" rel="stylesheet" type="text/css" media="all">
+		<link href="/css/templates.css" rel="stylesheet" type="text/css" media="all">
+		<link href="/css/disc/disc.css" rel="stylesheet" type="text/css" media="all">
 	</head>
-	<body>
+	<body class="page-viewport">
 		<init-component></init-component>
-		<script src="../js/components/init.js"></script>
+		<script src="/js/components/init.js"></script>
+
 		<div class="wrapper">
-		<p class="center"><h2 style="text-align: center;">NEWSLETTERS</h2></p>
-        <hr>
-        <p class="center"><h3 style="text-align: center;">2023</h3></p>
-        <p class="center">
-            <a href="../newsletters/2nd" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
-                2ND ANNIVERSARY<br><span style="font-family: var(--secondary-font); font-size: 18px;">November 18th 2023</span>
-            </a>
-        </p>
-        <hr>
-		<p class="center"><h3 style="text-align: center;">2024</h3></p>
-        <p class="center">
-            <span style="color: var(--link-hover); font-family: var(--font); font-size: 25px; text-shadow: none;">NEW!</span><br>
-            <a href="../newsletters/autumn24" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
-                Halloween Edition<br><span style="font-family: var(--secondary-font); font-size: 18px;">Autumn 2024</span>
-            </a>
-        </p>
-        <p class="center">
-            <span style="color: var(--faint-text); font-family: var(--font); font-size: 25px; text-shadow: none;">(Upcoming)</span><br>
-            <a class="break" href="#0" onclick="clickDenySound()" onmouseenter="heartBreak()">
-                3RD ANNIVERSARY<br><span style="font-family: var(--secondary-font); font-size: 18px;">December 1st 2024</span>
-            </a>
-        </p>
-		<hr>
-        <p class="center"><a href="../chapters" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">RETURN</a></p>
-		<footer>
-			<my-footer></my-footer>
-			<script src="../js/components/footer.js"></script>
-		</footer>
-	</div>
-	<script src="../js/soundfx.js"></script>
+			<h2 class="center">NEWSLETTERS</h2>
+			
+			<hr>
+
+			<h3 class="center">2023</h3>
+
+			<div class="center">
+				<a class="newsletter-link" href="/newsletters/2nd" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">2ND ANNIVERSARY
+					<br>
+					<span class="newsletter-date">November 18th 2023</span>
+				</a>
+			</div>
+
+			<hr>
+
+			<h3 class="center">2024</h3>
+
+			<div class="center">
+				<span class="newsletter-new">NEW!</span><br>
+				<a class="newsletter-link" href="/newsletters/autumn24" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">Halloween Edition
+					<br>
+					<span class="newsletter-date">Autumn 2024</span>
+				</a>
+			</div>
+
+			<p class="center">
+				<span class="newsletter-next">(Upcoming)</span><br>
+				<a class="newsletter-link break" href="#0" onclick="clickDenySound()" onmouseenter="heartBreak()">3RD ANNIVERSARY
+					<br>
+					<span class="newsletter-date">December 1st 2024</span>
+				</a>
+			</p>
+
+			<hr>
+
+			<p class="center"><a href="/chapters" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">RETURN</a></p>
+
+			<footer>
+				<my-footer></my-footer>
+				<script src="/js/components/footer.js"></script>
+			</footer>
+		</div>
+	<script src="/js/soundfx.js"></script>
 	</body>
 </html>

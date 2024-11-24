@@ -30,6 +30,7 @@ img { user-select: none; }
 ::selection { color:rgba(255, 255, 255, 1); background:  rgb(0, 171, 201, 0.5);}
 
 body.DEVICE-page {
+	font-family: var(--main-font);
 	cursor: var(--cursor-blur);
 	display: flex;
 	justify-content: center;
@@ -45,7 +46,7 @@ body.DEVICE-page {
 	max-width: 640px;
 	min-height: 144px;
 	margin: 15px;
-	font-family: var(--font);
+	
 	padding: 0 8px;
 	/* padding: 0 8px; If no portrait */
 	border: 26px solid transparent;
@@ -188,7 +189,8 @@ body.DIALOGUE-page {
 }
 
 /* Glowing effect on text */
-.devicepulse {
+.devicepulse-text {
+	font-family: var(--main-font);
 	animation: glow 1s ease-in-out infinite alternate;
 }
 

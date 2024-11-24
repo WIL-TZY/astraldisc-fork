@@ -58,7 +58,7 @@ a {
 	padding: 0 8px;
 	/* padding: 0 8px; If no portrait */
 	border: 26px solid transparent;
-	border-image: url(../assets/img/CandleholderBorder.gif) 52 stretch;
+	border-image: url(/assets/img/CandleholderBorder.gif) 52 stretch;
 	image-rendering: pixelated;
 	border-image-slice: 27.3% fill;
 }

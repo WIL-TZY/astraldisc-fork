@@ -149,14 +149,21 @@ html {
 
 body {
     background-color: var(--background);
-    font-family: var(--main-font), sans-serif;
     line-height: 170%;
     font-weight: normal;
-	font-size: 100%;
-	font-family: inherit;
     font-family: var(--secondary-font), sans-serif;
 	color: var(--font-color);
 	text-shadow: var(--text-shadow);
+}
+
+/* Check newsletters/index.html to see how this looks */
+.page-viewport {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+	image-rendering: pixelated;
 }
 
 /* Optimized for responsive images */
@@ -287,6 +294,34 @@ h3 {
 	color: var(--faint-text);
 	font-family: var(--main-font);
 	font-size: 120%;
+}
+
+.newsletter-link {
+    font-family: var(--main-font);
+    color: var(--link-alt);
+    text-decoration: none;
+    font-size: 32px;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.newsletter-date {
+    font-family: var(--secondary-font);
+    font-size: 18px;
+}
+
+.newsletter-new {
+    color: var(--link-hover);
+    font-family: var(--main-font);
+    font-size: 25px;
+    text-shadow: none;
+}
+
+.newsletter-next {
+    color: var(--faint-text);
+    font-family: var(--main-font);
+    font-size: 25px;
+    text-shadow: none;
 }
 
 .minerva-redacted {
@@ -439,32 +474,38 @@ a:hover img.hover {
 a:hover img.default {
 	display: none;
 }
-	
-.small-letters {
+
+/* UNUSED */
+/* .small-letters {
 	color: var(--faint-text);
 	font-size: var(--font-tiny);
+} */
+
+/* HOME PAGE */
+.project-about p {
+	text-align: justify;
 }
 
-.flex-container {
+.project-flex-container {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
     margin-top: 20px;
 }
 
-.flex-container > div {
+.project-flex-container > div {
 	text-align: center;
 	margin: 50px;
 	padding: 0px;
 }
 
-.flex-container > img {
+.project-flex-container > img {
 	height: 400px;
   	width: auto;
 	padding: 5px;
 }
 
-.flex-container.projects-box {
+.project-flex-container.projects-box {
 	width: 200px;
 	height: 200px; 
 }
@@ -730,7 +771,7 @@ body.shadowcrystal {
 	padding: 0 8px;
 	/* padding: 0 8px; If no portrait */
 	border: 26px solid transparent;
-	border-image: url(../assets/img/borders/DeltaruneBorder.gif) 52 stretch;
+	border-image: url(/assets/img/borders/DeltaruneBorder.gif) 52 stretch;
 	image-rendering: pixelated;
 	border-image-slice: 27.3% fill;
 }
@@ -754,7 +795,7 @@ body.shadowcrystal {
 	padding: 0 8px;
 	/* padding: 0 8px; If no portrait */
 	border: 26px solid transparent;
-	border-image: url(../assets/img/borders/DeltaruneBorderLW.png) 52 stretch;
+	border-image: url(/assets/img/borders/DeltaruneBorderLW.png) 52 stretch;
 	image-rendering: pixelated;
 	border-image-slice: 27.3% fill;  
 }
@@ -828,7 +869,7 @@ body.shadowcrystal {
 	}
 
 	/* except for the .other-links container that should keep row style */
-    .flex-container > .other-links {
+    .project-flex-container > .other-links {
         flex-direction: column;
         align-items: center;
     }
@@ -837,11 +878,11 @@ body.shadowcrystal {
 /* Mobile */
 @media (max-width: 480px) {
 
-    .flex-container {
+    .project-flex-container {
         margin: 0;
     }
 
-    .flex-container a {
+    .project-flex-container a {
         margin: 5px;
     }
 }

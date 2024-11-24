@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     //console.log('Current page URL:', window.location.href);
-    fetch('../js/gov/complaints.json')
+    fetch('/js/gov/complaints.json')
         .then(response => response.json())
         .then(data => {
             const complaintsTable = document.getElementById('complainers');

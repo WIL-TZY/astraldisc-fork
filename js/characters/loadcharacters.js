@@ -22,7 +22,7 @@ class CharacterMenu {
 
     async _loadCharacters() {
         try {
-            const response = await fetch('../js/characters/characters.json');
+            const response = await fetch('/js/characters/characters.json');
             const data = await response.json();
             return data.chapters[this.chapter] || null;
         } catch (error) {

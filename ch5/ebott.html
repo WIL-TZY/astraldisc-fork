@@ -9,26 +9,26 @@
 		<meta property="og:description" content="A Deltarune Chapters 3-8 take.">
 		<meta property="og:image" content="https://astraldisc.com/assets/img/disc/new_shooting_star.png">
 		<title>Susie Hawthorn.</title>
-		<link rel="icon" type="image/png" href="../assets/img/favicon/astraldisc.png" />
+		<link rel="icon" type="image/png" href="/assets/img/favicon/astraldisc.png" />
 		<!-- CSS -->
-		<link href="../css/reset.css" rel="stylesheet" type="text/css" media="all">
-		<link href="../css/templates.css" rel="stylesheet" type="text/css" media="all" />
-		<link href="../css/disc/disc.css" rel="stylesheet" type="text/css" media="all">
+		<link href="/css/reset.css" rel="stylesheet" type="text/css" media="all">
+		<link href="/css/templates.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="/css/disc/disc.css" rel="stylesheet" type="text/css" media="all">
 	</head>
 	<body class="image-page">
 		<init-component></init-component>
-		<script src="../js/components/init.js"></script>
+		<script src="/js/components/init.js"></script>
 		<div class="wrapper">
             <div id="over"></div>
 			<div id="img">
 				<img
 					id="img1"
-					src="../assets/img/disc/ch5/susie_alone.png"
+					src="/assets/img/disc/ch5/susie_alone.png"
                     class="image pixelated"
 					width="200%"
 					height="200%"
 					alt="Susie Hawthorn"
-					onclick="imgChange(this, '../assets/audio/birdnoise.ogg');"
+					onclick="imgChange(this, '/assets/audio/birdnoise.ogg');"
 				/>
 			</div>
 		</div>
@@ -38,13 +38,13 @@
             function susieAlone() {
                 document.getElementById("over").style.display="none";
                 document.title = 'Susie Hawthorn.';
-                document.getElementById("img1").src="../assets/img/disc/ch5/susie_alone.png";
+                document.getElementById("img1").src="/assets/img/disc/ch5/susie_alone.png";
                 document.getElementById("img1").alt="A lonely girl";
             }
 
             function susieFamily() {
                 document.getElementById("over").style.display="block";
-                document.getElementById("img1").src="../assets/img/disc/ch5/susie_family.gif";
+                document.getElementById("img1").src="/assets/img/disc/ch5/susie_family.gif";
                 document.title = 'Lake\'s kids.';
                 document.getElementById("img1").alt="A happy family";
             }

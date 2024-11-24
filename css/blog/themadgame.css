@@ -1,7 +1,7 @@
 /* ---------- Basic Stuff ---------- */
 body {
     background-color: white;
-    background-image: url("../../assets/img/blog/pollyanna/grunge.png");
+    background-image: url("/assets/img/blog/pollyanna/grunge.png");
 	background-attachment: fixed;
     color: darkolivegreen;
     font-family: Verdana, sans-serif;
