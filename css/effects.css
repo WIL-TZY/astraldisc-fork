@@ -1,3 +1,28 @@
+/* Flip Effect (used in CD logo) */
+.flip-container {
+    background: transparent;
+    display: flex;
+	justify-content: center;
+    align-items: center;
+}
+
+.flip-this {
+    position: relative;
+    width: 100%;
+    height: 100%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-container:hover .flip-this {
+    transition: 0.9s;
+    transform: rotateY(360deg);
+}
+
+/* Name this Effect */ 
 body.image-page {
 	background: black;
     image-rendering: pixelated;
@@ -69,6 +94,18 @@ body.eas-page {
 	align-items: center;
 	height: 100vh;
 	margin: 0;
+}
+
+.eas__title {
+	font-family: 'EASy Text', sans-serif;
+	text-align: center; 
+	font-size:50px;
+}
+
+.eas__marqueeText {
+	font-family: 'EASy Text', sans-serif;
+	text-align: center; 
+	font-size: 20px;
 }
 
 body.standby-page {
@@ -170,16 +207,4 @@ body.standby-page {
 	opacity: 0.05;
 	filter: brightness(8);
 	z-index: 100;
-}
-
-.eas__title {
-	font-family: 'EASy Text', sans-serif;
-	text-align: center; 
-	font-size:50px;
-}
-
-.eas__marqueeText {
-	font-family: 'EASy Text', sans-serif;
-	text-align: center; 
-	font-size: 20px;
 }

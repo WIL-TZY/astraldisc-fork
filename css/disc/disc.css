@@ -140,7 +140,7 @@
     src: url("../../assets/fonts/wingdings.ttf") format("truetype");
 }
 
-/* ---------- Generic Styles ---------- */
+/* ---------- HTML Elements ---------- */
 html {
 	font-size: 16px;
 	line-height: 1.5;
@@ -156,14 +156,34 @@ body {
 	text-shadow: var(--text-shadow);
 }
 
-/* Check newsletters/index.html to see how this looks */
-.page-viewport {
-	display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    margin: 0;
-	image-rendering: pixelated;
+main {
+	padding: 15px;
+	margin: 0 auto;
+	background: #000000;
+}
+	
+/* Prevent overflow of large images in main text areas */
+main img {
+	max-width: 100%;
+	height: auto;
+}
+
+main ul {
+    list-style-type: disc;
+    padding-inline-start: 40px;
+    font-family: var(--secondary-font);
+    font-size: 20px;
+    text-align: justify;
+}
+
+textarea {
+	border: 1px solid var(--textarea-border); 
+	font-size: 14px; 
+	background-color: var(--textarea); /* !important */ 
+	color: white;
+	padding: 1%;
+	text-align: left;
+	margin-bottom: 20px;
 }
 
 /* Optimized for responsive images */
@@ -269,6 +289,17 @@ h3 {
     text-shadow: none;
 }
 
+/* ---------- Footer ---------- */
+footer {
+	padding: 20px;
+	font-weight: bold;
+	font-size: 14px;
+	line-height: 1.4rem;
+	text-align: center;
+	color: var(--faint-text);
+	text-shadow: var(--text-shadow-footer);
+}
+
 /* ---------- Other ---------- */
 ::selection { color:#ffff00; background:  #333;} /* Selected Text */
 
@@ -280,57 +311,26 @@ h3 {
     transition: outline 0.3s;
 }
 
-/* ---------- Home Page ---------- */
-.deltarune-logo {
-	font-family: "Deltarune";
-	font-size: 24px;
+/* ---------- Generic Classes ---------- */
+.wrapper {
+	width: 90%;
+	max-width: 700px;
+	/*border: 3px solid red;*/ /* Use for Debug */
+	margin: 0 auto;
+	top: 0px;
 }
 
-/* ---------- Newsletters ---------- */
-.newsletter-credit {
-	text-decoration: none;
-	text-shadow: none;
-	text-align: center;
-	color: var(--faint-text);
-	font-family: var(--main-font);
-	font-size: 120%;
+/* Check newsletters/index.html to see how this looks */
+.page-viewport {
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+	image-rendering: pixelated;
 }
 
-.newsletter-link {
-    font-family: var(--main-font);
-    color: var(--link-alt);
-    text-decoration: none;
-    font-size: 32px;
-    display: block;
-    margin-bottom: 10px;
-}
-
-.newsletter-date {
-    font-family: var(--secondary-font);
-    font-size: 18px;
-}
-
-.newsletter-new {
-    color: var(--link-hover);
-    font-family: var(--main-font);
-    font-size: 25px;
-    text-shadow: none;
-}
-
-.newsletter-next {
-    color: var(--faint-text);
-    font-family: var(--main-font);
-    font-size: 25px;
-    text-shadow: none;
-}
-
-.minerva-redacted {
-	background-color: #333;
-	color: #333;
-	text-shadow: none;
-	user-select: none;
-}
-
+/* Candleholder Character Flex Items (needs renaming) */ 
 .flex-item {
     display: flex;
     max-width: 100%; /* Make images responsive */
@@ -340,31 +340,7 @@ h3 {
     /* Three items per row */
 }
 
-.flip-container {
-    background: transparent;
-    display: flex;
-	justify-content: center;
-    align-items: center;
-}
-
-.flip-this {
-    position: relative;
-    width: 100%;
-    height: 100%;
-	display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.6s;
-    transform-style: preserve-3d;
-}
-
-.flip-container:hover .flip-this {
-    transition: 0.9s;
-    transform: rotateY(360deg);
-}
-
-/* ---------- Newsletters END ---------- */
-
+/* ---------- Graze Effect ---------- */
 .grazearea {
 	cursor: var(--cursor-main);
 	color: transparent;
@@ -394,17 +370,9 @@ h3 {
 	display: none;
 	pointer-events: none;
 }
-  
-.wrapper {
-	width: 90%;
-	max-width: 700px;
-	/*border: 3px solid red;*/ /* Use for Debug */
-	margin: 0 auto;
-	top: 0px;
-}
 
 /* ---------- Header ---------- */
-header {
+.header {
 	background-color: black;
 	display: flex;
 	flex-direction: column;
@@ -421,54 +389,14 @@ header {
 	height: auto; /* Make sure logo scales well */
 }
 
-main {
-	padding: 15px;
-	margin: 0 auto;
-	background: #000000;
-}
-	
-/* Prevent overflow of large images in main text areas */
-main img {
-	max-width: 100%;
-	height: auto;
+/******************************************************************************\
+*                                 CHAPTERS.HTML                                *
+\******************************************************************************/
+.deltarune-logo {
+	font-family: "Deltarune";
+	font-size: 24px;
 }
 
-main ul {
-    list-style-type: disc;
-    padding-inline-start: 40px;
-    font-family: var(--secondary-font);
-    font-size: 20px;
-    text-align: justify;
-}
-
-textarea {
-	border: 1px solid var(--textarea-border); 
-	font-size: 14px; 
-	background-color: var(--textarea); /* !important */ 
-	color: white;
-	padding: 1%;
-	text-align: left;
-	margin-bottom: 20px;
-}
-
-footer {
-	padding: 20px;
-	font-weight: bold;
-	font-size: 14px;
-	line-height: 1.4rem;
-	text-align: center;
-	color: var(--faint-text);
-	text-shadow: var(--text-shadow-footer);
-	/* border-top: 1px solid rgb(22, 22, 22); */
-}
-
-/* UNUSED */
-/* .small-letters {
-	color: var(--faint-text);
-	font-size: var(--font-tiny);
-} */
-
-/* HOME PAGE */
 .project-about p {
 	text-align: justify;
 }
@@ -497,9 +425,6 @@ footer {
 	height: 200px; 
 }
 
-/******************************************************************************\
-*                                 CHAPTERS.HTML                                *
-\******************************************************************************/
 .chselect {
     background-color: black;
     font-family: var(--main-font);
@@ -596,7 +521,7 @@ footer {
 }
 
 /******************************************************************************\
- *                                team.HTML                                     *
+ *                                team.HTML                                    *
 \******************************************************************************/
 .team {
 	display: flex;
@@ -675,20 +600,6 @@ footer {
   	-webkit-text-fill-color: transparent;
 	margin-top: 0px;
 	margin-bottom: 0px;
-}
-
-#canvas {
-	display: block;
-}
-
-.overlay {
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	background: rgba(0, 0, 0, 0); /* Transparent background - GPT*/
-	pointer-events: none; /* Allow clicks to go through - GPT*/
 }
 
 .hue p {
@@ -814,6 +725,24 @@ body.shadowcrystal {
     visibility: hidden;
     content: "* ";
 }
+
+/* UNUSED STUFF */
+/* .small-letters {
+	color: var(--faint-text);
+	font-size: var(--font-tiny);
+} */
+
+/* #canvas { display: block; } */
+
+/* .overlay {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: rgba(0, 0, 0, 0);
+	pointer-events: none; 
+} */
 
 /******************************************************************************\
 *                               MEDIA QUERIES                                  *
