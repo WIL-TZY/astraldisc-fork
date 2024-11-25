@@ -1,5 +1,5 @@
 body {
-    background-image: url("/assets/img/blog/catti/bg-mist.png");
+    background-image: url("../../assets/img/blog/catti/bg-mist.png");
     background-blend-mode: multiply;
     background-color: #510048;
     font-family: "Garamond", serif;

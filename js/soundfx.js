@@ -12,26 +12,65 @@ var html5_audiotypes={ //define list of audio file extensions and their associat
 };
 
 //Initialize two sound clips with 1 fallback file each:
-var mouseoversound=createsoundbite("/assets/audio/ui_move.wav", "/assets/audio/ui_move.ogg");
+var mouseoversound=createsoundbite(
+	"./assets/audio/ui_move.wav", "./assets/audio/ui_move.ogg", 	// <-- Path relative to the root level
+	"../assets/audio/ui_move.wav", "../assets/audio/ui_move.ogg", 	// <-- Path relative to subfolders
+	"../../assets/audio/ui_move.wav", "../../assets/audio/ui_move.ogg" 	// <-- Path relative to sub-subfolders
+);
 
-var heartbreak=createsoundbite("/assets/audio/heartbreak.wav", "/assets/audio/heartbreak.ogg");
+var heartbreak=createsoundbite(
+	"./assets/audio/heartbreak.wav", "./assets/audio/heartbreak.ogg", 	// <-- Path relative to the root level
+	"../assets/audio/heartbreak.wav", "../assets/audio/heartbreak.ogg", 	// <-- Path relative to subfolders
+	"../../assets/audio/heartbreak.wav", "../../assets/audio/heartbreak.ogg" 	// <-- Path relative to sub-subfolders
+);
 
-var soulmode=createsoundbite("/assets/audio/soulmode.wav", "/assets/audio/soulmode.ogg");
+var soulmode=createsoundbite(
+	"./assets/audio/soulmode.wav", "./assets/audio/soulmode.ogg", 	// <-- Path relative to the root level
+	"../assets/audio/soulmode.wav", "../assets/audio/soulmode.ogg", 	// <-- Path relative to subfolders
+	"../../assets/audio/soulmode.wav", "../../assets/audio/soulmode.ogg" 	// <-- Path relative to sub-subfolders
+);
 
-var graze=createsoundbite("/assets/audio/graze.wav", "/assets/audio/graze.ogg");
+var graze=createsoundbite(
+	"./assets/audio/graze.wav", "./assets/audio/graze.ogg", 	// <-- Path relative to the root level
+	"../assets/audio/graze.wav", "../assets/audio/graze.ogg", 	// <-- Path relative to subfolders
+	"../../assets/audio/graze.wav", "../../assets/audio/graze.ogg" 	// <-- Path relative to sub-subfolders
+);
 
-var explosion=createsoundbite("/assets/audio/badexplosion.wav", "/assets/audio/badexplosion.ogg");
+var explosion=createsoundbite(
+	"./assets/audio/badexplosion.wav", "./assets/audio/badexplosion.ogg", 	// <-- Path relative to the root level
+	"../assets/audio/badexplosion.wav", "../assets/audio/badexplosion.ogg", 	// <-- Path relative to subfolders
+	"../../assets/audio/badexplosion.wav", "../../assets/audio/badexplosion.ogg" 	// <-- Path relative to sub-subfolders
+);
 
 var dooropen=createsoundbite(
-	"/assets/audio/dooropen.wav", "/assets/audio/dooropen.ogg");
+	"./assets/audio/dooropen.wav", "./assets/audio/dooropen.ogg", 	// <-- Path relative to the root level
+	"../assets/audio/dooropen.wav", "../assets/audio/dooropen.ogg", 	// <-- Path relative to subfolders
+	"../../assets/audio/dooropen.wav", "../../assets/audio/dooropen.ogg" 	// <-- Path relative to sub-subfolders
+);
 
-var doorclose=createsoundbite("/assets/audio/doorclose.wav", "/assets/audio/doorclose.ogg");
+var doorclose=createsoundbite(
+	"./assets/audio/doorclose.wav", "./assets/audio/doorclose.ogg", 	// <-- Path relative to the root level
+	"../assets/audio/doorclose.wav", "../assets/audio/doorclose.ogg", 	// <-- Path relative to subfolders
+	"../../assets/audio/doorclose.wav", "../../assets/audio/doorclose.ogg" 	// <-- Path relative to sub-subfolders
+);
 
-var clicksound=createsoundbite("/assets/audio/ui_select.wav", "/assets/audio/ui_select.ogg");
+var clicksound=createsoundbite(
+	"./assets/audio/ui_select.wav", "./assets/audio/ui_select.ogg",
+	"../assets/audio/ui_select.wav", "../assets/audio/ui_select.ogg",
+	"../../assets/audio/ui_select.wav", "../../assets/audio/ui_select.ogg",
+);
 
-var clickdenysound=createsoundbite("/assets/audio/ui_cant_select.wav", "/assets/audio/ui_cant_select.ogg");
+var clickdenysound=createsoundbite(
+	"./assets/audio/ui_cant_select.wav", "./assets/audio/ui_cant_select.ogg",
+	"../assets/audio/ui_cant_select.wav", "../assets/audio/ui_cant_select.ogg",
+	"../../assets/audio/ui_cant_select.wav", "../../assets/audio/ui_cant_select.ogg"
+);
 
-var clickgoner=createsoundbite("/assets/audio/ui_spooky_action.wav", "/assets/audio/ui_spooky_action.ogg");
+var clickgoner=createsoundbite(
+	"./assets/audio/ui_spooky_action.wav", "./assets/audio/ui_spooky_action.ogg",
+	"../assets/audio/ui_spooky_action.wav", "../assets/audio/ui_spooky_action.ogg",
+	"../../assets/audio/ui_spooky_action.wav", "../../assets/audio/ui_spooky_action.ogg"
+);
 
 var domInteracted = false;
 document.addEventListener("click", function () {

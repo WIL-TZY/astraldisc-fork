@@ -22,10 +22,10 @@
     --text-shadow-footer: 2px 2px #333333;
     --textarea: #202020;
 
-    --cursor-main: url(/assets/img/cursor/heart.png) 10 5, auto;
-    --cursor-break: url(/assets/img/cursor/heart_break.png) 12 5, auto;
-    --cursor-alt: url(/assets/img/cursor/heart_yellow.png) 10 5, auto;
-    --cursor-break-alt: url(/assets/img/cursor/heart_yellow_break.png) 12 5, auto;
+    --cursor-main: url(../../assets/img/cursor/heart.png) 10 5, auto;
+    --cursor-break: url(../../assets/img/cursor/heart_break.png) 12 5, auto;
+    --cursor-alt: url(../../assets/img/cursor/heart_yellow.png) 10 5, auto;
+    --cursor-break-alt: url(../../assets/img/cursor/heart_yellow_break.png) 12 5, auto;
 
     /* Deltarune Colors */
     --tp: #ffa040;
@@ -77,12 +77,12 @@
 /*  ---------- Fonts  ---------- */
 @font-face {
     font-family: 'Deltarune';
-    src: url("/assets/fonts/Deltarune.ttf") format("truetype");
+    src: url("../../assets/fonts/Deltarune.ttf") format("truetype");
 }
 
 @font-face {
     font-family: '8 Bit Operator';
-    src: url('/assets/fonts/8bitoperatorplus-regular.ttf') format('truetype');
+    src: url('../../assets/fonts/8bitoperatorplus-regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-size: 150%;
@@ -90,7 +90,7 @@
 
 @font-face {
     font-family: '8bitoperator JVE';
-    src: url('/assets/fonts/8bitoperator_jve.ttf') format('truetype');
+    src: url('../../assets/fonts/8bitoperator_jve.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-size: 170%;
@@ -98,7 +98,7 @@
 
 @font-face {
     font-family: '8bitoperator JVE2';
-    src: url('/assets/fonts/8bitoperator-JVE.woff') format('woff');
+    src: url('../../assets/fonts/8bitoperator-JVE.woff') format('woff');
     font-weight: normal;
     font-style: normal;
     font-size: 170%;
@@ -106,7 +106,7 @@
 
 @font-face {
     font-family:'Crypt of Tomorrow';
-    src: url('/assets/fonts/small.ttf') format('truetype');
+    src: url('../../assets/fonts/small.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-size: 150%;
@@ -114,7 +114,7 @@
 
 @font-face {
     font-family: 'DeltaJP';
-    src: url('/assets/fonts/ja_main.ttf') format('truetype');
+    src: url('../../assets/fonts/ja_main.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-size: 150%;
@@ -122,7 +122,7 @@
 
 @font-face {
     font-family: '8 Bit Operator Bold';
-    src: url('/assets/fonts/8bitoperatorplus-bold.ttf') format('truetype');
+    src: url('../../assets/fonts/8bitoperatorplus-bold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-size: 150%;
@@ -130,14 +130,14 @@
 
 @font-face {
     font-family: 'EASy Text';
-    src: url('/assets/fonts/easytext.ttf') format('truetype');
+    src: url('../../assets/fonts/easytext.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'wingdings';
-    src: url("/assets/fonts/wingdings.ttf") format("truetype");
+    src: url("../../assets/fonts/wingdings.ttf") format("truetype");
 }
 
 /* ---------- Generic Styles ---------- */
@@ -758,7 +758,7 @@ body.shadowcrystal {
 	padding: 0 8px;
 	/* padding: 0 8px; If no portrait */
 	border: 26px solid transparent;
-	border-image: url(/assets/img/borders/DeltaruneBorder.gif) 52 stretch;
+	border-image: url(../../assets/img/borders/DeltaruneBorder.gif) 52 stretch;
 	image-rendering: pixelated;
 	border-image-slice: 27.3% fill;
 }
@@ -782,7 +782,7 @@ body.shadowcrystal {
 	padding: 0 8px;
 	/* padding: 0 8px; If no portrait */
 	border: 26px solid transparent;
-	border-image: url(/assets/img/borders/DeltaruneBorderLW.png) 52 stretch;
+	border-image: url(../../assets/img/borders/DeltaruneBorderLW.png) 52 stretch;
 	image-rendering: pixelated;
 	border-image-slice: 27.3% fill;  
 }

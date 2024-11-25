@@ -22,8 +22,8 @@
 					"Still thinks about Tenna sometimes, and hates that."
 				],
 				"image": {
-					"default": "/assets/img/disc/ch3/mike.png",
-					"hover": "/assets/img/disc/ch3/mike_2.png"
+					"default": "../assets/img/disc/ch3/mike.png",
+					"hover": "../assets/img/disc/ch3/mike_2.png"
 				}
 			},
 			{
@@ -44,8 +44,8 @@
 					"Nick is what you would call a \"memory vampire\", feeding on positive memories."
 				],
 				"image": {
-					"default": "/assets/img/disc/ch3/nick.png",
-					"hover": "/assets/img/disc/ch3/nick_2.png"
+					"default": "../assets/img/disc/ch3/nick.png",
+					"hover": "../assets/img/disc/ch3/nick_2.png"
 				}
 			},
 			{
@@ -58,15 +58,15 @@
 					"pronouns": "She/her",
 					"role": "Secret Boss",
 					"object": "Signal Amplifier",
-					"soulMode": "/assets/img/cursor/heart_cyan.png",
+					"soulMode": "../assets/img/cursor/heart_cyan.png",
 					"items": [
 						{
 							"name": "Gloryslicer",
-							"icon": "/assets/img/disc/equip_sword.png"
+							"icon": "../assets/img/disc/equip_sword.png"
 						},
 						{
 							"name": "IdConcealer",
-							"icon": "/assets/img/disc/equip_armor.png"
+							"icon": "../assets/img/disc/equip_armor.png"
 						}
 					]
 				},
@@ -78,8 +78,8 @@
 					"Ironically, Halojack is very impatient."
 				],
 				"image": {
-					"default": "/assets/img/disc/ch3/halojack.png",
-					"hover": "/assets/img/disc/ch3/halojack_2.gif"
+					"default": "../assets/img/disc/ch3/halojack.png",
+					"hover": "../assets/img/disc/ch3/halojack_2.gif"
 				}
 			}
 		],
@@ -104,8 +104,8 @@
 					"Loves wine, but you will never see her drunk in public."
 				],
 				"image": {
-					"default": "/assets/img/disc/ch4/gospiel.png",
-					"hover": "/assets/img/disc/ch4/gospiel_2.png"
+					"default": "../assets/img/disc/ch4/gospiel.png",
+					"hover": "../assets/img/disc/ch4/gospiel_2.png"
 				}
 			},
 			{
@@ -127,8 +127,8 @@
 					"While half of her face is covered, nothing seems to escape her cold gaze."
 				],
 				"image": {
-					"default": "/assets/img/disc/ch4/acolyte.png",
-					"hover": "/assets/img/disc/ch4/acolyte_2.png"
+					"default": "../assets/img/disc/ch4/acolyte.png",
+					"hover": "../assets/img/disc/ch4/acolyte_2.png"
 				}
 			},
 			{
@@ -141,15 +141,15 @@
 					"pronouns": "He/him",
 					"role": "Secret Boss",
 					"object": "Church Bell",
-					"soulMode": "/assets/img/cursor/heart_green.png",
+					"soulMode": "../assets/img/cursor/heart_green.png",
 					"items": [
 						{
 							"name": "VesperRing",
-							"icon": "/assets/img/disc/equip_ring.png"
+							"icon": "../assets/img/disc/equip_ring.png"
 						},
 						{
 							"name": "CorruptStole",
-							"icon": "/assets/img/disc/equip_armor.png"
+							"icon": "../assets/img/disc/equip_armor.png"
 						}
 					]
 				},
@@ -161,8 +161,8 @@
 					"Beltrowel excels at manipulation to get what he wants. Maybe one day, a fellow darkner will agree to his plan..."
 				],
 				"image": {
-					"default": "/assets/img/disc/ch4/beltrowel.png",
-					"hover": "/assets/img/disc/ch4/beltrowel_2.gif"
+					"default": "../assets/img/disc/ch4/beltrowel.png",
+					"hover": "../assets/img/disc/ch4/beltrowel_2.gif"
 				}
 			}
 		],
@@ -185,8 +185,8 @@
 					"She loves the hell out of heights."
 				],
 				"image": {
-					"default": "/assets/img/disc/ch5/firefly.png",
-					"hover": "/assets/img/disc/ch5/firefly_2.png"
+					"default": "../assets/img/disc/ch5/firefly.png",
+					"hover": "../assets/img/disc/ch5/firefly_2.png"
 				}
 			},
 			{
@@ -199,15 +199,15 @@
 					"pronouns": "He/they/it",
 					"role": "Secret Boss",
 					"object": "Suspended Looping Coaster",
-					"soulMode": "/assets/img/cursor/heart_orange.png",
+					"soulMode": "../assets/img/cursor/heart_orange.png",
 					"items": [
 						{
 							"name": "BrokenTracks",
-							"icon": "/assets/img/disc/equip_sword.png"
+							"icon": "../assets/img/disc/equip_sword.png"
 						},
 						{
 							"name": "Safety Belt",
-							"icon": "/assets/img/disc/equip_armor.png"
+							"icon": "../assets/img/disc/equip_armor.png"
 						}
 					]
 				},
@@ -218,8 +218,8 @@
 					"They once met a strange priest and grew close to him. Little did they know that later on the priest would steal his eyes as a morbid memento. ...Maybe that's fine by him."
 				],
 				"image": {
-					"default": "/assets/img/disc/ch5/spreeblitz.png",
-					"hover": "/assets/img/disc/ch5/spreeblitz_2.gif"
+					"default": "../assets/img/disc/ch5/spreeblitz.png",
+					"hover": "../assets/img/disc/ch5/spreeblitz_2.gif"
 				}
 			},
 			{
@@ -242,8 +242,8 @@
 					"She loves her family so much it hurts."
 				],
 				"image": {
-					"default": "/assets/img/disc/ch5/comet.png",
-					"hover": "/assets/img/disc/ch5/comet_2.png"
+					"default": "../assets/img/disc/ch5/comet.png",
+					"hover": "../assets/img/disc/ch5/comet_2.png"
 				}
 			},
 			{
@@ -265,8 +265,8 @@
 					"Despite everything, Pollyanna still believes in better days."
 				],
 				"image": {
-					"default": "/assets/img/disc/ch5/pollyanna.png",
-					"hover": "/assets/img/disc/ch5/pollyanna_2.png"
+					"default": "../assets/img/disc/ch5/pollyanna.png",
+					"hover": "../assets/img/disc/ch5/pollyanna_2.png"
 				}
 			}
 		],
@@ -290,8 +290,8 @@
 					"His main function is to observe experiments from up close and write reports with his notes."
 				],
 				"image": {
-					"default": "/assets/img/disc/ch6/beholder.png",
-					"hover": "/assets/img/disc/ch6/beholder_2.png"
+					"default": "../assets/img/disc/ch6/beholder.png",
+					"hover": "../assets/img/disc/ch6/beholder_2.png"
 				}
 			},
 			{
@@ -314,8 +314,8 @@
 					"Makes a room for itself everywhere they go."
 				],
 				"image": {
-					"default": "/assets/img/disc/ch6/friend.gif",
-					"hover": "/assets/img/disc/ch6/friend_2.gif"
+					"default": "../assets/img/disc/ch6/friend.gif",
+					"hover": "../assets/img/disc/ch6/friend_2.gif"
 				}
 			},
 			{
@@ -329,15 +329,15 @@
 					"pronouns": "They/them",
 					"role": "Secret Boss",
 					"object": "",
-					"soulMode": "/assets/img/cursor/heart_purple.png",
+					"soulMode": "../assets/img/cursor/heart_purple.png",
 					"items": [
 						{
 							"name": "GonerLabrys",
-							"icon": "/assets/img/disc/equip_axe.png"
+							"icon": "../assets/img/disc/equip_axe.png"
 						},
 						{
 							"name": "SoulBandage",
-							"icon": "/assets/img/disc/equip_armor.png"
+							"icon": "../assets/img/disc/equip_armor.png"
 						}
 					]
 				},
@@ -348,8 +348,8 @@
 					"Despite their best efforts, decay is imminent. They're in denial of that."
 				],
 				"image": {
-					"default": "/assets/img/disc/ch6/gauze.png",
-					"hover": "/assets/img/disc/ch6/gauze_2.gif"
+					"default": "../assets/img/disc/ch6/gauze.png",
+					"hover": "../assets/img/disc/ch6/gauze_2.gif"
 				}
 			}
 		],
@@ -369,8 +369,8 @@
 				"description": "",
 				"trivia": [],
 				"image": {
-					"default": "/assets/img/disc/ch7/knight.png",
-					"hover": "/assets/img/disc/ch7/knight_2.gif"
+					"default": "../assets/img/disc/ch7/knight.png",
+					"hover": "../assets/img/disc/ch7/knight_2.gif"
 				}
 			},
 			{
@@ -391,8 +391,8 @@
 					"Everything is a tradition in their eyes, and must be followed thoroughly."
 				],
 				"image": {
-					"default": "/assets/img/disc/ch7/pionite.png",
-					"hover": "/assets/img/disc/ch7/pionite_2.png"
+					"default": "../assets/img/disc/ch7/pionite.png",
+					"hover": "../assets/img/disc/ch7/pionite_2.png"
 				}
 			},
 			{
@@ -405,15 +405,15 @@
 					"pronouns": "She/her",
 					"role": "Secret Boss",
 					"object": "Fountain Pen + Penholder",
-					"soulMode": "/assets/img/cursor/heart_blue.png",
+					"soulMode": "../assets/img/cursor/heart_blue.png",
 					"items": [
 						{
 							"name": "Fatemantle",
-							"icon": "/assets/img/disc/equip_scarf.png"
+							"icon": "../assets/img/disc/equip_scarf.png"
 						},
 						{
 							"name": "DestinyVeil",
-							"icon": "/assets/img/disc/equip_armor.png"
+							"icon": "../assets/img/disc/equip_armor.png"
 						}
 					]
 				},
@@ -424,8 +424,8 @@
 					"Masks the fact that she has little self worth."
 				],
 				"image": {
-					"default": "/assets/img/disc/ch7/minerva.png",
-					"hover": "/assets/img/disc/ch7/minerva.png"
+					"default": "../assets/img/disc/ch7/minerva.png",
+					"hover": "../assets/img/disc/ch7/minerva.png"
 				}
 			}
 		]

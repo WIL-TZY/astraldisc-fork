@@ -12,7 +12,7 @@ a.disabled {
 }
 
 body {
-    background-image: url("/assets/img/blog/logdaily/bg.png");
+    background-image: url("../../assets/img/blog/logdaily/bg.png");
     background-color: #7f8cc2;
     color: black;
     font-family: "Arial", sans-serif;

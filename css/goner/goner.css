@@ -3,7 +3,7 @@
 \******************************************************************************/
 :root {
 	--background: #000000;
-	--cursor-blur: url(/assets/img/cursor/heart_blur.png) 20 12, auto;
+	--cursor-blur: url(../../assets/img/cursor/heart_blur.png) 20 12, auto;
 
 	--link-default: #ffffff;
     --link-alt: #a5a5a5;
@@ -46,11 +46,10 @@ body.DEVICE-page {
 	max-width: 640px;
 	min-height: 144px;
 	margin: 15px;
-	
 	padding: 0 8px;
 	/* padding: 0 8px; If no portrait */
 	border: 26px solid transparent;
-	border-image: url(/assets/img/borders/DeviceBorder.png) 52 stretch;
+	border-image: url(../../assets/img/borders/DeviceBorder.png) 52 stretch;
 	image-rendering: pixelated;
 	border-image-slice: 27.3% fill;  
 }
