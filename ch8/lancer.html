@@ -16,25 +16,20 @@
 		<link href="../css/disc/main.css" rel="stylesheet" type="text/css" media="all"/>
 		<link href="../css/candleholder/main.css" rel="stylesheet" type="text/css" media="all"/>
 	</head>
-	<body>
+	<body class="page-viewport">
 		<init-component></init-component>
 		<script src="../js/components/init.js"></script>
+		
 		<!-- Click/Hover Sound JS -->
 		<script src="../js/soundfx.js"></script>
-		<style></style>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
-		<br/>
+
 		<div class="wrapper">
-			<div class="flex-container">
-				<div class="lancer">
+
+			<div class="character-flex-container">
+				<div class="lancer-container">
 					<a href="../" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">
-						<img class="default pixelated" src="../assets/img/lancer.png" width="76" height="76"/>
-						<img class="hover pixelated" src="../assets/img/lancer_sleep.gif" width="76" height="76" alt="Click me to return!" title="Click me to return!"/>
+						<img class="default pixelated" src="../assets/img/disc/ch8/lancer.png" width="76" height="76"/>
+						<img class="hover pixelated" src="../assets/img/disc/ch8/lancer_sleep.gif" width="76" height="76" alt="Click me to return!" title="Click me to return!"/>
 					</a>
 					<div class="dialogueCH">
 						<span class="firstline">Hey, clowns!! I'm still waiting</span>
@@ -70,10 +65,11 @@
 							<button class="chara-audioplayer btn-vol vol-up" type="button" onclick="increaseVolume()">+</button>
 						</div>
 					</div>
-				</div>
-				<!-- End of .lancer -->
-			</div>
-			<!-- End of .flex-container -->
+					
+					<!-- Return Button -->
+					<p class="center bold"><a href="../ch8/" onclick="clickSoundLoad(event)" onmouseenter="hoverSound()">RETURN</a></p>
+				</div> <!-- End of .lancer-container -->
+			</div> <!-- End of .character-flex-container -->
 		</div>
 		<!-- End of .wrapper -->
 		<!-- Audio Player JS -->

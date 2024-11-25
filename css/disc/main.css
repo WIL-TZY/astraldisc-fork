@@ -332,16 +332,6 @@ footer {
 	image-rendering: pixelated;
 }
 
-/* Candleholder Character Flex Items (needs renaming) */ 
-.flex-item {
-    display: flex;
-    max-width: 100%; /* Make images responsive */
-    height: auto;
-    justify-content: center;
-    /* flex: 0 0 calc(33.33% - 20px);  */
-    /* Three items per row */
-}
-
 /* ---------- Graze Effect ---------- */
 .grazearea {
 	cursor: var(--cursor-main);
@@ -403,28 +393,23 @@ footer {
 	text-align: justify;
 }
 
-.project-flex-container {
+.flex-container {
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
     margin-top: 20px;
 }
 
-.project-flex-container > div {
+.flex-container > div {
 	text-align: center;
 	margin: 50px;
 	padding: 0px;
 }
 
-.project-flex-container > img {
+.flex-container > img {
 	height: 400px;
   	width: auto;
 	padding: 5px;
-}
-
-.project-flex-container.projects-box {
-	width: 200px;
-	height: 200px; 
 }
 
 .chselect {
@@ -523,7 +508,7 @@ footer {
 }
 
 /******************************************************************************\
- *                                team.HTML                                    *
+ *                                TEAM.HTML                                    *
 \******************************************************************************/
 .team {
 	display: flex;
@@ -787,7 +772,7 @@ body.shadowcrystal {
 	}
 
 	/* except for the .other-links container that should keep row style */
-    .project-flex-container > .other-links {
+    .flex-container > .other-links {
         flex-direction: column;
         align-items: center;
     }
@@ -796,11 +781,11 @@ body.shadowcrystal {
 /* Mobile */
 @media (max-width: 480px) {
 
-    .project-flex-container {
+    .flex-container {
         margin: 0;
     }
 
-    .project-flex-container a {
+    .flex-container a {
         margin: 5px;
     }
 }

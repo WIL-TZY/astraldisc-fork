@@ -1,26 +1,40 @@
 /******************************************************************************\
 *                      CANDLEHOLDER PAGES MAIN STYLESHEET                      *
 \******************************************************************************/
+
+.character-wrapper {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+    /*border: 3px solid red;*/ /* Use for Debug */
+}
+
 body {
 	cursor: var(--cursor-alt);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
 }
 
 a {
 	cursor: var(--cursor-pointer-alt);
     color: var(--link-alt);
     font-family: var(--main-font);
+    font-weight: normal;
 }
 
 /* ---------- Lancer Page ---------- */
-.lancer {
+.lancer-container {
     margin: 5px 0;
 }
 
-.lancer p {
+.lancer-container p {
     margin-top: 20px;
 }
 
-.lancer p:nth-child(2) {
+.lancer-container p:nth-child(2) {
     margin-bottom: 30px;
 }
 
@@ -31,13 +45,19 @@ a {
     color: var(--faint-text);
 }
 
-.flex-item {
+.character-flex-container {
     display: flex;
-    max-width: 100%; /* Make images responsive */
+    flex-wrap: wrap; 
+    justify-content: center;
+    gap: 20px;
+}
+
+.character-flex-item {
+    display: flex;
     height: auto;
     justify-content: center;
-    /* flex: 0 0 calc(33.33% - 20px);  */
     /* Three items per row */
+    /* flex: 0 0 calc(33.33% - 20px);  */
 }
 
 /* ---------- Character Pages ---------- */
@@ -47,6 +67,14 @@ a {
     align-items: center; 
     justify-content: center; 
 }
+
+.flex-inner {
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+}
+
 
 /* ---------- Dialogue Boxes ---------- */
 .dialogueCH {
@@ -60,7 +88,7 @@ a {
 	padding: 0 8px;
 	/* padding: 0 8px; If no portrait */
 	border: 26px solid transparent;
-	border-image: url(../assets/img/CandleholderBorder.gif) 52 stretch;
+	border-image: url(../../assets/img/borders/CandleholderBorder.gif) 52 stretch;
 	image-rendering: pixelated;
 	border-image-slice: 27.3% fill;
 }
@@ -84,11 +112,6 @@ a {
     content: "_";
     padding: 10px;
 }
-
-.flex-inner {
-    align-self: center;
-}
-
 /* ---------- Risku Text Unique Styles ---------- */
 
 .riskuline::before {
@@ -231,12 +254,12 @@ a {
     }
 
     /* Comment this selector for one item per row */
-    .flex-container > div {
+    .character-flex-container > div {
         margin: 0px; 
         padding: 0px;
     }
 
-    .flex-item {
+    .character-flex-item {
         /* Two items per row */   
         flex: 0 0 calc(50% - 20px);  /* Even numbers... >:( */
     }
@@ -270,7 +293,7 @@ a {
     }
 
     /* Vertical alignment of items */
-    .flex-container {
+    .character-flex-container {
         flex-direction: column; 
     }
 
