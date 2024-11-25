@@ -121,7 +121,7 @@ class CharacterMenu {
 			}
 	
 			if (character.table.items?.length) {
-				const itemsHTML = character.table.items.map(item => /*html*/ `<img class="image pixelated" src="${item.icon}"> ${item.name}`).join('<br>');
+				const itemsHTML = character.table.items.map(item => /*html*/ `<img class="pixelated" src="${item.icon}"> ${item.name}`).join('<br>');
 				tableHTML += /*html*/ `<tr><th>Items</th><td>${itemsHTML}</td></tr>`;
 			}
 		}
