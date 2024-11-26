@@ -8,44 +8,26 @@
 		<meta property="og:url" content="https://astraldisc.com/">
 		<meta property="og:description" content="A Deltarune Chapters 3-8 take.">
 		<meta property="og:image" content="https://astraldisc.com/assets/img/disc/new_shooting_star.png">
-		<title>There's a strange interference here.</title>
+		<title>You can hear soft humming.</title>
 		<link rel="icon" type="image/png" href="../assets/img/favicon/astraldisc.png" />
 		<!-- CSS -->
 		<link href="../css/reset.css" rel="stylesheet" type="text/css" media="all">
 		<link href="../css/disc/main.css" rel="stylesheet" type="text/css" media="all">
 		<link href="../css/effects.css" rel="stylesheet" type="text/css" media="all">
 	</head>
-	<script>
-		var urlArray = [
-			"./eas",
-			"./rapture",
-			"./halojack",
-			"./location"
-		];
-
-		function randomUrl() {
-			var randomNumber = Math.floor(Math.random() * urlArray.length);
-			var newUrl = urlArray[randomNumber];
-			window.location.href = newUrl;
-		}
-	</script>
 	<body class="image-page">
 		<init-component></init-component>
 		<script src="../js/components/init.js"></script>
-
+		
 		<div class="resize-container">
-			<div id="over"></div>
 			<div id="img">
-				<div id="imgtip"></div>
-				<a href="javascript:randomUrl()"><img
-					id="interference"
-					src="../assets/img/disc/ch3/signal_intrusion.gif"
-					alt="A strange signal intrusion."
-					width="144"
-					height="184"
-				/></a>
+				<img
+					src="../assets/img/disc/ch4/well.gif"
+					width="276"
+					height="248"
+					alt="A cursed well"
+				/>
 			</div>
 		</div>
-		<!-- End of .wrapper -->
 	</body>
 </html>
