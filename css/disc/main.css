@@ -668,11 +668,6 @@ body.shadowcrystal {
 	min-height: 104px; /* Keeps Next Button in the corner */
 }
 
-.dialogueDW .note {
-    image-rendering: pixelated;
-    vertical-align: middle;
-}
-
 .dialogueLW { /* Light World */
 	text-align: left;
 	color: white;
@@ -700,7 +695,6 @@ body.shadowcrystal {
 
 /* ---------- General Text Styles ---------- */
 .firstline, .normaline {
-	text-shadow: var(--text-shadow);
     max-width: 640px;
     font-size: 32px;
     letter-spacing: 1px;
@@ -708,15 +702,22 @@ body.shadowcrystal {
     min-height: 104px; /* Keeps Next Button in the corner */
 }
 
+.firstline::before {
+    content: "* ";
+}
+
+.normaline::before {
+    visibility: hidden;
+    content: "* ";
+}
+
+/* Beltrowel Angry Text */
 .firstline.red, .normaline.red {
 	text-shadow: 2px 2px #470606;
     color: red;
 }
 
-.firstline::before {
-    content: "* ";
-}
-
+/* Beltrowel General Styles */
 .firstline.note::before {
     content: url("../../assets/img/disc/ch4/beltrowel_note.png");
     margin-right: 10px;
@@ -729,9 +730,118 @@ body.shadowcrystal {
     vertical-align: -4px;
 }
 
-.normaline::before {
+.firstline.note::after {
+    content: url("../../assets/img/disc/ch4/beltrowel_note.png");
+    margin-left: 10px;
+    vertical-align: -4px;
+}
+
+.firstline.notebroken::after {
+    content: url("../../assets/img/disc/ch4/beltrowel_note_broken.png");
+    margin-left: 10px;
+    vertical-align: -4px;
+}
+
+.normaline.note::before, .normaline.notebroken::before {
+    content: url("../../assets/img/disc/ch4/beltrowel_note.png");
+    margin-left: 10px;
+    vertical-align: -4px;
     visibility: hidden;
-    content: "* ";
+}
+
+.normaline.note::after {
+    content: url("../../assets/img/disc/ch4/beltrowel_note.png");
+    margin-left: 10px;
+    vertical-align: -4px;
+}
+
+.normaline.notebroken::after {
+    content: url("../../assets/img/disc/ch4/beltrowel_note_broken.png");
+    margin-left: 10px;
+    vertical-align: -4px;
+}
+
+/* ---------- Input Boxes ---------- */
+
+.inputDW { /* Dark World Input Box */
+	text-align: center;
+	color: white;
+	background: black;
+	max-width: 320px;
+	min-height: 72px;
+	margin: 20px auto 20px auto;
+	font-family: var(--main-font);
+	padding: 8px;
+	border: 26px solid transparent;
+	border-image: url(../../assets/img/borders/DeltaruneBorder.gif) 52 stretch;
+	image-rendering: pixelated;
+	border-image-slice: 27.3% fill;
+}
+
+.inputDW span {
+	font-size: 32px;
+	letter-spacing: 2px;
+	line-height: 34px;
+	margin: 0;
+	min-height: 104px; /* Keeps Next Button in the corner */
+}
+
+/* Wishing Well */
+.inputDW span.note::before {
+    content: url("../../assets/img/disc/ch4/beltrowel_note.png");
+    margin-right: 10px;
+    vertical-align: -4px;
+}
+
+.inputDW span.note::after {
+    content: url("../../assets/img/disc/ch4/beltrowel_note.png");
+    margin-left: 10px;
+    vertical-align: -4px;
+}
+
+.inputDW input {
+    margin: 0.8rem 1.2rem;
+    width: auto;
+    height: 30px;
+    font-family: var(--main-font);
+    font-size: large;
+    padding: 8px;
+    border: var(--unselected) 2px solid;
+    background-color: black;
+    color: white;
+    transition: all 0.2s ease;
+}
+
+.inputDW input:focus {
+    border: var(--tp) 2px solid;
+    transition: all 0.2s ease;
+}
+
+.inputDW input::placeholder {
+    color: var(--unselected);
+}
+
+.inputDW .whisper-btn {
+    text-align: center;
+    margin: 0.2rem 0.2rem;
+    font-family: var(--main-font);
+    font-size: x-large;
+    padding: 8px;
+    border: var(--tp) 2px solid;
+    background-color: black;
+    color: var(--tp);
+}
+
+.inputDW .whisper-btn:hover {
+    border: var(--h2) 2px solid;
+    color: var(--h2);
+    cursor: var(--cursor-main);
+}
+
+.inputDW .whisper-btn:active {
+    border: var(--font-color) 2px solid;
+    color: var(--font-color);
+    cursor: var(--cursor-main);
 }
 
 /* UNUSED STUFF */
