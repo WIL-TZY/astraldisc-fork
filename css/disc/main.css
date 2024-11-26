@@ -651,22 +651,26 @@ body.shadowcrystal {
 	background: black;
 	max-width: 640px;
 	min-height: 144px;
-	margin: auto;
+	margin: 20px auto 20px auto;
 	font-family: var(--main-font);
 	padding: 0 8px;
-	/* padding: 0 8px; If no portrait */
 	border: 26px solid transparent;
 	border-image: url(../../assets/img/borders/DeltaruneBorder.gif) 52 stretch;
 	image-rendering: pixelated;
 	border-image-slice: 27.3% fill;
 }
   
-.dialogueDW p {
+.dialogueDW span {
 	font-size: 32px;
 	letter-spacing: 2px;
 	line-height: 34px;
 	margin: 0;
 	min-height: 104px; /* Keeps Next Button in the corner */
+}
+
+.dialogueDW .note {
+    image-rendering: pixelated;
+    vertical-align: middle;
 }
 
 .dialogueLW { /* Light World */
@@ -675,7 +679,7 @@ body.shadowcrystal {
 	background: black;
 	max-width: 640px;
 	min-height: 144px;
-	margin: auto;
+	margin: 20px auto 20px auto;
 	font-family: var(--main-font);
 	padding: 0 8px;
 	/* padding: 0 8px; If no portrait */
@@ -685,7 +689,7 @@ body.shadowcrystal {
 	border-image-slice: 27.3% fill;  
 }
   
-.dialogueLW p {
+.dialogueLW span {
 	font-size: 32px;
 	letter-spacing: 2px;
 	line-height: 34px;
@@ -704,8 +708,25 @@ body.shadowcrystal {
     min-height: 104px; /* Keeps Next Button in the corner */
 }
 
+.firstline.red, .normaline.red {
+	text-shadow: 2px 2px #470606;
+    color: red;
+}
+
 .firstline::before {
     content: "* ";
+}
+
+.firstline.note::before {
+    content: url("../../assets/img/disc/ch4/beltrowel_note.png");
+    margin-right: 10px;
+    vertical-align: -4px;
+}
+
+.firstline.notebroken::before {
+    content: url("../../assets/img/disc/ch4/beltrowel_note_broken.png");
+    margin-right: 10px;
+    vertical-align: -4px;
 }
 
 .normaline::before {
