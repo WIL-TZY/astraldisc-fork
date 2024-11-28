@@ -800,16 +800,18 @@ body.shadowcrystal {
 }
 
 .inputDW input {
+    align-self: center;
     margin: 0.8rem 1.2rem;
-    width: auto;
-    height: 30px;
+    max-width: 190px;
+    height: 40px;
     font-family: var(--main-font);
-    font-size: large;
+    font-size: x-large;
     padding: 8px;
     border: var(--unselected) 2px solid;
     background-color: black;
     color: white;
     transition: all 0.2s ease;
+    text-transform: uppercase;
 }
 
 .inputDW input:focus {
@@ -842,6 +844,15 @@ body.shadowcrystal {
     border: var(--font-color) 2px solid;
     color: var(--font-color);
     cursor: var(--cursor-main);
+}
+
+.well-page {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
 }
 
 /* UNUSED STUFF */
