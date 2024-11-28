@@ -730,13 +730,13 @@ body.shadowcrystal {
     vertical-align: -4px;
 }
 
-.firstline.note::after {
+.firstline.note.after::after {
     content: url("../../assets/img/disc/ch4/beltrowel_note.png");
     margin-left: 10px;
     vertical-align: -4px;
 }
 
-.firstline.notebroken::after {
+.firstline.notebroken.after::after {
     content: url("../../assets/img/disc/ch4/beltrowel_note_broken.png");
     margin-left: 10px;
     vertical-align: -4px;
@@ -749,13 +749,13 @@ body.shadowcrystal {
     visibility: hidden;
 }
 
-.normaline.note::after {
+.normaline.note.after::after {
     content: url("../../assets/img/disc/ch4/beltrowel_note.png");
     margin-left: 10px;
     vertical-align: -4px;
 }
 
-.normaline.notebroken::after {
+.normaline.notebroken.after::after {
     content: url("../../assets/img/disc/ch4/beltrowel_note_broken.png");
     margin-left: 10px;
     vertical-align: -4px;
@@ -821,7 +821,7 @@ body.shadowcrystal {
     color: var(--unselected);
 }
 
-.inputDW .whisper-btn {
+.inputDW .speak-btn {
     text-align: center;
     margin: 0.2rem 0.2rem;
     font-family: var(--main-font);
@@ -832,13 +832,13 @@ body.shadowcrystal {
     color: var(--tp);
 }
 
-.inputDW .whisper-btn:hover {
+.inputDW .speak-btn:hover {
     border: var(--h2) 2px solid;
     color: var(--h2);
     cursor: var(--cursor-main);
 }
 
-.inputDW .whisper-btn:active {
+.inputDW .speak-btn:active {
     border: var(--font-color) 2px solid;
     color: var(--font-color);
     cursor: var(--cursor-main);

@@ -33,18 +33,21 @@
 					title="* (Is someone down there?)"
 				/>
 			</div>
-			<div class="dialogueDW">
-				<span class="firstline note">HAVE YOU COME TO THROW COINS?</span>
-				<br>
-				<span class="firstline red notebroken">THIS IS NOT A WISHING WELL!!</span>
-				<br>
-				<span class="firstline note">... UNLESS</span>
+			<div id="answer">
+				<div class="dialogueDW">
+					<span class="firstline note after">HAVE YOU COME TO THROW COINS?</span>
+					<br>
+					<span class="firstline red notebroken after">THIS IS NOT A WISHING WELL!!</span>
+					<br>
+					<span class="firstline note after">... UNLESS</span>
+				</div>
 			</div>
 			<div class="inputDW">
 				<span class="note">LET US TALK</span>
-				<input type="text" id="whisper" placeholder="TYPE HERE">
-				<button id="whisper" class="whisper-btn">WHISPER</button>
+				<input type="text" id="prompt" autocomplete="off" placeholder="ASK AWAY...">
+				<button class="speak-btn" onclick="whisper()">SPEAK</button>
 			</div>
 		</div>
+		<script src="../js/well.js"></script>
 	</body>
 </html>
