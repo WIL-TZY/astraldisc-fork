@@ -158,7 +158,7 @@
 					"Beltrowel has a great singing voice. In fact, he speaks very sing-songy.",
 					"He finds flower baths to be relaxing. He usually picks red roses, his favorite flower — his bathtub often stained with red.",
 					"Why serve Lightners when they care so little about you...? That's what he thinks.",
-					"Beltrowel excels at manipulation to get what he wants. Maybe one day, a fellow darkner will agree to his plan..."
+					"Beltrowel excels at manipulation to get what he wants. Maybe one day, a fellow Darkner will agree to his plan..."
 				],
 				"image": {
 					"default": "../assets/img/disc/ch4/beltrowel.png",
@@ -366,8 +366,11 @@
 					"role": "Main Antagonist",
 					"object": ""
 				},
-				"description": "",
-				"trivia": [],
+				"description": "Opened the Chapter 2, 5 and 7's Dark Fountains.\n\nUnder the title of The Roaring Knight, Comet Holiday has made it her goal to find her missing daughter, make sure her husband lives through his illness and mend her relationship with Noelle.\n\nGuided by the love she has for her family, and taking it to the extreme, she has been opening fountains in order to amass power and bring forth a Titan, who will then aid her endless search through the deepest shadows...\n\nMeanwhile, through her incessant prayers to the Angel and her own WISHPOWER being attended, the ANGEL'S HEAVEN is formed, its gateways leading towards a patch of utopic land made specifically for Noelle and Rudy... that while perfect on the surface, is nothing but an illusionary shelter.",
+				"trivia": [
+					"She has a bow and arrow as her Dark World weapon, and fires comets from it. Its Light World counterpart are scissors, which she also uses to open fountains.",
+					"Her element is pure cosmic power, which shapes most of her attacks."
+				],
 				"image": {
 					"default": "../assets/img/disc/ch7/knight.png",
 					"hover": "../assets/img/disc/ch7/knight_2.gif"
@@ -417,7 +420,7 @@
 						}
 					]
 				},
-				"description": "Minerva was a prolific scribe who wrote the stories of lightner's history and laws. She paraded her home as a sanctuary of ideas and her library was ever expanding. But one day, The Grand Inkwell, ran dry. With no Ink, her stories ceased and her powers dwindled.\n\nFor years she scoured the dark world in search of a spark that would never reignite. Feeling hopeless, she kept to herself as the world continued on without her.\n\nOn a rare outing, she encountered a <a href=\"/ch7/everything\">strange man</a>. He placed a shard in her hands, and through the inky darkness she saw light.\n\nNowadays, Minerva wander the depths of Hyaloid Fortress, forever searching for a way to tell the truth of the stories she's heard from the darkness. She firmly believes in The Knight's schemes, having known Comet's despair for quite a while, and longs to prove herself useful in order to aid her goals.",
+				"description": "Minerva was a prolific scribe who wrote the stories of Lightner's history and laws. One day, The Grand Inkwell in her home ran dry, and with no ink, her stories ceased as her powers dwindled. Feeling hopeless, she kept to herself as the world continued on without her.\n\nOn a rare outing, she encountered a <a href=\"/ch7/everything\">strange man</a>. He placed a shard in her hands, and through the inky darkness she saw light.\n\nNowadays, Minerva wanders the depths of Hyaloid Fortress, forever searching for a way to tell the truth of the stories she's heard from the darkness. She firmly believes in The Knight's schemes, having known Comet's despair, and longs to prove herself useful in order to aid her goals.",
 				"trivia": [
 					"Prim and proper. She is the embodiment of order, doing everything by the book.",
 					"She likes pianos and harps. She hasn't made music in a long time.",
