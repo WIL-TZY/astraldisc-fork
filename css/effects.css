@@ -174,36 +174,39 @@ body.standby-page {
 	background-repeat: repeat;
 	background-size: cover;
 	pointer-events: none;
+	image-rendering: pixelated;
 	opacity: 0.05;
 	filter: brightness(8);
 	z-index: 100;
 }
 
 .static_deltarune {
-	top:0px;
-	left:0px;
+	top: 0px;
+	left: 0px;
 	position: fixed;
-	height:100%;
-	width:100%;
+	height: 100%;
+	width: 100%;
 	background-image: url("../../assets/img/overlays/static_deltarune.gif");
 	background-repeat: repeat;
 	background-size: cover;
 	pointer-events: none;
-	opacity: 0.97;
-	filter: contrast(20%);
+	image-rendering: pixelated;
+	opacity: 0.5;
+	filter: brightness(30%);
 	z-index: 100;
 }
 
 .static_vhs {
-	top:0px;
-	left:0px;
+	top: 0px;
+	left: 0px;
 	position: fixed;
-	height:100%;
-	width:100%;
+	height: 100%;
+	width: 100%;
 	background-image: url("../../assets/img/overlays/vhs.gif");
 	background-repeat: repeat;
 	background-size: cover;
 	pointer-events: none;
+	image-rendering: pixelated;
 	opacity: 0.05;
 	filter: brightness(8);
 	z-index: 100;
