@@ -124,8 +124,20 @@ body.DEVICE-page {
 	transform-origin: center center;
 }
 
-/* Gaster Styles */
+/* FRIEND page */
+.FRIEND-main {
+	display: grid;
+	place-items: center;
+	min-height: 100vh;
+	position: relative;
+	cursor: var(--cursor-blur);
+}
 
+#eyes, #eyes img {
+	position: absolute;
+}
+
+/* Gaster Styles */
 body {
 	font-family: var(--main-font);
 	background-color: black;

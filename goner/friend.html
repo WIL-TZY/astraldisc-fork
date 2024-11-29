@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<meta property="og:title" content="ASTRAL DISC">
+		<meta property="og:url" content="https://astraldisc.com/">
+		<meta property="og:description" content="A Deltarune Chapters 3-8 take.">
+		<meta property="og:image" content="https://astraldisc.com/assets/img/disc/new_shooting_star.png">
+		<title>IS A GOOD MIRROR</title>
+		<link rel="icon" type="image/png" href="../assets/img/goner/IMAGE_GRIN.png" />
+		<!-- CSS -->
+		<link href="../css/reset.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="../css/templates.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="../css/effects.css" rel="stylesheet" type="text/css" media="all" />
+		<link href="../css/goner/main.css" rel="stylesheet" type="text/css" media="all" />
+	</head>
+	<body>
+		<init-component></init-component>
+		<script src="../js/components/init.js"></script>
+        <div class="FRIEND-main">
+            <div class="static_deltarune"></div>
+            <img id="anchor" class="pixelated" src="../assets/img/goner/IMAGE_OCULARGLOBE.png" width="236" height="80" alt="A FRIEND'S EYE">
+            <div id="eyes">
+                <img class="eye pixelated" src="../assets/img/goner/IMAGE_YELLOWEYE.png" width="52" height="52" style="top: -33px; left: -91px">
+                <img class="eye pixelated" src="../assets/img/goner/IMAGE_PINKEYE.png" width="52" height="52" style="top: -17px; left: 39px">
+            </div>
+        </div>
+        <script>
+            const anchor = document.getElementById("anchor");
+            const rect = anchor.getBoundingClientRect();
+            const anchorX = rect.left + rect.width / 2;
+            const anchorY = rect.top + rect.height / 2;
+            
+            document.addEventListener('mousemove', (e) => {
+                const mouseX = e.clientX;
+                const mouseY = e.clientY;
+
+                const angleDeg = angle(mouseX, mouseY, anchorX, anchorY);
+
+                const eyes = document.querySelectorAll(".eye");
+                eyes.forEach(eye => {
+                    eye.style.transform = `rotate(${90 + angleDeg}deg)`;
+                })
+            })
+
+            function angle(cx, cy, ex, ey) {
+                const dx = ex - cx;
+                const dy = ey - cy;
+                const rad = Math.atan2(dy, dx);
+                const deg = rad * 180 / Math.PI;
+                return deg;
+            }
+        </script>
+	</body>
+</html>
