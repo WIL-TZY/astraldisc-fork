@@ -209,6 +209,7 @@ input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::pla
     display: flex;
     justify-content: center;
     margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .print-btn {
