@@ -18,47 +18,52 @@ class CookiesComponent extends HTMLElement {
       this.shadow.innerHTML = `
             <style>
             .cookie-banner {
-            all: unset;
-            display: none;
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            border: var(--font-color) 2px solid;
-            background: #000000;
-            color: white;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
-            flex-direction: row;
-            gap: 10px;
-            opacity: 1;
-            transition: opacity 0.5s ease-out;
+                all: unset;
+                display: none;
+                position: fixed;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                border: var(--font-color) 2px solid;
+                background: #000000;
+                color: white;
+                text-align: center;
+                justify-content: center;
+                align-items: center;
+                flex-direction: row;
+                gap: 10px;
+                opacity: 0.2;
+                transition: opacity 0.5s ease-out;
+            }
+
+            .cookie-banner:hover {
+                opacity: 1; /* Fully visible when hovered */
             }
 
             .cookie-banner.hidden {
-            opacity: 0;
-            pointer-events: none;
+                opacity: 0;
+                pointer-events: none;
             }
 
             .cookie-banner p {
-            all: unset;
-            font-family: var(--main-font);
-            font-size: 16px;
-            text-align: center;
-            margin: 4px;
+                all: unset;
+                font-family: var(--main-font);
+                font-size: 16px;
+                text-align: center;
+                margin: 4px;
             }
 
             .cookie-banner button {
-            all: unset;
-            font-size: 16px;
-            padding: 0 5px;
-            cursor: inherit;
-            color: var(--link-alt);
+                all: unset;
+                font-size: 16px;
+                padding: 0 5px;
+                cursor: inherit;
+                color: var(--link-alt);
             }
 
             .cookie-banner button:hover {
-            color: var(--link-hover);
+                color: var(--link-hover);
+                opacity: 1;
             }
             </style>
             <div class="cookie-banner">
