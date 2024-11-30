@@ -1,10 +1,13 @@
 var prompt = document.getElementById("prompt");
 var answer = document.getElementById("answer");
 
-var greetings = new Array("hello", "hi", "greetings", "salutations");
-var laughter = new Array("haha", "hahaha", "teehee");
+const greetings = new Array("hello", "hi", "greetings", "salutations");
+const laughter = new Array("haha", "hahaha", "teehee");
+const beltrowel = new Array("what is your name", "what is your name?", "name", "name?")
+const HowAreYou = new Array("how are you", "how are you?", "how you doing", "how you doing?");
+const whyHere = new Array("why are you here", "why are you here?");
 
-var defaultArray = [
+const defaultArray = [
     "<div class='dialogueDW'><span class='firstline red notebroken after'>SPEAK UP!!!</span><br><span class='firstline note'>HOW AM I SUPPOSED TO HEAR YOU FROM</span><br><span class='normaline note after'>DOWN HERE IF YOU ARE MUMBLING?!</span></div>",
     "<div class='dialogueDW'><span class='firstline note after'>... I DID NOT CATCH THAT</span><br><span class='firstline note'>CAN'T YOU SAY ANYTHING THAT MAKES</span><br><span class='normaline note after'>SENSE?</div>",
     "<div class='dialogueDW'><span class='firstline note after'>ASK ME ABOUT PEOPLE... THINGS</span><br><span class='firstline note after'>OR COMMON QUESTIONS</span><br><span class='firstline note after'>YOU CAN DO THAT, I PRESUME</span></div>"
@@ -22,16 +25,30 @@ var nothingArray = [
     "<div class='dialogueDW'><span class='firstline note after'>...</span></div>"
 ];
 
+// Normalize input to a consistent format
+function normalize(input) {
+    /* 
+    The regular expression removes all characters from the string that are not:
+    \w: Word characters (letters, digits, and underscores)
+    \s: Whitespace characters (spaces, tabs, etc)
+
+    The ^ inside the brackets negates the match, so it removes everything except word characters and spaces
+    The g flag ensures the replacement is applied globally across the entire string
+    */
+    return input.trim().toLowerCase().replace(/[^\w\s]/g, '');
+}
+
 function nothingToSay() {
     var randomNumber = Math.floor(Math.random() * nothingArray.length);
     var randomAnswer = nothingArray[randomNumber];
     return randomAnswer;
 }
 
-/* putting "prompt.value.toLowerCase()" inside a variable DOES NOT WORK */
 function speak() {
     if (prompt && prompt.value) {
-        if (prompt.value.toLowerCase() == "what is your name") {
+        const userInput = normalize(prompt.value); 
+
+        if (beltrowel.includes(userInput)) {
             answer.innerHTML = `
                 <div class='dialogueDW'>
                     <span class='firstline note after'>BELTROWEL</span>
@@ -41,7 +58,7 @@ function speak() {
                     <span class='firstline note after'>I DO NOT CARE FOR PASSERSBY...</span>
                 </div>
             `;
-        } else if (prompt.value.toLowerCase() == "how are you") {
+        } else if (HowAreYou.includes(userInput)) {
             answer.innerHTML = `
                 <div class='dialogueDW'>
                     <span class='firstline red notebroken'>HOW DO YOU THINK THE ONE FOREVER</span>
@@ -61,7 +78,7 @@ function speak() {
                     <span class='normaline note after'>PRIEST IN NEED...?</span>
                 </div>
             `;
-        } else if (prompt.value.toLowerCase() == "freedom") {
+        } else if (userInput === "freedom") {
             answer.innerHTML = `
                 <div class='dialogueDW'>
                     <span class='firstline note after'>FREEDOM...</span>
@@ -83,7 +100,7 @@ function speak() {
                     <span class='firstline note after'>IS TO DO AS I SAY</span>
                 </div>
             `;
-        } else if (prompt.value.toLowerCase() == "why are you here") {
+        } else if (whyHere.includes(userInput)) {
             answer.innerHTML = `
                 <div class='dialogueDW'>
                     <span class='firstline red notebroken after'>COWARDS!! ALL OF THEM!!</span>
@@ -95,7 +112,7 @@ function speak() {
                     <span class='firstline red notebroken after'>TRAPPED ME DOWN HERE, SPELLBOUND</span>
                 </div>
             `;
-        } else if (prompt.value.toLowerCase() == "jevil") {
+        } else if (userInput === "jevil") {
             answer.innerHTML = `
                 <div class='dialogueDW'>
                     <span class='firstline note'>WE'VE LONG OUTGROWN THE ERA OF KINGS</span>
@@ -113,7 +130,7 @@ function speak() {
                     <span class='normaline note after'>A BACKWARDS VISION OF THE WORLD</span>
                 </div>
             `;
-        } else if (prompt.value.toLowerCase() == "spamton") {
+        } else if (userInput === "spamton") {
             answer.innerHTML = `
                 <div class='dialogueDW'>
                     <span class='firstline note'>NOW THERE IS A CREATURE WHO</span>
@@ -138,7 +155,7 @@ function speak() {
                     <span class='normaline note after'>ALL... IN HIS OWN WAY</span>
                 </div>
             `;
-        } else if (prompt.value.toLowerCase() == "halojack") {
+        } else if (userInput === "halojack") {
             answer.innerHTML = `
                 <div class='dialogueDW'>
                     <span class='firstline red notebroken after'>DO NOT REMIND ME OF THAT FREAK</span>
@@ -162,7 +179,7 @@ function speak() {
                     <span class='firstline red notebroken after'>BEGONE WITH YOU!!</span>
                 </div>
             `;
-        } else if (prompt.value.toLowerCase() == "spree blitz") {
+        } else if (userInput === "spree blitz") {
             answer.innerHTML = `
                 <div class='dialogueDW'>
                     <span class='firstline note after'>AH... YES</span>
@@ -172,7 +189,7 @@ function speak() {
                     <span class='firstline note after'>MY FALLEN ANGEL</span>
                 </div>
             `;
-        } else if (prompt.value.toLowerCase() == "gauze") {
+        } else if (userInput === "gauze") {
             answer.innerHTML = `
                 <div class='dialogueDW'>
                     <span class='firstline note after'>... I PRESUME YOU TALK OF A PERSON?</span>
@@ -184,7 +201,7 @@ function speak() {
                     <span class='firstline note after'>QUITE THE ODD NAME...</span>
                 </div>
             `;
-        } else if (prompt.value.toLowerCase() == "minerva") {
+        } else if (userInput === "minerva") {
             answer.innerHTML = `
                 <div class='dialogueDW'>
                     <span class='firstline note after'>A CURIOUS SOUL, THAT ONE</span>
@@ -208,7 +225,7 @@ function speak() {
                     <span class='normaline note after'>GATHERS IN THIS FORSAKEN WELL</span>
                 </div>
             `;
-        } else if (prompt.value.toLowerCase() == "acolyte" || prompt.value.toLowerCase() == "the acolyte") {
+        } else if (userInput === "acolyte" || userInput === "the acolyte") {
             answer.innerHTML = `
                 <div class='dialogueDW'>
                     <span class='firstline note after'>OH... HER</span>
@@ -226,7 +243,7 @@ function speak() {
                     <span class='normaline note after'>AROUND LIKE A LAPDOG...</span>
                 </div>
             `;
-        } else if (prompt.value.toLowerCase() == "mesmer") {
+        } else if (userInput === "mesmer") {
             answer.innerHTML = `
                 <div class='dialogueDW'>
                     <span class='firstline note after'>MESMER? MESMER??</span>
@@ -238,7 +255,7 @@ function speak() {
                     <span class='normaline red notebroken after'>BELIEVERS WHEN I AM NOT LISTENING</span>
                 </div>
             `;
-        } else if (prompt.value.toLowerCase() == "gargoyle" || prompt.value.toLowerCase() == "keeper") {
+        } else if (userInput === "gargoyle" || userInput === "keeper") {
             answer.innerHTML = `
                 <div class='dialogueDW'>
                     <span class='firstline red notebroken'>TO THE DEPTHS OF HELL WHERE HE</span>
@@ -252,7 +269,7 @@ function speak() {
                     <span class='firstline note after'>THEY ARE BLINDED BY THE LIGHT</span>
                 </div>
             `;
-        } else if (prompt.value.toLowerCase() == "priestess") {
+        } else if (userInput === "priestess") {
             answer.innerHTML = `
                 <div class='dialogueDW'>
                     <span class='firstline note after'>WHAT? WHAT PRIESTESS?!</span>
@@ -268,7 +285,7 @@ function speak() {
                     <span class='firstline note after'>I NEED A FEW MINUTES.</span>
                 </div>
             `;
-        } else if (greetings.includes(prompt.value.toLowerCase())) {
+        } else if (greetings.includes(userInput)) {
             answer.innerHTML = `
                 <div class='dialogueDW'>
                     <span class='firstline note after'>I SEE I'M STILL WORTHY OF A GREETING</span>
@@ -276,7 +293,7 @@ function speak() {
                     <span class='firstline note after'>I SUPPOSE I SHOULD THANK YOU</span>
                 </div>
             `;
-        } else if (laughter.includes(prompt.value.toLowerCase())) {
+        } else if (laughter.includes(userInput)) {
             answer.innerHTML = `
                 <div class='dialogueDW'>
                     <span class='firstline note'>... SO, YOU CAME ALL THIS WAY ONLY TO</span>

@@ -37,13 +37,18 @@
 					<span class="firstline note after">... UNLESS</span>
 				</div>
 			</div>
-			<div class="inputDW">
+			<form id="form" class="inputDW" method="POST" action="https://docs.google.com/forms/d/e/1FAIpQLSdaQpqMJqt5jUALh7K6K61thXueKto1tZu87hoaZl7wxHWpEg/formResponse">
 				<span class="note">LET US TALK</span>
-				<input type="text" id="prompt" autocomplete="off" placeholder="TYPE HERE">
-				<button class="speak-btn" onmouseenter="hoverSound()" onclick="speak(); clickSound()">SPEAK</button>
-			</div>
+				<input type="text" id="prompt" name="entry.1987565465" autocomplete="off" placeholder="TYPE HERE">
+				<button type="submit" id="speak-btn" class="speak-btn" onmouseenter="hoverSound()" onclick="speak(); clickSound()">SPEAK</button>
+			</form>	
+
+			<!-- Hidden iframe for form submission -->
+			<iframe id="iframe" name="iframe" style="display:none;"></iframe>		
 		</div>
+
 		<script src="../js/well.js"></script>
 		<script src="../js/soundfx.js"></script>
+		<script src="../js/sheets.js"></script> <!-- Google Form Integration -->
 	</body>
 </html>
