@@ -14,7 +14,7 @@
 	--device: green;
 	--device-darker: #006600;
 	--device-darkest: #004600;
-	--device-lighter: rgb(0, 255, 0);
+	--device-lighter: #00ff00;
 	--device-alpha: #00660070;
 	--device-alpha2: #00660026;
 }

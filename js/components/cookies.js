@@ -24,9 +24,10 @@ class CookiesComponent extends HTMLElement {
                 bottom: 0;
                 left: 0;
                 right: 0;
-                border: var(--font-color) 2px solid;
+                border: green 2px solid;
+                text-shadow: none;
                 background: #000000;
-                color: white;
+                color: green;
                 text-align: center;
                 justify-content: center;
                 align-items: center;
@@ -47,7 +48,7 @@ class CookiesComponent extends HTMLElement {
 
             .cookie-banner p {
                 all: unset;
-                font-family: var(--main-font);
+                font-family: "8bitoperator JVE2";
                 font-size: 16px;
                 text-align: center;
                 margin: 4px;
@@ -55,14 +56,15 @@ class CookiesComponent extends HTMLElement {
 
             .cookie-banner button {
                 all: unset;
+                font-family: "8bitoperator JVE2";
                 font-size: 16px;
                 padding: 0 5px;
                 cursor: inherit;
-                color: var(--link-alt);
+                color: #00ff00;
             }
 
             .cookie-banner button:hover {
-                color: var(--link-hover);
+                color: white;
                 opacity: 1;
             }
             </style>
