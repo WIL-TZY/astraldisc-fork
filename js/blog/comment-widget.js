@@ -39,13 +39,13 @@
 
 // New Stuff
 const s_stylePath = '../../css/blog/comment-widget-pink.css';
-const s_formId = '1FAIpQLSeF3r5T3zlyFF6VacJD2wYMHuo_dqVZRt3cFmTXe4z5cZANqA';
-const s_nameId = '184638914';
-const s_websiteId = '1235930731';
-const s_textId = '1047730094';
-const s_pageId = '1996777129';
-const s_replyId = '374095743';
-const s_sheetId = '1ZZmN2s-b23psCPb2zDshbdkzDwdFoeHvViXfojcxGBk';
+const s_formId = '1FAIpQLSd8o5rwGm3DSg_qRNuFke-WdsNagNXZP5ZnMiaqcpuClb-CIQ';
+const s_nameId = '1586354322';
+const s_websiteId = '308272136';
+const s_textId = '1204196901';
+const s_pageId = '1270555887';
+const s_replyId = '483926354';
+const s_sheetId = '1x-oNneZvGGPQRZIuaMaHdfypCdyBOuHMGITvFL6wRtQ';
 
 // The values below are necessary for accurate timestamps, I've filled it in with EST as an example
 const s_timezone = -5; // Your personal timezone (Example: UTC-5:00 is -5 here, UTC+10:30 would be 10.5)
