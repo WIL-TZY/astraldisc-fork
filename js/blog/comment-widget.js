@@ -33,7 +33,7 @@ https://docs.google.com/forms/d/e/1FAIpQLSecnVJdr3mZw5ZoRqHD1bAA5bb1fMxQvkzi0coZ
 // const s_sheetId = '1brNcannwsnWX0432DCSpQY5U82Ru5P6Oz7_OTPMkYUo';
 
 // NEW DATA
-const s_stylePath = '../../../css/blog/comment-widget-pink.css';
+const s_stylePath = '../../css/blog/comment-widget-pink.css';
 const s_formId = '1FAIpQLSecnVJdr3mZw5ZoRqHD1bAA5bb1fMxQvkzi0coZEoaycS6SRg';
 const s_nameId = '1058470027';
 const s_websiteId = '135500716';
