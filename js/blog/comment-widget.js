@@ -33,7 +33,7 @@ https://docs.google.com/forms/d/e/1FAIpQLSecnVJdr3mZw5ZoRqHD1bAA5bb1fMxQvkzi0coZ
 // const s_sheetId = '1brNcannwsnWX0432DCSpQY5U82Ru5P6Oz7_OTPMkYUo';
 
 // NEW DATA
-const s_stylePath = '../../css/comment-widget-pink.css';
+const s_stylePath = '../css/comment-widget-pink.css';
 const s_formId = '1FAIpQLSecnVJdr3mZw5ZoRqHD1bAA5bb1fMxQvkzi0coZEoaycS6SRg';
 const s_nameId = '1058470027';
 const s_websiteId = '135500716';
@@ -262,17 +262,27 @@ function getComments() {
 // Fetches the Google Sheet resource from the provided URL
 function getSheet(url) {
     return new Promise(function (resolve, reject) {
-        fetch(url).then(response => {
-            if (!response.ok) {reject('Could not find Google Sheet with that URL')} // Checking for a 404
-            else {
-                response.text().then(data => {
-                    if (!data) {reject('Invalid data pulled from sheet')}
-                    resolve(data);
-                })
-            }
+      fetch(url)
+        .then(response => {
+          if (!response.ok) {
+            reject('Could not find Google Sheet with that URL');  // Handle 404 errors
+          } else {
+            return response.text();
+          }
         })
-    })
-}
+        .then(data => {
+          if (!data) {
+            reject('Invalid data pulled from sheet');  // Handle empty data
+          } else {
+            resolve(data);
+          }
+        })
+        .catch(error => {
+          console.error('Error fetching sheet:', error);
+          reject(error);  // Re-reject the promise with the actual error
+        });
+    });
+  }
 
 // Displays comments on page
 let a_commentDivs = []; // For use in other functions
