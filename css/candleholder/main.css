@@ -2,6 +2,13 @@
 *                      CANDLEHOLDER PAGES MAIN STYLESHEET                      *
 \******************************************************************************/
 
+/* .wrapper {
+    width: 90%;
+    max-width: 700px;
+    margin: 0 auto;
+    top: 0px;
+} */
+
 .character-wrapper {
 	width: 90%;
 	max-width: 1200px;
@@ -111,6 +118,14 @@ a {
     visibility: hidden;
     content: "_";
     padding: 10px;
+}
+
+.dialogue-link {
+    text-shadow: var(--text-shadow-hover);
+    font-size: 20px;
+    letter-spacing: 1px;
+    line-height: 34px;
+    min-height: 104px;
 }
 /* ---------- Risku Text Unique Styles ---------- */
 
