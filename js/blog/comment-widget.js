@@ -16,31 +16,15 @@
     - Ayano (https://virtualobserver.moe/)
 */
 
-/*
-Full link: 
-https://docs.google.com/forms/d/e/1FAIpQLSecnVJdr3mZw5ZoRqHD1bAA5bb1fMxQvkzi0coZEoaycS6SRg/viewform?usp=pp_url&entry.1058470027=Name&entry.135500716=Website&entry.1737437619=Text%0A&entry.868020114=Page&entry.1971576793=Reply
-*/
-
 // The values in this section are REQUIRED for the widget to work! Keep them in quotes!
-// OLD DATA
-// const s_stylePath = '../css/comment-widget-pink.css';
-// const s_formId = '1FAIpQLSdOfC6Hv2m8pzDGi3F6PIrNexwC1U-jhOks-Do9MHomnyLnBw';
-// const s_nameId = '738369933';
-// const s_websiteId = '1631160841';
-// const s_textId = '571606822';
-// const s_pageId = '209946979';
-// const s_replyId = '694812919';
-// const s_sheetId = '1brNcannwsnWX0432DCSpQY5U82Ru5P6Oz7_OTPMkYUo';
-
-// NEW DATA
-const s_stylePath = '../../css/blog/comment-widget-pink.css';
-const s_formId = '1FAIpQLSecnVJdr3mZw5ZoRqHD1bAA5bb1fMxQvkzi0coZEoaycS6SRg';
-const s_nameId = '1058470027';
-const s_websiteId = '135500716';
-const s_textId = '1737437619';
-const s_pageId = '868020114';
-const s_replyId = '1971576793';
-const s_sheetId = '1jVc02wnoMtVcKWxB1bJK5yO2M_b-7zJNKtZwCQnWvkU';
+const s_stylePath = '/scripts/comments/comment-widget-dark.css';
+const s_formId = '1FAIpQLSehjOWKnRiEClXR42v4WMVCqLuUKg4Xoncu26yeYJoGVfd1Vw';
+const s_nameId = '1743958157';
+const s_websiteId = '103116453';
+const s_textId = '1487225851';
+const s_pageId = '2098775854';
+const s_replyId = '63675495';
+const s_sheetId = '1yM1qkcNHo-BoOzAeBm-z-4ZiInDO09argG1xgiSIWoc';
 
 // The values below are necessary for accurate timestamps, I've filled it in with EST as an example
 const s_timezone = -5; // Your personal timezone (Example: UTC-5:00 is -5 here, UTC+10:30 would be 10.5)
@@ -53,7 +37,7 @@ const s_dstEnd = ['November', 'Sunday', 1, 2]; // Example shown is the first Sun
 const s_commentsPerPage = 5; // The max amount of comments that can be displayed on one page, any number >= 1 (Replies not counted)
 const s_maxLength = 500; // The max character length of a comment
 const s_maxLengthName = 16; // The max character length of a name
-const s_commentsOpen = true; // Change to false if you'd like to close your comment section site-wide (Turn it off on Google Forms too!)
+const s_commentsOpen = false; // Change to false if you'd like to close your comment section site-wide (Turn it off on Google Forms too!)
 const s_collapsedReplies = true; // True for collapsed replies with a button, false for replies to display automatically
 const s_longTimestamp = false; // True for a date + time, false for just the date
 let s_includeUrlParameters = false; // Makes new comment sections on pages with URL parameters when set to true (If you don't know what this does, leave it disabled)
@@ -66,20 +50,15 @@ const s_filteredWords = [ // Add words to filter by putting them in quotes and s
     'heck', 'dang'
 ]
 
-const s_noelle = true
-const s_noelleBlogName = ['holidaygirl1225']
-const s_noelleBlogIcon = '../assets/img/holidaygirl1225/holidaygirl-icon.gif'
-
 // Text - Change what messages/text appear on the form and in the comments section (Mostly self explanatory)
 const s_widgetTitle = 'Leave a comment!';
 const s_nameFieldLabel = 'Name';
 const s_websiteFieldLabel = 'Website (Optional)';
 const s_textFieldLabel = '';
 const s_submitButtonLabel = 'Submit';
-const s_commentIcon = 'Icon';
 const s_loadingText = 'Loading comments...';
 const s_noCommentsText = 'No comments yet!';
-const s_closedCommentsText = 'Comments are closed temporarily!';
+const s_closedCommentsText = 'Comments are closed temporarily! Virtual Observer is on hiatus due to health concerns and burnout. See you again soon!';
 const s_websiteText = 'Website'; // The links to websites left by users on their comments
 const s_replyButtonText = 'Reply'; // The button for replying to someone
 const s_replyingText = 'Replying to'; // The text that displays while the user is typing a reply
@@ -171,7 +150,7 @@ c_replyingText.style.display = 'none'; c_replyingText.id = 'c_replyingText';
 c_form.appendChild(c_replyingText);
 c_replyingText = document.getElementById('c_replyingText');
 
-// Add the invisible reply input to document
+// Add the invisble reply input to document
 let c_replyInput = document.createElement('input');
 c_replyInput.type = 'text'; c_replyInput.style.display = 'none';
 c_replyInput.id = 'entry.' + s_replyId; c_replyInput.name = c_replyInput.id;
@@ -214,7 +193,7 @@ function getComments() {
 
     // Do stuff with the data here
     retrievedSheet.then(result => {
-        console.log(result);
+        // console.log(result);
         // The data comes with extra stuff at the beginning, get rid of it
         const json = JSON.parse(result.split('\n')[1].replace(/google.visualization.Query.setResponse\(|\);/g, ''));
 
@@ -262,27 +241,17 @@ function getComments() {
 // Fetches the Google Sheet resource from the provided URL
 function getSheet(url) {
     return new Promise(function (resolve, reject) {
-      fetch(url)
-        .then(response => {
-          if (!response.ok) {
-            reject('Could not find Google Sheet with that URL');  // Handle 404 errors
-          } else {
-            return response.text();
-          }
+        fetch(url).then(response => {
+            if (!response.ok) {reject('Could not find Google Sheet with that URL')} // Checking for a 404
+            else {
+                response.text().then(data => {
+                    if (!data) {reject('Invalid data pulled from sheet')}
+                    resolve(data);
+                })
+            }
         })
-        .then(data => {
-          if (!data) {
-            reject('Invalid data pulled from sheet');  // Handle empty data
-          } else {
-            resolve(data);
-          }
-        })
-        .catch(error => {
-          console.error('Error fetching sheet:', error);
-          reject(error);  // Re-reject the promise with the actual error
-        });
-    });
-  }
+    })
+}
 
 // Displays comments on page
 let a_commentDivs = []; // For use in other functions
@@ -389,7 +358,7 @@ function displayComments(comments) {
 // Create basic HTML comment, reply or not
 function createComment(data) {
     let comment = document.createElement('div');
-
+    
     // Get the right timestamps
     let timestamps = convertTimestamp(data.Timestamp);
     let timestamp;
@@ -407,15 +376,6 @@ function createComment(data) {
     name.innerText = filteredName;
     name.className = 'c-name';
     comment.appendChild(name);
-
-    // Icon for comments
-    // let img = document.createElement("img"); 
-    // img.innerHTML = s_commentIcon;
-    // img.src = "../assets/img/holidaygirl1225/holidaygirl-icon2.gif"; 
-    // var imageUrl = "../assets/img/holidaygirl1225/holidaygirl-icon.gif";
-    // if (data.Name.includes("holidaygirl1225")) { {img.setAttribute("src", imageUrl)}};
-    // img.className = 'c-commentIcon';
-    // name.appendChild(img);
 
     // Timestamp
     let time = document.createElement('span');
@@ -445,7 +405,6 @@ function createComment(data) {
 
 // Makes the Google Sheet timestamp usable
 function convertTimestamp(timestamp) {
-    console.log("Timestamp:", timestamp);
     const vals = timestamp.split('(')[1].split(')')[0].split(',');
     const date = new Date(vals[0], vals[1], vals[2], vals[3], vals[4], vals[5]);
     const timezoneDiff = (s_timezone * 60 + date.getTimezoneOffset()) * -1;
