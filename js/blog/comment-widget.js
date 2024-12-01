@@ -268,7 +268,7 @@ function getComments() {
 function getSheet(url) {
     return new Promise(function (resolve, reject) {
         fetch(url).then(response => {
-            console.log(response)
+            console.log(response);
             if (!response.ok) {reject('Could not find Google Sheet with that URL')} // Checking for a 404
             else {
                 response.text().then(data => {
@@ -301,6 +301,7 @@ function displayComments(comments) {
     v_amountOfPages = Math.ceil(comments.length / s_commentsPerPage);
     v_commentMax = s_commentsPerPage * v_pageNum;
     v_commentMin = v_commentMax - s_commentsPerPage;
+    
     // console.log(v_pageNum)
     console.log(v_amountOfPages)
 
@@ -387,7 +388,7 @@ function displayComments(comments) {
 // Create basic HTML comment, reply or not
 function createComment(data) {
     let comment = document.createElement('div');
-
+    
     // Get the right timestamps
     let timestamps = convertTimestamp(data.Timestamp);
     let timestamp;
@@ -405,7 +406,7 @@ function createComment(data) {
     name.innerText = filteredName;
     name.className = 'c-name';
     comment.appendChild(name);
-
+    
     // Icon for comments
     let img = document.createElement("img"); 
     img.innerHTML = s_commentIcon;
@@ -443,7 +444,6 @@ function createComment(data) {
 
 // Makes the Google Sheet timestamp usable
 function convertTimestamp(timestamp) {
-    console.log("Timestamp:", timestamp);
     const vals = timestamp.split('(')[1].split(')')[0].split(',');
     const date = new Date(vals[0], vals[1], vals[2], vals[3], vals[4], vals[5]);
     const timezoneDiff = (s_timezone * 60 + date.getTimezoneOffset()) * -1;
