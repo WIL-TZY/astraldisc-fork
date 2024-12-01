@@ -79,3 +79,8 @@ a:hover img.hover {
 a:hover img.default {
 	display: none;
 }
+
+/* --------------- CSS Fragmentation module --------------- */
+.no-break {
+	break-inside: avoid;
+}
