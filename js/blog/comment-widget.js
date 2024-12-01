@@ -18,24 +18,24 @@
 
 // The values in this section are REQUIRED for the widget to work! Keep them in quotes!
 // Ayano Stuff
-const s_stylePath = '../../css/blog/comment-widget-pink.css';
-const s_formId = '1FAIpQLSehjOWKnRiEClXR42v4WMVCqLuUKg4Xoncu26yeYJoGVfd1Vw';
-const s_nameId = '1743958157';
-const s_websiteId = '103116453';
-const s_textId = '1487225851';
-const s_pageId = '2098775854';
-const s_replyId = '63675495';
-const s_sheetId = '1yM1qkcNHo-BoOzAeBm-z-4ZiInDO09argG1xgiSIWoc';
+// const s_stylePath = '../../css/blog/comment-widget-pink.css';
+// const s_formId = '1FAIpQLSehjOWKnRiEClXR42v4WMVCqLuUKg4Xoncu26yeYJoGVfd1Vw';
+// const s_nameId = '1743958157';
+// const s_websiteId = '103116453';
+// const s_textId = '1487225851';
+// const s_pageId = '2098775854';
+// const s_replyId = '63675495';
+// const s_sheetId = '1yM1qkcNHo-BoOzAeBm-z-4ZiInDO09argG1xgiSIWoc';
 
 // Hue Stuff
-// const s_stylePath = '../css/comment-widget-pink.css';
-// const s_formId = '1FAIpQLSdOfC6Hv2m8pzDGi3F6PIrNexwC1U-jhOks-Do9MHomnyLnBw';
-// const s_nameId = '738369933';
-// const s_websiteId = '1631160841';
-// const s_textId = '571606822';
-// const s_pageId = '209946979';
-// const s_replyId = '694812919';
-// const s_sheetId = '1brNcannwsnWX0432DCSpQY5U82Ru5P6Oz7_OTPMkYUo';
+const s_stylePath = '../../css/blog/comment-widget-pink.css';
+const s_formId = '1FAIpQLSdOfC6Hv2m8pzDGi3F6PIrNexwC1U-jhOks-Do9MHomnyLnBw';
+const s_nameId = '738369933';
+const s_websiteId = '1631160841';
+const s_textId = '571606822';
+const s_pageId = '209946979';
+const s_replyId = '694812919';
+const s_sheetId = '1brNcannwsnWX0432DCSpQY5U82Ru5P6Oz7_OTPMkYUo';
 
 // New Stuff
 // const s_stylePath = '../../css/blog/comment-widget-pink.css';
