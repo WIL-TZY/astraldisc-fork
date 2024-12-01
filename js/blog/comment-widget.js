@@ -17,7 +17,7 @@
 */
 
 // The values in this section are REQUIRED for the widget to work! Keep them in quotes!
-const s_stylePath = '/scripts/comments/comment-widget-dark.css';
+const s_stylePath = '../../css/blog/comment-widget-pink.css';
 const s_formId = '1FAIpQLSehjOWKnRiEClXR42v4WMVCqLuUKg4Xoncu26yeYJoGVfd1Vw';
 const s_nameId = '1743958157';
 const s_websiteId = '103116453';
@@ -25,6 +25,15 @@ const s_textId = '1487225851';
 const s_pageId = '2098775854';
 const s_replyId = '63675495';
 const s_sheetId = '1yM1qkcNHo-BoOzAeBm-z-4ZiInDO09argG1xgiSIWoc';
+
+// const s_stylePath = '../../css/blog/comment-widget-pink.css';
+// const s_formId = '1FAIpQLSecnVJdr3mZw5ZoRqHD1bAA5bb1fMxQvkzi0coZEoaycS6SRg';
+// const s_nameId = '1058470027';
+// const s_websiteId = '135500716';
+// const s_textId = '1737437619';
+// const s_pageId = '868020114';
+// const s_replyId = '1971576793';
+// const s_sheetId = '1jVc02wnoMtVcKWxB1bJK5yO2M_b-7zJNKtZwCQnWvkU';
 
 // The values below are necessary for accurate timestamps, I've filled it in with EST as an example
 const s_timezone = -5; // Your personal timezone (Example: UTC-5:00 is -5 here, UTC+10:30 would be 10.5)
@@ -37,7 +46,7 @@ const s_dstEnd = ['November', 'Sunday', 1, 2]; // Example shown is the first Sun
 const s_commentsPerPage = 5; // The max amount of comments that can be displayed on one page, any number >= 1 (Replies not counted)
 const s_maxLength = 500; // The max character length of a comment
 const s_maxLengthName = 16; // The max character length of a name
-const s_commentsOpen = false; // Change to false if you'd like to close your comment section site-wide (Turn it off on Google Forms too!)
+const s_commentsOpen = true; // Change to false if you'd like to close your comment section site-wide (Turn it off on Google Forms too!)
 const s_collapsedReplies = true; // True for collapsed replies with a button, false for replies to display automatically
 const s_longTimestamp = false; // True for a date + time, false for just the date
 let s_includeUrlParameters = false; // Makes new comment sections on pages with URL parameters when set to true (If you don't know what this does, leave it disabled)
