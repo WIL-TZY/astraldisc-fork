@@ -28,24 +28,24 @@
 // const s_sheetId = '1yM1qkcNHo-BoOzAeBm-z-4ZiInDO09argG1xgiSIWoc';
 
 // Hue Stuff
-const s_stylePath = '../../css/blog/comment-widget-pink.css';
-const s_formId = '1FAIpQLSdOfC6Hv2m8pzDGi3F6PIrNexwC1U-jhOks-Do9MHomnyLnBw';
-const s_nameId = '738369933';
-const s_websiteId = '1631160841';
-const s_textId = '571606822';
-const s_pageId = '209946979';
-const s_replyId = '694812919';
-const s_sheetId = '1brNcannwsnWX0432DCSpQY5U82Ru5P6Oz7_OTPMkYUo';
+// const s_stylePath = '../../css/blog/comment-widget-pink.css';
+// const s_formId = '1FAIpQLSdOfC6Hv2m8pzDGi3F6PIrNexwC1U-jhOks-Do9MHomnyLnBw';
+// const s_nameId = '738369933';
+// const s_websiteId = '1631160841';
+// const s_textId = '571606822';
+// const s_pageId = '209946979';
+// const s_replyId = '694812919';
+// const s_sheetId = '1brNcannwsnWX0432DCSpQY5U82Ru5P6Oz7_OTPMkYUo';
 
 // New Stuff
-// const s_stylePath = '../../css/blog/comment-widget-pink.css';
-// const s_formId = '1FAIpQLSecnVJdr3mZw5ZoRqHD1bAA5bb1fMxQvkzi0coZEoaycS6SRg';
-// const s_nameId = '1058470027';
-// const s_websiteId = '135500716';
-// const s_textId = '1737437619';
-// const s_pageId = '868020114';
-// const s_replyId = '1971576793';
-// const s_sheetId = '1jVc02wnoMtVcKWxB1bJK5yO2M_b-7zJNKtZwCQnWvkU';
+const s_stylePath = '../../css/blog/comment-widget-pink.css';
+const s_formId = '1FAIpQLSecnVJdr3mZw5ZoRqHD1bAA5bb1fMxQvkzi0coZEoaycS6SRg';
+const s_nameId = '1058470027';
+const s_websiteId = '135500716';
+const s_textId = '1737437619';
+const s_pageId = '868020114';
+const s_replyId = '1971576793';
+const s_sheetId = '1jVc02wnoMtVcKWxB1bJK5yO2M_b-7zJNKtZwCQnWvkU';
 
 // The values below are necessary for accurate timestamps, I've filled it in with EST as an example
 const s_timezone = -5; // Your personal timezone (Example: UTC-5:00 is -5 here, UTC+10:30 would be 10.5)
