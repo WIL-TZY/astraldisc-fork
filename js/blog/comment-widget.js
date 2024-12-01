@@ -71,15 +71,20 @@ const s_filteredWords = [ // Add words to filter by putting them in quotes and s
     'heck', 'dang'
 ]
 
+const s_noelle = true
+const s_noelleBlogName = ['holidaygirl1225']
+const s_noelleBlogIcon = '../../assets/img/blog/noelle/icon.gif'
+
 // Text - Change what messages/text appear on the form and in the comments section (Mostly self explanatory)
 const s_widgetTitle = 'Leave a comment!';
 const s_nameFieldLabel = 'Name';
 const s_websiteFieldLabel = 'Website (Optional)';
 const s_textFieldLabel = '';
 const s_submitButtonLabel = 'Submit';
+const s_commentIcon = 'Icon';
 const s_loadingText = 'Loading comments...';
 const s_noCommentsText = 'No comments yet!';
-const s_closedCommentsText = 'Comments are closed temporarily! Virtual Observer is on hiatus due to health concerns and burnout. See you again soon!';
+const s_closedCommentsText = 'Comments are closed temporarily!';
 const s_websiteText = 'Website'; // The links to websites left by users on their comments
 const s_replyButtonText = 'Reply'; // The button for replying to someone
 const s_replyingText = 'Replying to'; // The text that displays while the user is typing a reply
@@ -171,7 +176,7 @@ c_replyingText.style.display = 'none'; c_replyingText.id = 'c_replyingText';
 c_form.appendChild(c_replyingText);
 c_replyingText = document.getElementById('c_replyingText');
 
-// Add the invisble reply input to document
+// Add the invisible reply input to document
 let c_replyInput = document.createElement('input');
 c_replyInput.type = 'text'; c_replyInput.style.display = 'none';
 c_replyInput.id = 'entry.' + s_replyId; c_replyInput.name = c_replyInput.id;
@@ -263,6 +268,7 @@ function getComments() {
 function getSheet(url) {
     return new Promise(function (resolve, reject) {
         fetch(url).then(response => {
+            console.log(response)
             if (!response.ok) {reject('Could not find Google Sheet with that URL')} // Checking for a 404
             else {
                 response.text().then(data => {
@@ -295,6 +301,8 @@ function displayComments(comments) {
     v_amountOfPages = Math.ceil(comments.length / s_commentsPerPage);
     v_commentMax = s_commentsPerPage * v_pageNum;
     v_commentMin = v_commentMax - s_commentsPerPage;
+    // console.log(v_pageNum)
+    console.log(v_amountOfPages)
 
     // Main comments (not replies)
     comments.reverse(); // Newest comments go to top
@@ -379,7 +387,7 @@ function displayComments(comments) {
 // Create basic HTML comment, reply or not
 function createComment(data) {
     let comment = document.createElement('div');
-    
+
     // Get the right timestamps
     let timestamps = convertTimestamp(data.Timestamp);
     let timestamp;
@@ -397,6 +405,15 @@ function createComment(data) {
     name.innerText = filteredName;
     name.className = 'c-name';
     comment.appendChild(name);
+
+    // Icon for comments
+    let img = document.createElement("img"); 
+    img.innerHTML = s_commentIcon;
+    img.src = "../../assets/img/blog/noelle/snowflake.gif"; 
+    var imageUrl = "../assets/img/holidaygirl1225/icon.gif";
+    if (data.Name.includes("holidaygirl1225")) { {img.setAttribute("src", imageUrl)}};
+    img.className = 'c-commentIcon';
+    name.appendChild(img);
 
     // Timestamp
     let time = document.createElement('span');
