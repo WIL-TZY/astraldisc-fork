@@ -152,10 +152,18 @@ textarea {
 input[type="radio"] {
     margin-right: 5px;
     display: inline;
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    max-width: 24px; 
+    max-height: 24px; 
+    aspect-ratio: 1;
 }
 
 input[type="radio"]:disabled {
     -webkit-appearance: none;
+    -moz-appearance: none;    /* Firefox fallback */
+    appearance: none;         /* Standard fallback */
     display: inline-block;
     width: 12px;
     height: 12px;
@@ -164,6 +172,16 @@ input[type="radio"]:disabled {
     border: 2px solid #bbbbbb;
     background-color: #aeaeae;
     border-radius: 50%;
+    cursor: inherit;
+}
+
+input[type="radio"]:checked {
+    background-color: #495a5a;
+}
+
+/* Fallback styles for browsers without webkit appearance support */
+input[type="radio"]:not([checked]) {
+    background-color: #aeaeae;
 }
 
 input[type="radio"]:checked {
@@ -224,8 +242,41 @@ input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::pla
     cursor: not-allowed;
 }
 
+/* Hide print button on mobile */
+@media (max-width: 768px) {
+    .print-container {
+        display: none;
+    }
+}
+
 /* Print Layout Styles */
 @media print {
+    input[type="radio"]:checked::before {
+        content: "●"; 
+        color: black;
+        font-size: 16px; 
+        position: absolute;
+        left: 50%; 
+        top: 50%;
+        transform: translate(-50%, -55%);
+    }
+    
+    input[type="radio"] {
+        position: relative;
+        width: 1.2em;
+        height: 1.2em;
+        -webkit-appearance: none;
+        appearance: none;
+        border: 1px solid black;
+        border-radius: 50%;
+        background-color: white;
+        cursor: default;
+    }
+    
+    input[type="radio"]:checked {
+        background-color: white;
+    }
+
     body {
         margin: 0;
         padding: 0;
@@ -255,5 +306,6 @@ input[type="text"]::placeholder, input[type="email"]::placeholder, textarea::pla
     .complaint-container, .response-item {
         page-break-inside: avoid;
         break-inside: avoid;
+        display: block;
     }
 }

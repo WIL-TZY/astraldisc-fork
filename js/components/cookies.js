@@ -67,6 +67,12 @@ class CookiesComponent extends HTMLElement {
                 color: white;
                 opacity: 1;
             }
+
+            @media print {
+                .cookie-banner {
+                    display: none !important;
+                }
+            }
             </style>
             <div class="cookie-banner">
                 <p>This website may use third-party cookies in some pages.</p>
