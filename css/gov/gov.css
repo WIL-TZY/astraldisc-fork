@@ -137,7 +137,8 @@ input[type="text"], input[type="email"], textarea {
     background-color: #b6ced2;
     color: #324952;
     margin-top: 5px;
-    font-size: medium;
+    font-family: monospace;
+    font-size: large;
 }
 
 textarea {
